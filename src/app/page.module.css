@@ -30,36 +30,43 @@
   padding: 4rem 0; /* Padding allows the wave behind it to breathe */
 }
 
+.logoGroup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(1rem, 2vw, 1.5rem);
+  z-index: 2; /* In front of the wave */
+}
+
 /* Super oversized display hero text */
 .title {
-  font-size: clamp(3.5rem, 10vw, 8rem);
-  font-weight: 700;
+  font-size: clamp(3.5rem, 10vw, 8.5rem);
+  font-weight: 800;
   line-height: 0.95;
   letter-spacing: -0.04em;
-  color: var(--foreground);
+  color: #000;
   margin: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: clamp(0.5rem, 2vw, 1.5rem);
-  z-index: 2; /* In front of the wave */
+}
+
+.exclamation {
+  color: #f43f5e;
+  margin-left: 0.3em;
+  font-weight: 800;
 }
 
 .middleIcon {
   height: clamp(3rem, 8vw, 6.5rem);
   width: auto;
-  color: var(--primary);
-  animation: pulseGlow 4s infinite alternate ease-in-out;
-}
-
-.dot {
-  color: var(--accent);
+  color: #3b82f6; /* Flat vivid blue */
 }
 
 .subtitle {
-  font-size: clamp(1.2rem, 2.5vw, 1.6rem);
-  color: var(--foreground);
-  opacity: 0.85;
+  font-size: clamp(1.1rem, 2vw, 1.35rem);
+  color: #111;
+  opacity: 0.9;
   max-width: 650px;
   line-height: 1.6;
   font-weight: 500;
@@ -68,8 +75,8 @@
 
 .actions {
   display: flex;
-  gap: 1rem;
-  margin-top: 2rem;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -78,43 +85,37 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 1.25rem 3rem;
-  font-size: 1.1rem;
+  padding: 1rem 2.5rem;
+  font-size: 1rem;
   font-weight: 700;
   color: #fff;
-  background: var(--foreground);
+  background: #000;
   border-radius: 9999px;
   border: 1px solid transparent;
   cursor: pointer;
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-  letter-spacing: 0.02em;
+  transition: opacity 0.2s ease;
+  letter-spacing: 0.01em;
 }
 
 .ctaPrimary:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
-  background: #000;
+  opacity: 0.8;
 }
 
 .ctaSecondary {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 1.25rem 3rem;
-  font-size: 1.1rem;
+  padding: 1rem 2.5rem;
+  font-size: 1rem;
   font-weight: 600;
-  color: var(--foreground);
-  background: var(--glass-bg);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  color: #000;
+  background: transparent;
   border-radius: 9999px;
-  border: 1px solid rgba(0,0,0,0.1);
+  border: 1px solid #e1e4e8;
   cursor: pointer;
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: background-color 0.2s ease;
 }
 
 .ctaSecondary:hover {
-  transform: translateY(-4px);
-  background: rgba(255, 255, 255, 0.8);
-  box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+  background-color: #f8fafc;
 }

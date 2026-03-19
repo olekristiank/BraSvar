@@ -11,85 +11,84 @@ export default function FrequencyWave() {
   return (
     <div className={styles.waveContainer}>
       <svg
-        viewBox="0 0 1440 600"
+        viewBox="0 0 1440 400"
         preserveAspectRatio="none"
         className={styles.waveSvg}
         xmlns="http://www.w3.org/2000/svg"
       >
         <defs>
-          <linearGradient id="freqGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" stopColor="rgba(59, 130, 246, 0.45)" />  {/* #3b82f6 */}
-            <stop offset="30%" stopColor="rgba(168, 85, 247, 0.35)" /> {/* #a855f7 */}
-            <stop offset="70%" stopColor="rgba(236, 72, 153, 0.4)" />  {/* #ec4899 */}
-            <stop offset="100%" stopColor="rgba(59, 130, 246, 0.45)" />
+          <linearGradient id="meshGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stopColor="rgba(253, 224, 211, 0.5)" />   /* Peach */
+            <stop offset="30%" stopColor="rgba(244, 162, 216, 0.5)" />  /* Pink */
+            <stop offset="70%" stopColor="rgba(244, 162, 216, 0.4)" />
+            <stop offset="100%" stopColor="rgba(191, 219, 254, 0.6)" /> /* Blue */
           </linearGradient>
-          <linearGradient id="freqGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" stopColor="rgba(244, 63, 94, 0.3)" />    {/* #f43f5e */}
-            <stop offset="50%" stopColor="rgba(249, 115, 22, 0.4)" />  {/* #f97316 */}
-            <stop offset="100%" stopColor="rgba(59, 130, 246, 0.3)" />
+          <linearGradient id="meshGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stopColor="rgba(254, 205, 211, 0.6)" />   /* Rose */
+            <stop offset="50%" stopColor="rgba(200, 150, 200, 0.4)" />  /* Purple tint */
+            <stop offset="100%" stopColor="rgba(147, 197, 253, 0.7)" /> /* Blue tint */
           </linearGradient>
-          
-          <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-            <feGaussianBlur stdDeviation="15" result="blur" />
-            <feMerge>
-              <feMergeNode in="blur" />
-              <feMergeNode in="SourceGraphic" />
-            </feMerge>
-          </filter>
+          <linearGradient id="meshLineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stopColor="rgba(255, 255, 255, 1)" />
+            <stop offset="50%" stopColor="rgba(255, 255, 255, 0.3)" />
+            <stop offset="100%" stopColor="rgba(255, 255, 255, 1)" />
+          </linearGradient>
+          <linearGradient id="meshLineGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stopColor="rgba(255, 255, 255, 0)" />
+            <stop offset="50%" stopColor="rgba(255, 255, 255, 0.9)" />
+            <stop offset="100%" stopColor="rgba(255, 255, 255, 0)" />
+          </linearGradient>
         </defs>
 
-        {/* Deep, slow thick wave */}
-        <path fill="url(#freqGrad1)" style={{ mixBlendMode: 'multiply' }}>
+        {/* Soft thick gradient fills representing the mesh aura */}
+        <path fill="url(#meshGrad1)">
           <animate
             attributeName="d"
-            dur="14s"
+            dur="16s"
             repeatCount="indefinite"
             values="
-              M0,300 C240,480 480,120 720,300 C960,480 1200,120 1440,300 L1440,600 L0,600 Z;
-              M0,300 C240,120 480,480 720,300 C960,120 1200,480 1440,300 L1440,600 L0,600 Z;
-              M0,300 C240,480 480,120 720,300 C960,480 1200,120 1440,300 L1440,600 L0,600 Z
+              M0,200 C240,320 480,80 720,200 C960,320 1200,80 1440,200 L1440,400 L0,400 Z;
+              M0,200 C240,80 480,320 720,200 C960,80 1200,320 1440,200 L1440,400 L0,400 Z;
+              M0,200 C240,320 480,80 720,200 C960,320 1200,80 1440,200 L1440,400 L0,400 Z
             "
           />
         </path>
 
-        {/* Thinner, vivid high-frequency wave */}
-        <path fill="none" stroke="url(#freqGrad2)" strokeWidth="4" filter="url(#glow)">
+        <path fill="url(#meshGrad2)" style={{ mixBlendMode: 'multiply' }}>
           <animate
             attributeName="d"
-            dur="8s"
+            dur="22s"
             repeatCount="indefinite"
             values="
-              M0,300 Q180,150 360,300 T720,300 T1080,300 T1440,300;
-              M0,300 Q180,450 360,300 T720,300 T1080,300 T1440,300;
-              M0,300 Q180,150 360,300 T720,300 T1080,300 T1440,300
+              M0,200 C300,100 500,350 720,200 C940,50 1140,300 1440,200 L1440,400 L0,400 Z;
+              M0,200 C300,300 500,50 720,200 C940,350 1140,100 1440,200 L1440,400 L0,400 Z;
+              M0,200 C300,100 500,350 720,200 C940,50 1140,300 1440,200 L1440,400 L0,400 Z
             "
           />
         </path>
 
-        {/* Middle sweeping wave */}
-        <path fill="url(#freqGrad2)" style={{ mixBlendMode: 'multiply' }}>
+        {/* The delicate thin intersecting sine waves on top mimicking the mockups thin sweeping lines */}
+        <path fill="none" stroke="url(#meshLineGrad)" strokeWidth="1.5">
           <animate
             attributeName="d"
-            dur="10s"
+            dur="13s"
             repeatCount="indefinite"
             values="
-              M0,300 C200,180 400,420 720,300 C1040,180 1240,420 1440,300 L1440,600 L0,600 Z;
-              M0,300 C200,420 400,180 720,300 C1040,420 1240,180 1440,300 L1440,600 L0,600 Z;
-              M0,300 C200,180 400,420 720,300 C1040,180 1240,420 1440,300 L1440,600 L0,600 Z
+              M0,200 C250,50 450,350 720,200 C990,50 1190,350 1440,200;
+              M0,200 C250,350 450,50 720,200 C990,350 1190,50 1440,200;
+              M0,200 C250,50 450,350 720,200 C990,50 1190,350 1440,200
             "
           />
         </path>
-        
-        {/* Core frequency line (thin sharp white/cyan core) */}
-        <path fill="none" stroke="rgba(255,255,255,0.8)" strokeWidth="2">
+        <path fill="none" stroke="url(#meshLineGrad2)" strokeWidth="2">
           <animate
             attributeName="d"
-            dur="6s"
+            dur="17s"
             repeatCount="indefinite"
             values="
-              M0,300 Q120,200 240,300 T480,300 T720,300 T960,300 T1200,300 T1440,300;
-              M0,300 Q120,400 240,300 T480,300 T720,300 T960,300 T1200,300 T1440,300;
-              M0,300 Q120,200 240,300 T480,300 T720,300 T960,300 T1200,300 T1440,300
+              M0,200 C300,350 420,50 720,200 C1020,350 1140,50 1440,200;
+              M0,200 C300,50 420,350 720,200 C1020,50 1140,350 1440,200;
+              M0,200 C300,350 420,50 720,200 C1020,350 1140,50 1440,200
             "
           />
         </path>
