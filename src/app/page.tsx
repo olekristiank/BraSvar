@@ -21,7 +21,7 @@ export default function Home() {
               <rect x="56" y="20" width="14" height="60" rx="7" />
               <rect x="78" y="30" width="14" height="40" rx="7" />
             </svg>
-            Svar<span className={styles.dot}>.</span>
+            Svar<span className={styles.dot}>!</span>
           </h1>
         </div>
         
