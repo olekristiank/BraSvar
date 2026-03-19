@@ -98,6 +98,19 @@ export default function WaveAdmin() {
           />
         </div>
 
+        <div className="flex flex-col gap-1">
+          <label className="text-xs font-semibold text-neutral-300 uppercase flex justify-between">
+            <span>Y-posisjon (Translate Y)</span>
+            <span>{config.translateY || 0}px</span>
+          </label>
+          <input 
+            type="range" min="-300" max="300" step="5" 
+            value={config.translateY || 0} 
+            onChange={e => setConfig({ ...config, translateY: parseInt(e.target.value) })}
+            className="w-full accent-pink-500"
+          />
+        </div>
+
         <button 
           onClick={handleCopy}
           className="mt-4 w-full bg-pink-600 hover:bg-pink-700 text-white font-bold py-3 px-4 rounded-xl transition-colors active:scale-95"

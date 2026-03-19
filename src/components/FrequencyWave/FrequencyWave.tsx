@@ -18,6 +18,7 @@ export type WaveConfig = {
   };
   opacity: number;
   scaleY: number;
+  translateY?: number;
 };
 
 export const defaultWaveConfig: WaveConfig = {
@@ -55,7 +56,7 @@ export default function FrequencyWave({ config = defaultWaveConfig }: { config?:
       style={{ 
         opacity: config.opacity, 
         // Restore the -50% -50% translation so it sits perfectly in the middle of the logo
-        transform: `translate(-50%, -50%) scaleY(${config.scaleY}) translateZ(0)` 
+        transform: `translate(-50%, calc(-50% + ${config.translateY || 0}px)) scaleY(${config.scaleY}) translateZ(0)` 
       }}
     >
       <svg
