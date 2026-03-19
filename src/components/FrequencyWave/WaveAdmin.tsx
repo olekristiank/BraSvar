@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import FrequencyWave, { WaveConfig, defaultWaveConfig } from "./FrequencyWave";
 import { wavePresets } from "./wavePresets";
 
@@ -8,7 +8,13 @@ export default function WaveAdmin() {
   const [activePreset, setActivePreset] = useState<string>("Soft Original");
   const [config, setConfig] = useState<WaveConfig>(wavePresets["Soft Original"] || defaultWaveConfig);
   const [speedMultiplier, setSpeedMultiplier] = useState(1);
+  const [debouncedSpeed, setDebouncedSpeed] = useState(1);
   const [copyText, setCopyText] = useState("Kopier Innstillinger");
+
+  useEffect(() => {
+    const handler = setTimeout(() => setDebouncedSpeed(speedMultiplier), 300);
+    return () => clearTimeout(handler);
+  }, [speedMultiplier]);
 
   const handlePresetChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const val = e.target.value;
@@ -22,10 +28,10 @@ export default function WaveAdmin() {
   const currentConfig: WaveConfig = {
     ...config,
     durations: {
-      path1: config.durations.path1 / speedMultiplier,
-      path2: config.durations.path2 / speedMultiplier,
-      line1: config.durations.line1 / speedMultiplier,
-      line2: config.durations.line2 / speedMultiplier,
+      path1: config.durations.path1 / debouncedSpeed,
+      path2: config.durations.path2 / debouncedSpeed,
+      line1: config.durations.line1 / debouncedSpeed,
+      line2: config.durations.line2 / debouncedSpeed,
     }
   };
 
