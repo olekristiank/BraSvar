@@ -14,7 +14,7 @@
   position: relative;
   overflow: hidden;
   align-items: center;
-  padding-top: 6rem; /* Natural padding from the absolute top of the page */
+  padding-top: 2rem; /* Bring directly to the top edge */
   padding-bottom: 2rem;
 }
 
@@ -36,7 +36,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: 2rem 0; /* Reduced from 4rem to pull elements closer */
+  padding: 1rem 0 2rem 0; /* Tighter top padding */
 }
 
 .logoGroup {
