@@ -67,7 +67,7 @@
 }
 
 .middleIcon {
-  height: clamp(3.5rem, 8.5vw, 6.5rem); /* Subtly thicker to match */
+  height: clamp(4.5rem, 10vw, 8.5rem); /* Scaled up to perfectly match the 8.5rem max height of the surrounding text */
   width: auto;
   color: #818cf8; /* Cornflower */
 }
