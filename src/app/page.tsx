@@ -18,19 +18,13 @@ export default function Home() {
               <svg
                 className={styles.middleIcon}
                 viewBox="0 0 100 100"
-                fill="currentColor"
+                fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <defs>
-                  <linearGradient id="iconGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                    <stop offset="0%" stopColor="#ff007f" /> {/* Intense Neon Pink */}
-                    <stop offset="100%" stopColor="#ff00ff" /> {/* Electric Magenta */}
-                  </linearGradient>
-                </defs>
-                <rect x="12" y="32" width="14" height="36" rx="7" fill="url(#iconGradient)"/>
-                <rect x="34" y="10" width="14" height="80" rx="7" fill="url(#iconGradient)"/>
-                <rect x="56" y="24" width="14" height="52" rx="7" fill="url(#iconGradient)"/>
-                <rect x="78" y="32" width="14" height="36" rx="7" fill="url(#iconGradient)"/>
+                <rect x="12" y="32" width="14" height="36" rx="7" fill="#ec4899"/>
+                <rect x="34" y="10" width="14" height="80" rx="7" fill="#ec4899"/>
+                <rect x="56" y="24" width="14" height="52" rx="7" fill="#ec4899"/>
+                <rect x="78" y="32" width="14" height="36" rx="7" fill="#ec4899"/>
               </svg>
               <h1 className={`${styles.title} display-font`}>
                 Svar<span className={styles.exclamation}>!</span>
