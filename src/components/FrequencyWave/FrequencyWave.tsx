@@ -18,15 +18,15 @@ export default function FrequencyWave() {
       >
         <defs>
           <linearGradient id="meshGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" stopColor="rgba(253, 224, 211, 0.4)" />   /* Peach */
-            <stop offset="30%" stopColor="rgba(219, 39, 119, 0.4)" />  /* Deep Pink / Fuchsia */
-            <stop offset="70%" stopColor="rgba(244, 114, 182, 0.4)" /> /* Pink */
-            <stop offset="100%" stopColor="rgba(251, 146, 60, 0.5)" /> /* Orange */
+            <stop offset="0%" stopColor="rgba(244, 63, 94, 0.85)" />   /* Intense Coral */
+            <stop offset="30%" stopColor="rgba(219, 39, 119, 0.9)" />  /* Deep Fuchsia */
+            <stop offset="70%" stopColor="rgba(236, 72, 153, 0.9)" />  /* Bright Pink */
+            <stop offset="100%" stopColor="rgba(249, 115, 22, 0.85)" /> /* Bright Orange */
           </linearGradient>
           <linearGradient id="meshGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" stopColor="rgba(254, 205, 211, 0.6)" />   /* Rose */
-            <stop offset="50%" stopColor="rgba(200, 150, 200, 0.4)" />  /* Purple tint */
-            <stop offset="100%" stopColor="rgba(244, 63, 94, 0.5)" />   /* Coral */
+            <stop offset="0%" stopColor="rgba(251, 113, 133, 0.85)" />  /* Vivid Rose */
+            <stop offset="50%" stopColor="rgba(225, 29, 72, 0.8)" />   /* Crimson */
+            <stop offset="100%" stopColor="rgba(251, 146, 60, 0.9)" />  /* Warm Orange */
           </linearGradient>
           <linearGradient id="meshLineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
             <stop offset="0%" stopColor="rgba(255, 255, 255, 1)" />
