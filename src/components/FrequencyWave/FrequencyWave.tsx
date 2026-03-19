@@ -3,13 +3,60 @@
 import React, { useEffect, useState } from "react";
 import styles from "./FrequencyWave.module.css";
 
-export default function FrequencyWave() {
+export type WaveColors = {
+  grad1: string[];
+  grad2: string[];
+};
+
+export type WaveConfig = {
+  colors: WaveColors;
+  durations: {
+    path1: number;
+    path2: number;
+    line1: number;
+    line2: number;
+  };
+  opacity: number;
+  scaleY: number;
+};
+
+export const defaultWaveConfig: WaveConfig = {
+  colors: {
+    grad1: [
+      "rgba(253, 224, 211, 0.4)",
+      "rgba(219, 39, 119, 0.4)",
+      "rgba(244, 114, 182, 0.4)",
+      "rgba(251, 146, 60, 0.5)"
+    ],
+    grad2: [
+      "rgba(254, 205, 211, 0.6)",
+      "rgba(200, 150, 200, 0.4)",
+      "rgba(244, 63, 94, 0.5)"
+    ]
+  },
+  durations: {
+    path1: 16,
+    path2: 22,
+    line1: 13,
+    line2: 17
+  },
+  opacity: 1,
+  scaleY: 1
+};
+
+export default function FrequencyWave({ config = defaultWaveConfig }: { config?: WaveConfig }) {
   const [mounted, setMounted] = useState(false);
   useEffect(() => setMounted(true), []);
   if (!mounted) return null;
 
   return (
-    <div className={styles.waveContainer}>
+    <div 
+      className={styles.waveContainer} 
+      style={{ 
+        opacity: config.opacity, 
+        transform: `scaleY(${config.scaleY}) translateZ(0)` 
+      }}
+    >
       <svg
         viewBox="0 0 1440 400"
         preserveAspectRatio="none"
@@ -18,15 +65,14 @@ export default function FrequencyWave() {
       >
         <defs>
           <linearGradient id="meshGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" stopColor="rgba(244, 63, 94, 0.85)" />   /* Intense Coral */
-            <stop offset="30%" stopColor="rgba(219, 39, 119, 0.9)" />  /* Deep Fuchsia */
-            <stop offset="70%" stopColor="rgba(236, 72, 153, 0.9)" />  /* Bright Pink */
-            <stop offset="100%" stopColor="rgba(249, 115, 22, 0.85)" /> /* Bright Orange */
+            {config.colors.grad1.map((color, i) => (
+              <stop key={i} offset={`${(i / (config.colors.grad1.length - 1)) * 100}%`} stopColor={color} />
+            ))}
           </linearGradient>
           <linearGradient id="meshGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" stopColor="rgba(251, 113, 133, 0.85)" />  /* Vivid Rose */
-            <stop offset="50%" stopColor="rgba(225, 29, 72, 0.8)" />   /* Crimson */
-            <stop offset="100%" stopColor="rgba(251, 146, 60, 0.9)" />  /* Warm Orange */
+            {config.colors.grad2.map((color, i) => (
+              <stop key={i} offset={`${(i / (config.colors.grad2.length - 1)) * 100}%`} stopColor={color} />
+            ))}
           </linearGradient>
           <linearGradient id="meshLineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
             <stop offset="0%" stopColor="rgba(255, 255, 255, 1)" />
@@ -44,7 +90,7 @@ export default function FrequencyWave() {
         <path fill="url(#meshGrad1)">
           <animate
             attributeName="d"
-            dur="16s"
+            dur={`${config.durations.path1}s`}
             repeatCount="indefinite"
             values="
               M0,200 C240,320 480,80 720,200 C960,320 1200,80 1440,200 L1440,400 L0,400 Z;
@@ -57,7 +103,7 @@ export default function FrequencyWave() {
         <path fill="url(#meshGrad2)" style={{ mixBlendMode: 'multiply' }}>
           <animate
             attributeName="d"
-            dur="22s"
+            dur={`${config.durations.path2}s`}
             repeatCount="indefinite"
             values="
               M0,200 C300,100 500,350 720,200 C940,50 1140,300 1440,200 L1440,400 L0,400 Z;
@@ -71,7 +117,7 @@ export default function FrequencyWave() {
         <path fill="none" stroke="url(#meshLineGrad)" strokeWidth="1.5">
           <animate
             attributeName="d"
-            dur="13s"
+            dur={`${config.durations.line1}s`}
             repeatCount="indefinite"
             values="
               M0,200 C250,50 450,350 720,200 C990,50 1190,350 1440,200;
@@ -83,7 +129,7 @@ export default function FrequencyWave() {
         <path fill="none" stroke="url(#meshLineGrad2)" strokeWidth="2">
           <animate
             attributeName="d"
-            dur="17s"
+            dur={`${config.durations.line2}s`}
             repeatCount="indefinite"
             values="
               M0,200 C300,350 420,50 720,200 C1020,350 1140,50 1440,200;

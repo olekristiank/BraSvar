@@ -1,5 +1,5 @@
 import styles from "./page.module.css";
-import FrequencyWave from "@/components/FrequencyWave/FrequencyWave";
+import WaveAdmin from "@/components/FrequencyWave/WaveAdmin";
 import Pricing from "@/components/Pricing/Pricing";
 
 export default function Home() {
@@ -9,7 +9,7 @@ export default function Home() {
         <main className={styles.main}>
           
           <div className={styles.logoGroupWrapper}>
-            <FrequencyWave />
+            <WaveAdmin />
             
             <div className={`${styles.logoGroup} animate-fade-in`}>
               <h1 className={`${styles.title} display-font`}>
