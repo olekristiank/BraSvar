@@ -21,12 +21,12 @@ export default function FrequencyWave() {
             <stop offset="0%" stopColor="rgba(253, 224, 211, 0.4)" />   /* Peach */
             <stop offset="30%" stopColor="rgba(219, 39, 119, 0.4)" />  /* Deep Pink / Fuchsia */
             <stop offset="70%" stopColor="rgba(244, 114, 182, 0.4)" /> /* Pink */
-            <stop offset="100%" stopColor="rgba(191, 219, 254, 0.5)" /> /* Blue */
+            <stop offset="100%" stopColor="rgba(251, 146, 60, 0.5)" /> /* Orange */
           </linearGradient>
           <linearGradient id="meshGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
             <stop offset="0%" stopColor="rgba(254, 205, 211, 0.6)" />   /* Rose */
             <stop offset="50%" stopColor="rgba(200, 150, 200, 0.4)" />  /* Purple tint */
-            <stop offset="100%" stopColor="rgba(147, 197, 253, 0.7)" /> /* Blue tint */
+            <stop offset="100%" stopColor="rgba(244, 63, 94, 0.5)" />   /* Coral */
           </linearGradient>
           <linearGradient id="meshLineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
             <stop offset="0%" stopColor="rgba(255, 255, 255, 1)" />

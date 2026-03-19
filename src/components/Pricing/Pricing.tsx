@@ -50,7 +50,7 @@ export default function Pricing() {
           {/* Pro Card */}
           <div className="flex flex-col p-10 rounded-[2rem] border-[3px] border-black bg-neutral-50 shadow-xl relative overflow-hidden">
              {/* Badge */}
-             <div className="absolute top-0 right-0 bg-blue-500 text-white px-5 py-2 rounded-bl-2xl font-bold text-sm tracking-wide">
+             <div className="absolute top-0 right-0 bg-pink-500 text-white px-5 py-2 rounded-bl-2xl font-bold text-sm tracking-wide">
                 MEST POPULÆR
              </div>
             
@@ -69,7 +69,7 @@ export default function Pricing() {
               </li>
             </ul>
             
-            <button className="w-full py-4 px-6 bg-blue-600 text-white rounded-full font-bold text-lg hover:bg-blue-700 transition-colors">
+            <button className="w-full py-4 px-6 bg-pink-600 text-white rounded-full font-bold text-lg hover:bg-pink-700 transition-colors">
               Få et skreddersydd tilbud
             </button>
           </div>
@@ -96,7 +96,7 @@ export default function Pricing() {
 
 function CheckIcon() {
   return (
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="text-blue-500 shrink-0">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="text-pink-500 shrink-0">
       <polyline points="20 6 9 17 4 12"></polyline>
     </svg>
   );
