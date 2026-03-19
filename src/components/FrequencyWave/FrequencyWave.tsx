@@ -18,10 +18,10 @@ export default function FrequencyWave() {
       >
         <defs>
           <linearGradient id="meshGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" stopColor="rgba(253, 224, 211, 0.5)" />   /* Peach */
-            <stop offset="30%" stopColor="rgba(244, 162, 216, 0.5)" />  /* Pink */
-            <stop offset="70%" stopColor="rgba(244, 162, 216, 0.4)" />
-            <stop offset="100%" stopColor="rgba(191, 219, 254, 0.6)" /> /* Blue */
+            <stop offset="0%" stopColor="rgba(253, 224, 211, 0.4)" />   /* Peach */
+            <stop offset="30%" stopColor="rgba(219, 39, 119, 0.4)" />  /* Deep Pink / Fuchsia */
+            <stop offset="70%" stopColor="rgba(244, 114, 182, 0.4)" /> /* Pink */
+            <stop offset="100%" stopColor="rgba(191, 219, 254, 0.5)" /> /* Blue */
           </linearGradient>
           <linearGradient id="meshGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
             <stop offset="0%" stopColor="rgba(254, 205, 211, 0.6)" />   /* Rose */
