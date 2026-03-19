@@ -46,10 +46,6 @@ export const defaultWaveConfig: WaveConfig = {
 };
 
 export default function FrequencyWave({ config = defaultWaveConfig }: { config?: WaveConfig }) {
-  const [mounted, setMounted] = useState(false);
-  useEffect(() => setMounted(true), []);
-  if (!mounted) return null;
-
   return (
     <div 
       className={styles.waveContainer} 
