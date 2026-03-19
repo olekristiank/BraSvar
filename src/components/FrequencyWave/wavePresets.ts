@@ -181,4 +181,58 @@ export const wavePresets: Record<string, WaveConfig> = {
     opacity: 1,
     scaleY: 1.3,
   },
+  "Silver Mist": {
+    colors: {
+      grad1: [
+        "rgba(241, 245, 249, 0.7)",
+        "rgba(203, 213, 225, 0.6)",
+        "rgba(148, 163, 184, 0.7)",
+        "rgba(226, 232, 240, 0.6)",
+      ],
+      grad2: [
+        "rgba(100, 116, 139, 0.6)",
+        "rgba(148, 163, 184, 0.5)",
+        "rgba(203, 213, 225, 0.6)",
+      ],
+    },
+    durations: { path1: 20, path2: 26, line1: 18, line2: 24 },
+    opacity: 0.8,
+    scaleY: 1,
+  },
+  "Graphite Dark": {
+    colors: {
+      grad1: [
+        "rgba(71, 85, 105, 0.8)",
+        "rgba(51, 65, 85, 0.7)",
+        "rgba(30, 41, 59, 0.8)",
+        "rgba(15, 23, 42, 0.7)",
+      ],
+      grad2: [
+        "rgba(30, 41, 59, 0.7)",
+        "rgba(71, 85, 105, 0.6)",
+        "rgba(100, 116, 139, 0.8)",
+      ],
+    },
+    durations: { path1: 15, path2: 20, line1: 12, line2: 16 },
+    opacity: 0.9,
+    scaleY: 1,
+  },
+  "Monochrome Tech": {
+    colors: {
+      grad1: [
+        "rgba(229, 231, 235, 0.5)",
+        "rgba(156, 163, 175, 0.6)",
+        "rgba(75, 85, 99, 0.5)",
+        "rgba(31, 41, 55, 0.6)",
+      ],
+      grad2: [
+        "rgba(107, 114, 128, 0.6)",
+        "rgba(209, 213, 219, 0.5)",
+        "rgba(243, 244, 246, 0.7)",
+      ],
+    },
+    durations: { path1: 18, path2: 22, line1: 15, line2: 19 },
+    opacity: 1,
+    scaleY: 1.1,
+  },
 };

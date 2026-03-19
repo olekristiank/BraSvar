@@ -4,12 +4,19 @@ import React, { useState, useEffect } from "react";
 import FrequencyWave, { WaveConfig, defaultWaveConfig } from "./FrequencyWave";
 import { wavePresets } from "./wavePresets";
 
+// Simple hex to RGB string helper for dynamic color generation
+function hexToRgb(hex: string) {
+  const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+  return result ? `${parseInt(result[1], 16)}, ${parseInt(result[2], 16)}, ${parseInt(result[3], 16)}` : "255, 255, 255";
+}
+
 export default function WaveAdmin() {
   const [activePreset, setActivePreset] = useState<string>("Soft Original");
   const [config, setConfig] = useState<WaveConfig>(wavePresets["Soft Original"] || defaultWaveConfig);
   const [speedMultiplier, setSpeedMultiplier] = useState(1);
   const [debouncedSpeed, setDebouncedSpeed] = useState(1);
   const [copyText, setCopyText] = useState("Kopier Innstillinger");
+  const [customColor, setCustomColor] = useState("#ec4899");
 
   useEffect(() => {
     const handler = setTimeout(() => setDebouncedSpeed(speedMultiplier), 300);
@@ -19,10 +26,34 @@ export default function WaveAdmin() {
   const handlePresetChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const val = e.target.value;
     setActivePreset(val);
-    if (wavePresets[val]) {
+    if (val === "Custom") {
+      applyCustomColor(customColor);
+    } else if (wavePresets[val]) {
       setConfig({ ...wavePresets[val] });
       setSpeedMultiplier(1);
     }
+  };
+
+  const applyCustomColor = (hex: string) => {
+    setActivePreset("Custom");
+    setCustomColor(hex);
+    const rgb = hexToRgb(hex);
+    setConfig({
+      ...config,
+      colors: {
+        grad1: [
+          `rgba(${rgb}, 0.8)`,
+          `rgba(${rgb}, 0.5)`,
+          `rgba(${rgb}, 0.7)`,
+          `rgba(${rgb}, 0.4)`,
+        ],
+        grad2: [
+          `rgba(${rgb}, 0.6)`,
+          `rgba(${rgb}, 0.4)`,
+          `rgba(${rgb}, 0.5)`,
+        ]
+      }
+    });
   };
 
   const currentConfig: WaveConfig = {
@@ -43,13 +74,9 @@ export default function WaveAdmin() {
 
   return (
     <>
-      {/* Background Component */}
       <FrequencyWave config={currentConfig} key={JSON.stringify(currentConfig.durations)} />
 
-      {/* Floating Control Panel */}
-      <div 
-        className="fixed bottom-4 right-4 z-50 bg-black/90 text-white p-6 rounded-2xl shadow-2xl backdrop-blur-md border border-white/20 flex flex-col gap-4 w-80 font-sans"
-      >
+      <div className="fixed bottom-4 right-4 z-50 bg-black/90 text-white p-6 rounded-2xl shadow-2xl backdrop-blur-md border border-white/20 flex flex-col gap-4 w-80 font-sans">
         <h3 className="font-bold text-lg mb-2">🌊 Bølgekontrollpanel</h3>
         
         <div className="flex flex-col gap-1">
@@ -62,8 +89,27 @@ export default function WaveAdmin() {
             {Object.keys(wavePresets).map(key => (
               <option key={key} value={key}>{key}</option>
             ))}
+            <option value="Custom">Custom (Skreddersydd)</option>
           </select>
         </div>
+
+        {activePreset === "Custom" && (
+          <div className="flex flex-col gap-1 py-1">
+            <label className="text-xs font-semibold text-neutral-300 uppercase flex justify-between items-center">
+              <span>Velg Basisfarge (Hex)</span>
+              <span className="font-mono text-[10px]">{customColor}</span>
+            </label>
+            <div className="flex gap-2 items-center">
+              <input 
+                type="color" 
+                value={customColor} 
+                onChange={(e) => applyCustomColor(e.target.value)}
+                className="w-10 h-10 p-1 bg-neutral-800 border border-neutral-700 rounded cursor-pointer"
+              />
+              <span className="text-xs text-neutral-400 leading-tight">Paletten genereres automatisk fra denne fargen.</span>
+            </div>
+          </div>
+        )}
 
         <div className="flex flex-col gap-1">
           <label className="text-xs font-semibold text-neutral-300 uppercase flex justify-between">
@@ -119,7 +165,7 @@ export default function WaveAdmin() {
 
         <button 
           onClick={handleCopy}
-          className="mt-4 w-full bg-pink-600 hover:bg-pink-700 text-white font-bold py-3 px-4 rounded-xl transition-colors active:scale-95"
+          className="mt-2 w-full bg-pink-600 hover:bg-pink-700 text-white font-bold py-3 px-4 rounded-xl transition-colors active:scale-95 text-sm"
         >
           {copyText}
         </button>
