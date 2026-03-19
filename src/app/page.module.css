@@ -20,15 +20,30 @@
   margin-top: -5vh; /* slightly elevated to balance the wave on the bottom half */
 }
 
-/* Super oversized Syne display hero text */
+/* Super oversized display hero text */
 .title {
-  font-size: clamp(4rem, 12vw, 9rem);
-  font-weight: 800;
+  font-size: clamp(3.5rem, 10vw, 7.5rem);
+  font-weight: 700;
   line-height: 0.95;
   letter-spacing: -0.04em;
   color: var(--foreground);
-  text-transform: uppercase;
   margin: 0;
+}
+
+.logoGroup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(1rem, 3vw, 2rem);
+  margin-bottom: 0.5rem;
+}
+
+.logoIcon {
+  height: clamp(3rem, 9vw, 6.5rem);
+  width: auto;
+  color: var(--primary);
+  /* Optional: soft breathing animation for the icon */
+  animation: pulseGlow 8s infinite alternate ease-in-out;
 }
 
 .subtitle {
