@@ -23,8 +23,8 @@ export default function Home() {
               >
                 <defs>
                   <linearGradient id="iconGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                    <stop offset="0%" stopColor="#f97316" /> {/* Vibrant Orange */}
-                    <stop offset="100%" stopColor="#ec4899" /> {/* Deep Pink */}
+                    <stop offset="0%" stopColor="#ff007f" /> {/* Intense Neon Pink */}
+                    <stop offset="100%" stopColor="#ff00ff" /> {/* Electric Magenta */}
                   </linearGradient>
                 </defs>
                 <rect x="12" y="32" width="14" height="36" rx="7" fill="url(#iconGradient)"/>
