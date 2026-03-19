@@ -19,6 +19,9 @@ export type WaveConfig = {
   opacity: number;
   scaleY: number;
   translateY?: number;
+  hueRotate?: number;
+  saturate?: number;
+  brightness?: number;
 };
 
 export const defaultWaveConfig: WaveConfig = {
@@ -42,17 +45,23 @@ export const defaultWaveConfig: WaveConfig = {
     line2: 17
   },
   opacity: 1,
-  scaleY: 1
+  scaleY: 1,
+  hueRotate: 0,
+  saturate: 100,
+  brightness: 100
 };
 
 export default function FrequencyWave({ config = defaultWaveConfig }: { config?: WaveConfig }) {
+  const filterString = `hue-rotate(${config.hueRotate || 0}deg) saturate(${config.saturate === undefined ? 100 : config.saturate}%) brightness(${config.brightness === undefined ? 100 : config.brightness}%)`;
+
   return (
     <div 
       className={styles.waveContainer} 
       style={{ 
         opacity: config.opacity, 
         // Restore the -50% -50% translation so it sits perfectly in the middle of the logo
-        transform: `translate(-50%, calc(-50% + ${config.translateY || 0}px)) scaleY(${config.scaleY}) translateZ(0)` 
+        transform: `translate(-50%, calc(-50% + ${config.translateY || 0}px)) scaleY(${config.scaleY}) translateZ(0)`,
+        filter: filterString
       }}
     >
       <svg

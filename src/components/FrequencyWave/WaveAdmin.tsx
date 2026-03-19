@@ -163,6 +163,45 @@ export default function WaveAdmin() {
           />
         </div>
 
+        <div className="flex flex-col gap-1 mt-2 pt-3 border-t border-neutral-700/50">
+          <label className="text-xs font-semibold text-neutral-300 uppercase flex justify-between">
+            <span>Fargetone (Hue)</span>
+            <span>{config.hueRotate || 0}°</span>
+          </label>
+          <input 
+            type="range" min="0" max="360" step="1" 
+            value={config.hueRotate || 0} 
+            onChange={e => setConfig({ ...config, hueRotate: parseInt(e.target.value) })}
+            className="w-full accent-pink-500"
+          />
+        </div>
+
+        <div className="flex flex-col gap-1">
+          <label className="text-xs font-semibold text-neutral-300 uppercase flex justify-between">
+            <span>Fargemetning (Sat)</span>
+            <span>{config.saturate === undefined ? 100 : config.saturate}%</span>
+          </label>
+          <input 
+            type="range" min="0" max="300" step="5" 
+            value={config.saturate === undefined ? 100 : config.saturate} 
+            onChange={e => setConfig({ ...config, saturate: parseInt(e.target.value) })}
+            className="w-full accent-pink-500"
+          />
+        </div>
+
+        <div className="flex flex-col gap-1 mb-2">
+          <label className="text-xs font-semibold text-neutral-300 uppercase flex justify-between">
+            <span>Lysstyrke (Light)</span>
+            <span>{config.brightness === undefined ? 100 : config.brightness}%</span>
+          </label>
+          <input 
+            type="range" min="0" max="250" step="5" 
+            value={config.brightness === undefined ? 100 : config.brightness} 
+            onChange={e => setConfig({ ...config, brightness: parseInt(e.target.value) })}
+            className="w-full accent-pink-500"
+          />
+        </div>
+
         <button 
           onClick={handleCopy}
           className="mt-2 w-full bg-pink-600 hover:bg-pink-700 text-white font-bold py-3 px-4 rounded-xl transition-colors active:scale-95 text-sm"
