@@ -54,10 +54,12 @@ export default function FrequencyWave({ config = defaultWaveConfig }: { config?:
       className={styles.waveContainer} 
       style={{ 
         opacity: config.opacity, 
-        transform: `scaleY(${config.scaleY}) translateZ(0)` 
+        // Restore the -50% -50% translation so it sits perfectly in the middle of the logo
+        transform: `translate(-50%, -50%) scaleY(${config.scaleY}) translateZ(0)` 
       }}
     >
       <svg
+        key={`svg-dur-${config.durations.path1}`} // Force SVG to perfectly restart when speed changes
         viewBox="0 0 1440 400"
         preserveAspectRatio="none"
         className={styles.waveSvg}

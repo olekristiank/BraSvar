@@ -8,15 +8,14 @@
 }
 
 .heroSection {
-  min-height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   position: relative;
   overflow: hidden;
   align-items: center;
-  justify-content: center;
-  padding-bottom: 20vh; /* Optically pushes the content higher up */
+  padding-top: 6rem; /* Natural padding from the absolute top of the page */
+  padding-bottom: 2rem;
 }
 
 .main {
@@ -24,9 +23,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   gap: 2rem;
-  padding: 2rem 2rem; /* Reduced top/bottom padding */
+  padding: 0 2rem;
   text-align: center;
   max-width: 1200px;
   width: 100%;
