@@ -26,10 +26,10 @@ export default function Home() {
                   <stop offset="100%" stopColor="#2563eb" />
                 </linearGradient>
               </defs>
-              <rect x="12" y="30" width="14" height="40" rx="7" fill="url(#iconGradient)"/>
+              <rect x="12" y="32" width="14" height="36" rx="7" fill="url(#iconGradient)"/>
               <rect x="34" y="10" width="14" height="80" rx="7" fill="url(#iconGradient)"/>
-              <rect x="56" y="20" width="14" height="60" rx="7" fill="url(#iconGradient)"/>
-              <rect x="78" y="30" width="14" height="40" rx="7" fill="url(#iconGradient)"/>
+              <rect x="56" y="24" width="14" height="52" rx="7" fill="url(#iconGradient)"/>
+              <rect x="78" y="32" width="14" height="36" rx="7" fill="url(#iconGradient)"/>
             </svg>
             <h1 className={`${styles.title} display-font`}>
               Svar<span className={styles.exclamation}>!</span>

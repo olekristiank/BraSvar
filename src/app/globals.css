@@ -58,8 +58,8 @@ a {
 
 /* Typography Overrides for Display */
 h1, h2, h3, h4, .display-font {
-  font-family: var(--font-plus-jakarta), sans-serif;
-  letter-spacing: -0.02em;
+  font-family: var(--font-inter), sans-serif;
+  letter-spacing: -0.05em; /* Tighter tracking for bold brutalist look */
 }
 
 @keyframes fadeInScale {

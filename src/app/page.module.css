@@ -34,16 +34,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: clamp(1rem, 2vw, 1.5rem);
+  gap: clamp(0.2rem, 1vw, 0.75rem); /* Tighter gap to feel like one sentence */
   z-index: 2; /* In front of the wave */
 }
 
 /* Super oversized display hero text */
 .title {
   font-size: clamp(3.5rem, 10vw, 8.5rem);
-  font-weight: 800;
+  font-weight: 800; /* Extra bold to match mockup */
   line-height: 0.95;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.05em; /* Tighter tracking */
   color: #000;
   margin: 0;
   display: flex;
@@ -53,12 +53,12 @@
 
 .exclamation {
   color: #f43f5e;
-  margin-left: 0.3em;
   font-weight: 800;
+  /* Margin removed so it sits perfectly flush with the text */
 }
 
 .middleIcon {
-  height: clamp(3rem, 8vw, 6.5rem);
+  height: clamp(3rem, 7.5vw, 6rem); /* Subtly smaller so it balances inline */
   width: auto;
   color: #3b82f6; /* Flat vivid blue */
 }
