@@ -238,20 +238,51 @@ export const wavePresets: Record<string, WaveConfig> = {
   "OKK1": {
     colors: {
       grad1: [
-        "rgba(253, 224, 211, 0.4)",
-        "rgba(219, 39, 119, 0.4)",
-        "rgba(244, 114, 182, 0.4)",
-        "rgba(251, 146, 60, 0.5)"
+        "rgba(253, 224, 211, 0.55)",
+        "rgba(219, 39, 119, 0.5)",
+        "rgba(244, 114, 182, 0.5)",
+        "rgba(251, 146, 60, 0.6)"
       ],
       grad2: [
-        "rgba(254, 205, 211, 0.6)",
-        "rgba(200, 150, 200, 0.4)",
-        "rgba(244, 63, 94, 0.5)"
+        "rgba(254, 205, 211, 0.7)",
+        "rgba(200, 150, 200, 0.5)",
+        "rgba(244, 63, 94, 0.6)"
       ]
     },
-    durations: { path1: 16, path2: 22, line1: 13, line2: 17 },
+    durations: { path1: 12, path2: 16, line1: 9, line2: 12 },
     opacity: 1,
-    scaleY: 0.7,
+    scaleY: 0.9,
     translateY: -15,
+    threadCount: 7,
+    threadOpacity: 1,
+    threadColor: "#ec4899",
+    phaseSpread: 50,
+    auraIntensity: 70,
+    maskWidth: 60,
+  },
+  "OKK2": {
+    colors: {
+      grad1: [
+        "rgba(253, 224, 211, 0.55)",
+        "rgba(219, 39, 119, 0.5)",
+        "rgba(244, 114, 182, 0.5)",
+        "rgba(251, 146, 60, 0.6)"
+      ],
+      grad2: [
+        "rgba(254, 205, 211, 0.7)",
+        "rgba(200, 150, 200, 0.5)",
+        "rgba(244, 63, 94, 0.6)"
+      ]
+    },
+    durations: { path1: 12, path2: 16, line1: 9, line2: 12 },
+    opacity: 1,
+    scaleY: 0.9,
+    translateY: -15,
+    threadCount: 7,
+    threadOpacity: 1,
+    threadColor: "#ec4899",
+    phaseSpread: 50,
+    auraIntensity: 70,
+    maskWidth: 28,
   },
 };

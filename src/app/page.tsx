@@ -1,15 +1,21 @@
 import styles from "./page.module.css";
 import WaveAdmin from "@/components/FrequencyWave/WaveAdmin";
+import Navbar from "@/components/Navbar/Navbar";
+import HowItWorks from "@/components/HowItWorks/HowItWorks";
 import Pricing from "@/components/Pricing/Pricing";
+import FAQ from "@/components/FAQ/FAQ";
+import BottomCTA from "@/components/BottomCTA/BottomCTA";
 
 export default function Home() {
   return (
     <div className={styles.container}>
+      <Navbar />
+
       <section className={styles.heroSection}>
         <main className={styles.main}>
           
           <div className={styles.logoGroupWrapper}>
-            <WaveAdmin />
+            {/* <WaveAdmin /> */}
             
             <div className={`${styles.logoGroup} animate-fade-in`}>
               <h1 className={`${styles.title} display-font`}>
@@ -49,7 +55,27 @@ export default function Home() {
         </main>
       </section>
 
+      <HowItWorks />
       <Pricing />
+      <FAQ />
+      <BottomCTA />
+
+      {/* Footer */}
+      <footer className={styles.footer}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+          <span className="display-font" style={{ fontWeight: 800, fontSize: '1.1rem', color: '#0f172a' }}>
+            Bra Svar<span style={{ color: '#ec4899' }}>!</span>
+          </span>
+        </div>
+        <nav style={{ display: 'flex', gap: '2rem', flexWrap: 'wrap', justifyContent: 'center' }}>
+          {['Personvern', 'Vilkår', 'Kontakt'].map((link) => (
+            <a key={link} href="#" className={styles.footerLink}>{link}</a>
+          ))}
+        </nav>
+        <p style={{ fontSize: '0.8rem', color: '#cbd5e1', fontWeight: 400 }}>
+          © {new Date().getFullYear()} Bra Svar. Alle rettigheter reservert.
+        </p>
+      </footer>
     </div>
   );
 }

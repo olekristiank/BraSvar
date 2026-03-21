@@ -1,120 +1,422 @@
 "use client";
 
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 export default function Pricing() {
   return (
-    <section className="w-full py-32 px-4 sm:px-6 lg:px-8 bg-slate-50 flex justify-center border-t border-slate-200/50">
-      <div className="max-w-6xl w-full flex flex-col items-center">
-        
-        <div className="text-center mb-24 max-w-3xl">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6 text-slate-900" style={{ fontFamily: 'var(--font-outfit)' }}>
-            Velg pakken for dine behov
-          </h2>
-          <p className="text-lg md:text-xl text-slate-600 font-medium leading-relaxed">
-            Begge pakker inkluderer alltid <strong className="text-slate-900 font-bold px-1">2x samtidige norske assistenter</strong> slik at telefonen &quot;aldri&quot; blir opptatt.
-          </p>
+    <section
+      id="priser"
+      className="w-full px-6 sm:px-8 lg:px-12 flex flex-col items-center relative z-20"
+      style={{
+        paddingTop: '5rem',
+        paddingBottom: '6rem',
+        background: 'linear-gradient(180deg, #f8fafc 0%, #fdf2f8 50%, #fff1f2 100%)',
+      }}
+    >
+      {/* Soft top divider */}
+      <div
+        className="absolute top-0 left-0 w-full"
+        style={{
+          height: '80px',
+          background: 'linear-gradient(180deg, rgba(248,250,252,0) 0%, rgba(248,250,252,1) 100%)',
+          transform: 'translateY(-80px)',
+          pointerEvents: 'none',
+        }}
+      />
+
+      <div className="w-full flex flex-col items-center" style={{ maxWidth: '1200px' }}>
+
+        {/* Header */}
+        <AnimateIn delay={0}>
+          <div className="text-center px-4" style={{ marginBottom: '3.5rem', maxWidth: '560px' }}>
+            <h2
+              className="font-extrabold tracking-tight"
+              style={{
+                fontFamily: 'var(--font-outfit)',
+                fontSize: 'clamp(2rem, 5vw, 3rem)',
+                lineHeight: 1.1,
+                marginBottom: '1rem',
+                background: 'linear-gradient(135deg, #0f172a 0%, #334155 50%, #475569 100%)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+              }}
+            >
+              Velg din pakke
+            </h2>
+            <p className="text-slate-500 font-medium" style={{ fontSize: 'clamp(1rem, 2vw, 1.15rem)', lineHeight: 1.7 }}>
+              Alle pakker inkluderer <strong className="text-slate-800">2× samtidige norske AI-assistenter</strong>, slik at telefonen aldri er opptatt.
+            </p>
+          </div>
+        </AnimateIn>
+
+        {/* Cards — 3 columns */}
+        <div
+          className="flex flex-col lg:flex-row justify-center items-stretch w-full"
+          style={{ gap: '1.5rem', maxWidth: '1100px' }}
+        >
+
+          {/* ── Mini Card ── */}
+          <AnimateIn delay={80}>
+            <HoverCard className="flex flex-col w-full" baseStyle={{
+              maxWidth: '360px',
+              background: '#fff',
+              borderRadius: '24px',
+              borderWidth: '1px',
+              borderStyle: 'solid',
+              borderColor: '#e2e8f0',
+              borderTopWidth: '3px',
+              borderTopColor: '#e2e8f0',
+              boxShadow: '0 1px 3px rgba(0,0,0,.04), 0 8px 24px rgba(0,0,0,.04)',
+              padding: '2.25rem',
+              height: '100%',
+            }} hoverStyle={{
+              boxShadow: '0 1px 3px rgba(0,0,0,.04), 0 16px 40px rgba(0,0,0,.08)',
+              transform: 'translateY(-3px)',
+              borderColor: '#cbd5e1',
+              borderTopColor: '#ec4899',
+            }}>
+              <p className="font-semibold uppercase" style={{ fontSize: '0.65rem', letterSpacing: '0.15em', color: '#94a3b8', marginBottom: '0.75rem' }}>Startpakke</p>
+              <h3 className="font-bold text-slate-900" style={{ fontSize: '1.4rem', marginBottom: '0.25rem' }}>Mini</h3>
+              <p className="text-slate-500" style={{ fontSize: '0.88rem', marginBottom: '1.75rem', lineHeight: 1.55, fontWeight: 450 }}>
+                Perfekt for å teste ut AI-assistenten.
+              </p>
+
+              {/* Price */}
+              <div style={{ marginBottom: '1.75rem', paddingBottom: '1.75rem', borderBottom: '1px solid #f1f5f9' }}>
+                <div className="flex items-baseline">
+                  <span className="font-extrabold text-slate-900" style={{ fontSize: '2.5rem', letterSpacing: '-0.03em', lineHeight: 1 }}>1 490</span>
+                  <span className="font-bold text-slate-900" style={{ fontSize: '1.25rem', marginLeft: '2px' }}>,-</span>
+                  <span className="text-slate-400 font-medium" style={{ fontSize: '0.9rem', marginLeft: '0.5rem' }}>/ mnd</span>
+                </div>
+                <p className="text-slate-400" style={{ fontSize: '0.75rem', marginTop: '0.4rem', fontWeight: 450 }}>kr 2,98 per ekstra minutt</p>
+              </div>
+
+              {/* Features */}
+              <ul className="flex-1 flex flex-col" style={{ gap: '1rem', marginBottom: '2rem' }}>
+                <Feature color="green">500 ringeminutter inkludert</Feature>
+                <Feature color="green">Kunnskapsbase for din bedrift</Feature>
+                <Feature color="green">Enkel kalenderbooking</Feature>
+              </ul>
+
+              <HoverButton
+                baseStyle={{
+                  width: '100%', fontWeight: 700, padding: '0.85rem', borderRadius: '14px',
+                  fontSize: '0.9rem', background: '#f8fafc',
+                  borderWidth: '1px', borderStyle: 'solid', borderColor: '#e2e8f0',
+                  color: '#1e293b', cursor: 'pointer', marginTop: 'auto',
+                  transition: 'all 0.25s cubic-bezier(.4,0,.2,1)',
+                }}
+                hoverStyle={{
+                  background: '#f1f5f9', borderColor: '#cbd5e1',
+                  boxShadow: '0 4px 12px rgba(0,0,0,.06)', transform: 'translateY(-1px)',
+                }}
+              >
+                Velg Mini
+              </HoverButton>
+            </HoverCard>
+          </AnimateIn>
+
+          {/* ── Basis Card (Most Popular) ── */}
+          <AnimateIn delay={160}>
+            <HoverCard className="flex flex-col w-full relative" baseStyle={{
+              maxWidth: '360px',
+              background: 'linear-gradient(165deg, #0f172a 0%, #1e293b 100%)',
+              borderRadius: '24px',
+              borderWidth: '2px',
+              borderStyle: 'solid',
+              borderColor: '#334155',
+              boxShadow: '0 25px 60px -12px rgba(0,0,0,.25), 0 0 0 1px rgba(255,255,255,.03) inset, 0 0 80px rgba(236,72,153,.06)',
+              padding: '2.25rem',
+              height: '100%',
+            }} hoverStyle={{
+              boxShadow: '0 30px 70px -12px rgba(0,0,0,.35), 0 0 0 1px rgba(255,255,255,.06) inset, 0 0 60px rgba(236,72,153,.12)',
+              transform: 'translateY(-5px)',
+              borderColor: '#475569',
+            }}>
+              {/* Badge */}
+              <div className="absolute whitespace-nowrap" style={{ top: '-14px', left: '50%', transform: 'translateX(-50%)' }}>
+                <span
+                  className="font-extrabold uppercase"
+                  style={{
+                    fontSize: '0.6rem', letterSpacing: '0.18em',
+                    background: 'linear-gradient(135deg, #ec4899, #f43f5e)',
+                    color: '#fff', padding: '6px 18px', borderRadius: '9999px',
+                    boxShadow: '0 4px 14px rgba(236,72,153,.35), 0 0 0 4px #0f172a',
+                    display: 'inline-block',
+                  }}
+                >
+                  Mest Populær
+                </span>
+              </div>
+
+              <p className="font-semibold uppercase" style={{ fontSize: '0.65rem', letterSpacing: '0.15em', color: 'rgba(148,163,184,.7)', marginBottom: '0.75rem', paddingTop: '0.5rem' }}>Anbefalt</p>
+              <h3 className="font-bold text-white" style={{ fontSize: '1.4rem', marginBottom: '0.25rem' }}>Basis</h3>
+              <p className="font-medium" style={{ color: '#94a3b8', fontSize: '0.88rem', marginBottom: '1.75rem', lineHeight: 1.55, fontWeight: 450 }}>
+                For bedrifter som vil automatisere telefonsvar.
+              </p>
+
+              {/* Price */}
+              <div style={{ marginBottom: '1.75rem', paddingBottom: '1.75rem', borderBottom: '1px solid rgba(71,85,105,.4)' }}>
+                <div className="flex items-baseline">
+                  <span
+                    className="font-extrabold"
+                    style={{
+                      fontSize: '2.5rem', letterSpacing: '-0.03em', lineHeight: 1,
+                      background: 'linear-gradient(135deg, #f472b6, #fb7185)',
+                      WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',
+                    }}
+                  >
+                    2 990
+                  </span>
+                  <span className="font-bold" style={{ fontSize: '1.25rem', marginLeft: '2px', color: '#f472b6' }}>,-</span>
+                  <span className="font-medium" style={{ fontSize: '0.9rem', marginLeft: '0.5rem', color: '#64748b' }}>/ mnd</span>
+                </div>
+                <p style={{ fontSize: '0.75rem', marginTop: '0.4rem', fontWeight: 450, color: '#64748b' }}>kr 2,99 per ekstra minutt</p>
+              </div>
+
+              {/* Features */}
+              <ul className="flex-1 flex flex-col" style={{ gap: '1rem', marginBottom: '2rem' }}>
+                <Feature color="pink">1 000 ringeminutter inkludert</Feature>
+                <Feature color="pink">Kunnskapsbase for din bedrift</Feature>
+                <Feature color="pink">Enkel kalenderbooking</Feature>
+              </ul>
+
+              <HoverButton
+                baseStyle={{
+                  width: '100%', fontWeight: 700, padding: '0.85rem', borderRadius: '14px',
+                  fontSize: '0.9rem', background: 'linear-gradient(135deg, #ec4899, #e11d48)',
+                  color: '#fff', border: 'none', cursor: 'pointer',
+                  boxShadow: '0 8px 24px rgba(236,72,153,.3)', marginTop: 'auto',
+                  transition: 'all 0.25s cubic-bezier(.4,0,.2,1)',
+                }}
+                hoverStyle={{
+                  boxShadow: '0 12px 32px rgba(236,72,153,.45)',
+                  transform: 'translateY(-1px)', filter: 'brightness(1.08)',
+                }}
+              >
+                Velg Basis
+              </HoverButton>
+            </HoverCard>
+          </AnimateIn>
+
+          {/* ── Pro Card ── */}
+          <AnimateIn delay={240}>
+            <HoverCard className="flex flex-col w-full" baseStyle={{
+              maxWidth: '360px',
+              background: '#fff',
+              borderRadius: '24px',
+              borderWidth: '1px',
+              borderStyle: 'solid',
+              borderColor: '#e2e8f0',
+              boxShadow: '0 1px 3px rgba(0,0,0,.04), 0 8px 24px rgba(0,0,0,.04)',
+              padding: '2.25rem',
+              height: '100%',
+            }} hoverStyle={{
+              boxShadow: '0 1px 3px rgba(0,0,0,.04), 0 16px 40px rgba(0,0,0,.08)',
+              transform: 'translateY(-3px)',
+              borderColor: '#cbd5e1',
+            }}>
+              <p className="font-semibold uppercase" style={{ fontSize: '0.65rem', letterSpacing: '0.15em', color: '#94a3b8', marginBottom: '0.75rem' }}>Enterprise</p>
+              <h3 className="font-bold text-slate-900" style={{ fontSize: '1.4rem', marginBottom: '0.25rem' }}>Pro</h3>
+              <p className="text-slate-500" style={{ fontSize: '0.88rem', marginBottom: '1.75rem', lineHeight: 1.55, fontWeight: 450 }}>
+                Skreddersydd for høyvolum og spesialbehov.
+              </p>
+
+              {/* Price */}
+              <div style={{ marginBottom: '1.75rem', paddingBottom: '1.75rem', borderBottom: '1px solid #f1f5f9' }} className="flex items-center">
+                <span
+                  className="font-extrabold text-slate-900"
+                  style={{ fontSize: '2.5rem', letterSpacing: '-0.03em', lineHeight: 1 }}
+                >
+                  Spør oss
+                </span>
+              </div>
+
+              {/* Features */}
+              <ul className="flex-1 flex flex-col" style={{ gap: '1rem', marginBottom: '2rem' }}>
+                <Feature color="green">Utvidet antall ringeminutter</Feature>
+                <Feature color="green">Avanserte API-integrasjoner</Feature>
+                <Feature color="green">Skreddersydd for din bedrift</Feature>
+              </ul>
+
+              <HoverButton
+                baseStyle={{
+                  width: '100%', fontWeight: 700, padding: '0.85rem', borderRadius: '14px',
+                  fontSize: '0.9rem', background: '#f8fafc',
+                  borderWidth: '1px', borderStyle: 'solid', borderColor: '#e2e8f0',
+                  color: '#1e293b', cursor: 'pointer', marginTop: 'auto',
+                  transition: 'all 0.25s cubic-bezier(.4,0,.2,1)',
+                }}
+                hoverStyle={{
+                  background: '#f1f5f9', borderColor: '#cbd5e1',
+                  boxShadow: '0 4px 12px rgba(0,0,0,.06)', transform: 'translateY(-1px)',
+                }}
+              >
+                Kontakt oss for tilbud
+              </HoverButton>
+            </HoverCard>
+          </AnimateIn>
+
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 w-full max-w-5xl items-stretch">
-          
-          {/* Basis Card */}
-          <div className="flex flex-col bg-white rounded-[2rem] border border-slate-200/80 shadow-lg hover:shadow-xl transition-all duration-300 p-8 sm:p-12 w-full mt-4 lg:mt-8">
-            <h3 className="text-2xl font-bold text-slate-900 mb-2">Basis</h3>
-            <p className="text-slate-500 mb-8 font-medium">Perfekt for små bedrifter som vil komme i gang.</p>
-            
-            <div className="mb-10 pb-10 border-b border-slate-100">
-              <div className="flex items-baseline text-5xl font-extrabold text-slate-900 tracking-tight">
-                2 990,-
-                <span className="ml-2 text-xl font-medium text-slate-500 tracking-normal">/ mnd</span>
-              </div>
-            </div>
-            
-            <ul className="flex-1 flex flex-col gap-6 text-slate-700 mb-12">
-              <li className="flex gap-4 items-start">
-                <div className="mt-1 bg-green-100 p-1 rounded-full"><CheckIcon className="text-green-600 w-4 h-4" /></div>
-                <span className="text-lg font-medium">1000 ringeminutter</span>
-              </li>
-              <li className="flex gap-4 items-start">
-                <div className="mt-1 bg-green-100 p-1 rounded-full"><CheckIcon className="text-green-600 w-4 h-4" /></div>
-                <span className="text-lg font-medium">Kunnskapsbase for din bedrift</span>
-              </li>
-              <li className="flex gap-4 items-start">
-                <div className="mt-1 bg-green-100 p-1 rounded-full"><CheckIcon className="text-green-600 w-4 h-4" /></div>
-                <span className="text-lg font-medium">Enkel kalenderbooking</span>
-              </li>
-            </ul>
-
-            <button className="w-full py-4 rounded-2xl font-bold text-lg bg-slate-100 text-slate-900 hover:bg-slate-200 transition-colors">
-              Dette passer oss
-            </button>
-          </div>
-
-          {/* Pro Card */}
-          <div className="flex flex-col bg-slate-900 text-white rounded-[2rem] border border-slate-800 shadow-2xl hover:shadow-pink-500/20 transition-all duration-300 p-8 sm:p-12 relative overflow-hidden w-full lg:scale-105 z-10">
-            {/* Top gradient highlight */}
-            <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-pink-500 via-purple-500 to-pink-500"></div>
-            
-            <div className="flex justify-between items-start mb-2">
-              <h3 className="text-2xl font-bold text-white">Pro</h3>
-              <span className="bg-gradient-to-r from-pink-500 to-rose-500 text-white text-xs font-extrabold px-4 py-1.5 rounded-full uppercase tracking-widest shadow-lg shadow-pink-500/30">
-                Mest Populær
-              </span>
-            </div>
-            <p className="text-slate-400 mb-8 font-medium">For større volumer og spesialbehov.</p>
-            
-            <div className="mb-10 pb-10 border-b border-slate-800">
-              <div className="flex items-baseline text-5xl font-extrabold text-white tracking-tight">
-                Spør oss
-              </div>
-            </div>
-            
-            <ul className="flex-1 flex flex-col gap-6 text-slate-300 mb-12">
-              <li className="flex gap-4 items-start">
-                <div className="mt-1 bg-pink-500/20 p-1 rounded-full"><CheckIcon className="text-pink-400 w-4 h-4" /></div>
-                <span className="text-lg font-medium">Utvidet antall ringeminutter</span>
-              </li>
-              <li className="flex gap-4 items-start">
-                <div className="mt-1 bg-pink-500/20 p-1 rounded-full"><CheckIcon className="text-pink-400 w-4 h-4" /></div>
-                <span className="text-lg font-medium">Avanserte integrasjoner</span>
-              </li>
-              <li className="flex gap-4 items-start">
-                <div className="mt-1 bg-pink-500/20 p-1 rounded-full"><CheckIcon className="text-pink-400 w-4 h-4" /></div>
-                <span className="text-lg font-medium">Skreddersydd for din bedrift</span>
-              </li>
-            </ul>
-
-            <button className="w-full py-4 rounded-2xl font-bold text-lg bg-pink-500 text-white hover:bg-pink-600 transition-colors shadow-lg shadow-pink-500/25">
-              Få et skreddersydd tilbud
-            </button>
-          </div>
-          
-        </div>
-
-        {/* Tilleggsmoduler */}
-        <div className="mt-20 w-full max-w-5xl bg-white border border-slate-200 rounded-[2rem] shadow-sm p-8 sm:p-10">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-8">
-            <div className="text-center md:text-left">
-              <h4 className="text-2xl font-bold text-slate-900 mb-3">Tilleggsmoduler</h4>
-              <p className="text-slate-600 text-lg">
-                <strong className="text-slate-900 font-bold">Chat til nettside</strong> – et genialt tillegg for økt konvertering. Vår AI-assistent kan også svare kundene dine skriftlig.
+        {/* Tilleggsmodul banner */}
+        <AnimateIn delay={320}>
+          <HoverCard className="w-full flex flex-col sm:flex-row items-center justify-between" baseStyle={{
+            marginTop: '3rem',
+            maxWidth: '1100px',
+            background: 'rgba(255,255,255,.7)',
+            backdropFilter: 'blur(8px)',
+            borderWidth: '1px',
+            borderStyle: 'solid',
+            borderColor: '#e2e8f0',
+            borderRadius: '20px',
+            padding: '1.75rem 2rem',
+            gap: '1.5rem',
+          }} hoverStyle={{
+            background: 'rgba(255,255,255,.85)',
+            boxShadow: '0 8px 24px rgba(0,0,0,.05)',
+            borderColor: '#cbd5e1',
+          }}>
+            <div className="text-center sm:text-left">
+              <h4 className="font-bold text-slate-900" style={{ fontSize: '1.05rem', marginBottom: '0.25rem' }}>
+                Tilleggsmodul: <span style={{ color: '#db2777' }}>Chat til nettside</span>
+              </h4>
+              <p className="text-slate-500 font-medium" style={{ fontSize: '0.9rem', lineHeight: 1.5 }}>
+                Gjør AI-assistenten tilgjengelig skriftlig — perfekt for økt konvertering.
               </p>
             </div>
-            <button className="shrink-0 text-lg py-3.5 px-8 font-bold bg-white border-2 border-slate-200 rounded-2xl hover:bg-slate-50 transition-colors text-slate-900 whitespace-nowrap">
-              Spør om pris
-            </button>
+            <HoverButton
+              baseStyle={{
+                flexShrink: 0, fontWeight: 700, fontSize: '0.85rem',
+                color: '#1e293b', background: '#fff',
+                borderWidth: '1.5px', borderStyle: 'solid', borderColor: '#e2e8f0',
+                padding: '0.65rem 1.5rem', borderRadius: '12px', cursor: 'pointer',
+                transition: 'all 0.25s cubic-bezier(.4,0,.2,1)',
+              }}
+              hoverStyle={{
+                borderColor: '#db2777', color: '#db2777',
+                boxShadow: '0 4px 12px rgba(219,39,119,.12)', transform: 'translateY(-1px)',
+              }}
+            >
+              Pris på forespørsel
+            </HoverButton>
+          </HoverCard>
+        </AnimateIn>
+
+        {/* Trust signals */}
+        <AnimateIn delay={400}>
+          <div className="flex flex-wrap justify-center items-center" style={{ gap: '2rem', marginTop: '2.5rem' }}>
+            {[
+              { icon: '🔓', text: 'Ingen bindingstid' },
+              { icon: '🚀', text: 'Gratis oppstart' },
+              { icon: '🇳🇴', text: 'Norsk support' },
+            ].map((item, i) => (
+              <div key={i} className="flex items-center" style={{ gap: '0.5rem' }}>
+                <span style={{ fontSize: '1rem' }}>{item.icon}</span>
+                <span className="font-medium" style={{ fontSize: '0.85rem', color: '#64748b' }}>{item.text}</span>
+              </div>
+            ))}
           </div>
-        </div>
+        </AnimateIn>
 
       </div>
     </section>
   );
 }
 
-function CheckIcon({ className = "w-5 h-5 text-current" }: { className?: string }) {
+/* ─── Shared Feature List Item ─── */
+function Feature({ children, color }: { children: React.ReactNode; color: 'green' | 'pink' }) {
+  const styles = color === 'green'
+    ? { bg: '#f0fdf4', border: 'rgba(187,247,208,.6)', icon: '#16a34a', text: '#334155' }
+    : { bg: 'rgba(236,72,153,.1)', border: 'rgba(236,72,153,.2)', icon: '#f472b6', text: '#cbd5e1' };
+
   return (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className={className}>
-      <polyline points="20 6 9 17 4 12"></polyline>
-    </svg>
+    <li className="flex items-start" style={{ gap: '0.75rem' }}>
+      <div
+        className="rounded-full flex-shrink-0"
+        style={{
+          marginTop: '1px', background: styles.bg,
+          border: `1px solid ${styles.border}`, padding: '4px',
+        }}
+      >
+        <svg viewBox="0 0 24 24" fill="none" stroke={styles.icon} strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round" style={{ width: '14px', height: '14px' }}>
+          <polyline points="20 6 9 17 4 12" />
+        </svg>
+      </div>
+      <span className="font-medium" style={{ fontSize: '0.9rem', lineHeight: 1.4, color: styles.text }}>{children}</span>
+    </li>
+  );
+}
+
+/* ─── Scroll-Triggered Fade-In Animation ─── */
+function AnimateIn({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) {
+  const ref = useRef<HTMLDivElement>(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.15, rootMargin: '0px 0px -40px 0px' }
+    );
+    if (ref.current) observer.observe(ref.current);
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <div
+      ref={ref}
+      style={{
+        opacity: isVisible ? 1 : 0,
+        transform: isVisible ? 'translateY(0)' : 'translateY(24px)',
+        transition: `opacity 0.7s cubic-bezier(.4,0,.2,1) ${delay}ms, transform 0.7s cubic-bezier(.4,0,.2,1) ${delay}ms`,
+        width: '100%',
+      }}
+    >
+      {children}
+    </div>
+  );
+}
+
+/* ─── Interactive Hover Card ─── */
+function HoverCard({
+  children, className = '', baseStyle, hoverStyle,
+}: {
+  children: React.ReactNode; className?: string;
+  baseStyle: React.CSSProperties; hoverStyle: React.CSSProperties;
+}) {
+  const [isHovered, setIsHovered] = useState(false);
+  return (
+    <div
+      className={className}
+      style={{ ...baseStyle, transition: 'all 0.3s cubic-bezier(.4,0,.2,1)', ...(isHovered ? hoverStyle : {}) }}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      {children}
+    </div>
+  );
+}
+
+/* ─── Interactive Hover Button ─── */
+function HoverButton({
+  children, baseStyle, hoverStyle,
+}: {
+  children: React.ReactNode;
+  baseStyle: React.CSSProperties; hoverStyle: React.CSSProperties;
+}) {
+  const [isHovered, setIsHovered] = useState(false);
+  return (
+    <button
+      style={{ ...baseStyle, transition: 'all 0.25s cubic-bezier(.4,0,.2,1)', ...(isHovered ? hoverStyle : {}) }}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      {children}
+    </button>
   );
 }
