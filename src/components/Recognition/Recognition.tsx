@@ -61,7 +61,7 @@ export default function Recognition() {
           clearInterval(interval);
           setCounterDone(true);
         }
-      }, 350);
+      }, 120);
       return () => clearInterval(interval);
     }, 1200);
     return () => clearTimeout(counterDelay);
