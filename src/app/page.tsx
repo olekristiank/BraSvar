@@ -51,12 +51,12 @@ export default function Home() {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <g opacity="0.8">
-                  <rect x="12" y="32" width="14" height="36" rx="7" fill="#ec4899"/>
-                  <rect x="34" y="10" width="14" height="80" rx="7" fill="#ec4899"/>
-                  <rect x="56" y="24" width="14" height="52" rx="7" fill="#ec4899"/>
-                  <rect x="78" y="32" width="14" height="36" rx="7" fill="#ec4899"/>
-                </g>
+                {/* 5 bars reflecting voice wave/frequency */}
+                <rect className={styles.voiceBar} style={{'--v-scale': 1.8, '--v-dur': '1.0s', '--v-delay': '0.1s'} as React.CSSProperties} x="15" y="35" width="10" height="30" rx="5" fill="#f472b6" />
+                <rect className={styles.voiceBar} style={{'--v-scale': 1.3, '--v-dur': '1.2s', '--v-delay': '0.3s'} as React.CSSProperties} x="30" y="20" width="10" height="60" rx="5" fill="#ec4899" />
+                <rect className={styles.voiceBar} style={{'--v-scale': 0.6, '--v-dur': '0.9s', '--v-delay': '0.0s'} as React.CSSProperties} x="45" y="10" width="10" height="80" rx="5" fill="#db2777" />
+                <rect className={styles.voiceBar} style={{'--v-scale': 1.5, '--v-dur': '1.3s', '--v-delay': '0.4s'} as React.CSSProperties} x="60" y="25" width="10" height="50" rx="5" fill="#ec4899" />
+                <rect className={styles.voiceBar} style={{'--v-scale': 2.0, '--v-dur': '1.1s', '--v-delay': '0.2s'} as React.CSSProperties} x="75" y="35" width="10" height="30" rx="5" fill="#f472b6" />
               </svg>
               <h1 className={`${styles.title} display-font`}>
                 Svar<span className={styles.exclamation}>!</span>
@@ -71,7 +71,7 @@ export default function Home() {
 
           <div className={`${styles.actions} animate-fade-in delay-2`}>
             <button className={styles.ctaPrimary}>
-              Prøv gratis
+              Få en gratis prototype
             </button>
             <button className={styles.ctaSecondary}>
               Hør en samtale

@@ -84,6 +84,19 @@
   color: #818cf8; /* Cornflower */
 }
 
+@keyframes voicePulse {
+  0%, 100% { transform: scaleY(1); }
+  50% { transform: scaleY(var(--v-scale, 1.2)); }
+}
+
+.voiceBar {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: voicePulse var(--v-dur, 1s) ease-in-out 3 both;
+  animation-delay: var(--v-delay, 0s);
+  will-change: transform;
+}
+
 .subtitle {
   font-size: clamp(1.05rem, 2vw, 1.25rem);
   color: #475569;
