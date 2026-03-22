@@ -71,8 +71,8 @@ export default function Recognition() {
     <section
       className="w-full px-6 sm:px-8 lg:px-12 flex flex-col items-center relative z-20"
       style={{
-        paddingTop: '5rem',
-        paddingBottom: '6rem',
+        paddingTop: '2rem',
+        paddingBottom: '4rem',
         background: '#fff',
       }}
     >
@@ -138,12 +138,21 @@ export default function Recognition() {
           ))}
         </div>
 
-        {/* Dark gradient overlay */}
+        {/* Dark gradient overlay + vignette */}
         <div
           style={{
             position: 'absolute',
             inset: 0,
-            background: 'linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 25%, rgba(0,0,0,0.4) 60%, rgba(0,0,0,0.8) 100%)',
+            background: 'linear-gradient(180deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0) 25%, rgba(0,0,0,0.4) 60%, rgba(0,0,0,0.82) 100%)',
+            pointerEvents: 'none',
+            zIndex: 4,
+          }}
+        />
+        <div
+          style={{
+            position: 'absolute',
+            inset: 0,
+            boxShadow: 'inset 0 0 100px 40px rgba(0,0,0,0.3)',
             pointerEvents: 'none',
             zIndex: 4,
           }}

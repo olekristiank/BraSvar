@@ -5,23 +5,23 @@ import React, { useState, useEffect, useRef } from 'react';
 const faqs = [
   {
     q: 'Hvor raskt kan vi komme i gang?',
-    a: 'De fleste bedrifter er oppe og kjører innen 5 minutter. Du trenger bare å legge inn grunnleggende informasjon om bedriften din, sette opp videresending av telefonnummeret ditt, og AI-assistenten er klar.',
+    a: 'De fleste bedrifter er oppe og kjører i løpet av noen dager. Vi trenger grunnleggende informasjon om bedriften din, bygger en prototype, tester sammen med deg — og så er AI-assistenten klar.',
   },
   {
     q: 'Hva skjer om AI-assistenten ikke kan svare?',
-    a: 'Hvis assistenten møter et spørsmål den ikke kan besvare, tar den pent imot beskjeden og sender deg en notifikasjon. Du kan også sette opp videresending til en menneskelig operatør.',
+    a: 'Hvis assistenten møter et spørsmål den ikke kan besvare, kan vi sette opp viderekobling til en menneskelig operatør.',
   },
   {
     q: 'Kan assistenten håndtere booking og kalendere?',
-    a: 'Ja! Assistenten kan kobles til de fleste bookingsystemer og kalendere. Den kan sjekke ledige tider, booke avtaler og sende bekreftelser — helt automatisk.',
+    a: 'Ja, assistenten kobles til systemene dine — booking, kalendere, CRM, ordrebehandling og lagerstyring. Den sjekker ledige tider, booker avtaler, sjekker lagerstatus og sender bekreftelser. Helt automatisk.',
   },
   {
     q: 'Støtter dere andre språk enn norsk?',
-    a: 'AI-assistenten snakker flytende norsk, men kan også håndtere engelsk, svensk og dansk. Kontakt oss for tilpasninger til andre språk.',
+    a: 'AI-assistenten snakker flytende og naturlig norsk, men kan også settes opp til å snakke engelsk eller andre språk.',
   },
   {
     q: 'Er det bindingstid?',
-    a: 'Nei, ingen bindingstid. Du kan oppgradere, nedgradere eller avslutte abonnementet når som helst. Vi tror på at produktet vårt selger seg selv.',
+    a: 'Nei, ingen bindingstid og ingen skjulte kostnader. Du kan oppgradere, nedgradere eller avslutte når som helst. Vi tror på at produktet selger seg selv — og lever av fornøyde kunder.',
   },
 ];
 
@@ -33,7 +33,7 @@ export default function FAQ() {
         paddingTop: '5rem',
         paddingBottom: '5rem',
         background: 'linear-gradient(180deg, #fdf2f8 0%, #fff 15%, #fff 100%)',
-        borderTop: '1px solid rgba(241,245,249,0.8)',
+        borderTop: 'none',
       }}
     >
       <div className="w-full flex flex-col items-center" style={{ maxWidth: '700px' }}>
@@ -101,7 +101,10 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
           cursor: 'pointer',
           textAlign: 'left',
           gap: '1rem',
+          transition: 'padding-left 0.2s ease',
         }}
+        onMouseEnter={(e) => { e.currentTarget.style.paddingLeft = '0.5rem'; }}
+        onMouseLeave={(e) => { e.currentTarget.style.paddingLeft = '0'; }}
       >
         <span style={{
           fontSize: '0.95rem',

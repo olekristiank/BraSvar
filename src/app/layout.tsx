@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Outfit, Manrope, Geist } from "next/font/google";
+import { Outfit, Manrope, Geist, Instrument_Serif } from "next/font/google";
 import "./globals.css";
 import { cn } from "../lib/utils";
 
@@ -10,6 +10,14 @@ const outfit = Outfit({
   subsets: ["latin"],
   display: "swap",
   weight: ["400", "500", "600", "700", "800", "900"],
+});
+
+const instrumentSerif = Instrument_Serif({
+  variable: "--font-serif",
+  subsets: ["latin"],
+  display: "swap",
+  weight: "400",
+  style: ["normal", "italic"],
 });
 
 const manrope = Manrope({
@@ -30,7 +38,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={cn(outfit.variable, manrope.variable, "font-sans", geist.variable)} suppressHydrationWarning>
+    <html lang="en" className={cn(outfit.variable, manrope.variable, instrumentSerif.variable, "font-sans", geist.variable)} suppressHydrationWarning>
       <body suppressHydrationWarning>{children}</body>
     </html>
   );

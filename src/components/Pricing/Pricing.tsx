@@ -28,7 +28,7 @@ export default function Pricing() {
 
         {/* Header */}
         <AnimateIn delay={0}>
-          <div className="text-center px-4" style={{ marginBottom: '3.5rem', maxWidth: '1100px', width: '100%' }}>
+          <div className="text-center px-4" style={{ marginBottom: '3.5rem', maxWidth: '700px', marginLeft: 'auto', marginRight: 'auto' }}>
             <h2
               className="font-extrabold tracking-tight"
               style={{
@@ -48,6 +48,9 @@ export default function Pricing() {
               </span>
               <span style={{
                 display: 'block',
+                fontFamily: 'var(--font-serif)',
+                fontStyle: 'italic',
+                fontWeight: 400,
                 background: 'linear-gradient(135deg, #ec4899 0%, #db2777 100%)',
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent',
@@ -55,9 +58,16 @@ export default function Pricing() {
                 Bedre enn en resepsjonist.
               </span>
             </h2>
-            <p className="text-slate-500 font-medium" style={{ fontSize: 'clamp(1rem, 2vw, 1.15rem)', lineHeight: 1.7 }}>
-              Alle pakker inkluderer <strong className="text-slate-800">2× samtidige norske AI-assistenter</strong>, slik at telefonen aldri er opptatt.
+            <p className="text-slate-500 font-medium" style={{ fontSize: 'clamp(1rem, 2vw, 1.15rem)', lineHeight: 1.7, marginBottom: '1.25rem' }}>
+              Alle pakker inkluderer <strong className="text-slate-800">2 AI-assistenter som svarer samtidig</strong> — slik at telefonen aldri er opptatt.
             </p>
+            <div className="flex flex-wrap justify-center" style={{ gap: '0.5rem 1.5rem' }}>
+              {['Ingen bindingstid', 'Gratis oppstart', 'Norsk support'].map((item) => (
+                <span key={item} className="font-medium" style={{ fontSize: '0.85rem', color: '#64748b' }}>
+                  {item}
+                </span>
+              ))}
+            </div>
           </div>
         </AnimateIn>
 
@@ -90,7 +100,7 @@ export default function Pricing() {
               <p className="font-semibold uppercase" style={{ fontSize: '0.65rem', letterSpacing: '0.15em', color: '#94a3b8', marginBottom: '0.75rem' }}>Startpakke</p>
               <h3 className="font-bold text-slate-900" style={{ fontSize: '1.4rem', marginBottom: '0.25rem' }}>Mini</h3>
               <p className="text-slate-500" style={{ fontSize: '0.88rem', marginBottom: '1.75rem', lineHeight: 1.55, fontWeight: 450 }}>
-                Perfekt for å komme i gang.
+                For bedrifter med lavt til moderat samtalevolum.
               </p>
 
               {/* Price */}
@@ -164,7 +174,7 @@ export default function Pricing() {
               <p className="font-semibold uppercase" style={{ fontSize: '0.65rem', letterSpacing: '0.15em', color: 'rgba(148,163,184,.7)', marginBottom: '0.75rem', paddingTop: '0.5rem' }}>Anbefalt</p>
               <h3 className="font-bold text-white" style={{ fontSize: '1.4rem', marginBottom: '0.25rem' }}>Basis</h3>
               <p className="font-medium" style={{ color: '#94a3b8', fontSize: '0.88rem', marginBottom: '1.75rem', lineHeight: 1.55, fontWeight: 450 }}>
-                For bedrifter som vil automatisere telefonsvar.
+                For bedrifter som aldri vil gå glipp av et anrop.
               </p>
 
               {/* Price */}
@@ -231,7 +241,7 @@ export default function Pricing() {
               <p className="font-semibold uppercase" style={{ fontSize: '0.65rem', letterSpacing: '0.15em', color: '#94a3b8', marginBottom: '0.75rem' }}>Enterprise</p>
               <h3 className="font-bold text-slate-900" style={{ fontSize: '1.4rem', marginBottom: '0.25rem' }}>Pro</h3>
               <p className="text-slate-500" style={{ fontSize: '0.88rem', marginBottom: '1.75rem', lineHeight: 1.55, fontWeight: 450 }}>
-                Skreddersydd for høyvolum og spesialbehov.
+                Skreddersydd løsning med egne integrasjoner og dedikert support.
               </p>
 
               {/* Price */}
@@ -270,6 +280,30 @@ export default function Pricing() {
           </AnimateIn>
 
         </div>
+
+        {/* Social proof */}
+        <AnimateIn delay={300}>
+          <div className="w-full flex flex-col items-center" style={{ marginTop: '3rem', maxWidth: '600px' }}>
+            <p style={{
+              fontFamily: 'var(--font-serif)',
+              fontStyle: 'italic',
+              fontSize: 'clamp(1rem, 2vw, 1.15rem)',
+              color: '#334155',
+              lineHeight: 1.7,
+              textAlign: 'center',
+            }}>
+              &ldquo;Vi mistet kanskje 5–6 kunder i uka på tapte anrop. Nå svarer Bra Svar på alt.&rdquo;
+            </p>
+            <p style={{
+              fontSize: '0.85rem',
+              color: '#94a3b8',
+              fontWeight: 500,
+              marginTop: '0.75rem',
+            }}>
+              — Tannklinikk i Bergen
+            </p>
+          </div>
+        </AnimateIn>
 
         {/* Tilleggsmodul banner */}
         <AnimateIn delay={320}>
@@ -315,21 +349,6 @@ export default function Pricing() {
           </HoverCard>
         </AnimateIn>
 
-        {/* Trust signals */}
-        <AnimateIn delay={400}>
-          <div className="flex flex-wrap justify-center items-center" style={{ gap: '2rem', marginTop: '2.5rem' }}>
-            {[
-              { icon: '🔓', text: 'Ingen bindingstid' },
-              { icon: '🚀', text: 'Gratis oppstart' },
-              { icon: '🇳🇴', text: 'Norsk support' },
-            ].map((item, i) => (
-              <div key={i} className="flex items-center" style={{ gap: '0.5rem' }}>
-                <span style={{ fontSize: '1rem' }}>{item.icon}</span>
-                <span className="font-medium" style={{ fontSize: '0.85rem', color: '#64748b' }}>{item.text}</span>
-              </div>
-            ))}
-          </div>
-        </AnimateIn>
 
       </div>
     </section>

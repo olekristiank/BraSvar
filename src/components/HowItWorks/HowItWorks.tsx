@@ -8,20 +8,19 @@ export default function HowItWorks() {
       id="hvordan"
       className="w-full px-6 sm:px-8 lg:px-12 flex flex-col items-center relative z-20 overflow-hidden"
       style={{
-        paddingTop: '7rem',
-        paddingBottom: '8rem',
+        paddingTop: '5rem',
+        paddingBottom: '5rem',
         background: '#f8fafc',
       }}
     >
-      {/* Decorative Background Auras */}
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-pink-100/40 rounded-full mix-blend-multiply blur-[80px] pointer-events-none transform translate-x-1/2 -translate-y-1/2" />
-      <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-blue-50/50 rounded-full mix-blend-multiply blur-[100px] pointer-events-none transform -translate-x-1/3 translate-y-1/3" />
+      {/* Top accent line */}
+      <div className="absolute top-0 left-0 right-0 h-[1px] pointer-events-none" style={{ background: 'linear-gradient(90deg, transparent 20%, #e2e8f0 50%, transparent 80%)' }} />
 
       <div className="w-full flex flex-col items-center relative z-10" style={{ maxWidth: '1100px' }}>
 
         {/* Header */}
         <AnimateIn delay={0}>
-          <div className="text-center px-4" style={{ marginBottom: '5rem', maxWidth: '800px', marginLeft: 'auto', marginRight: 'auto' }}>
+          <div className="text-center px-4" style={{ marginBottom: '3rem', maxWidth: '800px', marginLeft: 'auto', marginRight: 'auto' }}>
             <h2
               className="font-extrabold tracking-tight"
               style={{
@@ -39,24 +38,8 @@ export default function HowItWorks() {
 
 
 
-        {/* CSS for animated line */}
-        <style dangerouslySetInnerHTML={{__html: `
-          @keyframes slideRight {
-            0% { transform: translateX(-150px); }
-            100% { transform: translateX(1000px); }
-          }
-        `}} />
-
         {/* Steps */}
         <div className="w-full relative z-10 mx-auto">
-          {/* Connective Line (placed inside relative wrapper so top: 68px aligns with icons) */}
-          <div className="hidden lg:block absolute left-[16%] right-[16%] h-[2px] z-0 pointer-events-none" style={{ top: '68px' }}>
-             <div className="w-full h-full relative overflow-hidden flex items-center">
-                <div className="absolute inset-0 border-t-2 border-dashed border-slate-200"></div>
-                <div className="absolute left-0 top-0 h-[2px] bg-gradient-to-r from-transparent via-pink-400 to-transparent" 
-                     style={{ width: '150px', animation: 'slideRight 3s linear infinite' }} />
-             </div>
-          </div>
 
           <div className="w-full flex flex-col lg:flex-row items-stretch relative z-10" style={{ gap: '2rem' }}>
           {[
@@ -64,25 +47,19 @@ export default function HowItWorks() {
               num: '1',
               title: 'Vi lærer bedriften din å kjenne',
               desc: 'Fortell oss om tjenestene dine, vanlige spørsmål og hvordan du vil at kundene skal møtes. Vi bygger assistenten for deg.',
-              icon: (
-                <span style={{ fontSize: '1.5rem', fontWeight: 800 }}>1</span>
-              ),
+              icon: '1',
             },
             {
               num: '2',
               title: 'Test og juster',
               desc: 'Du får en prototype på et eget nummer. Prøv den, gi tilbakemelding — vi finjusterer til du er fornøyd.',
-              icon: (
-                <span style={{ fontSize: '1.5rem', fontWeight: 800 }}>2</span>
-              ),
+              icon: '2',
             },
             {
               num: '3',
               title: 'Koble til og gå live',
               desc: 'Videresend ditt eksisterende nummer, og assistenten tar over. Du velger selv: utenom åpningstid, ved ubesvarte anrop, eller 24/7.',
-              icon: (
-                <span style={{ fontSize: '1.5rem', fontWeight: 800 }}>3</span>
-              ),
+              icon: '3',
             },
           ].map((step, i) => (
             <AnimateIn key={i} delay={100 + i * 150} style={{ flex: 1, display: 'flex' }}>
@@ -119,22 +96,25 @@ export default function HowItWorks() {
                 {/* Decorative background glow on hover */}
                 <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-br from-pink-100 to-rose-50 rounded-full mix-blend-multiply filter blur-3xl opacity-0 group-hover:opacity-60 transition-opacity duration-500" style={{ transform: 'translate(20%, -20%)' }}></div>
 
-                <div className="mb-4 relative z-10">
-                  {/* Icon circle */}
-                  <div style={{
-                    width: 56,
-                    height: 56,
-                    borderRadius: '16px',
-                    background: 'linear-gradient(135deg, #ec4899, #f43f5e)',
-                    color: '#fff',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    boxShadow: '0 8px 16px -4px rgba(236,72,153,.4)',
+                <div className="relative z-10" style={{ marginBottom: '0.5rem' }}>
+                  <span style={{
+                    fontFamily: 'var(--font-serif)',
+                    fontStyle: 'italic',
+                    fontSize: '3.5rem',
+                    lineHeight: 1,
+                    color: '#ec4899',
+                    display: 'block',
                     transition: 'transform 0.3s ease',
                   }} className="group-hover:scale-110">
                     {step.icon}
-                  </div>
+                  </span>
+                  <div style={{
+                    width: '2rem',
+                    height: '2px',
+                    background: 'linear-gradient(90deg, #ec4899, transparent)',
+                    marginTop: '0.35rem',
+                    transition: 'width 0.3s ease',
+                  }} className="group-hover:!w-12" />
                 </div>
 
                 {/* Title */}
