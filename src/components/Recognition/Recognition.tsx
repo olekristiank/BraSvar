@@ -44,7 +44,7 @@ export default function Recognition() {
           observer.disconnect();
         }
       },
-      { threshold: 0.15, rootMargin: '0px 0px -100px 0px' }
+      { threshold: 0.45, rootMargin: '0px 0px -15% 0px' }
     );
     if (sectionRef.current) observer.observe(sectionRef.current);
     return () => observer.disconnect();
