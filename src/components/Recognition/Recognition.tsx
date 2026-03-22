@@ -120,7 +120,7 @@ export default function Recognition() {
                   flex: 1,
                   position: 'relative',
                   overflow: 'hidden',
-                  opacity: isVisible ? 1 : 0,
+                  opacity: isVisible ? 1 : 0.35,
                   transform: isVisible ? 'scale(1)' : 'scale(1.05)',
                   transition: `opacity 0.7s cubic-bezier(.4,0,.2,1) ${300 + i * 300}ms, transform 0.8s cubic-bezier(.4,0,.2,1) ${300 + i * 300}ms`,
                 }}
