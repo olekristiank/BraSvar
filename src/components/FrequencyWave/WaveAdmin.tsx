@@ -10,8 +10,8 @@ function hexToRgb(hex: string) {
 }
 
 export default function WaveAdmin() {
-  const [activePreset, setActivePreset] = useState<string>("OKK1");
-  const [config, setConfig] = useState<WaveConfig>(wavePresets["OKK1"] || defaultWaveConfig);
+  const [activePreset, setActivePreset] = useState<string>("OKK2");
+  const [config, setConfig] = useState<WaveConfig>(wavePresets["OKK2"] || defaultWaveConfig);
   const [showPanel, setShowPanel] = useState(false);
   const [speedMultiplier, setSpeedMultiplier] = useState(1);
   const [debouncedSpeed, setDebouncedSpeed] = useState(1);
@@ -121,6 +121,7 @@ export default function WaveAdmin() {
       <button
         onClick={() => setShowPanel(!showPanel)}
         style={{
+          display: 'none',
           position: 'fixed', bottom: '24px', right: '24px', zIndex: 9999,
           background: 'rgba(15,23,42,0.85)', color: '#fff',
           border: '1px solid rgba(100,116,139,0.3)', borderRadius: '12px',

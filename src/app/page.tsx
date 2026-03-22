@@ -42,7 +42,8 @@ export default function Home() {
           </div>
           
           <p className={`${styles.subtitle} animate-fade-in delay-1`}>
-            Hver samtale du ikke svarer på, ringer en konkurrent. Bra Svar er din AI-kundebehandler — svarer telefonen, booker avtaler og hjelper kundene dine. Døgnet rundt.
+            Hver samtale du ikke svarer på, ringer en konkurrent.<br />
+            Bra Svar er din AI-kundebehandler: svarer telefonen, booker avtaler og hjelper kundene dine. Døgnet rundt.
           </p>
 
           <div className={`${styles.actions} animate-fade-in delay-2`}>
@@ -74,8 +75,8 @@ export default function Home() {
             <a key={link} href="#" className={styles.footerLink}>{link}</a>
           ))}
         </nav>
-        <p style={{ fontSize: '0.8rem', color: '#cbd5e1', fontWeight: 400 }}>
-          © {new Date().getFullYear()} by Klevstrand Innovasjon. Alle rettigheter reservert.
+        <p style={{ fontSize: '0.85rem', color: '#64748b', fontWeight: 500, textAlign: 'center' }}>
+          © 2026 by Klevstrand Innovasjon
         </p>
       </footer>
     </div>
