@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar/Navbar";
 import HowItWorks from "@/components/HowItWorks/HowItWorks";
 import Pricing from "@/components/Pricing/Pricing";
 import FAQ from "@/components/FAQ/FAQ";
+import Recognition from "@/components/Recognition/Recognition";
 import BottomCTA from "@/components/BottomCTA/BottomCTA";
 
 export default function Home() {
@@ -15,7 +16,7 @@ export default function Home() {
         <main className={styles.main}>
           
           <div className={styles.logoGroupWrapper}>
-            {/* <WaveAdmin /> */}
+            <WaveAdmin />
             
             <div className={`${styles.logoGroup} animate-fade-in`}>
               <h1 className={`${styles.title} display-font`}>
@@ -41,20 +42,21 @@ export default function Home() {
           </div>
           
           <p className={`${styles.subtitle} animate-fade-in delay-1`}>
-            Den neste generasjons AI-taleassistenten som svarer på telefoner, håndterer bookinger, og løfter hele kundeopplevelsen din.
+            Hver samtale du ikke svarer på, ringer en konkurrent. Bra Svar er din AI-kundebehandler — svarer telefonen, booker avtaler og hjelper kundene dine. Døgnet rundt.
           </p>
 
           <div className={`${styles.actions} animate-fade-in delay-2`}>
             <button className={styles.ctaPrimary}>
-              Kom i gang
+              Prøv gratis
             </button>
             <button className={styles.ctaSecondary}>
-              Hør den i aksjon
+              Hør en samtale
             </button>
           </div>
         </main>
       </section>
 
+      <Recognition />
       <HowItWorks />
       <Pricing />
       <FAQ />
@@ -73,7 +75,7 @@ export default function Home() {
           ))}
         </nav>
         <p style={{ fontSize: '0.8rem', color: '#cbd5e1', fontWeight: 400 }}>
-          © {new Date().getFullYear()} Bra Svar. Alle rettigheter reservert.
+          © {new Date().getFullYear()} by Klevstrand Innovasjon. Alle rettigheter reservert.
         </p>
       </footer>
     </div>

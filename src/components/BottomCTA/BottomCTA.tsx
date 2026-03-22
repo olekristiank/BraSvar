@@ -61,7 +61,7 @@ export default function BottomCTA() {
           lineHeight: 1.7,
           marginBottom: '2rem',
         }}>
-          Start gratis i dag — ingen binding, ingen kredittkort.
+          Sett opp på kort tid. Ingen binding. Ingen kredittkort.
         </p>
         <a
           href="#"

@@ -22,10 +22,6 @@ export default function HowItWorks() {
         {/* Header */}
         <AnimateIn delay={0}>
           <div className="text-center px-4" style={{ marginBottom: '5rem', maxWidth: '800px', marginLeft: 'auto', marginRight: 'auto' }}>
-            <div className="inline-flex items-center gap-2 mb-6 px-4 py-1.5 rounded-full border border-pink-100 bg-white text-pink-500 font-bold text-[0.7rem] tracking-widest uppercase shadow-sm">
-              <span className="w-2 h-2 rounded-full bg-pink-500 animate-pulse" />
-              Slik fungerer det
-            </div>
             <h2
               className="font-extrabold tracking-tight"
               style={{
@@ -36,11 +32,8 @@ export default function HowItWorks() {
                 color: '#0f172a',
               }}
             >
-              Oppsett på under <span style={{ color: '#ec4899' }}>5 minutter</span>
+              Slik kommer du i <span style={{ color: '#ec4899' }}>gang</span>
             </h2>
-            <p className="text-slate-500 font-medium" style={{ fontSize: '1.1rem', lineHeight: 1.6 }}>
-              Ingen koding. Ingen kompliserte integrasjoner. Bare tre enkle steg til din egen AI-telefonassistent.
-            </p>
           </div>
         </AnimateIn>
 
@@ -69,34 +62,26 @@ export default function HowItWorks() {
           {[
             {
               num: '1',
-              title: 'Konfigurer assistenten',
-              desc: 'Legg inn din bedriftsinformasjon, åpningstider og last opp dokumenter til kunnskapsbasen. Assistenten lærer umiddelbart alt om din bedrift.',
+              title: 'Vi lærer bedriften din å kjenne',
+              desc: 'Fortell oss om tjenestene dine, vanlige spørsmål og hvordan du vil at kundene skal møtes. Vi bygger assistenten for deg.',
               icon: (
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ width: 24, height: 24 }}>
-                  <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/>
-                  <circle cx="12" cy="12" r="3"/>
-                </svg>
+                <span style={{ fontSize: '1.5rem', fontWeight: 800 }}>1</span>
               ),
             },
             {
               num: '2',
-              title: 'Koble til telefonen',
-              desc: 'Du får tildelt et unikt telefonnummer. Videresend ditt eksisterende nummer, eller bruk det nye nummeret direkte i din markedsføring.',
+              title: 'Test og juster',
+              desc: 'Du får en prototype på et eget nummer. Prøv den, gi tilbakemelding — vi finjusterer til du er fornøyd.',
               icon: (
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ width: 24, height: 24 }}>
-                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-                </svg>
+                <span style={{ fontSize: '1.5rem', fontWeight: 800 }}>2</span>
               ),
             },
             {
               num: '3',
-              title: 'Helt ferdig!',
-              desc: 'Klokken 16:00 går du hjem for dagen, men AI-assistenten fortsetter å svare kunder, booke møter og samle inn data i bakgrunnen.',
+              title: 'Koble til og gå live',
+              desc: 'Videresend ditt eksisterende nummer, og assistenten tar over. Du velger selv: utenom åpningstid, ved ubesvarte anrop, eller 24/7.',
               icon: (
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ width: 24, height: 24 }}>
-                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                  <polyline points="22 4 12 14.01 9 11.01"/>
-                </svg>
+                <span style={{ fontSize: '1.5rem', fontWeight: 800 }}>3</span>
               ),
             },
           ].map((step, i) => (
@@ -134,7 +119,7 @@ export default function HowItWorks() {
                 {/* Decorative background glow on hover */}
                 <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-br from-pink-100 to-rose-50 rounded-full mix-blend-multiply filter blur-3xl opacity-0 group-hover:opacity-60 transition-opacity duration-500" style={{ transform: 'translate(20%, -20%)' }}></div>
 
-                <div className="flex items-center justify-between mb-2 relative z-10">
+                <div className="mb-4 relative z-10">
                   {/* Icon circle */}
                   <div style={{
                     width: 56,
@@ -149,21 +134,6 @@ export default function HowItWorks() {
                     transition: 'transform 0.3s ease',
                   }} className="group-hover:scale-110">
                     {step.icon}
-                  </div>
-                  
-                  {/* Step Pill */}
-                  <div style={{
-                    background: '#f8fafc',
-                    border: '1px solid #e2e8f0',
-                    color: '#64748b',
-                    padding: '4px 12px',
-                    borderRadius: '99px',
-                    fontSize: '0.7rem',
-                    fontWeight: 800,
-                    letterSpacing: '0.1em',
-                    textTransform: 'uppercase',
-                  }}>
-                    Steg {step.num}
                   </div>
                 </div>
 

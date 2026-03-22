@@ -12,7 +12,7 @@ function hexToRgb(hex: string) {
 export default function WaveAdmin() {
   const [activePreset, setActivePreset] = useState<string>("OKK1");
   const [config, setConfig] = useState<WaveConfig>(wavePresets["OKK1"] || defaultWaveConfig);
-  const [showPanel, setShowPanel] = useState(true);
+  const [showPanel, setShowPanel] = useState(false);
   const [speedMultiplier, setSpeedMultiplier] = useState(1);
   const [debouncedSpeed, setDebouncedSpeed] = useState(1);
   const [copyText, setCopyText] = useState("📋 Kopier");
@@ -121,12 +121,12 @@ export default function WaveAdmin() {
       <button
         onClick={() => setShowPanel(!showPanel)}
         style={{
-          position: 'fixed', top: '12px', right: '12px', zIndex: 9999,
-          background: 'rgba(15,23,42,0.9)', color: '#f8fafc',
-          border: '1px solid rgba(100,116,139,0.3)', borderRadius: '8px',
-          padding: '6px 12px', fontSize: '12px', fontWeight: 700,
-          cursor: 'pointer', backdropFilter: 'blur(8px)',
-          transition: 'all 0.2s',
+          position: 'fixed', bottom: '24px', right: '24px', zIndex: 9999,
+          background: 'rgba(15,23,42,0.85)', color: '#fff',
+          border: '1px solid rgba(100,116,139,0.3)', borderRadius: '12px',
+          padding: '8px 14px', fontSize: '20px', cursor: 'pointer',
+          backdropFilter: 'blur(8px)', transition: 'all 0.2s',
+          boxShadow: '0 4px 12px rgba(0,0,0,0.2)',
         }}
       >
         {showPanel ? '✕' : '⚙️ Wave'}
@@ -135,8 +135,8 @@ export default function WaveAdmin() {
       {showPanel && (
         <div
           style={{
-            position: 'fixed', top: '48px', right: '12px', zIndex: 9998,
-            width: '300px', maxHeight: 'calc(100vh - 70px)', overflowY: 'auto',
+            position: 'fixed', bottom: '76px', right: '24px', zIndex: 9998,
+            width: '300px', maxHeight: 'calc(100vh - 100px)', overflowY: 'auto',
             background: 'rgba(15,23,42,0.95)', backdropFilter: 'blur(12px)',
             border: '1px solid rgba(100,116,139,0.25)', borderRadius: '14px',
             padding: '16px', boxShadow: '0 20px 50px rgba(0,0,0,.4)',

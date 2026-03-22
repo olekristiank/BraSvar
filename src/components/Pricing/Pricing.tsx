@@ -28,20 +28,32 @@ export default function Pricing() {
 
         {/* Header */}
         <AnimateIn delay={0}>
-          <div className="text-center px-4" style={{ marginBottom: '3.5rem', maxWidth: '560px' }}>
+          <div className="text-center px-4" style={{ marginBottom: '3.5rem', maxWidth: '1100px', width: '100%' }}>
             <h2
               className="font-extrabold tracking-tight"
               style={{
                 fontFamily: 'var(--font-outfit)',
                 fontSize: 'clamp(2rem, 5vw, 3rem)',
-                lineHeight: 1.1,
-                marginBottom: '1rem',
-                background: 'linear-gradient(135deg, #0f172a 0%, #334155 50%, #475569 100%)',
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent',
+                lineHeight: 1.15,
+                marginBottom: '1.25rem',
               }}
             >
-              Velg din pakke
+              <span style={{
+                display: 'block',
+                background: 'linear-gradient(135deg, #0f172a 0%, #334155 100%)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+              }}>
+                Billigere enn en vikar.
+              </span>
+              <span style={{
+                display: 'block',
+                background: 'linear-gradient(135deg, #ec4899 0%, #db2777 100%)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+              }}>
+                Bedre enn en resepsjonist.
+              </span>
             </h2>
             <p className="text-slate-500 font-medium" style={{ fontSize: 'clamp(1rem, 2vw, 1.15rem)', lineHeight: 1.7 }}>
               Alle pakker inkluderer <strong className="text-slate-800">2× samtidige norske AI-assistenter</strong>, slik at telefonen aldri er opptatt.
@@ -78,7 +90,7 @@ export default function Pricing() {
               <p className="font-semibold uppercase" style={{ fontSize: '0.65rem', letterSpacing: '0.15em', color: '#94a3b8', marginBottom: '0.75rem' }}>Startpakke</p>
               <h3 className="font-bold text-slate-900" style={{ fontSize: '1.4rem', marginBottom: '0.25rem' }}>Mini</h3>
               <p className="text-slate-500" style={{ fontSize: '0.88rem', marginBottom: '1.75rem', lineHeight: 1.55, fontWeight: 450 }}>
-                Perfekt for å teste ut AI-assistenten.
+                Perfekt for å komme i gang.
               </p>
 
               {/* Price */}
@@ -93,9 +105,9 @@ export default function Pricing() {
 
               {/* Features */}
               <ul className="flex-1 flex flex-col" style={{ gap: '1rem', marginBottom: '2rem' }}>
-                <Feature color="green">500 ringeminutter inkludert</Feature>
-                <Feature color="green">Kunnskapsbase for din bedrift</Feature>
-                <Feature color="green">Enkel kalenderbooking</Feature>
+                <Feature color="green">500 minutter — nok til ~17 samtaler daglig</Feature>
+                <Feature color="green">Kjenner bedriften din — svarer som en ansatt</Feature>
+                <Feature color="green">Booker avtaler rett i samtalen</Feature>
               </ul>
 
               <HoverButton
@@ -111,7 +123,7 @@ export default function Pricing() {
                   boxShadow: '0 4px 12px rgba(0,0,0,.06)', transform: 'translateY(-1px)',
                 }}
               >
-                Velg Mini
+                Start med Mini
               </HoverButton>
             </HoverCard>
           </AnimateIn>
@@ -176,9 +188,9 @@ export default function Pricing() {
 
               {/* Features */}
               <ul className="flex-1 flex flex-col" style={{ gap: '1rem', marginBottom: '2rem' }}>
-                <Feature color="pink">1 000 ringeminutter inkludert</Feature>
-                <Feature color="pink">Kunnskapsbase for din bedrift</Feature>
-                <Feature color="pink">Enkel kalenderbooking</Feature>
+                <Feature color="pink">1 000 minutter — nok til ~33 samtaler daglig</Feature>
+                <Feature color="pink">Kjenner bedriften din — svarer som en ansatt</Feature>
+                <Feature color="pink">Booker avtaler rett i samtalen</Feature>
               </ul>
 
               <HoverButton
@@ -194,7 +206,7 @@ export default function Pricing() {
                   transform: 'translateY(-1px)', filter: 'brightness(1.08)',
                 }}
               >
-                Velg Basis
+                Start med Basis
               </HoverButton>
             </HoverCard>
           </AnimateIn>
@@ -234,8 +246,8 @@ export default function Pricing() {
 
               {/* Features */}
               <ul className="flex-1 flex flex-col" style={{ gap: '1rem', marginBottom: '2rem' }}>
-                <Feature color="green">Utvidet antall ringeminutter</Feature>
-                <Feature color="green">Avanserte API-integrasjoner</Feature>
+                <Feature color="green">Ubegrenset med ringeminutter</Feature>
+                <Feature color="green">Integrasjoner med dine systemer</Feature>
                 <Feature color="green">Skreddersydd for din bedrift</Feature>
               </ul>
 

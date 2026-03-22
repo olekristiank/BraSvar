@@ -22,7 +22,7 @@ export default function Navbar() {
         padding: scrolled ? '0.65rem 2rem' : '1rem 2rem',
         display: 'flex',
         alignItems: 'center',
-        justifyContent: 'space-between',
+        justifyContent: 'flex-end',
         background: scrolled ? 'rgba(255,255,255,0.82)' : 'transparent',
         backdropFilter: scrolled ? 'blur(16px) saturate(1.8)' : 'none',
         WebkitBackdropFilter: scrolled ? 'blur(16px) saturate(1.8)' : 'none',
@@ -31,26 +31,7 @@ export default function Navbar() {
         maxWidth: '100vw',
       }}
     >
-      {/* Logo */}
-      <a href="#" style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', textDecoration: 'none' }}>
-        <span style={{
-          fontFamily: 'var(--font-outfit)',
-          fontWeight: 800,
-          fontSize: '1.15rem',
-          background: 'linear-gradient(135deg, #0f172a 0%, #334155 100%)',
-          WebkitBackgroundClip: 'text',
-          WebkitTextFillColor: 'transparent',
-          letterSpacing: '-0.02em',
-        }}>
-          Bra Svar
-        </span>
-        <span style={{
-          fontFamily: 'var(--font-outfit)',
-          fontWeight: 900,
-          fontSize: '1.15rem',
-          color: '#ec4899',
-        }}>!</span>
-      </a>
+
 
       {/* Nav links */}
       <nav style={{ display: 'flex', alignItems: 'center', gap: '2rem' }}>
