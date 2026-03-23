@@ -266,7 +266,7 @@ export default function WaveAdmin() {
 
           <div style={sliderRow}>
             <span style={label}>Offset Y</span>
-            <input type="range" min={-80} max={80} step={1} value={config.translateY ?? 0}
+            <input type="range" min={-500} max={500} step={5} value={config.translateY ?? 0}
               onChange={(e) => setConfig({ ...config, translateY: Number(e.target.value) })}
               style={sliderInput} />
             <span style={valueDisplay}>{config.translateY ?? 0}px</span>
