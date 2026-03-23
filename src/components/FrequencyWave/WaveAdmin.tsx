@@ -12,8 +12,8 @@ function hexToRgb(hex: string) {
 
 export default function WaveAdmin() {
   const [mounted, setMounted] = useState(false);
-  const [activePreset, setActivePreset] = useState<string>("OKK2");
-  const [config, setConfig] = useState<WaveConfig>(wavePresets["OKK2"] || defaultWaveConfig);
+  const [activePreset, setActivePreset] = useState<string>("OKK3");
+  const [config, setConfig] = useState<WaveConfig>(wavePresets["OKK3"] || defaultWaveConfig);
   const [showPanel, setShowPanel] = useState(false);
   const [speedMultiplier, setSpeedMultiplier] = useState(1);
   const [debouncedSpeed, setDebouncedSpeed] = useState(1);
