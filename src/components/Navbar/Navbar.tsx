@@ -82,7 +82,7 @@ export default function Navbar() {
               letterSpacing: '0.01em',
             }}
           >
-            Få et gratis oppsett
+            Gratis prøveversjon
           </a>
         </nav>
 
@@ -164,7 +164,7 @@ export default function Navbar() {
             marginTop: '0.5rem',
           }}
         >
-          Få et gratis oppsett
+          Gratis prøveversjon
         </a>
       </div>
     </>

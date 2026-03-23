@@ -26,7 +26,7 @@ export default function Home() {
 
           <div className={`${styles.actions} animate-fade-in delay-3`}>
             <button className={styles.ctaPrimary}>
-              Få en gratis prøveversjon
+              Gratis prøveversjon
             </button>
             <button className={styles.ctaSecondary}>
               Hør en samtale
