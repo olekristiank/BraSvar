@@ -44,7 +44,7 @@ export default function Pricing() {
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent',
               }}>
-                Billigere enn en vikar.
+                Aldri stengt.
               </span>
               <span style={{
                 display: 'block',
@@ -55,7 +55,7 @@ export default function Pricing() {
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent',
               }}>
-                Bedre enn en resepsjonist.
+                Aldri syk. Aldri på ferie.
               </span>
             </h2>
             <p className="text-slate-500 font-medium" style={{ fontSize: 'clamp(1rem, 2vw, 1.15rem)', lineHeight: 1.7, marginBottom: '1.25rem' }}>
@@ -110,7 +110,6 @@ export default function Pricing() {
                   <span className="font-bold text-slate-900" style={{ fontSize: '1.25rem', marginLeft: '2px' }}>,-</span>
                   <span className="text-slate-400 font-medium" style={{ fontSize: '0.9rem', marginLeft: '0.5rem' }}>/ mnd</span>
                 </div>
-                <p className="text-slate-400" style={{ fontSize: '0.75rem', marginTop: '0.4rem', fontWeight: 450 }}>kr 2,98 per ekstra minutt</p>
               </div>
 
               {/* Features */}
@@ -133,7 +132,7 @@ export default function Pricing() {
                   boxShadow: '0 4px 12px rgba(0,0,0,.06)', transform: 'translateY(-1px)',
                 }}
               >
-                Start med Mini
+                Bestill prototype
               </HoverButton>
             </HoverCard>
           </AnimateIn>
@@ -193,7 +192,6 @@ export default function Pricing() {
                   <span className="font-bold" style={{ fontSize: '1.25rem', marginLeft: '2px', color: '#f472b6' }}>,-</span>
                   <span className="font-medium" style={{ fontSize: '0.9rem', marginLeft: '0.5rem', color: '#64748b' }}>/ mnd</span>
                 </div>
-                <p style={{ fontSize: '0.75rem', marginTop: '0.4rem', fontWeight: 450, color: '#64748b' }}>kr 2,99 per ekstra minutt</p>
               </div>
 
               {/* Features */}
@@ -201,6 +199,7 @@ export default function Pricing() {
                 <Feature color="pink">1 000 minutter — nok til ~33 samtaler daglig</Feature>
                 <Feature color="pink">Kjenner bedriften din — svarer som en ansatt</Feature>
                 <Feature color="pink">Booker avtaler rett i samtalen</Feature>
+                <Feature color="pink">Valgfri chat-modul for nettsiden din</Feature>
               </ul>
 
               <HoverButton
@@ -216,7 +215,7 @@ export default function Pricing() {
                   transform: 'translateY(-1px)', filter: 'brightness(1.08)',
                 }}
               >
-                Start med Basis
+                Bestill prototype
               </HoverButton>
             </HoverCard>
           </AnimateIn>
@@ -281,73 +280,7 @@ export default function Pricing() {
 
         </div>
 
-        {/* Social proof */}
-        <AnimateIn delay={300}>
-          <div className="w-full flex flex-col items-center" style={{ marginTop: '3rem', maxWidth: '600px' }}>
-            <p style={{
-              fontFamily: 'var(--font-serif)',
-              fontStyle: 'italic',
-              fontSize: 'clamp(1rem, 2vw, 1.15rem)',
-              color: '#334155',
-              lineHeight: 1.7,
-              textAlign: 'center',
-            }}>
-              &ldquo;Vi mistet kanskje 5–6 kunder i uka på tapte anrop. Nå svarer Bra Svar på alt.&rdquo;
-            </p>
-            <p style={{
-              fontSize: '0.85rem',
-              color: '#94a3b8',
-              fontWeight: 500,
-              marginTop: '0.75rem',
-            }}>
-              — Tannklinikk i Bergen
-            </p>
-          </div>
-        </AnimateIn>
 
-        {/* Tilleggsmodul banner */}
-        <AnimateIn delay={320}>
-          <HoverCard className="w-full flex flex-col sm:flex-row items-center justify-between" baseStyle={{
-            marginTop: '3rem',
-            maxWidth: '1100px',
-            background: 'rgba(255,255,255,.7)',
-            backdropFilter: 'blur(8px)',
-            borderWidth: '1px',
-            borderStyle: 'solid',
-            borderColor: '#e2e8f0',
-            borderRadius: '20px',
-            padding: '1.75rem 2rem',
-            gap: '1.5rem',
-          }} hoverStyle={{
-            background: 'rgba(255,255,255,.85)',
-            boxShadow: '0 8px 24px rgba(0,0,0,.05)',
-            borderColor: '#cbd5e1',
-          }}>
-            <div className="text-center sm:text-left">
-              <h4 className="font-bold text-slate-900" style={{ fontSize: '1.05rem', marginBottom: '0.25rem' }}>
-                Tilleggsmodul: <span style={{ color: '#db2777' }}>Chat til nettside</span>
-              </h4>
-              <p className="text-slate-500 font-medium" style={{ fontSize: '0.9rem', lineHeight: 1.5 }}>
-                Gjør AI-assistenten tilgjengelig skriftlig — perfekt for økt konvertering.
-              </p>
-            </div>
-            <HoverButton
-              baseStyle={{
-                flexShrink: 0, fontWeight: 700, fontSize: '0.85rem',
-                color: '#1e293b', background: '#fff',
-                borderWidth: '1.5px', borderStyle: 'solid', borderColor: '#e2e8f0',
-                padding: '0.65rem 1.5rem', borderRadius: '12px', cursor: 'pointer',
-                transition: 'all 0.25s cubic-bezier(.4,0,.2,1)',
-              }}
-              hoverStyle={{
-                borderColor: '#db2777', color: '#db2777',
-                boxShadow: '0 4px 12px rgba(219,39,119,.12)', transform: 'translateY(-1px)',
-              }}
-            >
-              Pris på forespørsel
-            </HoverButton>
-          </HoverCard>
-        </AnimateIn>
 
 
       </div>

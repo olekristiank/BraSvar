@@ -116,6 +116,19 @@ h1, h2, h3, h4, .display-font {
   50% { transform: translateY(-8px); }
 }
 
+@keyframes voicePulse {
+  0%, 100% { transform: scaleY(1); }
+  50% { transform: scaleY(var(--v-scale, 1.2)); }
+}
+
+.voice-wave {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: voicePulse var(--v-dur, 1s) ease-in-out infinite both;
+  animation-delay: var(--v-delay, 0s);
+  will-change: transform;
+}
+
 @media (max-width: 768px) {
   .hero-notification { display: none !important; }
 }

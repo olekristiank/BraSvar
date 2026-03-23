@@ -32,79 +32,23 @@
   width: 100%;
 }
 
-.logoGroupWrapper {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  padding: 1rem 0 2rem 0; /* Tighter top padding */
-}
-
-.logoGroup {
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  align-items: center;
-  column-gap: clamp(1rem, 2vw, 1.5rem);
-  z-index: 2;
-}
-
-/* Super oversized display hero text */
-.title {
-  font-size: clamp(3.5rem, 10vw, 8.5rem);
+.heroHeadline {
+  font-size: clamp(2.4rem, 6vw, 4.2rem);
   font-weight: 800;
-  line-height: 0.95;
+  color: #0f172a;
+  line-height: 1.1;
   letter-spacing: -0.02em;
-  background: linear-gradient(160deg, #0f172a 0%, #1e293b 60%, #334155 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  margin: 0;
-  display: flex;
-  align-items: center;
+  max-width: 900px;
+  margin-top: 1rem;
+  margin-bottom: 1.25rem;
 }
 
-.title:first-child {
-  justify-self: end;
-}
-
-.title:last-child {
-  justify-self: start;
-}
-
-.exclamation {
-  color: #ec4899;
-  font-weight: 900;
-  -webkit-text-fill-color: #ec4899;
-}
-
-.middleIcon {
-  height: clamp(4.5rem, 10vw, 8.5rem); /* Scaled up to perfectly match the 8.5rem max height of the surrounding text */
-  width: auto;
-  color: #818cf8; /* Cornflower */
-}
-
-@keyframes voicePulse {
-  0%, 100% { transform: scaleY(1); }
-  50% { transform: scaleY(var(--v-scale, 1.2)); }
-}
-
-.voiceBar {
-  transform-box: fill-box;
-  transform-origin: center;
-  animation: voicePulse var(--v-dur, 1s) ease-in-out 3 both;
-  animation-delay: var(--v-delay, 0s);
-  will-change: transform;
-}
-
-.subtitle {
-  font-size: clamp(1.05rem, 2vw, 1.25rem);
+.heroSubheadline {
+  font-size: clamp(1.1rem, 2vw, 1.3rem);
   color: #475569;
-  max-width: 580px;
-  line-height: 1.7;
+  max-width: 650px;
+  line-height: 1.6;
   font-weight: 500;
-  margin-top: 0.5rem;
-  letter-spacing: 0.005em;
 }
 
 .actions {

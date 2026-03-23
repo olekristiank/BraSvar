@@ -13,63 +13,19 @@ export default function Home() {
       <Navbar />
 
       <section className={styles.heroSection}>
-        {/* Floating missed call notification */}
-        <div className="animate-fade-in delay-3 hero-notification" style={{
-          position: 'absolute',
-          top: 'clamp(5rem, 15vh, 8rem)',
-          right: 'clamp(1rem, 8vw, 6rem)',
-          background: 'rgba(255,255,255,0.92)',
-          backdropFilter: 'blur(12px)',
-          borderRadius: '16px',
-          padding: '0.75rem 1rem',
-          display: 'flex',
-          alignItems: 'center',
-          gap: '0.6rem',
-          boxShadow: '0 8px 32px rgba(0,0,0,.08), 0 1px 2px rgba(0,0,0,.04)',
-          zIndex: 15,
-          border: '1px solid rgba(241,245,249,0.8)',
-          animation: 'fadeInScale 0.9s cubic-bezier(0.16, 1, 0.3, 1) 1.5s both, floatY 3s ease-in-out 2.5s infinite',
-        }}>
-          <div style={{ width: 10, height: 10, borderRadius: '50%', background: '#ef4444', flexShrink: 0 }} />
-          <div>
-            <p style={{ fontSize: '0.7rem', fontWeight: 700, color: '#0f172a', lineHeight: 1.2 }}>Tapt anrop</p>
-            <p style={{ fontSize: '0.6rem', color: '#94a3b8', fontWeight: 500 }}>+47 932 XX XXX · 2 min siden</p>
-          </div>
-        </div>
         <main className={styles.main}>
           
-          <div className={styles.logoGroupWrapper}>
-            <WaveAdmin />
-            
-            <div className={`${styles.logoGroup} animate-fade-in`}>
-              <h1 className={`${styles.title} display-font`}>
-                Bra
-              </h1>
-              <svg
-                className={styles.middleIcon}
-                viewBox="0 0 100 100"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                {/* 5 bars reflecting voice wave/frequency */}
-                <rect className={styles.voiceBar} style={{'--v-scale': 1.8, '--v-dur': '1.0s', '--v-delay': '0.1s'} as React.CSSProperties} x="15" y="35" width="10" height="30" rx="5" fill="#f472b6" />
-                <rect className={styles.voiceBar} style={{'--v-scale': 1.3, '--v-dur': '1.2s', '--v-delay': '0.3s'} as React.CSSProperties} x="30" y="20" width="10" height="60" rx="5" fill="#ec4899" />
-                <rect className={styles.voiceBar} style={{'--v-scale': 0.6, '--v-dur': '0.9s', '--v-delay': '0.0s'} as React.CSSProperties} x="45" y="10" width="10" height="80" rx="5" fill="#db2777" />
-                <rect className={styles.voiceBar} style={{'--v-scale': 1.5, '--v-dur': '1.3s', '--v-delay': '0.4s'} as React.CSSProperties} x="60" y="25" width="10" height="50" rx="5" fill="#ec4899" />
-                <rect className={styles.voiceBar} style={{'--v-scale': 2.0, '--v-dur': '1.1s', '--v-delay': '0.2s'} as React.CSSProperties} x="75" y="35" width="10" height="30" rx="5" fill="#f472b6" />
-              </svg>
-              <h1 className={`${styles.title} display-font`}>
-                Svar<span className={styles.exclamation}>!</span>
-              </h1>
-            </div>
-          </div>
+          <WaveAdmin />
           
-          <p className={`${styles.subtitle} animate-fade-in delay-1`}>
-            <span style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontSize: '1.15em', color: '#334155' }}>Hver samtale du ikke svarer på, ringer en konkurrent.</span><br />
+          <h1 className={`${styles.heroHeadline} animate-fade-in delay-1`}>
+            Hver samtale du ikke svarer,<br />
+            ringer en konkurrent.
+          </h1>
+          <p className={`${styles.heroSubheadline} animate-fade-in delay-2`}>
             Bra Svar er din AI-kundebehandler — svarer telefonen, booker avtaler og hjelper kundene dine. Døgnet rundt.
           </p>
 
-          <div className={`${styles.actions} animate-fade-in delay-2`}>
+          <div className={`${styles.actions} animate-fade-in delay-3`}>
             <button className={styles.ctaPrimary}>
               Få en gratis prototype
             </button>

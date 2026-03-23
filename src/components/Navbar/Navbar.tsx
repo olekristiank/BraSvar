@@ -30,7 +30,7 @@ export default function Navbar() {
           left: 0,
           right: 0,
           zIndex: 100,
-          padding: scrolled ? '0.65rem clamp(1rem, 4vw, 2rem)' : '1rem clamp(1rem, 4vw, 2rem)',
+          padding: scrolled ? '0.65rem 2rem' : '1rem 2rem',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'space-between',
@@ -42,25 +42,25 @@ export default function Navbar() {
           maxWidth: '100vw',
         }}
       >
-        {/* Logo */}
-        <a href="#" style={{ display: 'flex', alignItems: 'center', gap: '0.15rem', textDecoration: 'none' }}>
-          <span style={{
-            fontFamily: 'var(--font-outfit)',
-            fontWeight: 800,
-            fontSize: '1.15rem',
-            background: 'linear-gradient(135deg, #0f172a 0%, #334155 100%)',
-            WebkitBackgroundClip: 'text',
-            WebkitTextFillColor: 'transparent',
-            letterSpacing: '-0.02em',
-          }}>
-            Bra Svar
+        {/* Brand Logo */}
+        <a href="/" style={{ display: 'flex', alignItems: 'center', gap: '0.15rem', textDecoration: 'none' }}>
+          <span style={{ fontFamily: 'var(--font-outfit)', fontWeight: 800, fontSize: 'clamp(1.15rem, 3vw, 1.3rem)', color: '#0f172a', letterSpacing: '-0.03em' }}>
+            Bra
           </span>
-          <span style={{
-            fontFamily: 'var(--font-outfit)',
-            fontWeight: 900,
-            fontSize: '1.15rem',
-            color: '#ec4899',
-          }}>!</span>
+          <svg
+            viewBox="0 0 100 100"
+            style={{ height: 'clamp(1.2rem, 3.5vw, 1.45rem)', width: 'auto', margin: '0 0.15rem' }}
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect className="voice-wave" style={{'--v-scale': 1.8, '--v-dur': '1.0s', '--v-delay': '0.1s'} as React.CSSProperties} x="10" y="35" width="12" height="30" rx="6" fill="#f472b6" />
+            <rect className="voice-wave" style={{'--v-scale': 1.3, '--v-dur': '1.2s', '--v-delay': '0.3s'} as React.CSSProperties} x="30" y="20" width="12" height="60" rx="6" fill="#ec4899" />
+            <rect className="voice-wave" style={{'--v-scale': 0.6, '--v-dur': '0.9s', '--v-delay': '0.0s'} as React.CSSProperties} x="50" y="10" width="12" height="80" rx="6" fill="#db2777" />
+            <rect className="voice-wave" style={{'--v-scale': 1.5, '--v-dur': '1.3s', '--v-delay': '0.4s'} as React.CSSProperties} x="70" y="25" width="12" height="50" rx="6" fill="#ec4899" />
+          </svg>
+          <span style={{ fontFamily: 'var(--font-outfit)', fontWeight: 800, fontSize: 'clamp(1.15rem, 3vw, 1.3rem)', color: '#0f172a', letterSpacing: '-0.03em' }}>
+            Svar<span style={{ color: '#ec4899' }}>!</span>
+          </span>
         </a>
 
         {/* Desktop nav */}
