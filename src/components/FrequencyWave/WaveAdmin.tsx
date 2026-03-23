@@ -121,7 +121,6 @@ export default function WaveAdmin() {
       <button
         onClick={() => setShowPanel(!showPanel)}
         style={{
-          display: 'none',
           position: 'fixed', bottom: '24px', right: '24px', zIndex: 9999,
           background: 'rgba(15,23,42,0.85)', color: '#fff',
           border: '1px solid rgba(100,116,139,0.3)', borderRadius: '12px',
