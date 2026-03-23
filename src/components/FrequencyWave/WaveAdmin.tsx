@@ -219,7 +219,7 @@ export default function WaveAdmin() {
           <div style={sectionTitle}>Aura</div>
 
           <div style={sliderRow}>
-            <span style={label}>Intensity</span>
+            <span style={label}>Opacity</span>
             <input type="range" min={0} max={100} step={1} value={auraIntensity}
               onChange={(e) => setAuraIntensity(Number(e.target.value))}
               style={sliderInput} />
