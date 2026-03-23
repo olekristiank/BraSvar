@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import { createPortal } from "react-dom";
 import FrequencyWave, { WaveConfig, defaultWaveConfig } from "./FrequencyWave";
 import { wavePresets } from "./wavePresets";
 
@@ -10,6 +11,7 @@ function hexToRgb(hex: string) {
 }
 
 export default function WaveAdmin() {
+  const [mounted, setMounted] = useState(false);
   const [activePreset, setActivePreset] = useState<string>("OKK2");
   const [config, setConfig] = useState<WaveConfig>(wavePresets["OKK2"] || defaultWaveConfig);
   const [showPanel, setShowPanel] = useState(false);
@@ -25,6 +27,10 @@ export default function WaveAdmin() {
   const [phaseSpread, setPhaseSpread] = useState(config.phaseSpread ?? 50);
   const [auraIntensity, setAuraIntensity] = useState(config.auraIntensity ?? 70);
   const [maskWidth, setMaskWidth] = useState(config.maskWidth ?? 60);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   useEffect(() => {
     const handler = setTimeout(() => setDebouncedSpeed(speedMultiplier), 300);
@@ -113,15 +119,13 @@ export default function WaveAdmin() {
     marginTop: '10px', marginBottom: '6px', paddingBottom: '4px', borderBottom: '1px solid rgba(100,116,139,0.2)',
   };
 
-  return (
+  const panelUI = (
     <>
-      <FrequencyWave config={currentConfig} key={JSON.stringify(currentConfig.durations) + threadCount + phaseSpread} />
-
       {/* Toggle button */}
       <button
         onClick={() => setShowPanel(!showPanel)}
         style={{
-          position: 'fixed', bottom: '24px', right: '24px', zIndex: 9999,
+          position: 'fixed', top: '90px', right: '24px', zIndex: 9999,
           background: 'rgba(15,23,42,0.85)', color: '#fff',
           border: '1px solid rgba(100,116,139,0.3)', borderRadius: '12px',
           padding: '8px 14px', fontSize: '20px', cursor: 'pointer',
@@ -135,8 +139,8 @@ export default function WaveAdmin() {
       {showPanel && (
         <div
           style={{
-            position: 'fixed', bottom: '76px', right: '24px', zIndex: 9998,
-            width: '300px', maxHeight: 'calc(100vh - 100px)', overflowY: 'auto',
+            position: 'fixed', top: '144px', right: '24px', zIndex: 9998,
+            width: '300px', maxHeight: 'calc(100vh - 160px)', overflowY: 'auto',
             background: 'rgba(15,23,42,0.95)', backdropFilter: 'blur(12px)',
             border: '1px solid rgba(100,116,139,0.25)', borderRadius: '14px',
             padding: '16px', boxShadow: '0 20px 50px rgba(0,0,0,.4)',
@@ -310,6 +314,13 @@ export default function WaveAdmin() {
           </button>
         </div>
       )}
+    </>
+  );
+
+  return (
+    <>
+      <FrequencyWave config={currentConfig} key={JSON.stringify(currentConfig.durations) + threadCount + phaseSpread} />
+      {mounted && createPortal(panelUI, document.body)}
     </>
   );
 }
