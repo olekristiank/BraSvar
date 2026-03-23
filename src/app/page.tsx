@@ -22,7 +22,8 @@ export default function Home() {
             ringer en konkurrent.
           </h1>
           <p className={`${styles.heroSubheadline} animate-fade-in delay-2`}>
-            Bra Svar er din AI-kundebehandler — svarer telefonen, booker avtaler og hjelper kundene dine. Døgnet rundt.
+            Bra Svar er ditt AI-sentralbord og kundebehandler.<br />
+            Den svarer telefonen, booker avtaler og hjelper kundene dine. Døgnet rundt.
           </p>
 
           <div className={`${styles.actions} animate-fade-in delay-3`}>
