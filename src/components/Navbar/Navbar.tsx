@@ -82,7 +82,7 @@ export default function Navbar() {
               letterSpacing: '0.01em',
             }}
           >
-            Ta kontakt for en hyggelig prat!
+            Ta kontakt
           </a>
         </nav>
 

@@ -320,7 +320,6 @@ export default function WaveAdmin() {
   return (
     <>
       <FrequencyWave config={currentConfig} key={JSON.stringify(currentConfig.durations) + threadCount + phaseSpread} />
-      {mounted && createPortal(panelUI, document.body)}
     </>
   );
 }

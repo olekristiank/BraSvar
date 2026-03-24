@@ -5,7 +5,7 @@ import HowItWorks from "@/components/HowItWorks/HowItWorks";
 import Pricing from "@/components/Pricing/Pricing";
 import FAQ from "@/components/FAQ/FAQ";
 import Recognition from "@/components/Recognition/Recognition";
-import BottomCTA from "@/components/BottomCTA/BottomCTA";
+
 
 export default function Home() {
   return (
@@ -13,7 +13,7 @@ export default function Home() {
       <Navbar />
 
       <section className={styles.heroSection}>
-        {/* <WaveAdmin /> */}
+        <WaveAdmin />
         <main className={styles.main}>
           <h1 className={`${styles.heroHeadline} animate-fade-in delay-1`}>
             Når du ikke svarer,<br />
@@ -39,8 +39,6 @@ export default function Home() {
       <HowItWorks />
       <Pricing />
       <FAQ />
-      <BottomCTA />
-
       {/* Footer */}
       <footer className={styles.footer}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
