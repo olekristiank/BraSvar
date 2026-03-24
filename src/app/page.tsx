@@ -5,6 +5,7 @@ import HowItWorks from "@/components/HowItWorks/HowItWorks";
 import Pricing from "@/components/Pricing/Pricing";
 import FAQ from "@/components/FAQ/FAQ";
 import Recognition from "@/components/Recognition/Recognition";
+import Integrations from "@/components/Integrations/Integrations";
 import ContactButton from "@/components/ContactModal/ContactButton";
 import AudioButton from "@/components/AudioModal/AudioButton";
 
@@ -40,6 +41,7 @@ export default function Home() {
       <Recognition />
       <HowItWorks />
       <Pricing />
+      <Integrations />
       <FAQ />
       {/* Footer */}
       <footer className={styles.footer}>
