@@ -13,11 +13,11 @@ export default function Home() {
       <Navbar />
 
       <section className={styles.heroSection}>
-        <WaveAdmin />
+        {/* <WaveAdmin /> */}
         <main className={styles.main}>
           <h1 className={`${styles.heroHeadline} animate-fade-in delay-1`}>
-            Hver samtale du ikke svarer,<br />
-            ringer en konkurrent.
+            Når du ikke svarer,<br />
+            svarer konkurrenten.
           </h1>
           <p className={`${styles.heroSubheadline} animate-fade-in delay-2`}>
             <span className="display-font" style={{ fontWeight: 800, color: '#0f172a' }}>Bra Svar<span style={{ color: '#ec4899' }}>!</span></span> er ditt AI-sentralbord og kundebehandler.<br />
@@ -26,7 +26,7 @@ export default function Home() {
 
           <div className={`${styles.actions} animate-fade-in delay-3`}>
             <button className={styles.ctaPrimary}>
-              Gratis prøveversjon
+              Ta kontakt for en hyggelig prat!
             </button>
             <button className={styles.ctaSecondary}>
               Hør en samtale

@@ -82,7 +82,7 @@ export default function Navbar() {
               letterSpacing: '0.01em',
             }}
           >
-            Gratis prøveversjon
+            Ta kontakt for en hyggelig prat!
           </a>
         </nav>
 

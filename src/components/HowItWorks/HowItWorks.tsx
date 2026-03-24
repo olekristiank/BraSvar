@@ -144,8 +144,48 @@ export default function HowItWorks() {
           ))}
           </div>
         </div>
+
+        {/* CTA */}
+        <AnimateIn delay={550}>
+          <div className="text-center" style={{ marginTop: '3rem' }}>
+            <HoverButton
+              baseStyle={{
+                fontWeight: 700, padding: '1rem 2.5rem', borderRadius: '14px',
+                fontSize: '1rem', background: 'linear-gradient(135deg, #ec4899, #e11d48)',
+                color: '#fff', border: 'none', cursor: 'pointer',
+                boxShadow: '0 8px 24px rgba(236,72,153,.3)',
+                transition: 'all 0.25s cubic-bezier(.4,0,.2,1)',
+              }}
+              hoverStyle={{
+                boxShadow: '0 12px 32px rgba(236,72,153,.45)',
+                transform: 'translateY(-2px)', filter: 'brightness(1.08)',
+              }}
+            >
+              Ta kontakt for en hyggelig prat!
+            </HoverButton>
+          </div>
+        </AnimateIn>
       </div>
     </section>
+  );
+}
+
+/* ─── Interactive Hover Button ─── */
+function HoverButton({
+  children, baseStyle, hoverStyle,
+}: {
+  children: React.ReactNode;
+  baseStyle: React.CSSProperties; hoverStyle: React.CSSProperties;
+}) {
+  const [isHovered, setIsHovered] = useState(false);
+  return (
+    <button
+      style={{ ...baseStyle, transition: 'all 0.25s cubic-bezier(.4,0,.2,1)', ...(isHovered ? hoverStyle : {}) }}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      {children}
+    </button>
   );
 }
 

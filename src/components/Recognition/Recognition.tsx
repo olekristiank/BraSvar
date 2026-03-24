@@ -28,7 +28,7 @@ export default function Recognition() {
   const [isVisible, setIsVisible] = useState(false);
   const [count, setCount] = useState(0);
   const [counterDone, setCounterDone] = useState(false);
-  const targetCount = 14;
+  const targetCount = 17;
 
   const [selectedImages, setSelectedImages] = useState(allImages.slice(0, 3));
 
@@ -177,8 +177,6 @@ export default function Recognition() {
               flexDirection: 'column',
               alignItems: 'center',
               gap: '0.15rem',
-              opacity: isVisible && count > 0 ? 1 : 0,
-              transition: 'opacity 0.4s ease',
             }}
           >
             <span
@@ -190,6 +188,10 @@ export default function Recognition() {
                 color: '#fff',
                 letterSpacing: '-0.04em',
                 textShadow: '0 4px 30px rgba(0,0,0,.5)',
+                opacity: isVisible && count > 0
+                  ? count <= 10 ? 1 : Math.max(0, 1 - (count - 10) / 7)
+                  : 0,
+                transition: 'opacity 0.4s ease',
               }}
             >
               {count}
@@ -203,9 +205,11 @@ export default function Recognition() {
                 textTransform: 'uppercase',
                 letterSpacing: '0.15em',
                 textShadow: '0 2px 10px rgba(0,0,0,.4)',
+                opacity: isVisible && count > 0 ? 1 : 0,
+                transition: 'opacity 0.4s ease',
               }}
             >
-              tapte anrop
+              Tapte anrop?
             </span>
           </div>
 

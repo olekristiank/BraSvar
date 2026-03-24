@@ -58,9 +58,6 @@ export default function Pricing() {
                 Aldri syk. Aldri på ferie.
               </span>
             </h2>
-            <p className="text-slate-500 font-medium" style={{ fontSize: 'clamp(1rem, 2vw, 1.15rem)', lineHeight: 1.7, marginBottom: '1.25rem' }}>
-              Alle pakker inkluderer <strong className="text-slate-800">2 AI-assistenter som svarer samtidig</strong> — slik at telefonen aldri er opptatt.
-            </p>
             <div className="flex flex-wrap justify-center" style={{ gap: '0.5rem 1.5rem' }}>
               {['Ingen bindingstid', 'Gratis oppstart', 'Norsk support'].map((item) => (
                 <span key={item} className="font-medium" style={{ fontSize: '0.85rem', color: '#64748b' }}>
@@ -100,7 +97,7 @@ export default function Pricing() {
               <p className="font-semibold uppercase" style={{ fontSize: '0.65rem', letterSpacing: '0.15em', color: '#94a3b8', marginBottom: '0.75rem' }}>Startpakke</p>
               <h3 className="font-bold text-slate-900" style={{ fontSize: '1.4rem', marginBottom: '0.25rem' }}>Mini</h3>
               <p className="text-slate-500" style={{ fontSize: '0.88rem', marginBottom: '1.75rem', lineHeight: 1.55, fontWeight: 450 }}>
-                For bedrifter med lavt til moderat samtalevolum.
+                For bedrifter med lavt samtalevolum og enkle behov.
               </p>
 
               {/* Price */}
@@ -114,26 +111,13 @@ export default function Pricing() {
 
               {/* Features */}
               <ul className="flex-1 flex flex-col" style={{ gap: '1rem', marginBottom: '2rem' }}>
-                <Feature color="green">500 minutter — nok til ~17 samtaler daglig</Feature>
-                <Feature color="green">Kjenner bedriften din — svarer som en ansatt</Feature>
-                <Feature color="green">Booker avtaler rett i samtalen</Feature>
+                <Feature color="green">500 minutter</Feature>
+                <Feature color="green">Timebestilling mot én kalender</Feature>
+                <Feature color="green">Liten kunnskapsbase</Feature>
+                <Feature color="green">Kan sette over til deg</Feature>
+                <Feature color="green">Snakker norsk!</Feature>
               </ul>
 
-              <HoverButton
-                baseStyle={{
-                  width: '100%', fontWeight: 700, padding: '0.85rem', borderRadius: '14px',
-                  fontSize: '0.9rem', background: '#f8fafc',
-                  borderWidth: '1px', borderStyle: 'solid', borderColor: '#e2e8f0',
-                  color: '#1e293b', cursor: 'pointer', marginTop: 'auto',
-                  transition: 'all 0.25s cubic-bezier(.4,0,.2,1)',
-                }}
-                hoverStyle={{
-                  background: '#f1f5f9', borderColor: '#cbd5e1',
-                  boxShadow: '0 4px 12px rgba(0,0,0,.06)', transform: 'translateY(-1px)',
-                }}
-              >
-                Bestill prototype
-              </HoverButton>
             </HoverCard>
           </AnimateIn>
 
@@ -196,27 +180,18 @@ export default function Pricing() {
 
               {/* Features */}
               <ul className="flex-1 flex flex-col" style={{ gap: '1rem', marginBottom: '2rem' }}>
-                <Feature color="pink">1 000 minutter — nok til ~33 samtaler daglig</Feature>
-                <Feature color="pink">Kjenner bedriften din — svarer som en ansatt</Feature>
-                <Feature color="pink">Booker avtaler rett i samtalen</Feature>
-                <Feature color="pink">Valgfri chat-modul for nettsiden din</Feature>
+                <Feature color="pink">1 000 minutter</Feature>
+                <Feature color="pink">Timebestilling mot flere kalendere</Feature>
+                <Feature color="pink">Stor kunnskapsbase</Feature>
+                <Feature color="pink">Kan sette over til flere telefonkøer</Feature>
+                <Feature color="pink">Kan snakke norsk og engelsk</Feature>
+                <Feature color="pink">2 samtidige samtaler</Feature>
+                <Feature color="pink">Avansert samtaleflyt</Feature>
+                <Feature color="pink">Enkel integrasjon mot fagsystemer</Feature>
+                <Feature color="pink">Chat-modul på nettside</Feature>
+                <Feature color="pink">Sende SMS</Feature>
               </ul>
 
-              <HoverButton
-                baseStyle={{
-                  width: '100%', fontWeight: 700, padding: '0.85rem', borderRadius: '14px',
-                  fontSize: '0.9rem', background: 'linear-gradient(135deg, #ec4899, #e11d48)',
-                  color: '#fff', border: 'none', cursor: 'pointer',
-                  boxShadow: '0 8px 24px rgba(236,72,153,.3)', marginTop: 'auto',
-                  transition: 'all 0.25s cubic-bezier(.4,0,.2,1)',
-                }}
-                hoverStyle={{
-                  boxShadow: '0 12px 32px rgba(236,72,153,.45)',
-                  transform: 'translateY(-1px)', filter: 'brightness(1.08)',
-                }}
-              >
-                Bestill prototype
-              </HoverButton>
             </HoverCard>
           </AnimateIn>
 
@@ -256,32 +231,35 @@ export default function Pricing() {
               {/* Features */}
               <ul className="flex-1 flex flex-col" style={{ gap: '1rem', marginBottom: '2rem' }}>
                 <Feature color="green">Ubegrenset med ringeminutter</Feature>
-                <Feature color="green">Integrasjoner med dine systemer</Feature>
-                <Feature color="green">Skreddersydd for din bedrift</Feature>
+                <Feature color="green">Avanserte integrasjoner</Feature>
+                <Feature color="green">Kan ringe utgående samtaler for direktesalg, kundeundersøkelser m.m.</Feature>
               </ul>
 
-              <HoverButton
-                baseStyle={{
-                  width: '100%', fontWeight: 700, padding: '0.85rem', borderRadius: '14px',
-                  fontSize: '0.9rem', background: '#f8fafc',
-                  borderWidth: '1px', borderStyle: 'solid', borderColor: '#e2e8f0',
-                  color: '#1e293b', cursor: 'pointer', marginTop: 'auto',
-                  transition: 'all 0.25s cubic-bezier(.4,0,.2,1)',
-                }}
-                hoverStyle={{
-                  background: '#f1f5f9', borderColor: '#cbd5e1',
-                  boxShadow: '0 4px 12px rgba(0,0,0,.06)', transform: 'translateY(-1px)',
-                }}
-              >
-                Kontakt oss for tilbud
-              </HoverButton>
             </HoverCard>
           </AnimateIn>
 
         </div>
 
-
-
+        {/* CTA under packages */}
+        <AnimateIn delay={320}>
+          <div className="text-center" style={{ marginTop: '3rem' }}>
+            <HoverButton
+              baseStyle={{
+                fontWeight: 700, padding: '1rem 2.5rem', borderRadius: '14px',
+                fontSize: '1rem', background: 'linear-gradient(135deg, #ec4899, #e11d48)',
+                color: '#fff', border: 'none', cursor: 'pointer',
+                boxShadow: '0 8px 24px rgba(236,72,153,.3)',
+                transition: 'all 0.25s cubic-bezier(.4,0,.2,1)',
+              }}
+              hoverStyle={{
+                boxShadow: '0 12px 32px rgba(236,72,153,.45)',
+                transform: 'translateY(-2px)', filter: 'brightness(1.08)',
+              }}
+            >
+              Ta kontakt for en hyggelig prat!
+            </HoverButton>
+          </div>
+        </AnimateIn>
 
       </div>
     </section>
