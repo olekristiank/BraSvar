@@ -1,8 +1,10 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from 'react';
+import { useContactModal } from '@/components/ContactModal/ContactContext';
 
 export default function Pricing() {
+  const openContact = useContactModal();
   return (
     <section
       id="priser"
@@ -244,6 +246,7 @@ export default function Pricing() {
         <AnimateIn delay={320}>
           <div className="text-center" style={{ marginTop: '3rem' }}>
             <HoverButton
+              onClick={openContact}
               baseStyle={{
                 fontWeight: 700, padding: '1rem 2.5rem', borderRadius: '14px',
                 fontSize: '1rem', background: 'linear-gradient(135deg, #ec4899, #e11d48)',
@@ -346,14 +349,16 @@ function HoverCard({
 
 /* ─── Interactive Hover Button ─── */
 function HoverButton({
-  children, baseStyle, hoverStyle,
+  children, baseStyle, hoverStyle, onClick,
 }: {
   children: React.ReactNode;
   baseStyle: React.CSSProperties; hoverStyle: React.CSSProperties;
+  onClick?: () => void;
 }) {
   const [isHovered, setIsHovered] = useState(false);
   return (
     <button
+      onClick={onClick}
       style={{ ...baseStyle, transition: 'all 0.25s cubic-bezier(.4,0,.2,1)', ...(isHovered ? hoverStyle : {}) }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}

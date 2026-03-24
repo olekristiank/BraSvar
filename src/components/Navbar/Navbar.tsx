@@ -1,10 +1,12 @@
 "use client";
 
 import React, { useEffect, useState } from 'react';
+import { useContactModal } from '@/components/ContactModal/ContactContext';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const openContact = useContactModal();
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -67,8 +69,8 @@ export default function Navbar() {
         <nav className="nav-links" style={{ display: 'flex', alignItems: 'center', gap: '2rem' }}>
           <NavLink href="#hvordan">Slik fungerer det</NavLink>
           <NavLink href="#priser">Priser</NavLink>
-          <a
-            href="#"
+          <button
+            onClick={openContact}
             style={{
               fontSize: '0.85rem',
               fontWeight: 700,
@@ -76,14 +78,15 @@ export default function Navbar() {
               background: 'linear-gradient(135deg, #ec4899 0%, #db2777 100%)',
               padding: '0.55rem 1.4rem',
               borderRadius: '10px',
-              textDecoration: 'none',
+              border: 'none',
+              cursor: 'pointer',
               transition: 'all 0.3s cubic-bezier(.4,0,.2,1)',
               boxShadow: '0 2px 8px rgba(236,72,153,0.25)',
               letterSpacing: '0.01em',
             }}
           >
             Ta kontakt
-          </a>
+          </button>
         </nav>
 
         {/* Mobile hamburger */}
@@ -149,9 +152,8 @@ export default function Navbar() {
       >
         <a href="#hvordan" onClick={() => setMobileOpen(false)} style={{ fontSize: '1.2rem', fontWeight: 600, color: '#0f172a', textDecoration: 'none' }}>Slik fungerer det</a>
         <a href="#priser" onClick={() => setMobileOpen(false)} style={{ fontSize: '1.2rem', fontWeight: 600, color: '#0f172a', textDecoration: 'none' }}>Priser</a>
-        <a
-          href="#"
-          onClick={() => setMobileOpen(false)}
+        <button
+          onClick={() => { setMobileOpen(false); openContact(); }}
           style={{
             fontSize: '1rem',
             fontWeight: 700,
@@ -159,13 +161,14 @@ export default function Navbar() {
             background: 'linear-gradient(135deg, #ec4899 0%, #db2777 100%)',
             padding: '0.85rem 2.5rem',
             borderRadius: '14px',
-            textDecoration: 'none',
+            border: 'none',
+            cursor: 'pointer',
             boxShadow: '0 4px 14px rgba(236,72,153,0.35)',
             marginTop: '0.5rem',
           }}
         >
-          Gratis prøveversjon
-        </a>
+          Ta kontakt
+        </button>
       </div>
     </>
   );

@@ -5,6 +5,8 @@ import HowItWorks from "@/components/HowItWorks/HowItWorks";
 import Pricing from "@/components/Pricing/Pricing";
 import FAQ from "@/components/FAQ/FAQ";
 import Recognition from "@/components/Recognition/Recognition";
+import ContactButton from "@/components/ContactModal/ContactButton";
+import AudioButton from "@/components/AudioModal/AudioButton";
 
 
 export default function Home() {
@@ -25,12 +27,12 @@ export default function Home() {
           </p>
 
           <div className={`${styles.actions} animate-fade-in delay-3`}>
-            <button className={styles.ctaPrimary}>
+            <ContactButton className={styles.ctaPrimary}>
               Ta kontakt for en hyggelig prat!
-            </button>
-            <button className={styles.ctaSecondary}>
+            </ContactButton>
+            <AudioButton className={styles.ctaSecondary}>
               Hør en samtale
-            </button>
+            </AudioButton>
           </div>
         </main>
       </section>
