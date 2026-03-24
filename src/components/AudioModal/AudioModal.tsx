@@ -31,8 +31,16 @@ export default function AudioModal({ open, onClose }: AudioModalProps) {
   useEffect(() => {
     if (open) {
       document.body.style.overflow = 'hidden';
+      document.body.style.position = 'fixed';
+      document.body.style.width = '100%';
+      document.body.style.top = `-${window.scrollY}px`;
     } else {
+      const scrollY = document.body.style.top;
       document.body.style.overflow = '';
+      document.body.style.position = '';
+      document.body.style.width = '';
+      document.body.style.top = '';
+      if (scrollY) window.scrollTo(0, parseInt(scrollY || '0') * -1);
       if (audioRef.current) {
         audioRef.current.pause();
         audioRef.current = null;
@@ -43,7 +51,14 @@ export default function AudioModal({ open, onClose }: AudioModalProps) {
       setDuration(0);
       setError(null);
     }
-    return () => { document.body.style.overflow = ''; };
+    return () => {
+      const scrollY = document.body.style.top;
+      document.body.style.overflow = '';
+      document.body.style.position = '';
+      document.body.style.width = '';
+      document.body.style.top = '';
+      if (scrollY) window.scrollTo(0, parseInt(scrollY || '0') * -1);
+    };
   }, [open]);
 
   const playClip = useCallback((index: number) => {
@@ -104,13 +119,17 @@ export default function AudioModal({ open, onClose }: AudioModalProps) {
       onClick={onClose}
       style={{
         position: 'fixed',
-        inset: 0,
+        top: 0,
+        right: 0,
+        bottom: 0,
+        left: 0,
         zIndex: 200,
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
         background: 'rgba(0,0,0,0.5)',
         backdropFilter: 'blur(4px)',
+        WebkitBackdropFilter: 'blur(4px)',
         padding: '1rem',
         animation: 'audioFadeIn 0.2s ease',
       }}
