@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Navbar from '@/components/Navbar/Navbar';
 import { getPost, getAllPosts } from '@/lib/blog';
 import { notFound } from 'next/navigation';
 
@@ -178,28 +179,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         fontFamily: 'var(--font-outfit)',
         background: '#fff',
       }}>
-        {/* Nav bar */}
-        <div style={{
-          padding: '1rem 2rem',
-          position: 'fixed',
-          top: 0,
-          left: 0,
-          right: 0,
-          zIndex: 50,
-          background: 'rgba(255,255,255,0.85)',
-          backdropFilter: 'blur(12px)',
-          WebkitBackdropFilter: 'blur(12px)',
-          borderBottom: '1px solid rgba(226,232,240,0.6)',
-        }}>
-          <div style={{ maxWidth: '700px', margin: '0 auto', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-            <Link href="/" style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '0.15rem' }}>
-              <span style={{ fontWeight: 800, fontSize: '1.05rem', color: '#0f172a' }}>Bra Svar<span style={{ color: '#ec4899' }}>!</span></span>
-            </Link>
-            <Link href="/blog" style={{ fontSize: '0.85rem', fontWeight: 550, color: '#64748b', textDecoration: 'none' }}>
-              Alle artikler
-            </Link>
-          </div>
-        </div>
+        <Navbar />
 
         {/* Article */}
         <article style={{
@@ -229,8 +209,8 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             {renderMarkdown(post.content)}
           </div>
 
-          {/* Back link */}
-          <div style={{ marginTop: '3rem', paddingTop: '2rem', borderTop: '1px solid #f1f5f9' }}>
+          {/* Footer nav */}
+          <div style={{ marginTop: '3rem', paddingTop: '2rem', borderTop: '1px solid #e2e8f0', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
             <Link href="/blog" style={{
               fontSize: '0.9rem',
               fontWeight: 600,
@@ -240,7 +220,19 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
               alignItems: 'center',
               gap: '0.4rem',
             }}>
-              <span>&larr;</span> Alle artikler
+              &larr; Alle artikler
+            </Link>
+            <Link href="/" style={{
+              fontSize: '0.85rem',
+              fontWeight: 600,
+              color: '#fff',
+              background: 'linear-gradient(135deg, #ec4899, #db2777)',
+              padding: '0.6rem 1.5rem',
+              borderRadius: '10px',
+              textDecoration: 'none',
+              boxShadow: '0 2px 8px rgba(236,72,153,0.25)',
+            }}>
+              Prøv Bra Svar
             </Link>
           </div>
         </article>

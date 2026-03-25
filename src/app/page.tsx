@@ -6,13 +6,30 @@ import Pricing from "@/components/Pricing/Pricing";
 import FAQ from "@/components/FAQ/FAQ";
 import Recognition from "@/components/Recognition/Recognition";
 import Integrations from "@/components/Integrations/Integrations";
+import BlogPreview from "@/components/BlogPreview/BlogPreview";
 import ContactButton from "@/components/ContactModal/ContactButton";
 import AudioButton from "@/components/AudioModal/AudioButton";
 
 
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'Bra Svar',
+  url: 'https://brasvar.no',
+  description: 'KI-telefonassistent for norske småbedrifter. Svarer telefonen, booker avtaler og hjelper kundene dine døgnet rundt.',
+  telephone: '+4764006264',
+  contactPoint: {
+    '@type': 'ContactPoint',
+    telephone: '+47-64-00-62-64',
+    contactType: 'sales',
+    availableLanguage: ['Norwegian', 'English'],
+  },
+};
+
 export default function Home() {
   return (
     <div className={styles.container}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Navbar />
 
       <section className={styles.heroSection}>
@@ -45,6 +62,7 @@ export default function Home() {
       <HowItWorks />
       <Pricing />
       <Integrations />
+      <BlogPreview />
       <FAQ />
       {/* Footer */}
       <footer className={styles.footer}>

@@ -29,8 +29,17 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "Bra Svar! | AI Voice Assistant",
-  description: "AI voice assistant that answers phones for customers and makes bookings.",
+  title: "Bra Svar! | KI-telefonassistent for norske småbedrifter",
+  description: "Bra Svar er ditt AI-sentralbord og kundebehandler. Svarer telefonen, booker avtaler og hjelper kundene dine — døgnet rundt. Ingen binding.",
+  keywords: ['KI-telefonassistent', 'AI sentralbord', 'telefonassistent', 'automatisering småbedrift', 'ubesvarte samtaler', 'KI kundeservice'],
+  openGraph: {
+    title: 'Bra Svar! | KI-telefonassistent for norske småbedrifter',
+    description: 'AI-sentralbord som svarer telefonen, booker avtaler og hjelper kundene dine — døgnet rundt.',
+    url: 'https://brasvar.no',
+    siteName: 'Bra Svar',
+    locale: 'nb_NO',
+    type: 'website',
+  },
 };
 
 export default function RootLayout({
@@ -39,7 +48,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={cn(outfit.variable, manrope.variable, instrumentSerif.variable, "font-sans", geist.variable)} suppressHydrationWarning>
+    <html lang="no" className={cn(outfit.variable, manrope.variable, instrumentSerif.variable, "font-sans", geist.variable)} suppressHydrationWarning>
       <body suppressHydrationWarning><ContactProvider>{children}</ContactProvider></body>
     </html>
   );

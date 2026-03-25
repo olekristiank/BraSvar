@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Navbar from '@/components/Navbar/Navbar';
 import { getAllPosts } from '@/lib/blog';
 
 export const metadata: Metadata = {
@@ -16,6 +17,7 @@ export default function BlogPage() {
       fontFamily: 'var(--font-outfit)',
       background: '#fff',
     }}>
+      <Navbar />
       {/* Header */}
       <div style={{
         paddingTop: 'clamp(6rem, 12vw, 9rem)',
@@ -24,10 +26,6 @@ export default function BlogPage() {
         background: 'linear-gradient(180deg, #fdf2f8 0%, #fff 100%)',
         padding: 'clamp(6rem, 12vw, 9rem) 2rem 3rem',
       }}>
-        <Link href="/" style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '0.15rem', marginBottom: '2rem' }}>
-          <span style={{ fontWeight: 800, fontSize: '1.1rem', color: '#0f172a' }}>Bra</span>
-          <span style={{ fontWeight: 800, fontSize: '1.1rem', color: '#0f172a' }}>Svar<span style={{ color: '#ec4899' }}>!</span></span>
-        </Link>
         <h1 style={{
           fontSize: 'clamp(2.2rem, 5vw, 3.2rem)',
           fontWeight: 800,

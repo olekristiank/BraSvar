@@ -50,7 +50,7 @@ Eller du kan fortsette som før. Men da bør du vite hva det koster. Sjekk anrop
 
 ## Kom i gang
 
-[Bra Svar](/) tilbyr KI-telefonassistenter bygget for norske småbedrifter. Vi hjelper deg med å sette opp en løsning som svarer kundene dine når du ikke kan. [Ta kontakt for en uforpliktende prat](/kontakt).`,
+[Bra Svar](/) tilbyr KI-telefonassistenter bygget for norske småbedrifter. Vi hjelper deg med å sette opp en løsning som svarer kundene dine når du ikke kan. [Ta kontakt for en uforpliktende prat](/).`,
   },
   {
     slug: 'ki-bruken-i-norge-doblet-seg',
@@ -86,7 +86,7 @@ Start med noe konkret. Et verktøy som tar unna repeterende oppgaver. En [telefo
 
 ## Vi kan hjelpe
 
-[Bra Svar](/) leverer KI-telefonassistenter til norske småbedrifter. Enkelt å sette opp, ingen teknisk kompetanse nødvendig. [Ta kontakt](/kontakt) for å komme i gang.`,
+[Bra Svar](/) leverer KI-telefonassistenter til norske småbedrifter. Enkelt å sette opp, ingen teknisk kompetanse nødvendig. [Ta kontakt](/) for å komme i gang.`,
   },
   {
     slug: 'gdpr-og-ki-verktoy',
@@ -139,7 +139,7 @@ Gjør du dette, er du trygt innenfor.
 
 ## Slik gjør vi det i Bra Svar
 
-Hos [Bra Svar](/) tar vi personvern på alvor. Vi tilbyr databehandleravtale basert på Datatilsynets standardmal, dokumenterer alle underbehandlere, og sørger for at kundedata behandles i tråd med GDPR. [Ta kontakt](/kontakt) om du vil vite mer.`,
+Hos [Bra Svar](/) tar vi personvern på alvor. Vi tilbyr databehandleravtale basert på Datatilsynets standardmal, dokumenterer alle underbehandlere, og sørger for at kundedata behandles i tråd med GDPR. [Ta kontakt](/) om du vil vite mer.`,
   },
   {
     slug: 'norges-nye-ki-lov',
@@ -183,7 +183,7 @@ KI-loven er ikke ment å bremse innovasjon. Den er ment å sørge for at den skj
 
 ## Bra Svar og KI-loven
 
-[Bra Svar](/) bygger sine telefonassistenter med åpenhet som standard. Kundene dine vil alltid vite at de snakker med en KI, og vi sørger for at løsningen følger gjeldende regelverk. [Ta kontakt](/kontakt) om du lurer på noe.`,
+[Bra Svar](/) bygger sine telefonassistenter med åpenhet som standard. Kundene dine vil alltid vite at de snakker med en KI, og vi sørger for at løsningen følger gjeldende regelverk. [Ta kontakt](/) om du lurer på noe.`,
   },
   {
     slug: 'slik-fungerer-en-ki-telefonassistent',
@@ -237,7 +237,7 @@ For bedriften din betyr det [færre tapte samtaler](/blog/hva-koster-en-ubesvart
 
 ## Prøv det selv
 
-[Bra Svar](/) setter opp KI-telefonassistenter for norske småbedrifter. Vi tilpasser løsningen til din bedrift og hjelper deg med å bygge kunnskapsbasen. [Ring oss på 64 00 62 64](tel:+4764006264) for å teste — eller [send oss en melding](/kontakt).`,
+[Bra Svar](/) setter opp KI-telefonassistenter for norske småbedrifter. Vi tilpasser løsningen til din bedrift og hjelper deg med å bygge kunnskapsbasen. [Ring oss på 64 00 62 64](tel:+4764006264) for å teste — eller [send oss en melding](/).`,
   },
   {
     slug: 'arbeidskraftmangel-og-ki',
@@ -277,7 +277,7 @@ Når KI tar seg av det forutsigbare, kan du og de ansatte bruke tiden på det so
 
 ## Bra Svar kan hjelpe
 
-[Bra Svar](/) leverer KI-telefonassistenter som tar imot samtaler, svarer på spørsmål og booker timer. Ikke en erstatning for menneskene dine, men en støtte som gjør at de kan fokusere på det de er gode på. [Ta kontakt](/kontakt).`,
+[Bra Svar](/) leverer KI-telefonassistenter som tar imot samtaler, svarer på spørsmål og booker timer. Ikke en erstatning for menneskene dine, men en støtte som gjør at de kan fokusere på det de er gode på. [Ta kontakt](/).`,
   },
   {
     slug: 'chatbot-vs-telefonassistent',
@@ -332,7 +332,7 @@ For mange norske småbedrifter i helse, service og håndverk er telefonen fortsa
 
 ## Bra Svar bygger telefonassistenter
 
-[Bra Svar](/) spesialiserer seg på KI-telefonassistenter for norske småbedrifter. [Ta kontakt](/kontakt) for en uforpliktende samtale om hva som passer for deg.`,
+[Bra Svar](/) spesialiserer seg på KI-telefonassistenter for norske småbedrifter. [Ta kontakt](/) for en uforpliktende samtale om hva som passer for deg.`,
   },
   {
     slug: 'fem-ting-du-kan-automatisere',
@@ -382,7 +382,7 @@ Velg det ene området som gir mest igjen for minst innsats, og begynn der. For d
 
 ## Bra Svar hjelper deg i gang
 
-[Bra Svar](/) setter opp KI-telefonassistenter tilpasset din bedrift. Vi tar oss av det tekniske — du gir oss informasjonen om bedriften din. [Ta kontakt](/kontakt) for å komme i gang.`,
+[Bra Svar](/) setter opp KI-telefonassistenter tilpasset din bedrift. Vi tar oss av det tekniske — du gir oss informasjonen om bedriften din. [Ta kontakt](/) for å komme i gang.`,
   },
   {
     slug: 'ki-modenhet-sjekkliste',
@@ -439,7 +439,7 @@ KI er en naturlig del av hvordan bedriften jobber. Flere prosesser er automatise
 
 ## Bra Svar hjelper deg opp et nivå
 
-Uansett hvor du er i dag, kan vi hjelpe deg videre. [Bra Svar](/) leverer KI-telefonassistenter som er enkle å sette opp og som gir umiddelbar effekt. [Ta kontakt](/kontakt) for en prat om hvor bedriften din kan ha mest å hente.`,
+Uansett hvor du er i dag, kan vi hjelpe deg videre. [Bra Svar](/) leverer KI-telefonassistenter som er enkle å sette opp og som gir umiddelbar effekt. [Ta kontakt](/) for en prat om hvor bedriften din kan ha mest å hente.`,
   },
   {
     slug: 'kundene-forventer-ki',
@@ -489,7 +489,7 @@ Se gjerne vår [sjekkliste for KI-modenhet](/blog/ki-modenhet-sjekkliste) for å
 
 ## Bra Svar gjør bedriften din tilgjengelig
 
-[Bra Svar](/) leverer KI-telefonassistenter som svarer kundene dine døgnet rundt, på naturlig norsk. Sett opp på en ettermiddag, effekt fra dag én. [Ta kontakt](/kontakt) for å komme i gang.`,
+[Bra Svar](/) leverer KI-telefonassistenter som svarer kundene dine døgnet rundt, på naturlig norsk. Sett opp på en ettermiddag, effekt fra dag én. [Ta kontakt](/) for å komme i gang.`,
   },
 ];
 

@@ -25,6 +25,16 @@ const faqs = [
   },
 ];
 
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map(f => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+};
+
 export default function FAQ() {
   return (
     <section
@@ -36,6 +46,7 @@ export default function FAQ() {
         borderTop: 'none',
       }}
     >
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <div className="w-full flex flex-col items-center" style={{ maxWidth: '700px' }}>
         <AnimateIn delay={0}>
           <div className="text-center" style={{ marginBottom: '3rem' }}>
