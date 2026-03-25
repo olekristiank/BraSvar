@@ -5,7 +5,7 @@ import React, { useState, useEffect, useRef } from 'react';
 const faqs = [
   {
     q: 'Hvor raskt kan vi komme i gang?',
-    a: 'De fleste bedrifter er oppe og kjører i løpet av noen dager. Vi trenger grunnleggende informasjon om bedriften din, bygger en prototype, tester sammen med deg — og så er AI-assistenten klar.',
+    a: 'De fleste bedrifter er i gang innen 3–5 virkedager. Vi trenger grunnleggende informasjon om bedriften din, bygger en prototype, tester sammen med deg — og så er AI-assistenten klar.',
   },
   {
     q: 'Hva skjer om AI-assistenten ikke kan svare?',
@@ -17,11 +17,11 @@ const faqs = [
   },
   {
     q: 'Støtter dere andre språk enn norsk?',
-    a: 'AI-assistenten snakker flytende og naturlig norsk, men kan også settes opp til å snakke engelsk eller andre språk.',
+    a: 'AI-assistenten snakker flytende og naturlig norsk, men kan også snakke engelsk. Vi legger til flere språk ved behov.',
   },
   {
     q: 'Er det bindingstid?',
-    a: 'Nei, ingen bindingstid og ingen skjulte kostnader. Du kan oppgradere, nedgradere eller avslutte når som helst. Vi tror på at produktet selger seg selv — og lever av fornøyde kunder.',
+    a: 'Nei, ingen bindingstid og ingen skjulte kostnader. Du kan oppgradere, nedgradere eller avslutte når som helst — med én e-post, ingen oppsigelsestid.',
   },
 ];
 

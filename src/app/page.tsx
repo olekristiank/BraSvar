@@ -35,6 +35,9 @@ export default function Home() {
               Hør en samtale
             </AudioButton>
           </div>
+          <p className="animate-fade-in delay-3" style={{ fontSize: '0.82rem', color: '#94a3b8', fontWeight: 500, marginTop: '0.75rem' }}>
+            Gratis å prøve — ingen binding.
+          </p>
         </main>
       </section>
 

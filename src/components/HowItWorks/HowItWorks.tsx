@@ -60,7 +60,7 @@ export default function HowItWorks() {
             {
               num: '3',
               title: 'Koble til og gå live',
-              desc: 'Videresend ditt eksisterende nummer, og assistenten tar over. Du velger selv: utenom åpningstid, ved ubesvarte anrop, eller 24/7.',
+              desc: 'Videresend ditt eksisterende nummer, og assistenten tar over. Du velger selv: utenom åpningstid, ved ubesvarte anrop, eller 24/7. Du mister aldri et anrop igjen.',
               icon: '3',
             },
           ].map((step, i) => (

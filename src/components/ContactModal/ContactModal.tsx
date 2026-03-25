@@ -129,7 +129,7 @@ export default function ContactModal({ open, onClose }: ContactModalProps) {
               Takk for din henvendelse!
             </h3>
             <p style={{ color: '#64748b', fontSize: '0.95rem' }}>
-              Vi tar kontakt så snart som mulig.
+              Vi tar kontakt innen én virkedag.
             </p>
           </div>
         ) : (
@@ -155,7 +155,7 @@ export default function ContactModal({ open, onClose }: ContactModalProps) {
               <a href="tel:+4764006264" style={{ color: '#db2777', fontWeight: 600, textDecoration: 'none' }}>
                 64 00 62 64
               </a>
-              , der kan du både teste ut Bra Svar og legge igjen dine opplysninger om du vil. Eller — fyll ut nedenfor, så tar vi kontakt!
+              {' '}— du får teste Bra Svar med én gang. Eller fyll ut skjemaet, så tar vi kontakt!
             </p>
 
             <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>

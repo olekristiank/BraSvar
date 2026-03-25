@@ -123,7 +123,7 @@ export default function Integrations() {
             color: '#64748b',
             marginTop: '2rem',
           }}>
-            Finner du ikke systemet ditt? Ingen grunn til bekymring — vi kan integrere med de fleste løsninger.
+            Bruker du et system som ikke er listet? Vi kobler oss til det også.
           </p>
         </AnimateIn>
 
