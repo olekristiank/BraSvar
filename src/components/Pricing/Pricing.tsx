@@ -259,7 +259,7 @@ export default function Pricing() {
                 transform: 'translateY(-2px)', filter: 'brightness(1.08)',
               }}
             >
-              Ta kontakt for en hyggelig prat!
+              Ta kontakt så hjelper vi deg!
             </HoverButton>
           </div>
         </AnimateIn>

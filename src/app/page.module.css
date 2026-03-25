@@ -63,13 +63,14 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  min-width: 260px;
   padding: 0.95rem 2.75rem;
   font-size: 0.95rem;
   font-weight: 700;
   color: #fff;
   background: linear-gradient(135deg, #ec4899 0%, #db2777 100%);
   border-radius: 14px;
-  border: none;
+  border: 1.5px solid transparent;
   cursor: pointer;
   transition: all 0.3s cubic-bezier(.4,0,.2,1);
   letter-spacing: 0.02em;
@@ -86,6 +87,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  min-width: 260px;
   padding: 0.95rem 2.75rem;
   font-size: 0.95rem;
   font-weight: 700;

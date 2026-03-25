@@ -164,7 +164,7 @@ export default function HowItWorks() {
                 transform: 'translateY(-2px)', filter: 'brightness(1.08)',
               }}
             >
-              Ta kontakt for en hyggelig prat!
+              Start med en prat!
             </HoverButton>
           </div>
         </AnimateIn>

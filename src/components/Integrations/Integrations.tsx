@@ -1,114 +1,56 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from 'react';
-import { useContactModal } from '@/components/ContactModal/ContactContext';
 
-interface Integration {
-  name: string;
-  icon: string;
-}
 
-interface Category {
-  title: string;
-  icon: string;
-  items: Integration[];
-}
-
-const categories: Category[] = [
-  {
-    title: 'Autentisering',
-    icon: '🔐',
-    items: [
-      { name: 'SMS', icon: '💬' },
-      { name: 'BankID', icon: '🏦' },
-    ],
-  },
-  {
-    title: 'Kalendere',
-    icon: '📅',
-    items: [
-      { name: 'Outlook', icon: '📧' },
-      { name: 'Google Calendar', icon: '📆' },
-    ],
-  },
+// Ordered so wide(2)+normal(1) fill each row cleanly: row1=3, row2=3, row3=3
+const categories: { title: string; items: string[] }[] = [
   {
     title: 'Timebok & booking',
-    icon: '📋',
-    items: [
-      { name: 'Pasientsky', icon: '🏥' },
-      { name: 'Makeplans', icon: '🗓️' },
-      { name: 'Cal.com', icon: '📅' },
-      { name: 'Opus', icon: '⚕️' },
-      { name: 'Anita', icon: '💊' },
-      { name: 'Pridok', icon: '🩺' },
-      { name: 'DIPS', icon: '🏥' },
-      { name: 'Muntra', icon: '🦷' },
-    ],
+    items: ['Pasientsky', 'Makeplans', 'Cal.com', 'Opus', 'Anita', 'Pridok', 'DIPS', 'Muntra'],
   },
   {
-    title: 'Betaling',
-    icon: '💳',
-    items: [
-      { name: 'Vipps', icon: '📱' },
-      { name: 'Stripe', icon: '💳' },
-    ],
+    title: 'Regnskap & betaling',
+    items: ['Tripletex', 'Fiken', 'Visma', 'Vipps', 'Stripe'],
   },
   {
-    title: 'Meldinger',
-    icon: '✉️',
-    items: [
-      { name: 'Messenger', icon: '💬' },
-      { name: 'WhatsApp', icon: '📲' },
-      { name: 'SMS', icon: '📩' },
-      { name: 'E-post', icon: '📧' },
-    ],
+    title: 'Servicedesk',
+    items: ['ServiceNow!', 'Jira', 'Zendesk', 'Freshdesk', 'Pureservice', 'HubSpot'],
   },
   {
     title: 'CRM',
-    icon: '👥',
-    items: [
-      { name: 'HubSpot', icon: '🟠' },
-      { name: 'Salesforce', icon: '☁️' },
-      { name: 'Pipedrive', icon: '📊' },
-    ],
+    items: ['HubSpot', 'Salesforce', 'Pipedrive'],
   },
   {
-    title: 'Regnskap',
-    icon: '📒',
-    items: [
-      { name: 'Tripletex', icon: '📗' },
-      { name: 'Fiken', icon: '📘' },
-      { name: 'Visma', icon: '📕' },
-    ],
+    title: 'Meldinger',
+    items: ['Messenger', 'WhatsApp', 'SMS', 'E-post'],
+  },
+  {
+    title: 'Kalendere & autentisering',
+    items: ['Outlook', 'Google Calendar', 'BankID', 'SMS'],
   },
   {
     title: 'Kommunikasjon',
-    icon: '💬',
-    items: [
-      { name: 'Microsoft Teams', icon: '🟣' },
-      { name: 'Slack', icon: '🟡' },
-    ],
+    items: ['Microsoft Teams', 'Slack', 'E-post'],
   },
 ];
 
 export default function Integrations() {
-  const openContact = useContactModal();
-
   return (
     <section
       id="integrasjoner"
       className="w-full px-6 sm:px-8 lg:px-12 flex flex-col items-center relative z-20"
       style={{
-        paddingTop: '5rem',
-        paddingBottom: '5rem',
-        background: '#fff',
+        paddingTop: '4rem',
+        paddingBottom: '4rem',
+        background: 'linear-gradient(180deg, #fff1f2 0%, #fff 20%, #fff 80%, #fdf2f8 100%)',
       }}
     >
       <div className="w-full flex flex-col items-center" style={{ maxWidth: '1100px' }}>
 
         {/* Header */}
         <AnimateIn delay={0}>
-          <div className="text-center px-4" style={{ marginBottom: '1rem', maxWidth: '800px', marginLeft: 'auto', marginRight: 'auto' }}>
+          <div className="text-center px-4" style={{ marginBottom: '2rem', maxWidth: '800px', marginLeft: 'auto', marginRight: 'auto' }}>
             <h2
               className="font-extrabold tracking-tight"
               style={{
@@ -119,7 +61,7 @@ export default function Integrations() {
                 color: '#0f172a',
               }}
             >
-              Fungerer med systemene du allerede <span style={{ color: '#ec4899' }}>bruker</span>
+              Fungerer med systemene<br />du allerede <span style={{ color: '#ec4899' }}>bruker</span>
             </h2>
             <p style={{
               fontSize: 'clamp(0.95rem, 2vw, 1.1rem)',
@@ -127,113 +69,62 @@ export default function Integrations() {
               lineHeight: 1.6,
               fontWeight: 450,
             }}>
-              Bra Svar kobler seg sømløst til dine eksisterende verktøy. Her er et utvalg — vi kan integrere med de fleste systemer.
+              Bra Svar kobler seg sømløst til dine eksisterende verktøy.<br />Her er et utvalg — vi kan integrere med de fleste systemer.
             </p>
           </div>
         </AnimateIn>
 
-        {/* Category grid */}
-        <div
-          style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))',
-            gap: '1.25rem',
-            width: '100%',
-            marginTop: '2rem',
-          }}
-        >
+        {/* Compact category list */}
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', width: '100%', maxWidth: '750px' }}>
           {categories.map((cat, ci) => (
-            <AnimateIn key={cat.title} delay={80 + ci * 60}>
-              <div
-                style={{
-                  background: '#f8fafc',
-                  borderRadius: '18px',
-                  padding: '1.5rem',
-                  border: '1px solid #f1f5f9',
-                  height: '100%',
-                  transition: 'all 0.3s cubic-bezier(.4,0,.2,1)',
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.transform = 'translateY(-4px)';
-                  e.currentTarget.style.boxShadow = '0 8px 24px rgba(236,72,153,.08)';
-                  e.currentTarget.style.borderColor = '#fce7f3';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.transform = 'translateY(0)';
-                  e.currentTarget.style.boxShadow = 'none';
-                  e.currentTarget.style.borderColor = '#f1f5f9';
-                }}
-              >
-                {/* Category header */}
-                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem' }}>
-                  <span style={{ fontSize: '1.2rem' }}>{cat.icon}</span>
-                  <h3 style={{
-                    fontFamily: 'var(--font-outfit)',
-                    fontWeight: 700,
-                    fontSize: '0.95rem',
-                    color: '#0f172a',
-                    letterSpacing: '-0.01em',
-                  }}>
-                    {cat.title}
-                  </h3>
-                </div>
-
-                {/* Items */}
-                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.4rem' }}>
-                  {cat.items.map((item) => (
-                    <span
-                      key={item.name}
-                      style={{
-                        display: 'inline-flex',
-                        alignItems: 'center',
-                        gap: '0.3rem',
-                        padding: '0.3rem 0.7rem',
-                        background: '#fff',
-                        borderRadius: '8px',
-                        fontSize: '0.82rem',
-                        fontWeight: 500,
-                        color: '#334155',
-                        border: '1px solid #e2e8f0',
-                        whiteSpace: 'nowrap',
-                      }}
-                    >
-                      {item.name}
-                    </span>
-                  ))}
-                </div>
+            <AnimateIn key={cat.title} delay={60 + ci * 40}>
+              <div style={{ display: 'flex', alignItems: 'baseline', flexWrap: 'wrap', gap: '0.5rem' }}>
+                <span style={{
+                  fontFamily: 'var(--font-outfit)',
+                  fontWeight: 700,
+                  fontSize: '0.88rem',
+                  color: '#0f172a',
+                  whiteSpace: 'nowrap',
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '0.4rem',
+                }}>
+                  <span style={{ color: '#ec4899', fontSize: '0.7rem' }}>—</span>
+                  {cat.title}
+                </span>
+                {cat.items.map((item) => (
+                  <span
+                    key={item}
+                    style={{
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      padding: '0.25rem 0.65rem',
+                      background: 'rgba(253,242,248,0.6)',
+                      borderRadius: '6px',
+                      fontSize: '0.8rem',
+                      fontWeight: 500,
+                      color: '#475569',
+                      border: '1px solid rgba(236,72,153,0.1)',
+                      whiteSpace: 'nowrap',
+                    }}
+                  >
+                    {item}
+                  </span>
+                ))}
               </div>
             </AnimateIn>
           ))}
         </div>
 
-        {/* Note + CTA */}
+        {/* Note */}
         <AnimateIn delay={600}>
-          <div className="text-center" style={{ marginTop: '2.5rem' }}>
-            <p style={{
-              fontSize: '0.95rem',
-              color: '#94a3b8',
-              marginBottom: '1.5rem',
-              fontStyle: 'italic',
-            }}>
-              Finner du ikke systemet ditt? Ingen grunn til bekymring — vi kan integrere med de fleste løsninger.
-            </p>
-            <HoverButton
-              onClick={openContact}
-              baseStyle={{
-                fontWeight: 700, padding: '1rem 2.5rem', borderRadius: '14px',
-                fontSize: '1rem', background: 'linear-gradient(135deg, #ec4899, #e11d48)',
-                color: '#fff', border: 'none', cursor: 'pointer',
-                boxShadow: '0 8px 24px rgba(236,72,153,.3)',
-                transition: 'all 0.25s cubic-bezier(.4,0,.2,1)',
-              }}
-              hoverStyle={{
-                boxShadow: '0 12px 32px rgba(236,72,153,.45)',
-                transform: 'translateY(-2px)', filter: 'brightness(1.08)',
-              }}
-            >
-              Ta kontakt for en hyggelig prat!
-            </HoverButton>
-          </div>
+          <p className="text-center" style={{
+            fontSize: '0.95rem',
+            color: '#64748b',
+            marginTop: '2rem',
+          }}>
+            Finner du ikke systemet ditt? Ingen grunn til bekymring — vi kan integrere med de fleste løsninger.
+          </p>
         </AnimateIn>
 
       </div>
@@ -241,29 +132,8 @@ export default function Integrations() {
   );
 }
 
-/* ─── Interactive Hover Button ─── */
-function HoverButton({
-  children, baseStyle, hoverStyle, onClick,
-}: {
-  children: React.ReactNode;
-  baseStyle: React.CSSProperties; hoverStyle: React.CSSProperties;
-  onClick?: () => void;
-}) {
-  const [isHovered, setIsHovered] = useState(false);
-  return (
-    <button
-      onClick={onClick}
-      style={{ ...baseStyle, transition: 'all 0.25s cubic-bezier(.4,0,.2,1)', ...(isHovered ? hoverStyle : {}) }}
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-    >
-      {children}
-    </button>
-  );
-}
-
 /* ─── Scroll-Triggered Fade-In Animation ─── */
-function AnimateIn({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) {
+function AnimateIn({ children, delay = 0, className }: { children: React.ReactNode; delay?: number; className?: string }) {
   const ref = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
 
@@ -284,6 +154,7 @@ function AnimateIn({ children, delay = 0 }: { children: React.ReactNode; delay?:
   return (
     <div
       ref={ref}
+      className={className}
       style={{
         opacity: isVisible ? 1 : 0,
         transform: isVisible ? 'translateY(0)' : 'translateY(24px)',
