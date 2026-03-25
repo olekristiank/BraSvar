@@ -69,6 +69,7 @@ export default function Navbar() {
         <nav className="nav-links" style={{ display: 'flex', alignItems: 'center', gap: '2rem' }}>
           <NavLink href="#hvordan">Slik kommer du i gang</NavLink>
           <NavLink href="#priser">Priser</NavLink>
+          <NavLink href="/blog">Blogg</NavLink>
           <button
             onClick={openContact}
             style={{
@@ -152,6 +153,7 @@ export default function Navbar() {
       >
         <a href="#hvordan" onClick={() => setMobileOpen(false)} style={{ fontSize: '1.2rem', fontWeight: 600, color: '#0f172a', textDecoration: 'none' }}>Slik kommer du i gang</a>
         <a href="#priser" onClick={() => setMobileOpen(false)} style={{ fontSize: '1.2rem', fontWeight: 600, color: '#0f172a', textDecoration: 'none' }}>Priser</a>
+        <a href="/blog" onClick={() => setMobileOpen(false)} style={{ fontSize: '1.2rem', fontWeight: 600, color: '#0f172a', textDecoration: 'none' }}>Blogg</a>
         <button
           onClick={() => { setMobileOpen(false); openContact(); }}
           style={{

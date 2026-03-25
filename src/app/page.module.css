@@ -57,14 +57,16 @@
   margin-top: 1.5rem;
   flex-wrap: wrap;
   justify-content: center;
+  max-width: 540px;
+  width: 100%;
 }
 
 .ctaPrimary {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 260px;
-  padding: 0.95rem 2.75rem;
+  flex: 1;
+  padding: 0.95rem 1.5rem;
   font-size: 0.95rem;
   font-weight: 700;
   color: #fff;
@@ -87,8 +89,8 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 260px;
-  padding: 0.95rem 2.75rem;
+  flex: 1;
+  padding: 0.95rem 1.5rem;
   font-size: 0.95rem;
   font-weight: 700;
   color: #be185d;
