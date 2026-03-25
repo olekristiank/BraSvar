@@ -49,7 +49,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="no" className={cn(outfit.variable, manrope.variable, instrumentSerif.variable, "font-sans", geist.variable)} suppressHydrationWarning>
-      <body suppressHydrationWarning><ContactProvider>{children}</ContactProvider></body>
+      <body suppressHydrationWarning>
+        <a href="#main" className="skip-link">Hopp til hovedinnhold</a>
+        <ContactProvider>{children}</ContactProvider>
+      </body>
     </html>
   );
 }

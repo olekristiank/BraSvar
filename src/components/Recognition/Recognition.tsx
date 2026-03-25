@@ -3,18 +3,18 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 
-const allImages = [
-  '/images/personas/plumber.jpg',
-  '/images/personas/roofer.jpg',
-  '/images/personas/therapist.jpg',
-  '/images/personas/dentist.jpg',
-  '/images/personas/hairdresser.jpg',
-  '/images/personas/mechanic.jpg',
-  '/images/personas/lawyer.jpg',
-  '/images/personas/warehouse.jpg',
+const allImages: { src: string; alt: string }[] = [
+  { src: '/images/personas/plumber.jpg', alt: 'Rørlegger på jobb' },
+  { src: '/images/personas/roofer.jpg', alt: 'Taktekker på tak' },
+  { src: '/images/personas/therapist.jpg', alt: 'Terapeut i konsultasjon' },
+  { src: '/images/personas/dentist.jpg', alt: 'Tannlege med pasient' },
+  { src: '/images/personas/hairdresser.jpg', alt: 'Frisør med kunde' },
+  { src: '/images/personas/mechanic.jpg', alt: 'Bilmekaniker i verksted' },
+  { src: '/images/personas/lawyer.jpg', alt: 'Advokat på kontor' },
+  { src: '/images/personas/warehouse.jpg', alt: 'Lagerarbeider' },
 ];
 
-function shuffleAndPick(arr: string[], count: number): string[] {
+function shuffleAndPick<T>(arr: T[], count: number): T[] {
   const shuffled = [...arr];
   for (let i = shuffled.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -100,8 +100,8 @@ export default function Recognition() {
           className="poster-triptych flex w-full relative"
           style={{ aspectRatio: '16 / 9' }}
         >
-          {selectedImages.map((src, i) => (
-            <React.Fragment key={src}>
+          {selectedImages.map((img, i) => (
+            <React.Fragment key={img.src}>
               {i > 0 && (
                 <div
                   className="poster-divider"
@@ -126,8 +126,8 @@ export default function Recognition() {
                 }}
               >
                 <Image
-                  src={src}
-                  alt=""
+                  src={img.src}
+                  alt={img.alt}
                   fill
                   sizes="(max-width: 1023px) 100vw, 33vw"
                   style={{ objectFit: 'cover', objectPosition: 'center top' }}

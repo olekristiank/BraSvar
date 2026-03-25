@@ -28,7 +28,7 @@ const jsonLd = {
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div id="main" className={styles.container}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Navbar />
 
@@ -52,7 +52,7 @@ export default function Home() {
               Hør en samtale
             </AudioButton>
           </div>
-          <p className="animate-fade-in delay-3" style={{ fontSize: '0.82rem', color: '#94a3b8', fontWeight: 500, marginTop: '0.75rem' }}>
+          <p className="animate-fade-in delay-3" style={{ fontSize: '0.82rem', color: '#64748b', fontWeight: 500, marginTop: '0.75rem' }}>
             Gratis å prøve — ingen binding.
           </p>
         </main>
