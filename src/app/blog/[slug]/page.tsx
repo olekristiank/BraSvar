@@ -34,7 +34,7 @@ function renderMarkdown(md: string) {
     const line = lines[i];
 
     if (line === '---') {
-      elements.push(<hr key={i} style={{ border: 'none', borderTop: '1px solid #e2e8f0', margin: '2rem 0' }} />);
+      elements.push(<hr key={i} style={{ border: 'none', borderTop: '1px solid #e2e8f0', margin: '2.5rem 0' }} />);
       i++;
       continue;
     }

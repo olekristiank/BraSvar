@@ -4,8 +4,8 @@ import Navbar from '@/components/Navbar/Navbar';
 import { getAllPosts } from '@/lib/blog';
 
 export const metadata: Metadata = {
-  title: 'Blogg | Bra Svar!',
-  description: 'Artikler om KI, automatisering og smartere drift for norske småbedrifter.',
+  title: 'Blogg om KI for småbedrifter | Bra Svar!',
+  description: 'Praktiske artikler om KI-telefonassistenter, automatisering, GDPR og smartere drift for norske småbedrifter. Lær hvordan KI kan spare tid og øke omsetningen.',
 };
 
 export default function BlogPage() {
@@ -46,6 +46,14 @@ export default function BlogPage() {
         </p>
       </div>
 
+      <style dangerouslySetInnerHTML={{ __html: `
+        .blog-card { border-left: 3px solid transparent; }
+        .blog-card:hover {
+          border-left-color: #ec4899;
+          box-shadow: 0 4px 16px rgba(236,72,153,.06);
+          transform: translateY(-2px);
+        }
+      `}} />
       {/* Posts grid */}
       <div style={{
         maxWidth: '900px',
@@ -59,6 +67,7 @@ export default function BlogPage() {
           <Link
             key={post.slug}
             href={`/blog/${post.slug}`}
+            className="blog-card"
             style={{
               textDecoration: 'none',
               display: 'block',

@@ -29,11 +29,11 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "Bra Svar! | KI-telefonassistent for norske småbedrifter",
+  title: "Bra Svar! — AI-sentralbord og intelligent kundeservice",
   description: "Bra Svar er ditt AI-sentralbord og kundebehandler. Svarer telefonen, booker avtaler og hjelper kundene dine — døgnet rundt. Ingen binding.",
-  keywords: ['KI-telefonassistent', 'AI sentralbord', 'telefonassistent', 'automatisering småbedrift', 'ubesvarte samtaler', 'KI kundeservice'],
+  keywords: ['KI-telefonassistent', 'AI sentralbord', 'kunstig intelligens', 'telefonassistent', 'automatisering småbedrift', 'ubesvarte samtaler', 'KI kundeservice', 'intelligent kundeservice'],
   openGraph: {
-    title: 'Bra Svar! | KI-telefonassistent for norske småbedrifter',
+    title: 'Bra Svar! — AI-sentralbord og intelligent kundeservice',
     description: 'AI-sentralbord som svarer telefonen, booker avtaler og hjelper kundene dine — døgnet rundt.',
     url: 'https://brasvar.no',
     siteName: 'Bra Svar',
