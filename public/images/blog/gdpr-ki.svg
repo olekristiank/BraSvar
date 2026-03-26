@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ec4899"/>
+      <stop offset="100%" stop-color="#f472b6"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <!-- Decorative circles -->
+  <circle cx="160" cy="100" r="45" fill="#ec4899" opacity="0.06"/>
+  <circle cx="640" cy="360" r="55" fill="#f472b6" opacity="0.05"/>
+  <circle cx="680" cy="80" r="20" fill="#ec4899" opacity="0.08"/>
+  <!-- Shield shape -->
+  <path d="M400 100 L480 140 L480 240 Q480 310 400 350 Q320 310 320 240 L320 140 Z" fill="#ec4899" opacity="0.08" stroke="#ec4899" stroke-width="2.5"/>
+  <!-- Lock body -->
+  <rect x="372" y="220" width="56" height="45" rx="6" fill="none" stroke="#f472b6" stroke-width="2.5"/>
+  <rect x="372" y="220" width="56" height="45" rx="6" fill="#ec4899" opacity="0.12"/>
+  <!-- Lock shackle -->
+  <path d="M385 220 L385 200 Q385 180 400 180 Q415 180 415 200 L415 220" fill="none" stroke="#f472b6" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Keyhole -->
+  <circle cx="400" cy="238" r="6" fill="#f472b6" opacity="0.6"/>
+  <rect x="397" y="240" width="6" height="12" rx="2" fill="#f472b6" opacity="0.6"/>
+  <!-- Orbiting data dots -->
+  <circle cx="340" cy="170" r="4" fill="#ec4899" opacity="0.4"/>
+  <circle cx="460" cy="170" r="4" fill="#ec4899" opacity="0.4"/>
+  <circle cx="350" cy="300" r="3" fill="#f472b6" opacity="0.3"/>
+  <circle cx="450" cy="300" r="3" fill="#f472b6" opacity="0.3"/>
+  <!-- Connecting lines -->
+  <line x1="340" y1="170" x2="360" y2="190" stroke="#ec4899" stroke-width="1" opacity="0.2"/>
+  <line x1="460" y1="170" x2="440" y2="190" stroke="#ec4899" stroke-width="1" opacity="0.2"/>
+  <!-- Bottom decorative line -->
+  <line x1="200" y1="390" x2="600" y2="390" stroke="#ec4899" stroke-width="1" opacity="0.15"/>
+</svg>

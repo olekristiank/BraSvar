@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import Navbar from '@/components/Navbar/Navbar';
 import { getPost, getAllPosts } from '@/lib/blog';
 import { notFound } from 'next/navigation';
@@ -187,6 +188,25 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           margin: '0 auto',
           padding: 'clamp(6rem, 12vw, 8rem) 1.5rem 4rem',
         }}>
+          {/* Cover image */}
+          <div style={{
+            position: 'relative',
+            width: '100%',
+            aspectRatio: '16 / 9',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            marginBottom: '2rem',
+          }}>
+            <Image
+              src={post.cover}
+              alt={post.title}
+              fill
+              sizes="700px"
+              style={{ objectFit: 'cover' }}
+              priority
+            />
+          </div>
+
           <div style={{ marginBottom: '2rem' }}>
             <h1 style={{
               fontSize: 'clamp(1.8rem, 4vw, 2.5rem)',

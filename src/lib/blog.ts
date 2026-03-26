@@ -4,6 +4,7 @@ export interface BlogPost {
   description: string;
   date: string;
   readTime: string;
+  cover: string;
   content: string;
 }
 
@@ -14,6 +15,7 @@ export const posts: BlogPost[] = [
     description: 'For mange småbedrifter er tapte anrop den største kilden til tapt omsetning de aldri måler. Vi gjør regnestykket.',
     date: '2026-03-10',
     readTime: '4 min',
+    cover: '/images/blog/ubesvart-samtale.svg',
     content: `For mange småbedrifter er tapte anrop den største kilden til tapt omsetning de aldri måler.
 
 ---
@@ -58,6 +60,7 @@ Eller du kan fortsette som før. Men da bør du vite hva det koster. Sjekk anrop
     description: 'Over halvparten av norske virksomheter bruker nå kunstig intelligens. For to år siden var tallet under en fjerdedel.',
     date: '2026-03-12',
     readTime: '4 min',
+    cover: '/images/blog/ki-bruken-doblet.svg',
     content: `Over halvparten av norske virksomheter bruker nå kunstig intelligens. For to år siden var tallet under en fjerdedel.
 
 ---
@@ -86,7 +89,11 @@ Start med noe konkret. Et verktøy som tar unna repeterende oppgaver. En [telefo
 
 ## Vi kan hjelpe
 
-[Bra Svar](/) leverer KI-telefonassistenter til norske småbedrifter. Enkelt å sette opp, ingen teknisk kompetanse nødvendig. [Ta kontakt](/) for å komme i gang.`,
+[Bra Svar](/) leverer KI-telefonassistenter til norske småbedrifter. Enkelt å sette opp, ingen teknisk kompetanse nødvendig. [Ta kontakt](/) for å komme i gang.
+
+---
+
+**Kilder:** NHO/Abelia: *Næringslivets KI-barometer 2026*. Basert på svar fra ca. 4 000 norske virksomheter.`,
   },
   {
     slug: 'gdpr-og-ki-verktoy',
@@ -94,6 +101,7 @@ Start med noe konkret. Et verktøy som tar unna repeterende oppgaver. En [telefo
     description: 'GDPR gjelder også når du bruker kunstig intelligens. Her er tre konkrete ting du må ha kontroll på som småbedriftseier.',
     date: '2026-03-14',
     readTime: '5 min',
+    cover: '/images/blog/gdpr-ki.svg',
     content: `GDPR gjelder også når du bruker kunstig intelligens. Her er det du må ha kontroll på som småbedriftseier.
 
 ---
@@ -147,6 +155,7 @@ Hos [Bra Svar](/) tar vi personvern på alvor. Vi tilbyr databehandleravtale bas
     description: 'EUs AI Act blir norsk lov sommeren 2026. Her er hva den nye KI-loven betyr i praksis for småbedrifter — og hva du må gjøre.',
     date: '2026-03-16',
     readTime: '5 min',
+    cover: '/images/blog/ki-lov.svg',
     content: `EUs AI Act blir norsk lov. Her er hva det betyr i praksis for en bedrift med 5 til 20 ansatte.
 
 ---
@@ -191,6 +200,7 @@ KI-loven er ikke ment å bremse innovasjon. Den er ment å sørge for at den skj
     description: 'En praktisk gjennomgang av hvordan en KI-telefonassistent fungerer, steg for steg — fra innkommende samtale til oppsummering.',
     date: '2026-03-18',
     readTime: '5 min',
+    cover: '/images/blog/telefonassistent.svg',
     content: `En praktisk gjennomgang av hvordan teknologien faktisk virker, steg for steg.
 
 ---
@@ -245,6 +255,7 @@ For bedriften din betyr det [færre tapte samtaler](/blog/hva-koster-en-ubesvart
     description: 'Norge mangler folk. For bedrifter med få ansatte er hver ledig stilling ekstra kritisk. Slik kan KI være en buffer.',
     date: '2026-03-08',
     readTime: '4 min',
+    cover: '/images/blog/arbeidskraftmangel.svg',
     content: `Norge mangler folk. For bedrifter med få ansatte er hver ledig stilling ekstra kritisk.
 
 ---
@@ -277,7 +288,11 @@ Når KI tar seg av det forutsigbare, kan du og de ansatte bruke tiden på det so
 
 ## Bra Svar kan hjelpe
 
-[Bra Svar](/) leverer KI-telefonassistenter som tar imot samtaler, svarer på spørsmål og booker timer. Ikke en erstatning for menneskene dine, men en støtte som gjør at de kan fokusere på det de er gode på. [Ta kontakt](/).`,
+[Bra Svar](/) leverer KI-telefonassistenter som tar imot samtaler, svarer på spørsmål og booker timer. Ikke en erstatning for menneskene dine, men en støtte som gjør at de kan fokusere på det de er gode på. [Ta kontakt](/).
+
+---
+
+**Kilder:** NHO/Abelia: *Næringslivets KI-barometer 2026*. NAV: Bedriftsundersøkelsen 2025.`,
   },
   {
     slug: 'chatbot-vs-telefonassistent',
@@ -285,6 +300,7 @@ Når KI tar seg av det forutsigbare, kan du og de ansatte bruke tiden på det so
     description: 'Begge bruker kunstig intelligens, men de løser ulike problemer for ulike bransjer. Her er en ærlig sammenligning.',
     date: '2026-03-06',
     readTime: '5 min',
+    cover: '/images/blog/chatbot-vs-telefon.svg',
     content: `Begge bruker kunstig intelligens. Men de løser ulike problemer for ulike bransjer.
 
 ---
@@ -340,6 +356,7 @@ For mange norske småbedrifter i helse, service og håndverk er telefonen fortsa
     description: 'Du trenger ikke et stort KI-prosjekt. Her er fem konkrete ting du kan automatisere i småbedriften din allerede i dag.',
     date: '2026-03-04',
     readTime: '4 min',
+    cover: '/images/blog/automatisering.svg',
     content: `Du trenger ikke et KI-prosjekt. Du trenger ett konkret sted å begynne.
 
 ---
@@ -390,6 +407,7 @@ Velg det ene området som gir mest igjen for minst innsats, og begynn der. For d
     description: 'Hvor langt har bedriften din kommet med kunstig intelligens? Bruk denne sjekklisten for å finne ut — og se hvor du bør begynne.',
     date: '2026-03-02',
     readTime: '5 min',
+    cover: '/images/blog/ki-modenhet.svg',
     content: `En enkel sjekkliste for å finne ut hvor du står og hvor du bør begynne.
 
 ---
@@ -447,6 +465,7 @@ Uansett hvor du er i dag, kan vi hjelpe deg videre. [Bra Svar](/) leverer KI-tel
     description: '54 prosent av nordmenn bruker kunstig intelligens. Når kundene er vant til KI hjemme, forventer de det fra bedriften din også.',
     date: '2026-03-20',
     readTime: '4 min',
+    cover: '/images/blog/kundene-forventer.svg',
     content: `Når folk bruker ChatGPT hjemme, stiger forventningene til bedriftene de handler med.
 
 ---
@@ -489,7 +508,11 @@ Se gjerne vår [sjekkliste for KI-modenhet](/blog/ki-modenhet-sjekkliste) for å
 
 ## Bra Svar gjør bedriften din tilgjengelig
 
-[Bra Svar](/) leverer KI-telefonassistenter som svarer kundene dine døgnet rundt, på naturlig norsk. Sett opp på en ettermiddag, effekt fra dag én. [Ta kontakt](/) for å komme i gang.`,
+[Bra Svar](/) leverer KI-telefonassistenter som svarer kundene dine døgnet rundt, på naturlig norsk. Sett opp på en ettermiddag, effekt fra dag én. [Ta kontakt](/) for å komme i gang.
+
+---
+
+**Kilder:** SSB: *Bruk av IKT i husholdningene 2025*. Statistisk sentralbyrå.`,
   },
 ];
 
