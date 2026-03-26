@@ -7,31 +7,23 @@ import React, { useEffect, useRef, useState } from 'react';
 const categories: { title: string; items: string[] }[] = [
   {
     title: 'Kalender og booking',
-    items: ['Pasientsky', 'Makeplans', 'Cal.com', 'Opus', 'Anita', 'Pridok', 'DIPS', 'Muntra'],
+    items: ['Pasientsky', 'Makeplans', 'Cal.com', 'Opus', 'Anita', 'Pridok', 'DIPS', 'Muntra', 'Outlook', 'Google Calendar'],
   },
   {
     title: 'Regnskap & betaling',
     items: ['Tripletex', 'Fiken', 'Visma', 'Vipps', 'Stripe'],
   },
   {
-    title: 'Brukerstøtte og kunnskapsbase',
-    items: ['ServiceNow!', 'Jira', 'Zendesk', 'Freshdesk', 'Pureservice', 'HubSpot'],
-  },
-  {
-    title: 'CRM',
-    items: ['HubSpot', 'Salesforce', 'Pipedrive'],
-  },
-  {
-    title: 'Meldinger',
-    items: ['Messenger', 'WhatsApp', 'SMS', 'E-post'],
-  },
-  {
-    title: 'Kalendere & autentisering',
-    items: ['Outlook', 'Google Calendar', 'BankID', 'SMS'],
+    title: 'Brukerstøtte og CRM',
+    items: ['ServiceNow!', 'Jira', 'Zendesk', 'Freshdesk', 'Pureservice', 'HubSpot', 'Salesforce', 'Pipedrive'],
   },
   {
     title: 'Kommunikasjon',
-    items: ['Microsoft Teams', 'Slack', 'E-post'],
+    items: ['Microsoft Teams', 'Slack', 'Messenger', 'WhatsApp', 'SMS', 'E-post'],
+  },
+  {
+    title: 'Autentisering og tilgang',
+    items: ['BankID', 'SMS'],
   },
 ];
 
