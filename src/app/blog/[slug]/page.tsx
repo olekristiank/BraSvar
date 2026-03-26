@@ -58,7 +58,7 @@ function renderMarkdown(md: string) {
         tableLines.push(lines[i]);
         i++;
       }
-      elements.push(renderTable(tableLines, elements.length));
+      elements.push(renderTable(tableLines, `table-${i}`));
       continue;
     }
 
@@ -69,7 +69,7 @@ function renderMarkdown(md: string) {
         i++;
       }
       elements.push(
-        <ul key={`ul-${elements.length}`} style={{ paddingLeft: '1.5rem', margin: '1rem 0', display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
+        <ul key={`ul-${i}`} style={{ paddingLeft: '1.5rem', margin: '1rem 0', display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
           {items.map((item, j) => <li key={j} style={{ fontSize: '1rem', color: '#334155', lineHeight: 1.7 }}>{renderInline(item)}</li>)}
         </ul>
       );
@@ -83,7 +83,7 @@ function renderMarkdown(md: string) {
         i++;
       }
       elements.push(
-        <ol key={`ol-${elements.length}`} style={{ paddingLeft: '1.5rem', margin: '1rem 0', display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
+        <ol key={`ol-${i}`} style={{ paddingLeft: '1.5rem', margin: '1rem 0', display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
           {items.map((item, j) => <li key={j} style={{ fontSize: '1rem', color: '#334155', lineHeight: 1.7 }}>{renderInline(item)}</li>)}
         </ol>
       );
@@ -129,7 +129,7 @@ function renderInline(text: string): React.ReactNode[] {
   return parts;
 }
 
-function renderTable(lines: string[], key: number) {
+function renderTable(lines: string[], key: string) {
   const rows = lines.filter(l => !l.match(/^\|[\s-:|]+\|$/));
   const header = rows[0]?.split('|').filter(c => c.trim()).map(c => c.trim());
   const body = rows.slice(1).map(r => r.split('|').filter(c => c.trim()).map(c => c.trim()));
