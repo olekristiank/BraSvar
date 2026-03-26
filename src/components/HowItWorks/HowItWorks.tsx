@@ -48,7 +48,7 @@ export default function HowItWorks() {
             {
               num: '1',
               title: 'Vi lærer bedriften din å kjenne',
-              desc: 'Fortell oss om tjenestene dine, spørsmål du ofte får, kontakten mellom deg og dine kunder, og hvordan du vil at kundene skal møtes. Vi bygger assistenten for deg.',
+              desc: 'Fortell oss om tjenestene dine, spørsmål du ofte får, kontakten mellom deg og dine kunder, og hvordan du vil at kundene skal møtes. Vi bygger assistenten for deg, helt uten kostnad for deg.',
               icon: '1',
             },
             {
