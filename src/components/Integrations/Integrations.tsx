@@ -75,7 +75,7 @@ export default function Integrations() {
         </AnimateIn>
 
         {/* Compact category list */}
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', width: '100%', maxWidth: '750px' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', width: '100%', maxWidth: '750px', paddingLeft: '0.5rem' }}>
           {categories.map((cat, ci) => (
             <AnimateIn key={cat.title} delay={60 + ci * 40}>
               <div style={{ display: 'flex', alignItems: 'baseline', flexWrap: 'wrap', gap: '0.5rem' }}>

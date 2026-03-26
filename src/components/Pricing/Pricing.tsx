@@ -72,7 +72,7 @@ export default function Pricing() {
 
         {/* Cards — 3 columns */}
         <div
-          className="flex flex-col lg:flex-row justify-center items-stretch w-full"
+          className="flex flex-col lg:flex-row justify-center items-center lg:items-stretch w-full"
           style={{ gap: '1.5rem', maxWidth: '1100px' }}
         >
 
