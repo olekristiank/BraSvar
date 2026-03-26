@@ -112,7 +112,7 @@ export default function Pricing() {
                 <span style={{
                   position: 'absolute',
                   top: '50%',
-                  left: '-80px',
+                  left: '-160px',
                   marginTop: '-16px',
                   background: 'linear-gradient(135deg, #ec4899, #db2777)',
                   color: '#fff',
@@ -200,7 +200,7 @@ export default function Pricing() {
                 <span style={{
                   position: 'absolute',
                   top: '50%',
-                  left: '-80px',
+                  left: '-160px',
                   marginTop: '-16px',
                   background: 'linear-gradient(135deg, #f472b6, #ec4899)',
                   color: '#fff',
