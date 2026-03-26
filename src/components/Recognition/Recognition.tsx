@@ -30,7 +30,7 @@ export default function Recognition() {
   const [counterDone, setCounterDone] = useState(false);
   const targetCount = 17;
 
-  const selectedImages = [allImages[1], allImages[3], allImages[5]]; // roofer, dentist, mechanic
+  const [selectedImages] = useState(() => shuffleAndPick(allImages, 3));
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -95,6 +95,7 @@ export default function Recognition() {
         <div
           className="poster-triptych flex w-full relative"
           style={{ aspectRatio: '16 / 9' }}
+          suppressHydrationWarning
         >
           {selectedImages.map((img, i) => (
             <React.Fragment key={img.src}>
