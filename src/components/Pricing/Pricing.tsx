@@ -103,31 +103,27 @@ export default function Pricing() {
               </p>
 
               {/* Price */}
-              <div style={{ marginBottom: '1.75rem', paddingBottom: '1.75rem', borderBottom: '1px solid #f1f5f9', position: 'relative' }}>
+              <div style={{ marginBottom: '1.75rem', paddingBottom: '1.75rem', borderBottom: '1px solid #f1f5f9' }}>
                 <div className="flex items-baseline">
                   <span className="font-extrabold text-slate-900" style={{ fontSize: '2.5rem', letterSpacing: '-0.03em', lineHeight: 1 }}>1 490</span>
                   <span className="font-bold text-slate-900" style={{ fontSize: '1.25rem', marginLeft: '2px' }}>,-</span>
                   <span className="text-slate-400 font-medium" style={{ fontSize: '0.9rem', marginLeft: '0.5rem' }}>/ mnd</span>
                 </div>
-                <span style={{
-                  position: 'absolute',
-                  top: '50%',
-                  left: '-160px',
-                  marginTop: '-16px',
+                <div style={{
+                  marginTop: '0.75rem',
                   background: 'linear-gradient(135deg, #ec4899, #db2777)',
                   color: '#fff',
-                  fontSize: '0.6rem',
+                  fontSize: '0.7rem',
                   fontWeight: 800,
-                  padding: '8px 18px',
-                  borderRadius: '6px',
-                  transform: 'rotate(-12deg)',
-                  boxShadow: '0 2px 8px rgba(236,72,153,0.3)',
-                  letterSpacing: '0.03em',
+                  padding: '6px 0',
+                  borderRadius: '8px',
+                  letterSpacing: '0.1em',
                   textTransform: 'uppercase',
-                  whiteSpace: 'nowrap',
+                  textAlign: 'center',
+                  boxShadow: '0 2px 10px rgba(236,72,153,0.25)',
                 }}>
                   Introduksjonstilbud!
-                </span>
+                </div>
               </div>
 
               {/* Features */}
@@ -182,7 +178,7 @@ export default function Pricing() {
               </p>
 
               {/* Price */}
-              <div style={{ marginBottom: '1.75rem', paddingBottom: '1.75rem', borderBottom: '1px solid rgba(71,85,105,.4)', position: 'relative' }}>
+              <div style={{ marginBottom: '1.75rem', paddingBottom: '1.75rem', borderBottom: '1px solid rgba(71,85,105,.4)' }}>
                 <div className="flex items-baseline">
                   <span
                     className="font-extrabold"
@@ -197,25 +193,21 @@ export default function Pricing() {
                   <span className="font-bold" style={{ fontSize: '1.25rem', marginLeft: '2px', color: '#f472b6' }}>,-</span>
                   <span className="font-medium" style={{ fontSize: '0.9rem', marginLeft: '0.5rem', color: '#64748b' }}>/ mnd</span>
                 </div>
-                <span style={{
-                  position: 'absolute',
-                  top: '50%',
-                  left: '-160px',
-                  marginTop: '-16px',
+                <div style={{
+                  marginTop: '0.75rem',
                   background: 'linear-gradient(135deg, #f472b6, #ec4899)',
                   color: '#fff',
-                  fontSize: '0.6rem',
+                  fontSize: '0.7rem',
                   fontWeight: 800,
-                  padding: '8px 18px',
-                  borderRadius: '6px',
-                  transform: 'rotate(-12deg)',
-                  boxShadow: '0 2px 8px rgba(236,72,153,0.4)',
-                  letterSpacing: '0.03em',
+                  padding: '6px 0',
+                  borderRadius: '8px',
+                  letterSpacing: '0.1em',
                   textTransform: 'uppercase',
-                  whiteSpace: 'nowrap',
+                  textAlign: 'center',
+                  boxShadow: '0 2px 10px rgba(236,72,153,0.3)',
                 }}>
                   Introduksjonstilbud!
-                </span>
+                </div>
               </div>
 
               {/* Features */}
