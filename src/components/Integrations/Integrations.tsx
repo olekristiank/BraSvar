@@ -39,7 +39,7 @@ export default function Integrations() {
   return (
     <section
       id="integrasjoner"
-      className="w-full px-6 sm:px-8 lg:px-12 flex flex-col items-center relative z-20"
+      className="w-full px-8 sm:px-10 lg:px-12 flex flex-col items-center relative z-20"
       style={{
         paddingTop: '4rem',
         paddingBottom: '4rem',
@@ -75,7 +75,7 @@ export default function Integrations() {
         </AnimateIn>
 
         {/* Compact category list */}
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', width: '100%', maxWidth: '750px', margin: '0 auto', paddingLeft: '0.5rem', paddingRight: '0.5rem' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', width: '100%', maxWidth: '750px', margin: '0 auto' }}>
           {categories.map((cat, ci) => (
             <AnimateIn key={cat.title} delay={60 + ci * 40}>
               <div style={{ display: 'flex', alignItems: 'baseline', flexWrap: 'wrap', gap: '0.5rem' }}>
