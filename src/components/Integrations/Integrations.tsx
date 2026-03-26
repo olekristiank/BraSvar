@@ -63,7 +63,7 @@ export default function Integrations() {
               lineHeight: 1.6,
               fontWeight: 450,
             }}>
-              Bra Svar kobler seg sømløst til dine eksisterende verktøy.<br />Her er et utvalg — vi kan integrere med de fleste systemer.
+              Bra Svar kan integreres med de fleste systemer.<br />Her er et utvalg.
             </p>
           </div>
         </AnimateIn>

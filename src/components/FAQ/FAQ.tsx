@@ -5,15 +5,15 @@ import React, { useState, useEffect, useRef } from 'react';
 const faqs = [
   {
     q: 'Hvor raskt kan vi komme i gang?',
-    a: 'De fleste bedrifter er i gang innen 3–5 virkedager. Vi trenger grunnleggende informasjon om bedriften din, bygger en prototype, tester sammen med deg — og så er AI-assistenten klar.',
+    a: 'De fleste er i gang innen 1 uke etter den innledende samtalen. Vi trenger grunnleggende informasjon om bedriften din, bygger en prøveversjon, og tester sammen med deg til du er fornøyd.',
   },
   {
     q: 'Hva skjer om AI-assistenten ikke kan svare?',
-    a: 'Hvis assistenten møter et spørsmål den ikke kan besvare, kan vi sette opp viderekobling til en menneskelig operatør.',
+    a: 'Hvis assistenten møter et spørsmål den ikke kan besvare, kan vi sette opp viderekobling til deg.',
   },
   {
     q: 'Kan assistenten håndtere booking og kalendere?',
-    a: 'Ja, assistenten kobles til systemene dine — booking, kalendere, CRM, ordrebehandling og lagerstyring. Den sjekker ledige tider, booker avtaler, sjekker lagerstatus og sender bekreftelser. Helt automatisk.',
+    a: 'Ja, assistenten kan kobles til de fleste systemer. Timebestilling, kalendere, CRM, ordrebehandling og lagerstyring. Den kan sjekke ledige tider, booker avtaler, sjekker lagerstatus og sender bekreftelser. Helt automatisk.',
   },
   {
     q: 'Støtter dere andre språk enn norsk?',
@@ -21,7 +21,11 @@ const faqs = [
   },
   {
     q: 'Er det bindingstid?',
-    a: 'Nei, ingen bindingstid og ingen skjulte kostnader. Du kan oppgradere, nedgradere eller avslutte når som helst — med én e-post, ingen oppsigelsestid.',
+    a: 'Nei, ingen bindingstid og ingen skjulte kostnader. Du kan oppgradere, nedgradere eller avslutte når som helst, ingen oppsigelsestid og ingen gebyrer.',
+  },
+  {
+    q: 'Hva med personvern og GDPR?',
+    a: 'Vi tar personvern på alvor. All data behandles i tråd med GDPR, og vi har databehandleravtale basert på Datatilsynets standardmal. Samtaledata lagres trygt, og vi deler aldri informasjon med tredjepart uten avtale. Du har full kontroll over hva assistenten har tilgang til.',
   },
 ];
 
@@ -38,10 +42,12 @@ const faqJsonLd = {
 export default function FAQ() {
   return (
     <section
-      className="w-full px-6 sm:px-8 lg:px-12 flex flex-col items-center relative z-20"
+      className="w-full flex flex-col items-center relative z-20"
       style={{
         paddingTop: '5rem',
         paddingBottom: '5rem',
+        paddingLeft: 'clamp(2rem, 6vw, 3rem)',
+        paddingRight: 'clamp(2rem, 6vw, 3rem)',
         background: 'linear-gradient(180deg, #fdf2f8 0%, #fff 15%, #fff 100%)',
         borderTop: 'none',
       }}

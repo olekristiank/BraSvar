@@ -54,13 +54,13 @@ export default function HowItWorks() {
             {
               num: '2',
               title: 'Test og juster',
-              desc: 'Du får raskt en første versjon på et eget telefonnummer. Prøv den, og gi tilbakemelding. Vi finjusterer til du er fornøyd. Alt dette uten kjøpsforpliktelse eller kostnad for deg.',
+              desc: 'Du får raskt en første versjon på et eget telefonnummer. Prøv den, og gi tilbakemelding. Vi finjusterer til du er fornøyd.',
               icon: '2',
             },
             {
               num: '3',
-              title: 'Koble til og gå live',
-              desc: 'Videresend ditt eksisterende nummer, og assistenten tar over. Du velger selv: utenom åpningstid, ved ubesvarte anrop, eller 24/7. Du mister aldri et anrop igjen.',
+              title: 'Koble til',
+              desc: 'Videresend ditt eksisterende nummer, og assistenten tar over. Du velger selv: utenom åpningstid, ved ubesvarte anrop, eller 24/7. Kundene dine får alltid svar — og du har full oversikt gjennom rapporter og innsikt i kontrollpanelet.',
               icon: '3',
             },
           ].map((step, i) => (

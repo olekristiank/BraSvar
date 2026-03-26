@@ -62,8 +62,8 @@ export default function Home() {
       <HowItWorks />
       <Pricing />
       <Integrations />
-      <BlogPreview />
       <FAQ />
+      <BlogPreview />
       {/* Footer */}
       <footer className={styles.footer}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
