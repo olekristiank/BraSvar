@@ -68,46 +68,50 @@ export default function BlogPreview() {
             <AnimateIn key={post.slug} delay={80 + i * 80}>
               <Link
                 href={`/blog/${post.slug}`}
+                className="group relative"
                 style={{
                   textDecoration: 'none',
                   display: 'flex',
                   flexDirection: 'column',
-                  padding: '1.5rem',
-                  borderRadius: '16px',
+                  padding: '2rem 2rem',
+                  borderRadius: '24px',
                   border: '1px solid #f1f5f9',
+                  borderTop: '2px solid transparent',
                   background: '#fff',
                   height: '100%',
-                  transition: 'all 0.25s cubic-bezier(.4,0,.2,1)',
-                  boxShadow: '0 1px 3px rgba(0,0,0,.02)',
+                  transition: 'all 0.4s cubic-bezier(.4,0,.2,1)',
+                  boxShadow: '0 4px 6px -1px rgba(0,0,0,.01), 0 20px 40px -10px rgba(0,0,0,.03)',
+                  overflow: 'hidden',
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.transform = 'translateY(-4px)';
-                  e.currentTarget.style.boxShadow = '0 8px 24px rgba(236,72,153,.08)';
-                  e.currentTarget.style.borderColor = '#fce7f3';
+                  e.currentTarget.style.transform = 'translateY(-8px)';
+                  e.currentTarget.style.boxShadow = '0 10px 25px -5px rgba(236,72,153,.15), 0 25px 50px -12px rgba(236,72,153,.1)';
+                  e.currentTarget.style.borderColor = '#fbcfe8';
+                  e.currentTarget.style.borderTopColor = '#ec4899';
                 }}
                 onMouseLeave={(e) => {
                   e.currentTarget.style.transform = 'translateY(0)';
-                  e.currentTarget.style.boxShadow = '0 1px 3px rgba(0,0,0,.02)';
+                  e.currentTarget.style.boxShadow = '0 4px 6px -1px rgba(0,0,0,.01), 0 20px 40px -10px rgba(0,0,0,.03)';
                   e.currentTarget.style.borderColor = '#f1f5f9';
+                  e.currentTarget.style.borderTopColor = 'transparent';
                 }}
               >
-                <time style={{ fontSize: '0.78rem', color: '#94a3b8', fontWeight: 500, marginBottom: '0.5rem' }}>
-                  {new Date(post.date).toLocaleDateString('nb-NO', { day: 'numeric', month: 'long', year: 'numeric' })}
-                </time>
-                <h3 style={{
+                <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-br from-pink-100 to-rose-50 rounded-full mix-blend-multiply filter blur-3xl opacity-0 group-hover:opacity-60 transition-opacity duration-500" style={{ transform: 'translate(20%, -20%)' }} />
+                <h3 className="relative z-10" style={{
                   fontFamily: 'var(--font-outfit)',
-                  fontWeight: 700,
-                  fontSize: '1.05rem',
+                  fontWeight: 800,
+                  fontSize: '1.1rem',
                   color: '#0f172a',
                   lineHeight: 1.3,
-                  marginBottom: '0.5rem',
+                  marginBottom: '0.75rem',
                 }}>
                   {post.title}
                 </h3>
-                <p style={{
-                  fontSize: '0.85rem',
-                  color: '#64748b',
-                  lineHeight: 1.5,
+                <p className="relative z-10" style={{
+                  fontSize: '0.9rem',
+                  color: '#475569',
+                  lineHeight: 1.6,
+                  fontWeight: 450,
                   flex: 1,
                 }}>
                   {post.description}

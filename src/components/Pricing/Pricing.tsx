@@ -79,7 +79,7 @@ export default function Pricing() {
           {/* ── Mini Card ── */}
           <AnimateIn delay={80}>
             <HoverCard className="flex flex-col w-full" baseStyle={{
-              maxWidth: '360px',
+              maxWidth: '360px', margin: '0 auto',
               background: '#fff',
               borderRadius: '24px',
               borderWidth: '1px',
@@ -96,7 +96,10 @@ export default function Pricing() {
               borderColor: '#cbd5e1',
               borderTopColor: '#ec4899',
             }}>
-              <p className="font-semibold uppercase" style={{ fontSize: '0.65rem', letterSpacing: '0.15em', color: '#94a3b8', marginBottom: '0.75rem' }}>Startpakke</p>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.75rem' }}>
+                <p className="font-semibold uppercase" style={{ fontSize: '0.65rem', letterSpacing: '0.15em', color: '#94a3b8' }}>Startpakke</p>
+                <span style={{ fontSize: '0.6rem', fontWeight: 700, color: '#db2777', background: '#fdf2f8', padding: '2px 8px', borderRadius: '9999px', border: '1px solid #fce7f3' }}>Introduksjonstilbud!</span>
+              </div>
               <h3 className="font-bold text-slate-900" style={{ fontSize: '1.4rem', marginBottom: '0.25rem' }}>Mini</h3>
               <p className="text-slate-500" style={{ fontSize: '0.88rem', marginBottom: '1.75rem', lineHeight: 1.55, fontWeight: 450 }}>
                 For bedrifter med lavt samtalevolum og enkle behov.
@@ -126,7 +129,7 @@ export default function Pricing() {
           {/* ── Basis Card (Most Popular) ── */}
           <AnimateIn delay={160}>
             <HoverCard className="flex flex-col w-full relative" baseStyle={{
-              maxWidth: '360px',
+              maxWidth: '360px', margin: '0 auto',
               background: 'linear-gradient(165deg, #0f172a 0%, #1e293b 100%)',
               borderRadius: '24px',
               borderWidth: '2px',
@@ -156,7 +159,10 @@ export default function Pricing() {
                 </span>
               </div>
 
-              <p className="font-semibold uppercase" style={{ fontSize: '0.65rem', letterSpacing: '0.15em', color: 'rgba(148,163,184,.7)', marginBottom: '0.75rem', paddingTop: '0.5rem' }}>Anbefalt</p>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.75rem', paddingTop: '0.5rem' }}>
+                <p className="font-semibold uppercase" style={{ fontSize: '0.65rem', letterSpacing: '0.15em', color: 'rgba(148,163,184,.7)' }}>Anbefalt</p>
+                <span style={{ fontSize: '0.6rem', fontWeight: 700, color: '#f9a8d4', background: 'rgba(236,72,153,0.15)', padding: '2px 8px', borderRadius: '9999px', border: '1px solid rgba(236,72,153,0.2)' }}>Introduksjonstilbud!</span>
+              </div>
               <h3 className="font-bold text-white" style={{ fontSize: '1.4rem', marginBottom: '0.25rem' }}>Basis</h3>
               <p className="font-medium" style={{ color: '#94a3b8', fontSize: '0.88rem', marginBottom: '1.75rem', lineHeight: 1.55, fontWeight: 450 }}>
                 For bedrifter som aldri vil gå glipp av et anrop.
@@ -200,7 +206,7 @@ export default function Pricing() {
           {/* ── Pro Card ── */}
           <AnimateIn delay={240}>
             <HoverCard className="flex flex-col w-full" baseStyle={{
-              maxWidth: '360px',
+              maxWidth: '360px', margin: '0 auto',
               background: '#fff',
               borderRadius: '24px',
               borderWidth: '1px',
@@ -214,7 +220,7 @@ export default function Pricing() {
               transform: 'translateY(-3px)',
               borderColor: '#cbd5e1',
             }}>
-              <p className="font-semibold uppercase" style={{ fontSize: '0.65rem', letterSpacing: '0.15em', color: '#94a3b8', marginBottom: '0.75rem' }}>Enterprise</p>
+              <p className="font-semibold uppercase" style={{ fontSize: '0.65rem', letterSpacing: '0.15em', color: '#94a3b8', marginBottom: '0.75rem' }}>Spesielle behov</p>
               <h3 className="font-bold text-slate-900" style={{ fontSize: '1.4rem', marginBottom: '0.25rem' }}>Pro</h3>
               <p className="text-slate-500" style={{ fontSize: '0.88rem', marginBottom: '1.75rem', lineHeight: 1.55, fontWeight: 450 }}>
                 For deg som trenger noe helt eget — med skreddersydde integrasjoner og en fast kontaktperson.

@@ -46,7 +46,7 @@ export default function Home() {
 
           <div className={`${styles.actions} animate-fade-in delay-3`}>
             <ContactButton className={styles.ctaPrimary}>
-              Ta kontakt for en hyggelig prat!
+              Ta kontakt for<br />en hyggelig prat!
             </ContactButton>
             <AudioButton className={styles.ctaSecondary}>
               Hør en samtale

@@ -55,7 +55,7 @@ export default function Integrations() {
               className="font-extrabold tracking-tight"
               style={{
                 fontFamily: 'var(--font-outfit)',
-                fontSize: 'clamp(2rem, 5vw, 3rem)',
+                fontSize: 'clamp(1.7rem, 5vw, 3rem)',
                 lineHeight: 1.15,
                 marginBottom: '1.25rem',
                 color: '#0f172a',
@@ -75,7 +75,7 @@ export default function Integrations() {
         </AnimateIn>
 
         {/* Compact category list */}
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', width: '100%', maxWidth: '750px', paddingLeft: '0.5rem' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', width: '100%', maxWidth: '750px', margin: '0 auto', paddingLeft: '0.5rem', paddingRight: '0.5rem' }}>
           {categories.map((cat, ci) => (
             <AnimateIn key={cat.title} delay={60 + ci * 40}>
               <div style={{ display: 'flex', alignItems: 'baseline', flexWrap: 'wrap', gap: '0.5rem' }}>

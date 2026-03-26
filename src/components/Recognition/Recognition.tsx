@@ -30,11 +30,7 @@ export default function Recognition() {
   const [counterDone, setCounterDone] = useState(false);
   const targetCount = 17;
 
-  const [selectedImages, setSelectedImages] = useState(allImages.slice(0, 3));
-
-  useEffect(() => {
-    setSelectedImages(shuffleAndPick(allImages, 3));
-  }, []);
+  const selectedImages = [allImages[1], allImages[3], allImages[5]]; // roofer, dentist, mechanic
 
   useEffect(() => {
     const observer = new IntersectionObserver(

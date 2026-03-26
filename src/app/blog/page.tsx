@@ -79,12 +79,6 @@ export default function BlogPage() {
               boxShadow: '0 1px 3px rgba(0,0,0,.02)',
             }}
           >
-            <div style={{ display: 'flex', gap: '1rem', alignItems: 'baseline', marginBottom: '0.5rem' }}>
-              <time style={{ fontSize: '0.8rem', color: '#94a3b8', fontWeight: 500, whiteSpace: 'nowrap' }}>
-                {new Date(post.date).toLocaleDateString('nb-NO', { day: 'numeric', month: 'long', year: 'numeric' })}
-              </time>
-              <span style={{ fontSize: '0.8rem', color: '#cbd5e1' }}>{post.readTime}</span>
-            </div>
             <h2 style={{
               fontSize: '1.2rem',
               fontWeight: 700,

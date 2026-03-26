@@ -188,12 +188,6 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           padding: 'clamp(6rem, 12vw, 8rem) 1.5rem 4rem',
         }}>
           <div style={{ marginBottom: '2rem' }}>
-            <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', marginBottom: '1rem' }}>
-              <time style={{ fontSize: '0.82rem', color: '#94a3b8', fontWeight: 500 }}>
-                {new Date(post.date).toLocaleDateString('nb-NO', { day: 'numeric', month: 'long', year: 'numeric' })}
-              </time>
-              <span style={{ fontSize: '0.82rem', color: '#cbd5e1' }}>{post.readTime}</span>
-            </div>
             <h1 style={{
               fontSize: 'clamp(1.8rem, 4vw, 2.5rem)',
               fontWeight: 800,
