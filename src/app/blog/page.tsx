@@ -42,7 +42,7 @@ export default function BlogPage() {
           margin: '0 auto',
           lineHeight: 1.6,
         }}>
-          Artikler om KI, automatisering og smartere drift for norske småbedrifter.
+          KI, automatisering og smartere drift for norske bedrifter.
         </p>
       </div>
 
