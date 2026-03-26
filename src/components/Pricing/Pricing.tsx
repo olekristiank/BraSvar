@@ -96,22 +96,37 @@ export default function Pricing() {
               borderColor: '#cbd5e1',
               borderTopColor: '#ec4899',
             }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.75rem' }}>
-                <p className="font-semibold uppercase" style={{ fontSize: '0.65rem', letterSpacing: '0.15em', color: '#94a3b8' }}>Startpakke</p>
-                <span style={{ fontSize: '0.6rem', fontWeight: 700, color: '#db2777', background: '#fdf2f8', padding: '2px 8px', borderRadius: '9999px', border: '1px solid #fce7f3' }}>Introduksjonstilbud!</span>
-              </div>
+              <p className="font-semibold uppercase" style={{ fontSize: '0.65rem', letterSpacing: '0.15em', color: '#94a3b8', marginBottom: '0.75rem' }}>Startpakke</p>
               <h3 className="font-bold text-slate-900" style={{ fontSize: '1.4rem', marginBottom: '0.25rem' }}>Mini</h3>
               <p className="text-slate-500" style={{ fontSize: '0.88rem', marginBottom: '1.75rem', lineHeight: 1.55, fontWeight: 450 }}>
                 For bedrifter med lavt samtalevolum og enkle behov.
               </p>
 
               {/* Price */}
-              <div style={{ marginBottom: '1.75rem', paddingBottom: '1.75rem', borderBottom: '1px solid #f1f5f9' }}>
+              <div style={{ marginBottom: '1.75rem', paddingBottom: '1.75rem', borderBottom: '1px solid #f1f5f9', position: 'relative' }}>
                 <div className="flex items-baseline">
                   <span className="font-extrabold text-slate-900" style={{ fontSize: '2.5rem', letterSpacing: '-0.03em', lineHeight: 1 }}>1 490</span>
                   <span className="font-bold text-slate-900" style={{ fontSize: '1.25rem', marginLeft: '2px' }}>,-</span>
                   <span className="text-slate-400 font-medium" style={{ fontSize: '0.9rem', marginLeft: '0.5rem' }}>/ mnd</span>
                 </div>
+                <span style={{
+                  position: 'absolute',
+                  top: '-8px',
+                  right: '-12px',
+                  background: 'linear-gradient(135deg, #ec4899, #db2777)',
+                  color: '#fff',
+                  fontSize: '0.6rem',
+                  fontWeight: 800,
+                  padding: '4px 14px',
+                  borderRadius: '6px',
+                  transform: 'rotate(-12deg)',
+                  boxShadow: '0 2px 8px rgba(236,72,153,0.3)',
+                  letterSpacing: '0.03em',
+                  textTransform: 'uppercase',
+                  whiteSpace: 'nowrap',
+                }}>
+                  Introduksjonstilbud!
+                </span>
               </div>
 
               {/* Features */}
@@ -159,17 +174,14 @@ export default function Pricing() {
                 </span>
               </div>
 
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.75rem', paddingTop: '0.5rem' }}>
-                <p className="font-semibold uppercase" style={{ fontSize: '0.65rem', letterSpacing: '0.15em', color: 'rgba(148,163,184,.7)' }}>Anbefalt</p>
-                <span style={{ fontSize: '0.6rem', fontWeight: 700, color: '#f9a8d4', background: 'rgba(236,72,153,0.15)', padding: '2px 8px', borderRadius: '9999px', border: '1px solid rgba(236,72,153,0.2)' }}>Introduksjonstilbud!</span>
-              </div>
+              <p className="font-semibold uppercase" style={{ fontSize: '0.65rem', letterSpacing: '0.15em', color: 'rgba(148,163,184,.7)', marginBottom: '0.75rem', paddingTop: '0.5rem' }}>Anbefalt</p>
               <h3 className="font-bold text-white" style={{ fontSize: '1.4rem', marginBottom: '0.25rem' }}>Basis</h3>
               <p className="font-medium" style={{ color: '#94a3b8', fontSize: '0.88rem', marginBottom: '1.75rem', lineHeight: 1.55, fontWeight: 450 }}>
                 For bedrifter som aldri vil gå glipp av et anrop.
               </p>
 
               {/* Price */}
-              <div style={{ marginBottom: '1.75rem', paddingBottom: '1.75rem', borderBottom: '1px solid rgba(71,85,105,.4)' }}>
+              <div style={{ marginBottom: '1.75rem', paddingBottom: '1.75rem', borderBottom: '1px solid rgba(71,85,105,.4)', position: 'relative' }}>
                 <div className="flex items-baseline">
                   <span
                     className="font-extrabold"
@@ -184,6 +196,24 @@ export default function Pricing() {
                   <span className="font-bold" style={{ fontSize: '1.25rem', marginLeft: '2px', color: '#f472b6' }}>,-</span>
                   <span className="font-medium" style={{ fontSize: '0.9rem', marginLeft: '0.5rem', color: '#64748b' }}>/ mnd</span>
                 </div>
+                <span style={{
+                  position: 'absolute',
+                  top: '-8px',
+                  right: '-12px',
+                  background: 'linear-gradient(135deg, #f472b6, #ec4899)',
+                  color: '#fff',
+                  fontSize: '0.6rem',
+                  fontWeight: 800,
+                  padding: '4px 14px',
+                  borderRadius: '6px',
+                  transform: 'rotate(-12deg)',
+                  boxShadow: '0 2px 8px rgba(236,72,153,0.4)',
+                  letterSpacing: '0.03em',
+                  textTransform: 'uppercase',
+                  whiteSpace: 'nowrap',
+                }}>
+                  Introduksjonstilbud!
+                </span>
               </div>
 
               {/* Features */}

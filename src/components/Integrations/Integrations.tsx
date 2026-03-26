@@ -39,10 +39,12 @@ export default function Integrations() {
   return (
     <section
       id="integrasjoner"
-      className="w-full px-8 sm:px-10 lg:px-12 flex flex-col items-center relative z-20"
+      className="w-full flex flex-col items-center relative z-20"
       style={{
         paddingTop: '4rem',
         paddingBottom: '4rem',
+        paddingLeft: 'clamp(2rem, 6vw, 3rem)',
+        paddingRight: 'clamp(2rem, 6vw, 3rem)',
         background: 'linear-gradient(180deg, #fff1f2 0%, #fff 20%, #fff 80%, #fdf2f8 100%)',
       }}
     >
