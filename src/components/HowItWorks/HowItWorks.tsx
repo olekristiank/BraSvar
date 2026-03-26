@@ -48,13 +48,13 @@ export default function HowItWorks() {
             {
               num: '1',
               title: 'Vi lærer bedriften din å kjenne',
-              desc: 'Fortell oss om tjenestene dine, vanlige spørsmål og hvordan du vil at kundene skal møtes. Vi bygger assistenten for deg.',
+              desc: 'Fortell oss om tjenestene dine, spørsmål du ofte får, kontakten mellom deg og dine kunder, og hvordan du vil at kundene skal møtes. Vi bygger assistenten for deg.',
               icon: '1',
             },
             {
               num: '2',
               title: 'Test og juster',
-              desc: 'Du får en prototype på et eget nummer. Prøv den, gi tilbakemelding — vi finjusterer til du er fornøyd.',
+              desc: 'Du får raskt en første versjon på et eget telefonnummer. Prøv den, og gi tilbakemelding. Vi finjusterer til du er fornøyd. Alt dette uten kjøpsforpliktelse eller kostnad for deg.',
               icon: '2',
             },
             {
