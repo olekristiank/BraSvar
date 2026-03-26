@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
+import { useScrollLock } from '@/hooks/useScrollLock';
 
 interface ContactModalProps {
   open: boolean;
@@ -19,29 +20,7 @@ export default function ContactModal({ open, onClose }: ContactModalProps) {
   });
   const [submitted, setSubmitted] = useState(false);
 
-  useEffect(() => {
-    if (open) {
-      document.body.style.overflow = 'hidden';
-      document.body.style.position = 'fixed';
-      document.body.style.width = '100%';
-      document.body.style.top = `-${window.scrollY}px`;
-    } else {
-      const scrollY = document.body.style.top;
-      document.body.style.overflow = '';
-      document.body.style.position = '';
-      document.body.style.width = '';
-      document.body.style.top = '';
-      if (scrollY) window.scrollTo(0, parseInt(scrollY || '0') * -1);
-    }
-    return () => {
-      const scrollY = document.body.style.top;
-      document.body.style.overflow = '';
-      document.body.style.position = '';
-      document.body.style.width = '';
-      document.body.style.top = '';
-      if (scrollY) window.scrollTo(0, parseInt(scrollY || '0') * -1);
-    };
-  }, [open]);
+  useScrollLock(open);
 
   useEffect(() => {
     if (!open) {

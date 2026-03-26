@@ -1,7 +1,8 @@
 "use client";
 
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useState } from 'react';
 import { useContactModal } from '@/components/ContactModal/ContactContext';
+import AnimateIn from '@/components/AnimateIn/AnimateIn';
 
 export default function HowItWorks() {
   const openContact = useContactModal();
@@ -194,37 +195,3 @@ function HoverButton({
   );
 }
 
-/* ─── Scroll-Triggered Fade-In Animation ─── */
-function AnimateIn({ children, delay = 0, style = {} }: { children: React.ReactNode; delay?: number; style?: React.CSSProperties }) {
-  const ref = useRef<HTMLDivElement>(null);
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-          observer.disconnect();
-        }
-      },
-      { threshold: 0.15, rootMargin: '0px 0px -40px 0px' }
-    );
-    if (ref.current) observer.observe(ref.current);
-    return () => observer.disconnect();
-  }, []);
-
-  return (
-    <div
-      ref={ref}
-      style={{
-        ...style,
-        opacity: isVisible ? 1 : 0,
-        transform: isVisible ? 'translateY(0)' : 'translateY(30px)',
-        transition: `opacity 0.8s cubic-bezier(.2,0.8,.2,1) ${delay}ms, transform 0.8s cubic-bezier(.2,0.8,.2,1) ${delay}ms`,
-        width: '100%',
-      }}
-    >
-      {children}
-    </div>
-  );
-}

@@ -1,7 +1,8 @@
 "use client";
 
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useState } from 'react';
 import { useContactModal } from '@/components/ContactModal/ContactContext';
+import AnimateIn from '@/components/AnimateIn/AnimateIn';
 
 export default function Pricing() {
   const openContact = useContactModal();
@@ -324,40 +325,6 @@ function Feature({ children, color }: { children: React.ReactNode; color: 'green
       </div>
       <span className="font-medium" style={{ fontSize: '0.9rem', lineHeight: 1.4, color: styles.text }}>{children}</span>
     </li>
-  );
-}
-
-/* ─── Scroll-Triggered Fade-In Animation ─── */
-function AnimateIn({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) {
-  const ref = useRef<HTMLDivElement>(null);
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-          observer.disconnect();
-        }
-      },
-      { threshold: 0.15, rootMargin: '0px 0px -40px 0px' }
-    );
-    if (ref.current) observer.observe(ref.current);
-    return () => observer.disconnect();
-  }, []);
-
-  return (
-    <div
-      ref={ref}
-      style={{
-        opacity: isVisible ? 1 : 0,
-        transform: isVisible ? 'translateY(0)' : 'translateY(24px)',
-        transition: `opacity 0.7s cubic-bezier(.4,0,.2,1) ${delay}ms, transform 0.7s cubic-bezier(.4,0,.2,1) ${delay}ms`,
-        width: '100%',
-      }}
-    >
-      {children}
-    </div>
   );
 }
 

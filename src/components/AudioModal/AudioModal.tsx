@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useRef, useEffect, useCallback } from 'react';
+import { useScrollLock } from '@/hooks/useScrollLock';
 
 interface Clip {
   label: string;
@@ -28,19 +29,10 @@ export default function AudioModal({ open, onClose }: AudioModalProps) {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const progressRef = useRef<HTMLDivElement>(null);
 
+  useScrollLock(open);
+
   useEffect(() => {
-    if (open) {
-      document.body.style.overflow = 'hidden';
-      document.body.style.position = 'fixed';
-      document.body.style.width = '100%';
-      document.body.style.top = `-${window.scrollY}px`;
-    } else {
-      const scrollY = document.body.style.top;
-      document.body.style.overflow = '';
-      document.body.style.position = '';
-      document.body.style.width = '';
-      document.body.style.top = '';
-      if (scrollY) window.scrollTo(0, parseInt(scrollY || '0') * -1);
+    if (!open) {
       if (audioRef.current) {
         audioRef.current.pause();
         audioRef.current = null;
@@ -51,14 +43,6 @@ export default function AudioModal({ open, onClose }: AudioModalProps) {
       setDuration(0);
       setError(null);
     }
-    return () => {
-      const scrollY = document.body.style.top;
-      document.body.style.overflow = '';
-      document.body.style.position = '';
-      document.body.style.width = '';
-      document.body.style.top = '';
-      if (scrollY) window.scrollTo(0, parseInt(scrollY || '0') * -1);
-    };
   }, [open]);
 
   const playClip = useCallback((index: number) => {
