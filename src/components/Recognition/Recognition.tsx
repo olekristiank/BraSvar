@@ -30,7 +30,11 @@ export default function Recognition() {
   const [counterDone, setCounterDone] = useState(false);
   const targetCount = 17;
 
-  const [selectedImages] = useState(() => shuffleAndPick(allImages, 3));
+  const [selectedImages, setSelectedImages] = useState<typeof allImages | null>(null);
+
+  useEffect(() => {
+    setSelectedImages(shuffleAndPick(allImages, 3));
+  }, []);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -97,7 +101,7 @@ export default function Recognition() {
           style={{ aspectRatio: '16 / 9' }}
           suppressHydrationWarning
         >
-          {selectedImages.map((img, i) => (
+          {(selectedImages || []).map((img, i) => (
             <React.Fragment key={img.src}>
               {i > 0 && (
                 <div
