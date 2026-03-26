@@ -6,7 +6,7 @@ import React, { useEffect, useRef, useState } from 'react';
 // Ordered so wide(2)+normal(1) fill each row cleanly: row1=3, row2=3, row3=3
 const categories: { title: string; items: string[] }[] = [
   {
-    title: 'Timebok & booking',
+    title: 'Kalender og booking',
     items: ['Pasientsky', 'Makeplans', 'Cal.com', 'Opus', 'Anita', 'Pridok', 'DIPS', 'Muntra'],
   },
   {
@@ -14,7 +14,7 @@ const categories: { title: string; items: string[] }[] = [
     items: ['Tripletex', 'Fiken', 'Visma', 'Vipps', 'Stripe'],
   },
   {
-    title: 'Servicedesk',
+    title: 'Brukerstøtte og kunnskapsbase',
     items: ['ServiceNow!', 'Jira', 'Zendesk', 'Freshdesk', 'Pureservice', 'HubSpot'],
   },
   {
