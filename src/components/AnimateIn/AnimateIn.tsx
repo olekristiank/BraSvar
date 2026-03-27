@@ -31,7 +31,6 @@ export default function AnimateIn({ children, delay = 0, style = {}, className }
       className={className}
       style={{
         width: '100%',
-        height: '100%',
         ...style,
         opacity: isVisible ? 1 : 0,
         transform: isVisible ? 'translateY(0)' : 'translateY(24px)',

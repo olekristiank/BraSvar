@@ -137,34 +137,48 @@ function CategoryRow({ title, items }: { title: string; items: string[] }) {
           alignItems: 'center',
           gap: '0.5rem',
         }}>
-          <span style={{ color: '#ec4899', fontSize: '0.7rem' }}>–</span>
+          <span style={{
+            display: 'inline-flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            width: 22,
+            height: 22,
+            borderRadius: '6px',
+            background: open ? 'linear-gradient(135deg, #ec4899, #db2777)' : 'rgba(253,242,248,0.8)',
+            border: open ? 'none' : '1px solid rgba(236,72,153,0.15)',
+            transition: 'all 0.3s ease',
+            flexShrink: 0,
+          }}>
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke={open ? '#fff' : '#ec4899'}
+              strokeWidth="2.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              style={{ width: 12, height: 12 }}
+            >
+              {open ? (
+                <line x1="5" y1="12" x2="19" y2="12" />
+              ) : (
+                <>
+                  <line x1="12" y1="5" x2="12" y2="19" />
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                </>
+              )}
+            </svg>
+          </span>
           {title}
         </span>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-          <span style={{
-            fontSize: '0.75rem',
-            fontWeight: 500,
-            color: '#94a3b8',
-          }}>
-            {items.length} systemer
-          </span>
-          <svg
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="#94a3b8"
-            strokeWidth="2.5"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            style={{
-              width: 14,
-              height: 14,
-              transition: 'transform 0.3s ease',
-              transform: open ? 'rotate(180deg)' : 'rotate(0deg)',
-            }}
-          >
-            <polyline points="6 9 12 15 18 9" />
-          </svg>
-        </div>
+        <span style={{
+          fontSize: '0.78rem',
+          fontWeight: 500,
+          color: open ? '#db2777' : '#94a3b8',
+          transition: 'color 0.3s ease',
+          whiteSpace: 'nowrap',
+        }}>
+          {open ? 'Skjul' : 'Vis alle'}
+        </span>
       </button>
 
       <div
