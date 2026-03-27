@@ -137,7 +137,7 @@ export default function FrequencyWave({ config = defaultWaveConfig }: { config?:
   const lg = Math.min(255, g + 40);
   const lb = Math.min(255, b + 40);
 
-  // Dynamic mask — solid core at 30% of maskWidth, fade to transparent at maskWidth
+  // Dynamic mask – solid core at 30% of maskWidth, fade to transparent at maskWidth
   const maskCore = Math.round(maskWidth * 0.4);
   const maskStyle = `radial-gradient(ellipse 90% 80% at center, black ${maskCore}%, transparent ${maskWidth}%)`;
 
@@ -172,7 +172,7 @@ export default function FrequencyWave({ config = defaultWaveConfig }: { config?:
             ))}
           </linearGradient>
 
-          {/* Dynamic thread gradient — derived from threadColor */}
+          {/* Dynamic thread gradient – derived from threadColor */}
           <linearGradient id="threadGradA" x1="0%" y1="0%" x2="100%" y2="0%">
             <stop offset="0%" stopColor={`rgba(${r},${g},${b}, 0)`} />
             <stop offset="20%" stopColor={`rgba(${r},${g},${b}, 0.35)`} />

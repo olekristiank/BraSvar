@@ -5,7 +5,7 @@ import FAQPageContent from './FAQPageContent';
 
 export const metadata: Metadata = {
   title: 'Ofte stilte spørsmål | Bra Svar!',
-  description: 'Finn svar på vanlige spørsmål om Bra Svar — AI-telefonassistenten for norske bedrifter. Priser, personvern, integrasjoner og mer.',
+  description: 'Finn svar på vanlige spørsmål om Bra Svar – AI-telefonassistenten for norske bedrifter. Priser, personvern, integrasjoner og mer.',
 };
 
 const faqJsonLd = {

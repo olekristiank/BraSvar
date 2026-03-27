@@ -54,7 +54,7 @@ export default function Home() {
             </AudioButton>
           </div>
           <p className="animate-fade-in delay-3" style={{ fontSize: '0.82rem', color: '#64748b', fontWeight: 500, marginTop: '0.75rem' }}>
-            Gratis å prøve — ingen binding.
+            Gratis å prøve – ingen binding.
           </p>
         </main>
       </section>

@@ -61,7 +61,7 @@ export default function HowItWorks() {
             {
               num: '3',
               title: 'Koble til',
-              desc: 'Videresend ditt eksisterende nummer, og assistenten tar over. Du velger selv: utenom åpningstid, ved ubesvarte anrop, eller 24/7. Kundene dine får alltid svar — og du har full oversikt gjennom rapporter og innsikt i kontrollpanelet.',
+              desc: 'Videresend ditt eksisterende nummer, og assistenten tar over. Du velger selv: utenom åpningstid, ved ubesvarte anrop, eller 24/7. Kundene dine får alltid svar – og du har full oversikt gjennom rapporter og innsikt i kontrollpanelet.',
               icon: '3',
             },
           ].map((step, i) => (

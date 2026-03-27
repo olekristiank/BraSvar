@@ -103,7 +103,7 @@ export default function HowItWorksPageContent() {
             {
               num: '1',
               title: 'Kunden ringer',
-              desc: 'Telefonen din ringer som vanlig — enten direkte eller via viderekobling.',
+              desc: 'Telefonen din ringer som vanlig – enten direkte eller via viderekobling.',
             },
             {
               num: '2',
@@ -353,7 +353,7 @@ export default function HowItWorksPageContent() {
             {[
               { num: '1', title: 'Fortell oss om bedriften din', desc: 'Vi setter opp hvordan telefonen din skal besvares.' },
               { num: '2', title: 'Test løsningen', desc: 'Du får prøve og gi tilbakemelding.' },
-              { num: '3', title: 'Koble til', desc: 'Viderekoble nummeret ditt — så er du i gang.' },
+              { num: '3', title: 'Koble til', desc: 'Viderekoble nummeret ditt – så er du i gang.' },
             ].map((step, i) => (
               <AnimateIn key={i} delay={80 + i * 80}>
                 <div style={{

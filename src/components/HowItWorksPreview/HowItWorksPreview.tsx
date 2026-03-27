@@ -69,7 +69,7 @@ export default function HowItWorksPreview() {
               lineHeight: 1.6,
               fontWeight: 450,
             }}>
-              Når noen ringer deg, svarer Bra Svar med en gang — og hjelper kunden videre.
+              Når noen ringer deg, svarer Bra Svar med en gang – og hjelper kunden videre.
             </p>
           </div>
         </AnimateIn>

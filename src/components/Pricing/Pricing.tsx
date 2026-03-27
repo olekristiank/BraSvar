@@ -71,7 +71,7 @@ export default function Pricing() {
           </div>
         </AnimateIn>
 
-        {/* Cards — 3 columns */}
+        {/* Cards – 3 columns */}
         <div
           className="flex flex-col lg:flex-row justify-center items-center lg:items-stretch w-full"
           style={{ gap: '1.5rem', maxWidth: '1100px' }}
@@ -252,7 +252,7 @@ export default function Pricing() {
               <p className="font-semibold uppercase" style={{ fontSize: '0.65rem', letterSpacing: '0.15em', color: '#94a3b8', marginBottom: '0.75rem' }}>Spesielle behov</p>
               <h3 className="font-bold text-slate-900" style={{ fontSize: '1.4rem', marginBottom: '0.25rem' }}>Pro</h3>
               <p className="text-slate-500" style={{ fontSize: '0.88rem', marginBottom: '1.75rem', lineHeight: 1.55, fontWeight: 450 }}>
-                For deg som trenger noe helt eget — med skreddersydde integrasjoner og en fast kontaktperson.
+                For deg som trenger noe helt eget – med skreddersydde integrasjoner og en fast kontaktperson.
               </p>
 
               {/* Price */}

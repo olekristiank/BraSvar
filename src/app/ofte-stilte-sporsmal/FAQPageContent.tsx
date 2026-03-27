@@ -81,7 +81,7 @@ export default function FAQPageContent({ categories }: { categories: FAQCategory
             lineHeight: 1.65,
             fontWeight: 450,
           }}>
-            Alt du trenger å vite om Bra Svar — fra oppstart og priser til personvern og integrasjoner.
+            Alt du trenger å vite om Bra Svar – fra oppstart og priser til personvern og integrasjoner.
           </p>
         </AnimateIn>
       </div>
@@ -169,7 +169,7 @@ export default function FAQPageContent({ categories }: { categories: FAQCategory
               marginBottom: '1.5rem',
               fontWeight: 450,
             }}>
-              Vi svarer gjerne på spørsmål — helt uforpliktende.
+              Vi svarer gjerne på spørsmål – helt uforpliktende.
             </p>
             <button
               onClick={openContact}

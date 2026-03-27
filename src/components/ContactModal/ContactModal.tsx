@@ -143,7 +143,7 @@ export default function ContactModal({ open, onClose }: ContactModalProps) {
                 lineHeight: 1.6,
                 marginBottom: '0.85rem',
               }}>
-                Ring og opplev assistenten selv — med én gang.
+                Ring og opplev assistenten selv – med én gang.
               </p>
               <a
                 href="tel:+4764006264"
@@ -206,7 +206,7 @@ export default function ContactModal({ open, onClose }: ContactModalProps) {
                 marginBottom: '1rem',
                 textAlign: 'center',
               }}>
-                Fyll ut skjemaet, så setter vi opp en assistent tilpasset din bedrift — <strong style={{ color: '#0f172a' }}>helt gratis</strong>.
+                Fyll ut skjemaet, så setter vi opp en assistent tilpasset din bedrift – <strong style={{ color: '#0f172a' }}>helt gratis</strong>.
               </p>
 
               <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>

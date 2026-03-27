@@ -23,7 +23,7 @@ export const faqs: FAQ[] = [
   },
   {
     q: 'Kan jeg beholde mitt eksisterende telefonnummer?',
-    a: 'Ja, absolutt. Du setter opp en enkel viderekobling fra ditt nåværende nummer til assistenten. Kundene dine ringer samme nummer som før — de merker ingen forskjell.',
+    a: 'Ja, absolutt. Du setter opp en enkel viderekobling fra ditt nåværende nummer til assistenten. Kundene dine ringer samme nummer som før – de merker ingen forskjell.',
     category: 'Kom i gang',
   },
 
@@ -40,17 +40,17 @@ export const faqs: FAQ[] = [
   },
   {
     q: 'Hvordan høres assistenten ut?',
-    a: 'Assistenten snakker med en naturlig, menneskelig stemme — ikke en typisk robotstemme. De fleste som ringer merker ikke at det er en AI. Vi tilpasser tone og stil etter bedriften din, slik at den passer inn med merkevaren din.',
+    a: 'Assistenten snakker med en naturlig, menneskelig stemme – ikke en typisk robotstemme. De fleste som ringer merker ikke at det er en AI. Vi tilpasser tone og stil etter bedriften din, slik at den passer inn med merkevaren din.',
     category: 'Om assistenten',
   },
   {
     q: 'Fungerer det for min bransje?',
-    a: 'Bra Svar fungerer for de aller fleste bransjer — fra håndverkere og helsepersonell til advokater, frisører og bilverksteder. Vi tilpasser assistenten til din bedrift, dine tjenester og dine kunders behov.',
+    a: 'Bra Svar fungerer for de aller fleste bransjer – fra håndverkere og helsepersonell til advokater, frisører og bilverksteder. Vi tilpasser assistenten til din bedrift, dine tjenester og dine kunders behov.',
     category: 'Om assistenten',
   },
   {
     q: 'Kan assistenten sende SMS eller e-post etter en samtale?',
-    a: 'Ja, med Basis-pakken kan assistenten sende SMS automatisk — for eksempel bekreftelse på en avtale, veibeskrivelse, eller oppfølgingsinformasjon. Den kan også sende e-post hvis det er ønskelig.',
+    a: 'Ja, med Basis-pakken kan assistenten sende SMS automatisk – for eksempel bekreftelse på en avtale, veibeskrivelse, eller oppfølgingsinformasjon. Den kan også sende e-post hvis det er ønskelig.',
     category: 'Om assistenten',
   },
 
@@ -79,7 +79,7 @@ export const faqs: FAQ[] = [
   },
   {
     q: 'Kan jeg lytte til samtalene i etterkant?',
-    a: 'Ja, du har tilgang til et kontrollpanel med full oversikt over alle samtaler. Der kan du se sammendrag, lytte til opptak og følge med på statistikk — slik at du alltid vet hva kundene spør om.',
+    a: 'Ja, du har tilgang til et kontrollpanel med full oversikt over alle samtaler. Der kan du se sammendrag, lytte til opptak og følge med på statistikk – slik at du alltid vet hva kundene spør om.',
     category: 'Andre spørsmål',
   },
 ];
