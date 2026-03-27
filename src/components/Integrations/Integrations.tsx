@@ -7,8 +7,8 @@ import AnimateIn from '@/components/AnimateIn/AnimateIn';
 // Ordered so wide(2)+normal(1) fill each row cleanly: row1=3, row2=3, row3=3
 const categories: { title: string; items: string[] }[] = [
   {
-    title: 'Kalender og booking',
-    items: ['Pasientsky', 'Makeplans', 'Cal.com', 'Opus', 'Anita', 'Pridok', 'DIPS', 'Muntra', 'Outlook', 'Google Calendar'],
+    title: 'Timebestilling og kalender',
+    items: ['Acuity', 'Anita', 'Athena', 'Avon', 'Cal.com', 'Cliniko', 'Dentally', 'DIPS', 'Dynamic', 'EasyPractice', 'Epic', 'Exact', 'Frenda', 'Google Calendar', 'J4', 'Kaddio', 'Konfidens', 'MakePlans', 'Metodika', 'Millennium', 'Muntra', 'Nextech', 'Opus', 'Outlook', 'Pasientsky', 'Physica', 'Pridok', 'Prorenata', 'Psykbase', 'Semble', 'Sensei', 'Solvit', 'Speare', 'TakeCare', 'Vena', 'WebDoc'],
   },
   {
     title: 'Regnskap & betaling',
@@ -16,7 +16,7 @@ const categories: { title: string; items: string[] }[] = [
   },
   {
     title: 'Brukerstøtte og CRM',
-    items: ['ServiceNow!', 'Jira', 'Zendesk', 'Freshdesk', 'Pureservice', 'HubSpot', 'Salesforce', 'Pipedrive'],
+    items: ['Zendesk', 'Freshdesk', 'Jira', 'ServiceNow', 'SuperOffice', 'Lime', 'Zoho', 'Pureservice', 'HubSpot', 'Salesforce', 'Pipedrive'],
   },
   {
     title: 'Kommunikasjon',

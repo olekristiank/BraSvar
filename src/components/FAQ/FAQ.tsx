@@ -1,46 +1,28 @@
 "use client";
 
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useMemo } from 'react';
 import AnimateIn from '@/components/AnimateIn/AnimateIn';
-
-const faqs = [
-  {
-    q: 'Hvor raskt kan vi komme i gang?',
-    a: 'De fleste er i gang innen 1 uke etter den innledende samtalen. Vi trenger grunnleggende informasjon om bedriften din, bygger en prøveversjon, og tester sammen med deg til du er fornøyd.',
-  },
-  {
-    q: 'Hva skjer om AI-assistenten ikke kan svare?',
-    a: 'Hvis assistenten møter et spørsmål den ikke kan besvare, kan vi sette opp viderekobling til deg.',
-  },
-  {
-    q: 'Kan assistenten håndtere booking og kalendere?',
-    a: 'Ja, assistenten kan kobles til de fleste systemer. Timebestilling, kalendere, CRM, ordrebehandling og lagerstyring. Den kan sjekke ledige tider, booker avtaler, sjekker lagerstatus og sender bekreftelser. Helt automatisk.',
-  },
-  {
-    q: 'Støtter dere andre språk enn norsk?',
-    a: 'AI-assistenten snakker flytende og naturlig norsk, men kan også snakke engelsk. Vi legger til flere språk ved behov.',
-  },
-  {
-    q: 'Er det bindingstid?',
-    a: 'Nei, ingen bindingstid og ingen skjulte kostnader. Du kan oppgradere, nedgradere eller avslutte når som helst, ingen oppsigelsestid og ingen gebyrer.',
-  },
-  {
-    q: 'Hva med personvern og GDPR?',
-    a: 'Vi tar personvern på alvor. All data behandles i tråd med GDPR, og vi har databehandleravtale basert på Datatilsynets standardmal. Samtaledata lagres trygt, og vi deler aldri informasjon med tredjepart uten avtale. Du har full kontroll over hva assistenten har tilgang til.',
-  },
-];
-
-const faqJsonLd = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: faqs.map(f => ({
-    '@type': 'Question',
-    name: f.q,
-    acceptedAnswer: { '@type': 'Answer', text: f.a },
-  })),
-};
+import { faqs } from '@/lib/faqs';
 
 export default function FAQ() {
+  // Pick 3 random FAQs on mount (client-side only to avoid hydration mismatch)
+  const [randomFaqs, setRandomFaqs] = useState(faqs.slice(0, 3));
+
+  useEffect(() => {
+    const shuffled = [...faqs].sort(() => Math.random() - 0.5);
+    setRandomFaqs(shuffled.slice(0, 3));
+  }, []);
+
+  const faqJsonLd = useMemo(() => ({
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: randomFaqs.map(f => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a },
+    })),
+  }), [randomFaqs]);
+
   return (
     <section
       className="w-full flex flex-col items-center relative z-20"
@@ -76,13 +58,38 @@ export default function FAQ() {
           </div>
         </AnimateIn>
 
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '0' }}>
-          {faqs.map((faq, i) => (
-            <AnimateIn key={i} delay={60 * i}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '0', width: '100%' }} suppressHydrationWarning>
+          {randomFaqs.map((faq, i) => (
+            <AnimateIn key={faq.q} delay={60 * i}>
               <FAQItem question={faq.q} answer={faq.a} />
             </AnimateIn>
           ))}
         </div>
+
+        <AnimateIn delay={240}>
+          <div className="text-center" style={{ marginTop: '2rem' }}>
+            <a
+              href="/ofte-stilte-sporsmal"
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.4rem',
+                fontSize: '0.95rem',
+                fontWeight: 600,
+                color: '#ec4899',
+                textDecoration: 'none',
+                transition: 'gap 0.2s ease',
+              }}
+              onMouseEnter={(e) => { e.currentTarget.style.gap = '0.7rem'; }}
+              onMouseLeave={(e) => { e.currentTarget.style.gap = '0.4rem'; }}
+            >
+              Se alle spørsmål og svar
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ width: 16, height: 16 }}>
+                <polyline points="9 18 15 12 9 6" />
+              </svg>
+            </a>
+          </div>
+        </AnimateIn>
       </div>
     </section>
   );
@@ -172,4 +179,3 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
     </div>
   );
 }
-

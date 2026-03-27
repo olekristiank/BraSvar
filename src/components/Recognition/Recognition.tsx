@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from 'react';
-import Image from 'next/image';
 
 const allImages: { src: string; alt: string }[] = [
   { src: '/images/personas/plumber.jpg', alt: 'Rørlegger på jobb' },
@@ -30,7 +29,8 @@ export default function Recognition() {
   const [counterDone, setCounterDone] = useState(false);
   const targetCount = 17;
 
-  const [selectedImages, setSelectedImages] = useState<typeof allImages | null>(null);
+  // Use first 3 as initial SSR value, then shuffle on client
+  const [selectedImages, setSelectedImages] = useState(allImages.slice(0, 3));
 
   useEffect(() => {
     setSelectedImages(shuffleAndPick(allImages, 3));
@@ -101,8 +101,8 @@ export default function Recognition() {
           style={{ aspectRatio: '16 / 9' }}
           suppressHydrationWarning
         >
-          {(selectedImages || []).map((img, i) => (
-            <React.Fragment key={img.src}>
+          {selectedImages.map((img, i) => (
+            <React.Fragment key={i}>
               {i > 0 && (
                 <div
                   className="poster-divider"
@@ -126,13 +126,19 @@ export default function Recognition() {
                   transition: `opacity 0.7s cubic-bezier(.4,0,.2,1) ${300 + i * 300}ms, transform 0.8s cubic-bezier(.4,0,.2,1) ${300 + i * 300}ms`,
                 }}
               >
-                <Image
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
                   src={img.src}
                   alt={img.alt}
-                  fill
-                  sizes="(max-width: 1023px) 100vw, 33vw"
-                  style={{ objectFit: 'cover', objectPosition: 'center top' }}
-                  priority={i === 1}
+                  loading="eager"
+                  style={{
+                    position: 'absolute',
+                    inset: 0,
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'cover',
+                    objectPosition: 'center top',
+                  }}
                 />
               </div>
             </React.Fragment>

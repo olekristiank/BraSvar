@@ -106,9 +106,10 @@ export default function HowItWorks() {
                     fontSize: '3.5rem',
                     lineHeight: 1,
                     color: '#ec4899',
-                    display: 'block',
+                    display: 'inline-block',
                     transition: 'transform 0.3s ease',
-                  }} className="group-hover:scale-110">
+                    transformOrigin: 'left bottom',
+                  }} className="group-hover:scale-125">
                     {step.icon}
                   </span>
                   <div style={{
