@@ -82,8 +82,8 @@ export default function Home() {
             </p>
             <nav style={{ display: 'flex', flexDirection: 'column', gap: '0.35rem' }}>
               <a href="/ai-sentralbord" className={styles.footerLink}>AI sentralbord</a>
-              <a href="/telefonsvarer-bedrift" className={styles.footerLink}>Telefonsvarer</a>
-              <a href="/virtuell-resepsjonist" className={styles.footerLink}>Virtuell resepsjonist</a>
+              <a href="/telefonsvarer-bedrift" className={styles.footerLink}>Telefonsvarer for bedrift</a>
+              <a href="/virtuell-resepsjonist" className={styles.footerLink}>Virtuell resepsjonist for bedrift</a>
               <a href="/hvordan-det-fungerer" className={styles.footerLink}>Slik fungerer det</a>
             </nav>
           </div>

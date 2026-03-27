@@ -52,7 +52,7 @@ export default function Telefonsvarer() {
 
       {/* Comparison table */}
       <div style={{ maxWidth: '800px', margin: '0 auto', padding: '3rem clamp(1.5rem, 4vw, 3rem) 4rem' }}>
-        <h2 style={{ fontSize: 'clamp(1.5rem, 3vw, 2rem)', fontWeight: 800, color: '#0f172a', textAlign: 'center', marginBottom: '2rem' }}>Vanlig telefonsvarer vs. Bra Svar</h2>
+        <h2 style={{ fontSize: 'clamp(1.5rem, 3vw, 2rem)', fontWeight: 800, color: '#0f172a', textAlign: 'center', marginBottom: '2rem' }}>Hva skjer egentlig når kunden ringer?</h2>
         <div style={{ overflowX: 'auto' }}>
           <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.9rem' }}>
             <thead>
@@ -80,9 +80,9 @@ export default function Telefonsvarer() {
         <h2 style={{ fontSize: 'clamp(1.5rem, 3vw, 2rem)', fontWeight: 800, color: '#0f172a', textAlign: 'center', marginBottom: '1.5rem' }}>Hvorfor bytter bedrifter fra telefonsvarer?</h2>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
           {[
-            { title: 'Kundene får svar, ikke en pipetone', text: 'En vanlig telefonsvarer ber kunden ringe tilbake. Bra Svar gir kunden svar der og da. Det betyr færre tapte kunder og mer fornøyde henvendelser.' },
-            { title: 'Du vet hva kundene spør om', text: 'Etter hver samtale får du en oppsummering. Ingen talepost du må lytte gjennom, bare en ren oversikt over hvem som ringte og hva de trengte.' },
-            { title: 'Timer bookes automatisk', text: 'Kunden kan booke time direkte i samtalen. Ingen ekstra steg, ingen «ring tilbake i åpningstiden».' },
+            { title: 'Færre kunder som ringer konkurrenten', text: 'En vanlig telefonsvarer ber kunden ringe tilbake. De fleste gjør det ikke. Bra Svar gir svar der og da, så kunden blir hos deg.' },
+            { title: 'Full oversikt uten talepost', text: 'Etter hver samtale får du en kort oppsummering. Hvem ringte, hva de trengte, og hva som ble avtalt. Ingen talepost å lytte gjennom.' },
+            { title: 'Avtaler som booker seg selv', text: 'Kunden booker time direkte i samtalen. Ingen ekstra steg, ingen «ring tilbake i åpningstiden».' },
           ].map((item) => (
             <div key={item.title}>
               <h3 style={{ fontWeight: 700, fontSize: '1rem', color: '#0f172a', marginBottom: '0.35rem' }}>{item.title}</h3>
@@ -94,7 +94,7 @@ export default function Telefonsvarer() {
 
       <div style={{ textAlign: 'center', padding: '3rem 2rem 5rem', background: 'linear-gradient(180deg, #fff 0%, #fdf2f8 100%)' }}>
         <h2 style={{ fontSize: 'clamp(1.5rem, 3vw, 2.2rem)', fontWeight: 800, color: '#0f172a', marginBottom: '1rem' }}>Bytt fra telefonsvarer til samtale</h2>
-        <p style={{ color: '#64748b', marginBottom: '1.5rem' }}>Gratis å prøve. Ingen binding.</p>
+        <p style={{ color: '#64748b', marginBottom: '1.5rem' }}>Gratis å prøve. Ingen binding, ingen oppstartskostnad.</p>
         <Link href="/" style={{ display: 'inline-flex', padding: '1rem 2.5rem', fontWeight: 700, fontSize: '1rem', color: '#fff', background: 'linear-gradient(135deg, #db2777, #be185d)', borderRadius: '14px', textDecoration: 'none', boxShadow: '0 4px 14px rgba(236,72,153,0.3)' }}>Prøv Bra Svar gratis</Link>
       </div>
     </main>

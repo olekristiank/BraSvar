@@ -13,20 +13,20 @@ export const metadata: Metadata = {
 };
 
 const features = [
-  { title: 'Svarer umiddelbart', desc: 'Ingen ventetid. Kundene dine får svar med én gang, uansett tid på døgnet.' },
+  { title: 'Svarer umiddelbart', desc: 'Ingen ventetid. Kunden som ringer klokken ni på kvelden booker time før de legger seg.' },
   { title: 'Forstår naturlig norsk', desc: 'Flytende norsk med forståelse for dialekter og aksenter. Fungerer også på engelsk.' },
-  { title: 'Booker timer direkte', desc: 'Koblet til kalendersystemet ditt. Sjekker ledige tider og booker avtaler automatisk.' },
-  { title: 'Videresender ved behov', desc: 'Når kunden trenger deg personlig, setter assistenten samtalen over etter dine regler.' },
-  { title: 'Sender oppsummering', desc: 'Etter hver samtale får du en oppsummering via SMS eller e-post med det viktigste.' },
-  { title: 'Tilpasses din bedrift', desc: 'Assistenten kjenner tjenestene, prisene og rutinene dine – og svarer deretter.' },
+  { title: 'Booker timer direkte', desc: 'Koblet til kalendersystemet ditt. Kunden velger tid, og avtalen dukker opp i kalenderen din.' },
+  { title: 'Videresender ved behov', desc: 'Når kunden trenger deg personlig, setter assistenten samtalen over. Du bestemmer reglene.' },
+  { title: 'Sender oppsummering', desc: 'Etter hver samtale får du en kort oppsummering. Du vet alltid hva kundene spurte om.' },
+  { title: 'Tilpasses din bedrift', desc: 'Vi bygger assistenten rundt dine tjenester, priser og rutiner. Den svarer som en del av teamet.' },
 ];
 
 const useCases = [
-  'Klinikker og tannleger som er opptatt med pasienter',
-  'Håndverkere som er ute på oppdrag',
-  'Advokater og rådgivere i møter',
-  'Frisører og treningssentre med høyt kundetrykk',
-  'Små kontorer uten fast resepsjonist',
+  'Tannleger som mister nye pasienter mens de står i behandling',
+  'Håndverkere som er ute på oppdrag og ikke kan ta telefonen',
+  'Advokater og rådgivere som sitter i møter hele dagen',
+  'Frisører og treningssentre der ingen har tid til å svare',
+  'Små kontorer som trenger profesjonelt mottak uten å ansette',
 ];
 
 const jsonLd = {
@@ -50,7 +50,7 @@ export default function AISentralbord() {
           Et sentralbord som aldri tar <span style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 400, color: '#ec4899' }}>pause</span>
         </h1>
         <p style={{ fontSize: 'clamp(1rem, 2vw, 1.15rem)', color: '#64748b', maxWidth: '600px', margin: '0 auto 2rem', lineHeight: 1.65 }}>
-          Bra Svar er et AI-sentralbord som svarer telefonen for bedriften din med en naturlig norsk stemme. Døgnet rundt, uten ventetid – slik at du aldri mister et anrop igjen.
+          Svarer telefonen din med en naturlig norsk stemme. Døgnet rundt, uten ventetid. Du mister aldri et anrop igjen.
         </p>
         <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
           <Link href="/" style={{ display: 'inline-flex', padding: '0.9rem 2rem', fontWeight: 700, fontSize: '0.95rem', color: '#fff', background: 'linear-gradient(135deg, #db2777, #be185d)', borderRadius: '12px', textDecoration: 'none', boxShadow: '0 4px 14px rgba(236,72,153,0.3)' }}>Prøv gratis</Link>
@@ -84,7 +84,7 @@ export default function AISentralbord() {
 
       <div style={{ textAlign: 'center', padding: '3rem 2rem 5rem', background: 'linear-gradient(180deg, #fff 0%, #fdf2f8 100%)' }}>
         <h2 style={{ fontSize: 'clamp(1.5rem, 3vw, 2.2rem)', fontWeight: 800, color: '#0f172a', marginBottom: '1rem' }}>Klar til å aldri miste et anrop igjen?</h2>
-        <p style={{ color: '#64748b', marginBottom: '1.5rem' }}>Gratis å prøve – ingen binding, ingen oppstartskostnad.</p>
+        <p style={{ color: '#64748b', marginBottom: '1.5rem' }}>Gratis å prøve. Ingen binding, ingen oppstartskostnad.</p>
         <Link href="/" style={{ display: 'inline-flex', padding: '1rem 2.5rem', fontWeight: 700, fontSize: '1rem', color: '#fff', background: 'linear-gradient(135deg, #db2777, #be185d)', borderRadius: '14px', textDecoration: 'none', boxShadow: '0 4px 14px rgba(236,72,153,0.3)' }}>Prøv Bra Svar gratis</Link>
       </div>
     </main>

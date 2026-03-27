@@ -46,7 +46,7 @@ export default function VirtuellResepsjonist() {
           Resepsjonisten som aldri er <span style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 400, color: '#ec4899' }}>borte</span>
         </h1>
         <p style={{ fontSize: 'clamp(1rem, 2vw, 1.15rem)', color: '#64748b', maxWidth: '600px', margin: '0 auto 2rem', lineHeight: 1.65 }}>
-          Bra Svar er en virtuell resepsjonist som svarer telefonen for bedriften din med en naturlig norsk stemme. Hun booker timer, svarer på spørsmål og sørger for at ingen kunder faller mellom stolene.
+          Bra Svar er en virtuell resepsjonist som svarer telefonen for bedriften din med en naturlig norsk stemme. Assistenten booker timer, svarer på spørsmål og sørger for at ingen kunder faller mellom stolene.
         </p>
         <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
           <Link href="/" style={{ display: 'inline-flex', padding: '0.9rem 2rem', fontWeight: 700, fontSize: '0.95rem', color: '#fff', background: 'linear-gradient(135deg, #db2777, #be185d)', borderRadius: '12px', textDecoration: 'none', boxShadow: '0 4px 14px rgba(236,72,153,0.3)' }}>Prøv gratis</Link>
@@ -69,7 +69,7 @@ export default function VirtuellResepsjonist() {
 
       {/* Who it's for */}
       <div style={{ maxWidth: '800px', margin: '0 auto', padding: '0 clamp(1.5rem, 4vw, 3rem) 4rem' }}>
-        <h2 style={{ fontSize: 'clamp(1.5rem, 3vw, 2rem)', fontWeight: 800, color: '#0f172a', textAlign: 'center', marginBottom: '2rem' }}>Hvem passer det for?</h2>
+        <h2 style={{ fontSize: 'clamp(1.5rem, 3vw, 2rem)', fontWeight: 800, color: '#0f172a', textAlign: 'center', marginBottom: '2rem' }}>Kundene forventer profesjonelt mottak. Du trenger ikke ansette for å levere det.</h2>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1rem' }}>
           {whoItsFor.map((w) => (
             <div key={w.title} style={{ display: 'flex', gap: '0.75rem', alignItems: 'flex-start' }}>
@@ -98,6 +98,7 @@ export default function VirtuellResepsjonist() {
             <p style={{ fontSize: '0.82rem', color: '#94a3b8' }}>per måned</p>
           </div>
         </div>
+        <p style={{ marginTop: '1rem', fontSize: '0.9rem', color: '#64748b', textAlign: 'center' }}>Samme jobb. 96% lavere kostnad.</p>
       </div>
 
       <div style={{ textAlign: 'center', padding: '3rem 2rem 5rem', background: 'linear-gradient(180deg, #fff 0%, #fdf2f8 100%)' }}>

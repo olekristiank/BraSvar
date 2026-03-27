@@ -51,13 +51,13 @@ export default function HowItWorksPageContent() {
             color: '#0f172a',
             marginBottom: '1.25rem',
           }}>
-            Slik fungerer{' '}
+            Fra ubesvart til booket på{' '}
             <span style={{
               fontFamily: 'var(--font-serif)',
               fontStyle: 'italic',
               fontWeight: 400,
               color: '#ec4899',
-            }}>det</span>
+            }}>30 sekunder</span>
           </h1>
         </AnimateIn>
 
@@ -251,9 +251,11 @@ export default function HowItWorksPageContent() {
               gap: '1rem',
             }}>
               <ChatBubble who="customer">Hei, jeg vil gjerne bestille time</ChatBubble>
-              <ChatBubble who="ai">Hei! Hva gjelder det?</ChatBubble>
+              <ChatBubble who="ai">Hei! Velkommen til Klinikk Sentrum. Hva slags behandling ønsker du?</ChatBubble>
               <ChatBubble who="customer">Massasje</ChatBubble>
-              <ChatBubble who="ai">Da finner jeg en ledig time til deg. Passer det i morgen?</ChatBubble>
+              <ChatBubble who="ai">Flott! Jeg ser at vi har ledig torsdag klokken 14 eller fredag klokken 10. Hva passer best?</ChatBubble>
+              <ChatBubble who="customer">Torsdag passer fint</ChatBubble>
+              <ChatBubble who="ai">Da har jeg booket deg inn torsdag kl. 14:00. Du får en bekreftelse på SMS. Velkommen!</ChatBubble>
             </div>
           </AnimateIn>
         </div>
@@ -420,10 +422,10 @@ export default function HowItWorksPageContent() {
 
         <div className="grid grid-cols-2 sm:grid-cols-4" style={{ gap: '1rem' }}>
           {[
-            'Ingen ubesvarte anrop',
-            'Flere bookinger',
-            'Mindre avbrytelser',
-            'Bedre kundeopplevelse',
+            '0 tapte kunder etter stengetid',
+            'Timer som booker seg selv',
+            'Færre avbrytelser i arbeidsdagen',
+            'Fornøyde kunder fra første ring',
           ].map((item, i) => (
             <AnimateIn key={item} delay={60 + i * 60}>
               <div style={{
