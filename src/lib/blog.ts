@@ -514,6 +514,160 @@ Se gjerne vår [sjekkliste for KI-modenhet](/blog/ki-modenhet-sjekkliste) for å
 
 **Kilder:** SSB: *Bruk av IKT i husholdningene 2025*. Statistisk sentralbyrå.`,
   },
+  {
+    slug: 'ai-sentralbord-for-smabedrifter',
+    title: 'AI-sentralbord: Hva det er og hvorfor bedriften din trenger det',
+    description: 'Et AI-sentralbord svarer telefonen for deg med en naturlig stemme, booker timer og videresender samtaler. Her er alt du trenger å vite.',
+    date: '2026-03-22',
+    readTime: '5 min',
+    cover: '/images/blog/automatisere.png',
+    content: `Et AI-sentralbord svarer telefonen for deg med en naturlig stemme. Her er alt du trenger å vite.
+
+---
+
+De fleste småbedrifter har ikke et sentralbord. De har en mobiltelefon, en hektisk hverdag og et håp om at viktige samtaler ikke kommer akkurat når de er opptatt. Men det gjør de. Og hver gang telefonen ringer ubesvart, risikerer du å miste en kunde.
+
+Et [AI-sentralbord](/ai-sentralbord) endrer dette. Det svarer telefonen for deg, med en naturlig norsk stemme, døgnet rundt. Ikke med en meny eller en pipetone, men med en ekte samtale.
+
+## Hva er et AI-sentralbord?
+
+Et AI-sentralbord er en KI-drevet telefonløsning som svarer innkommende samtaler på vegne av bedriften din. Det forstår hva kunden sier, gir relevante svar basert på informasjon du har lagt inn, og kan utføre handlinger som å booke timer eller ta imot beskjeder.
+
+Tenk på det som en [virtuell resepsjonist](/virtuell-resepsjonist) som aldri er syk, aldri tar lunsj og aldri er på ferie.
+
+## Hvordan skiller det seg fra en vanlig telefonsvarer?
+
+En [vanlig telefonsvarer](/telefonsvarer-bedrift) spiller av en melding og ber kunden legge igjen beskjed. De fleste gjør det ikke. De ringer neste navn på lista.
+
+Et AI-sentralbord fører en samtale. Det stiller spørsmål, gir svar og løser kundens behov der og da. Kunden får hjelp, du mister ingen.
+
+## Hvem bruker det?
+
+AI-sentralbord brukes av bedrifter der telefon er en viktig kontaktkanal, men der det ikke er mulig eller lønnsomt å ha noen til å svare hele tiden. Det gjelder [de fleste småbedrifter](/blog/hva-koster-en-ubesvart-samtale): tannleger, rørleggere, frisører, advokater, klinikker og verksteder.
+
+## Hva koster det?
+
+Langt mindre enn å ansette noen. Bra Svar starter på 1 490 kroner per måned, uten oppstartkostnad og uten binding. Til sammenligning koster en fysisk resepsjonist rundt 35 000 kroner i måneden.
+
+## Slik kommer du i gang
+
+1. Vi lærer bedriften din å kjenne
+2. Du tester en prøveversjon
+3. Du kobler til nummeret ditt
+
+Hele prosessen tar vanligvis under en uke. [Les mer om hvordan det fungerer](/hvordan-det-fungerer).
+
+## Bra Svar er et AI-sentralbord bygget for norske bedrifter
+
+[Bra Svar](/ai-sentralbord) er laget for småbedrifter som vil svare kundene sine uten å ansette noen. Naturlig norsk stemme, integrasjon med kalendersystemet ditt, og full oversikt over alle samtaler. [Prøv gratis](/).`,
+  },
+  {
+    slug: 'trenger-du-virtuell-resepsjonist',
+    title: 'Trenger bedriften din en virtuell resepsjonist?',
+    description: 'En virtuell resepsjonist koster en brøkdel av en ansatt og svarer telefonen 24/7. Her er hvordan du finner ut om det passer for deg.',
+    date: '2026-03-24',
+    readTime: '4 min',
+    cover: '/images/blog/kundeforventning.png',
+    content: `En virtuell resepsjonist koster en brøkdel av en ansatt og svarer telefonen 24/7. Passer det for din bedrift?
+
+---
+
+Mange småbedrifter befinner seg i en klemme. Kundene forventer å bli møtt profesjonelt når de ringer. Men å ansette en resepsjonist er dyrt, og som regel helt unødvendig for en bedrift med 1 til 10 ansatte.
+
+En [virtuell resepsjonist](/virtuell-resepsjonist) løser dette. Den svarer telefonen med en naturlig stemme, hilser med bedriftens navn, og hjelper kunden videre. Enten det er å booke en time, svare på et spørsmål eller ta imot en beskjed.
+
+## Hva er en virtuell resepsjonist?
+
+Det er et [AI-sentralbord](/ai-sentralbord) tilpasset bedrifter som trenger profesjonelt kundemottak uten å ansette. Assistenten kjenner bedriften din, vet hva du tilbyr, og svarer deretter. Den er tilgjengelig 24/7, uten sykefravær og uten ferie.
+
+## Tegn på at du trenger en
+
+Du kjenner deg kanskje igjen i noen av disse:
+
+- Du mister anrop mens du er opptatt med kunder
+- Kunder klager på at det er vanskelig å nå deg
+- Du bruker tid på å ringe tilbake folk som ikke tar telefonen
+- Du har ikke råd til (eller behov for) en heltidsansatt resepsjonist
+- Du vil tilby kundene dine bedre tilgjengelighet
+
+Kjenner du deg igjen i to eller flere? Da er det verdt å prøve.
+
+## Hva koster det?
+
+En fysisk resepsjonist koster rundt 35 000 kroner i måneden med alt inkludert. Bra Svar starter på 1 490 kroner. Det er 96% lavere kostnad for samme jobb.
+
+Og du kan prøve helt gratis, uten binding.
+
+## Hvordan fungerer det i praksis?
+
+Oppsettet er enkelt. Du gir oss informasjon om bedriften din, vi bygger assistenten, og du tester den på et eget nummer. Når du er fornøyd, kobler du til. [Les mer om prosessen steg for steg](/hvordan-det-fungerer).
+
+Kunder som ringer merker at de snakker med en KI, og det er helt i tråd med [KI-regelverket](/blog/norges-nye-ki-lov). Men opplevelsen er naturlig, rask og profesjonell.
+
+## Bra Svar er din virtuelle resepsjonist
+
+[Bra Svar](/virtuell-resepsjonist) gir bedriften din profesjonelt kundemottak til en brøkdel av prisen. [Prøv gratis](/).`,
+  },
+  {
+    slug: 'bytt-fra-telefonsvarer-til-ai',
+    title: 'Derfor bør du bytte fra telefonsvarer til KI',
+    description: 'En vanlig telefonsvarer mister kunder. Et AI-alternativ fører en ekte samtale, booker timer og gir deg full oversikt. Her er forskjellene.',
+    date: '2026-03-26',
+    readTime: '4 min',
+    cover: '/images/blog/chatbot-samtaleagent.png',
+    content: `En vanlig telefonsvarer mister kunder. Et AI-alternativ fører en ekte samtale. Her er forskjellene.
+
+---
+
+De fleste bedrifter har hatt en telefonsvarer på et eller annet tidspunkt. Og de fleste har opplevd det samme: kundene legger ikke igjen beskjed. De ringer neste alternativ.
+
+En [KI-telefonsvarer](/telefonsvarer-bedrift) gjør noe helt annet. Den svarer med en gang, fører en naturlig samtale, og hjelper kunden videre. Enten med svar, en booket time eller en viderekobling til deg.
+
+## Problemet med vanlig telefonsvarer
+
+Pipetone. «Legg igjen en beskjed etter signalet.» De fleste legger på. Undersøkelser viser at under 20% av innringere til bedrifter legger igjen talemelding. Resten ringer neste treff i søkeresultatet.
+
+For deg betyr det tapte kunder du aldri visste om. [Vi har regnet på hva det koster](/blog/hva-koster-en-ubesvart-samtale).
+
+## Hva KI-alternativet gjør annerledes
+
+En KI-telefonsvarer fører en ekte samtale. Den:
+
+- Svarer med bedriftens navn innen ett sekund
+- Forstår hva kunden spør om
+- Gir relevante svar basert på din bedriftsinfo
+- Booker timer direkte i kalenderen
+- Sender deg oppsummering etterpå
+
+Det er ikke en telefonsvarer. Det er et [AI-sentralbord](/ai-sentralbord) som gjør jobben en resepsjonist vanligvis gjør, til en brøkdel av prisen.
+
+## Hvem bør bytte?
+
+Har du en telefonsvarer i dag? Da bør du vurdere å bytte hvis:
+
+- Du mister anrop utenom åpningstid
+- Kunder sjelden legger igjen beskjed
+- Du bruker tid på å ringe tilbake
+- Du vil at kundene skal kunne booke selv
+
+## Hva med personvern?
+
+All data behandles i tråd med GDPR, og kunden vet alltid at de snakker med en KI. [Les mer om personvern og KI-verktøy](/blog/gdpr-og-ki-verktoy).
+
+## Slik bytter du
+
+Prosessen er enkel og tar under en uke:
+
+1. Vi setter opp assistenten med din bedriftsinformasjon
+2. Du tester og gir tilbakemelding
+3. Du kobler til telefonnummeret ditt
+
+Alt dette er gratis. Ingen binding, ingen oppstartskostnad. [Se hvordan det fungerer steg for steg](/hvordan-det-fungerer).
+
+## Klar til å bytte?
+
+[Bra Svar](/telefonsvarer-bedrift) er laget for bedrifter som vil bytte fra talepost til samtale. [Prøv gratis](/).`,
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
