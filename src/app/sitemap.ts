@@ -23,5 +23,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     ...posts,
+    ...[
+      'ai-sentralbord',
+      'telefonsvarer-bedrift',
+      'virtuell-resepsjonist',
+      'hvordan-det-fungerer',
+      'ofte-stilte-sporsmal',
+    ].map(slug => ({
+      url: `https://brasvar.no/${slug}`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.6,
+    })),
   ];
 }

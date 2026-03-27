@@ -7,6 +7,7 @@ import FAQ from "@/components/FAQ/FAQ";
 import Recognition from "@/components/Recognition/Recognition";
 import Integrations from "@/components/Integrations/Integrations";
 import BlogPreview from "@/components/BlogPreview/BlogPreview";
+import HowItWorksPreview from "@/components/HowItWorksPreview/HowItWorksPreview";
 import ContactButton from "@/components/ContactModal/ContactButton";
 import AudioButton from "@/components/AudioModal/AudioButton";
 
@@ -59,6 +60,7 @@ export default function Home() {
       </section>
 
       <Recognition />
+      <HowItWorksPreview />
       <HowItWorks />
       <Pricing />
       <Integrations />
@@ -66,16 +68,51 @@ export default function Home() {
       <BlogPreview />
       {/* Footer */}
       <footer className={styles.footer}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem' }}>
           <span className="display-font" style={{ fontWeight: 800, fontSize: '1.1rem', color: 'rgba(255,255,255,0.9)' }}>
             Bra Svar<span style={{ color: '#ec4899' }}>!</span>
           </span>
         </div>
-        <nav style={{ display: 'flex', gap: '2rem', flexWrap: 'wrap', justifyContent: 'center' }}>
-          {['Personvern', 'Vilkår', 'Kontakt'].map((link) => (
-            <a key={link} href="#" className={styles.footerLink}>{link}</a>
-          ))}
-        </nav>
+
+        <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '3rem', marginBottom: '1.5rem' }}>
+          {/* Løsninger */}
+          <div>
+            <p style={{ fontSize: '0.75rem', fontWeight: 700, color: 'rgba(255,255,255,0.5)', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '0.6rem' }}>
+              Løsninger
+            </p>
+            <nav style={{ display: 'flex', flexDirection: 'column', gap: '0.35rem' }}>
+              <a href="/ai-sentralbord" className={styles.footerLink}>AI sentralbord</a>
+              <a href="/telefonsvarer-bedrift" className={styles.footerLink}>Telefonsvarer</a>
+              <a href="/virtuell-resepsjonist" className={styles.footerLink}>Virtuell resepsjonist</a>
+              <a href="/hvordan-det-fungerer" className={styles.footerLink}>Slik fungerer det</a>
+            </nav>
+          </div>
+
+          {/* Ressurser */}
+          <div>
+            <p style={{ fontSize: '0.75rem', fontWeight: 700, color: 'rgba(255,255,255,0.5)', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '0.6rem' }}>
+              Ressurser
+            </p>
+            <nav style={{ display: 'flex', flexDirection: 'column', gap: '0.35rem' }}>
+              <a href="/blog" className={styles.footerLink}>Blogg</a>
+              <a href="/ofte-stilte-sporsmal" className={styles.footerLink}>Ofte stilte spørsmål</a>
+            </nav>
+          </div>
+
+          {/* Om oss */}
+          <div>
+            <p style={{ fontSize: '0.75rem', fontWeight: 700, color: 'rgba(255,255,255,0.5)', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '0.6rem' }}>
+              Om oss
+            </p>
+            <nav style={{ display: 'flex', flexDirection: 'column', gap: '0.35rem' }}>
+              <a href="#" className={styles.footerLink}>Personvern</a>
+              <a href="#" className={styles.footerLink}>Vilkår</a>
+              <a href="#" className={styles.footerLink}>Kontakt</a>
+            </nav>
+          </div>
+        </div>
+
+        <div style={{ width: '100%', maxWidth: '600px', height: '1px', background: 'rgba(255,255,255,0.06)', margin: '0 auto 1rem' }} />
         <p style={{ fontSize: '0.85rem', color: 'rgba(255,255,255,0.25)', fontWeight: 500, textAlign: 'center' }}>
           © 2026 by Klevstrand Innovasjon
         </p>

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect, useRef, useMemo } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import AnimateIn from '@/components/AnimateIn/AnimateIn';
 import { faqs } from '@/lib/faqs';
 
@@ -13,15 +13,15 @@ export default function FAQ() {
     setRandomFaqs(shuffled.slice(0, 3));
   }, []);
 
-  const faqJsonLd = useMemo(() => ({
+  const faqJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
-    mainEntity: randomFaqs.map(f => ({
+    mainEntity: faqs.map(f => ({
       '@type': 'Question',
       name: f.q,
       acceptedAnswer: { '@type': 'Answer', text: f.a },
     })),
-  }), [randomFaqs]);
+  };
 
   return (
     <section
