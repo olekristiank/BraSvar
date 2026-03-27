@@ -30,12 +30,12 @@ export default function AnimateIn({ children, delay = 0, style = {}, className }
       ref={ref}
       className={className}
       style={{
+        width: '100%',
+        height: '100%',
         ...style,
         opacity: isVisible ? 1 : 0,
         transform: isVisible ? 'translateY(0)' : 'translateY(24px)',
         transition: `opacity 0.7s cubic-bezier(.2,0.8,.2,1) ${delay}ms, transform 0.7s cubic-bezier(.2,0.8,.2,1) ${delay}ms`,
-        width: '100%',
-        height: '100%',
       }}
     >
       {children}
