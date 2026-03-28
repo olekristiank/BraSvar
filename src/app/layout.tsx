@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     siteName: 'Bra Svar',
     locale: 'nb_NO',
     type: 'website',
-    images: [{ url: '/icon.svg', width: 100, height: 100, alt: 'Bra Svar logo' }],
+    images: [{ url: '/opengraph-image.svg', width: 1200, height: 630, alt: 'Bra Svar - AI-sentralbord for norske bedrifter' }],
   },
 };
 

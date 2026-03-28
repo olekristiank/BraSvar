@@ -98,7 +98,7 @@ export default function OmOssPage() {
           <p style={textStyle}>
             Klevstrand Innovasjon<br />
             Org.nr. 937 361 157<br />
-            <a href="https://www.klevstrand.no" style={{ color: '#ec4899', textDecoration: 'none' }}>www.klevstrand.no</a>
+            www.klevstrand.no
           </p>
         </div>
 

@@ -34,8 +34,12 @@ const jsonLd = {
   '@type': 'Product',
   name: 'Bra Svar AI Switchboard',
   description: 'AI switchboard that answers the phone for businesses around the clock.',
+  image: 'https://brasvar.no/icon.svg',
   brand: { '@type': 'Organization', name: 'Bra Svar' },
-  offers: { '@type': 'AggregateOffer', lowPrice: '1490', highPrice: '2990', priceCurrency: 'NOK', offerCount: '3', availability: 'https://schema.org/InStock' },
+  offers: [
+    { '@type': 'Offer', name: 'Mini', price: '1490', priceCurrency: 'NOK', availability: 'https://schema.org/InStock' },
+    { '@type': 'Offer', name: 'Basis', price: '2990', priceCurrency: 'NOK', availability: 'https://schema.org/InStock' },
+  ],
 };
 
 export default function AISwitchboard() {

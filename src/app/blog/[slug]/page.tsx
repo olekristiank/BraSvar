@@ -255,6 +255,14 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
               Prøv Bra Svar
             </Link>
           </div>
+
+          <div style={{ textAlign: 'center', padding: '1.5rem 0 0', marginTop: '1rem' }}>
+            <div style={{ display: 'flex', gap: '1.5rem', justifyContent: 'center', fontSize: '0.82rem' }}>
+              <Link href="/personvern" style={{ color: '#94a3b8', textDecoration: 'none' }}>Personvern</Link>
+              <Link href="/om-oss" style={{ color: '#94a3b8', textDecoration: 'none' }}>Om oss</Link>
+              <Link href="/kontakt" style={{ color: '#94a3b8', textDecoration: 'none' }}>Kontakt</Link>
+            </div>
+          </div>
         </article>
       </main>
     </>
