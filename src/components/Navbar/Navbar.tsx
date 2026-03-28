@@ -5,11 +5,18 @@ import { useContactModal } from '@/components/ContactModal/ContactContext';
 
 const industries = [
   { href: '/advokat', label: 'Advokat' },
+  { href: '/akupunktor', label: 'Akupunktør' },
+  { href: '/arkitekt', label: 'Arkitekt' },
+  { href: '/begravelsesbyraa', label: 'Begravelsesbyrå' },
   { href: '/bilpleie', label: 'Bilpleie' },
   { href: '/eiendomsmegler', label: 'Eiendomsmegler' },
+  { href: '/elektriker', label: 'Elektriker' },
+  { href: '/entreprenor', label: 'Entreprenør' },
   { href: '/forsikring', label: 'Forsikring' },
+  { href: '/fotograf', label: 'Fotograf' },
   { href: '/fotterapeut', label: 'Fotterapeut' },
   { href: '/frisor', label: 'Frisør' },
+  { href: '/fysioterapeut', label: 'Fysioterapeut' },
   { href: '/handverker', label: 'Håndverker' },
   { href: '/hudklinikk', label: 'Hudklinikk' },
   { href: '/hundesalong', label: 'Hundesalong' },
@@ -17,13 +24,18 @@ const industries = [
   { href: '/klinikk', label: 'Klinikk' },
   { href: '/konsulent', label: 'Konsulent' },
   { href: '/legekontor', label: 'Legekontor' },
+  { href: '/maler', label: 'Maler' },
   { href: '/naprapat-osteopat', label: 'Naprapat/Osteopat' },
   { href: '/optiker', label: 'Optiker' },
   { href: '/personlig-trener', label: 'Personlig trener' },
+  { href: '/psykolog', label: 'Psykolog' },
   { href: '/regnskapsforer', label: 'Regnskapsfører' },
   { href: '/renhold', label: 'Renhold' },
+  { href: '/rorlegger', label: 'Rørlegger' },
   { href: '/skjonnhet', label: 'Skjønnhetssalong' },
   { href: '/tannlege', label: 'Tannlege' },
+  { href: '/tatovor', label: 'Tatovør' },
+  { href: '/treningssenter', label: 'Treningssenter' },
   { href: '/velvaereklinikk', label: 'Velværeklinikk' },
   { href: '/verksted', label: 'Verksted' },
   { href: '/veterinaer', label: 'Veterinær' },
@@ -120,7 +132,7 @@ export default function Navbar() {
                 <div style={{
                   background: '#fff', borderRadius: '14px', border: '1px solid #f1f5f9',
                   boxShadow: '0 8px 30px rgba(0,0,0,0.08)', padding: '0.75rem 0',
-                  display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0', minWidth: '340px',
+                  display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '0', minWidth: '480px',
                 }}>
                   {industries.map((ind) => (
                     <a key={ind.href} href={ind.href} style={{

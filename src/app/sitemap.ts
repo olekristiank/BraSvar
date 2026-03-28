@@ -41,6 +41,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
       'hudklinikk', 'velvaereklinikk', 'advokat', 'regnskapsforer', 'eiendomsmegler',
       'forsikring', 'konsulent', 'hundesalong', 'bilpleie', 'renhold',
       'fotterapeut', 'kiropraktor', 'veterinaer',
+      'fysioterapeut', 'psykolog', 'elektriker', 'rorlegger', 'fotograf',
+      'tatovor', 'maler', 'begravelsesbyraa', 'treningssenter', 'akupunktor',
+      'entreprenor', 'arkitekt',
     ].map(slug => ({
       url: `https://brasvar.no/${slug}`,
       lastModified: new Date(),
