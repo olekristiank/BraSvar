@@ -668,6 +668,94 @@ Alt dette er gratis. Ingen binding, ingen oppstartskostnad. [Se hvordan det fung
 
 [Bra Svar](/telefonsvarer-bedrift) er laget for bedrifter som vil bytte fra talepost til samtale. [Prøv gratis](/).`,
   },
+  {
+    slug: 'mister-kunder-pa-telefon',
+    title: 'Mister du kunder på telefon?',
+    description: 'Mange bedrifter mister kunder fordi de ikke rekker å ta telefonen. Her er hvorfor det skjer, hva det koster, og hvordan du kan unngå det.',
+    date: '2026-03-28',
+    readTime: '5 min',
+    cover: '/images/blog/samtale-kostnad.png',
+    content: `Mange bedrifter mister kunder hver uke uten å vite det. Ikke fordi de gjør en dårlig jobb, men fordi de ikke rekker å ta telefonen når noen ringer.
+
+Når kunden ikke får svar, skjer det noe enkelt: de ringer neste alternativ.
+
+## Hvorfor mister bedrifter kunder på telefon?
+
+Det skjer som regel ikke fordi du ikke bryr deg. Det skjer fordi du er opptatt.
+
+Typiske situasjoner:
+
+- Du står med en kunde
+- Du er ute på oppdrag
+- Du sitter i møte
+- Du rekker ikke å ringe tilbake raskt nok
+
+For deg er det én tapt samtale. For kunden er det bare ett ekstra klikk videre til neste leverandør.
+
+## Hva koster en ubesvart samtale?
+
+En ubesvart samtale er ikke bare et tapt anrop. Det kan være:
+
+- En ny kunde som aldri kommer tilbake
+- En booking som går til noen andre
+- En eksisterende kunde som blir frustrert
+- Inntekt du aldri får igjen
+
+Har du bare én eller to slike i uka, kan det utgjøre [mye over tid](/blog/hva-koster-en-ubesvart-samtale). For en gjennomsnittlig småbedrift snakker vi fort om hundretusenvis av kroner i året.
+
+## Hvorfor holder det ikke med vanlig telefonsvarer?
+
+De fleste som ringer en bedrift legger ikke igjen beskjed på telefonsvarer. De vil ha svar med en gang.
+
+En vanlig telefonsvarer:
+
+- Tar ikke samtalen videre
+- Svarer ikke på spørsmål
+- Booker ikke timer
+- Stopper ikke kunden fra å ringe konkurrenten
+
+Et bedre alternativ for mange er en moderne [telefonsvarer for bedrift](/telefonsvarer-bedrift) som faktisk fører en samtale med kunden.
+
+## Hva kan du gjøre i stedet?
+
+Det viktigste er å sørge for at kunden faktisk får et svar når de ringer. Det kan være at noen svarer for deg, at henvendelsen blir håndtert med én gang, eller at kunden får hjelp videre uten å vente.
+
+For mange små bedrifter er dette grunnen til at de velger et [AI-sentralbord](/ai-sentralbord) eller en [virtuell resepsjonist](/virtuell-resepsjonist). Assistenten svarer telefonen med en naturlig stemme, kjenner bedriften din og kan hjelpe kunden direkte.
+
+## Hvem merker dette mest?
+
+Dette gjelder spesielt for bedrifter som ikke alltid kan avbryte arbeidet sitt for å ta telefonen:
+
+- Klinikker og behandlere som står med pasienter
+- Frisører med hendene fulle
+- Håndverkere ute på jobb
+- Verksteder med støy og travle dager
+- Små kontorer uten resepsjon
+
+Felles for alle: telefonen er viktig, men det er ikke alltid mulig å svare.
+
+## 5 tegn på at du sannsynligvis mister kunder på telefon
+
+1. Du ser ofte ubesvarte anrop når du er ferdig med en kunde
+2. Mange ringer bare én gang og ringer aldri tilbake
+3. Du rekker ikke ringe tilbake før det har gått for lang tid
+4. Du får spørsmål som kunne vært besvart automatisk
+5. Booking og henvendelser kommer ujevnt eller forsvinner
+
+Kjenner du deg igjen i to eller flere? Da mister du sannsynligvis kunder uten å vite det.
+
+## Det handler ikke om telefonen. Det handler om kundene.
+
+Når noen ringer bedriften din, prøver de å komme videre. Bestille en time, få svar på et spørsmål, finne ut om du kan hjelpe dem. Hvis de ikke får svar, går de videre et annet sted.
+
+Derfor er det ikke nok å bare ha et telefonnummer. Du trenger en løsning som faktisk tar imot henvendelsen. [Se hvordan det fungerer i praksis](/hvordan-det-fungerer).
+
+## Vil du slutte å miste kunder på telefon?
+
+Bra Svar svarer telefonen for deg, håndterer henvendelser og hjelper kundene videre når du ikke kan ta telefonen selv.
+
+[Prøv Bra Svar gratis](/) | [Se hvordan det fungerer](/hvordan-det-fungerer)`,
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
