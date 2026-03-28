@@ -14,7 +14,7 @@ import AudioButton from '@/components/AudioModal/AudioButton';
 
 export const metadata: Metadata = {
   title: 'Bra Svar! - AI Switchboard and Intelligent Customer Service',
-  description: 'Bra Svar is your AI switchboard and customer service agent. It answers the phone, books appointments and helps your customers. Around the clock.',
+  description: 'Bra Svar is an AI switchboard built for Norwegian small businesses. It answers the phone, books appointments and helps your customers around the clock.',
   openGraph: {
     title: 'Bra Svar! - AI Switchboard and Intelligent Customer Service',
     description: 'AI switchboard that answers the phone, books appointments and helps your customers around the clock.',
@@ -54,7 +54,7 @@ export default function EnglishHome() {
             your competitor does.
           </h1>
           <p className={`${styles.heroSubheadline} animate-fade-in delay-2`}>
-            <span className="display-font" style={{ fontWeight: 800, color: '#0f172a' }}>Bra Svar<span style={{ color: '#ec4899' }}>!</span></span> is your AI switchboard and customer service agent.<br />
+            <span className="display-font" style={{ fontWeight: 800, color: '#0f172a' }}>Bra Svar<span style={{ color: '#ec4899' }}>!</span></span> is an AI switchboard built for Norwegian small businesses.<br />
             It answers the phone, books appointments and helps your customers. Around the clock.
           </p>
 
