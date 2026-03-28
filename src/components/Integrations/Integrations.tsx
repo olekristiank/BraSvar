@@ -96,9 +96,9 @@ function CategoryRow({ title, items }: { title: string; items: string[] }) {
   const [open, setOpen] = useState(false);
   const contentRef = useRef<HTMLDivElement>(null);
   const [height, setHeight] = useState(0);
-  const previewCount = Math.min(3, items.length);
+  const previewCount = Math.min(6, items.length);
   const previewItems = items.slice(0, previewCount);
-  const remainingCount = items.length - previewCount;
+  const hasMore = items.length > previewCount;
 
   useEffect(() => {
     if (contentRef.current) {
@@ -110,15 +110,15 @@ function CategoryRow({ title, items }: { title: string; items: string[] }) {
     <div
       style={{
         borderRadius: '12px',
-        border: '1px solid',
+        border: hasMore ? '1px solid' : 'none',
         borderColor: open ? 'rgba(236,72,153,0.15)' : '#f1f5f9',
-        background: open ? 'rgba(253,242,248,0.3)' : '#fff',
+        background: open ? 'rgba(253,242,248,0.3)' : hasMore ? '#fff' : 'transparent',
         transition: 'all 0.3s ease',
         overflow: 'hidden',
       }}
     >
       <button
-        onClick={() => setOpen(!open)}
+        onClick={() => hasMore && setOpen(!open)}
         style={{
           width: '100%',
           display: 'flex',
@@ -127,7 +127,7 @@ function CategoryRow({ title, items }: { title: string; items: string[] }) {
           padding: '0.85rem 1.1rem',
           background: 'none',
           border: 'none',
-          cursor: 'pointer',
+          cursor: hasMore ? 'pointer' : 'default',
           gap: '0.75rem',
         }}
       >
@@ -158,29 +158,31 @@ function CategoryRow({ title, items }: { title: string; items: string[] }) {
             </span>
           )}
         </div>
-        <span style={{
-          fontSize: '0.78rem',
-          fontWeight: 600,
-          color: open ? '#db2777' : '#ec4899',
-          whiteSpace: 'nowrap',
-          flexShrink: 0,
-          display: 'flex',
-          alignItems: 'center',
-          gap: '0.3rem',
-        }}>
-          {open ? 'Skjul' : 'Flere'}
-          <svg
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2.5"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            style={{ width: 12, height: 12, transition: 'transform 0.3s ease', transform: open ? 'rotate(180deg)' : 'rotate(0)' }}
-          >
-            <polyline points="6 9 12 15 18 9" />
-          </svg>
-        </span>
+        {hasMore && (
+          <span style={{
+            fontSize: '0.78rem',
+            fontWeight: 600,
+            color: open ? '#db2777' : '#ec4899',
+            whiteSpace: 'nowrap',
+            flexShrink: 0,
+            display: 'flex',
+            alignItems: 'center',
+            gap: '0.3rem',
+          }}>
+            {open ? 'Skjul' : 'Flere'}
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              style={{ width: 12, height: 12, transition: 'transform 0.3s ease', transform: open ? 'rotate(180deg)' : 'rotate(0)' }}
+            >
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </span>
+        )}
       </button>
 
       <div
