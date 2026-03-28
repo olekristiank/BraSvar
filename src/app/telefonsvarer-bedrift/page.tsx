@@ -98,6 +98,23 @@ export default function Telefonsvarer() {
         </div>
       </div>
 
+      {/* Vanlige spørsmål */}
+      <div style={{ maxWidth: '700px', margin: '0 auto', padding: '2rem clamp(1.5rem, 4vw, 3rem) 4rem' }}>
+        <h2 style={{ fontSize: 'clamp(1.5rem, 3vw, 2rem)', fontWeight: 800, color: '#0f172a', textAlign: 'center', marginBottom: '2rem' }}>Vanlige spørsmål</h2>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+          {[
+            { q: 'Hva skjer om kunden stiller et spørsmål assistenten ikke kan svare på?', a: 'Assistenten er ærlig og sier at den ikke har svaret, men tilbyr å ta en beskjed slik at du kan ringe tilbake. Du får en oppsummering med spørsmålet og kontaktinformasjon, slik at du kan følge opp raskt. Ingen kunder blir hengende i løse luften.' },
+            { q: 'Kan jeg fortsatt svare telefonen selv når jeg er tilgjengelig?', a: 'Absolutt. De fleste kunder bruker Bra Svar som en backup. Du kan sette opp viderekobling slik at assistenten kun tar over når du ikke svarer innen et visst antall ring, eller etter arbeidstid. Du bestemmer selv når AI-assistenten skal være aktiv.' },
+            { q: 'Hvor lang tid tar det å komme i gang?', a: 'De fleste bedrifter er oppe og kjører i løpet av én til to virkedager. Vi trenger litt informasjon om tjenestene dine og hvordan du vil at samtaler skal håndteres. Deretter setter vi opp og tester assistenten sammen med deg før den aktiveres.' },
+          ].map((item) => (
+            <div key={item.q}>
+              <h3 style={{ fontWeight: 700, fontSize: '1rem', color: '#0f172a', marginBottom: '0.35rem' }}>{item.q}</h3>
+              <p style={{ fontSize: '0.9rem', color: '#64748b', lineHeight: 1.6 }}>{item.a}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
       <div style={{ textAlign: 'center', padding: '3rem 2rem 5rem', background: 'linear-gradient(180deg, #fff 0%, #fdf2f8 100%)' }}>
         <h2 style={{ fontSize: 'clamp(1.5rem, 3vw, 2.2rem)', fontWeight: 800, color: '#0f172a', marginBottom: '1rem' }}>Bytt fra telefonsvarer til samtale</h2>
         <p style={{ color: '#64748b', marginBottom: '1.5rem' }}>Gratis å prøve. Ingen binding, ingen oppstartskostnad.</p>

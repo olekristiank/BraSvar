@@ -87,6 +87,26 @@ export default function AISentralbord() {
         </ul>
       </div>
 
+      {/* Slik kommer du i gang */}
+      <div style={{ maxWidth: '700px', margin: '0 auto', padding: '0 clamp(1.5rem, 4vw, 3rem) 4rem' }}>
+        <h2 style={{ fontSize: 'clamp(1.5rem, 3vw, 2rem)', fontWeight: 800, color: '#0f172a', textAlign: 'center', marginBottom: '2rem' }}>Slik kommer du i gang</h2>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+          {[
+            { step: '1', title: 'Fortell oss om bedriften din', text: 'Vi trenger bare grunnleggende informasjon: hva bedriften gjør, hvilke tjenester dere tilbyr, åpningstider og hvordan dere ønsker at samtaler skal håndteres. Det tar under ti minutter.' },
+            { step: '2', title: 'Vi bygger assistenten din', text: 'Basert på informasjonen du gir oss, setter vi opp en skreddersydd AI-assistent som kjenner bedriften din. Vi tester den sammen med deg og gjør justeringer til du er fornøyd med resultatet.' },
+            { step: '3', title: 'Aktiver viderekobling', text: 'Når assistenten er klar, aktiverer du viderekobling fra ditt eksisterende telefonnummer. Alt skjer uten bytte av nummer og uten installasjon. Kundene dine merker ingen forskjell, bortsett fra at noen endelig svarer.' },
+          ].map((item) => (
+            <div key={item.step} style={{ display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
+              <div style={{ width: 32, height: 32, borderRadius: '50%', background: 'linear-gradient(135deg, #db2777, #be185d)', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 700, fontSize: '0.85rem', flexShrink: 0 }}>{item.step}</div>
+              <div>
+                <h3 style={{ fontWeight: 700, fontSize: '1rem', color: '#0f172a', marginBottom: '0.35rem' }}>{item.title}</h3>
+                <p style={{ fontSize: '0.9rem', color: '#64748b', lineHeight: 1.6 }}>{item.text}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
       <div style={{ textAlign: 'center', padding: '3rem 2rem 5rem', background: 'linear-gradient(180deg, #fff 0%, #fdf2f8 100%)' }}>
         <h2 style={{ fontSize: 'clamp(1.5rem, 3vw, 2.2rem)', fontWeight: 800, color: '#0f172a', marginBottom: '1rem' }}>Klar til å aldri miste et anrop igjen?</h2>
         <p style={{ color: '#64748b', marginBottom: '1.5rem' }}>Gratis å prøve. Ingen binding, ingen oppstartskostnad.</p>

@@ -87,6 +87,26 @@ export default function AISwitchboard() {
         </ul>
       </div>
 
+      {/* How to get started */}
+      <div style={{ maxWidth: '700px', margin: '0 auto', padding: '0 clamp(1.5rem, 4vw, 3rem) 4rem' }}>
+        <h2 style={{ fontSize: 'clamp(1.5rem, 3vw, 2rem)', fontWeight: 800, color: '#0f172a', textAlign: 'center', marginBottom: '2rem' }}>How to get started</h2>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+          {[
+            { step: '1', title: 'Tell us about your business', text: 'We only need the basics: what your business does, which services you offer, your opening hours and how you want calls to be handled. It takes less than ten minutes.' },
+            { step: '2', title: 'We build your assistant', text: 'Based on the information you provide, we set up a custom AI assistant that knows your business inside out. We test it together with you and make adjustments until you are happy with the result.' },
+            { step: '3', title: 'Activate call forwarding', text: 'When the assistant is ready, you simply activate call forwarding from your existing phone number. No number change and no installation required. Your customers will not notice any difference, except that someone finally picks up.' },
+          ].map((item) => (
+            <div key={item.step} style={{ display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
+              <div style={{ width: 32, height: 32, borderRadius: '50%', background: 'linear-gradient(135deg, #db2777, #be185d)', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 700, fontSize: '0.85rem', flexShrink: 0 }}>{item.step}</div>
+              <div>
+                <h3 style={{ fontWeight: 700, fontSize: '1rem', color: '#0f172a', marginBottom: '0.35rem' }}>{item.title}</h3>
+                <p style={{ fontSize: '0.9rem', color: '#64748b', lineHeight: 1.6 }}>{item.text}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
       <div style={{ textAlign: 'center', padding: '3rem 2rem 5rem', background: 'linear-gradient(180deg, #fff 0%, #fdf2f8 100%)' }}>
         <h2 style={{ fontSize: 'clamp(1.5rem, 3vw, 2.2rem)', fontWeight: 800, color: '#0f172a', marginBottom: '1rem' }}>Ready to never miss a call again?</h2>
         <p style={{ color: '#64748b', marginBottom: '1.5rem' }}>Free to try. No commitment, no setup fee.</p>

@@ -73,21 +73,35 @@ export default function AboutPage() {
         <div style={sectionStyle}>
           <h2 style={sectionTitleStyle}>Who we are</h2>
           <p style={textStyle}>
-            Bra Svar is a service from Klevstrand Innovasjon, a Norwegian technology company based in Akershus. We build software for small and medium-sized businesses.
+            Bra Svar is a service from Klevstrand Innovasjon, a Norwegian technology company based in Akershus. We build software for small and medium-sized businesses, with a strong focus on usability. The team behind Bra Svar has a background in product development, user experience and artificial intelligence, and we are passionate about making advanced technology accessible to everyday businesses.
           </p>
         </div>
 
         <div style={sectionStyle}>
           <h2 style={sectionTitleStyle}>What we do</h2>
           <p style={textStyle}>
-            With Bra Svar, we build AI phone assistants that answer the phone for your business with a natural voice. The assistant books appointments, answers questions and sends you a summary afterwards.
+            With Bra Svar, we build AI phone assistants that answer the phone for your business with a natural voice. The assistant books appointments, answers questions and sends you a summary afterwards. Each assistant is tailored to the individual business, with knowledge of services, prices, opening hours and common customer enquiries. The result is that your customers get help straight away, no matter when they call.
           </p>
         </div>
 
         <div style={sectionStyle}>
-          <h2 style={sectionTitleStyle}>Why</h2>
+          <h2 style={sectionTitleStyle}>Our mission</h2>
           <p style={textStyle}>
-            Because small businesses deserve the same availability as large corporations, without the cost.
+            Small businesses deserve the same availability as large corporations, without the cost. A dentist treating patients, an electrician out on a job, or a lawyer in meetings all day, rarely has the chance to answer the phone. Yet customers expect an answer. We build the tools that make it possible for small teams to deliver big service.
+          </p>
+        </div>
+
+        <div style={sectionStyle}>
+          <h2 style={sectionTitleStyle}>Why AI for small businesses?</h2>
+          <p style={textStyle}>
+            Large companies have call centres and receptionists who answer around the clock. For a business with two to ten employees, that is simply not realistic. Artificial intelligence makes it possible to offer the same experience at a fraction of the cost. It is not about replacing people, but about making sure no customer enquiry disappears just because you are busy doing the work you are actually meant to do.
+          </p>
+        </div>
+
+        <div style={sectionStyle}>
+          <h2 style={sectionTitleStyle}>What makes Bra Svar different?</h2>
+          <p style={textStyle}>
+            We are not a generic AI tool. Bra Svar is built specifically for Norwegian businesses, with Norwegian language understanding and adaptation to local working conditions. We set up the assistant together with you, test it thoroughly and adjust until it responds exactly the way you want. You do not need any technical expertise to get started, and we are available for support along the way.
           </p>
         </div>
 

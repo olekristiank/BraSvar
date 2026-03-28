@@ -67,21 +67,35 @@ export default function OmOssPage() {
         <div style={sectionStyle}>
           <h2 style={sectionTitleStyle}>Hvem vi er</h2>
           <p style={textStyle}>
-            Bra Svar er en tjeneste fra Klevstrand Innovasjon, et norsk teknologiselskap med base i Akershus. Hovedfokus er utvikling av SaaS-løsninger og apper for SMB og konsumentmarkedet, med brukervennlighet i fokus.
+            Bra Svar er en tjeneste fra Klevstrand Innovasjon, et norsk teknologiselskap med base i Akershus. Hovedfokus er utvikling av SaaS-løsninger og apper for SMB og konsumentmarkedet, med brukervennlighet i fokus. Teamet bak Bra Svar har bakgrunn fra produktutvikling, brukeropplevelse og kunstig intelligens, og vi brenner for å gjøre avansert teknologi tilgjengelig for vanlige bedrifter.
           </p>
         </div>
 
         <div style={sectionStyle}>
           <h2 style={sectionTitleStyle}>Hva vi gjør</h2>
           <p style={textStyle}>
-            Med tjenesten Bra Svar lager vi KI-telefonassistenter som svarer telefonen for bedriften din med en naturlig norsk stemme. Assistenten booker timer, svarer på spørsmål og sender deg oppsummering etterpå.
+            Med tjenesten Bra Svar lager vi KI-telefonassistenter som svarer telefonen for bedriften din med en naturlig norsk stemme. Assistenten booker timer, svarer på spørsmål og sender deg oppsummering etterpå. Hver assistent blir skreddersydd til den enkelte bedrift, med kunnskap om tjenester, priser, åpningstider og vanlige kundehenvendelser. Resultatet er at kundene dine får hjelp med en gang, uansett når de ringer.
           </p>
         </div>
 
         <div style={sectionStyle}>
-          <h2 style={sectionTitleStyle}>Hvorfor</h2>
+          <h2 style={sectionTitleStyle}>Vårt oppdrag</h2>
           <p style={textStyle}>
-            Fordi småbedrifter fortjener samme tilgjengelighet som store selskaper, uten kostnadene.
+            Småbedrifter fortjener samme tilgjengelighet som store selskaper, uten kostnadene. En tannlege som behandler pasienter, en elektriker som er ute på oppdrag, eller en advokat som sitter i møter hele dagen, har sjelden mulighet til å svare telefonen. Likevel forventer kundene svar. Vi bygger verktøyene som gjør det mulig for små team å levere stor service.
+          </p>
+        </div>
+
+        <div style={sectionStyle}>
+          <h2 style={sectionTitleStyle}>Hvorfor KI for småbedrifter?</h2>
+          <p style={textStyle}>
+            Store selskaper har callsentre og resepsjonister som svarer døgnet rundt. For en bedrift med to til ti ansatte er det rett og slett ikke realistisk. Kunstig intelligens gjør det mulig å tilby den samme opplevelsen til en brøkdel av kostnaden. Det handler ikke om å erstatte mennesker, men om å sørge for at ingen kundehenvendelse forsvinner bare fordi du er opptatt med jobben du faktisk skal gjøre.
+          </p>
+        </div>
+
+        <div style={sectionStyle}>
+          <h2 style={sectionTitleStyle}>Hva gjør Bra Svar annerledes?</h2>
+          <p style={textStyle}>
+            Vi er ikke et generisk AI-verktøy. Bra Svar er bygget spesifikt for norske bedrifter, med norsk språkforståelse og tilpasning til norske arbeidsforhold. Vi setter opp assistenten sammen med deg, tester den grundig, og justerer til den svarer akkurat slik du ønsker. Du trenger ingen teknisk kompetanse for å komme i gang, og vi er tilgjengelige for støtte underveis.
           </p>
         </div>
 

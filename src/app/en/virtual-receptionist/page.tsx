@@ -21,10 +21,10 @@ const benefits = [
 ];
 
 const whoItsFor = [
-  { title: 'Clinics and healthcare professionals', desc: 'Focus on your patients. Let the receptionist take the phone.' },
-  { title: 'Tradespeople and service companies', desc: 'Be out on jobs without losing customers.' },
-  { title: 'Lawyers and consultants', desc: 'Be in meetings without missing new enquiries.' },
-  { title: 'Small offices', desc: 'Professional customer reception without hiring anyone.' },
+  { title: 'Clinics and healthcare professionals', desc: 'Patients often call during working hours to book appointments or ask about treatments. With a virtual receptionist, you can focus entirely on your patients while the assistant handles the phone professionally.' },
+  { title: 'Tradespeople and service companies', desc: 'When you are out on a job with your hands full, potential customers call the next company on the list. The assistant takes the enquiry, provides information about your services and books a time for a quote or visit.' },
+  { title: 'Lawyers and consultants', desc: 'Meetings and client work fill the entire day. A virtual receptionist makes sure new enquiries are received, messages are structured and urgent matters are forwarded to you immediately.' },
+  { title: 'Small offices', desc: 'Not every business can afford or needs a full-time receptionist. With Bra Svar you get professional customer reception at a fraction of the price, without hiring and without administration.' },
 ];
 
 export default function VirtualReceptionist() {

@@ -21,10 +21,10 @@ const benefits = [
 ];
 
 const whoItsFor = [
-  { title: 'Klinikker og helsepersonell', desc: 'Fokuser på pasientene. La resepsjonisten ta telefonen.' },
-  { title: 'Håndverkere og servicebedrifter', desc: 'Vær ute på oppdrag uten å miste kunder.' },
-  { title: 'Advokater og konsulenter', desc: 'Vær i møter uten å gå glipp av nye henvendelser.' },
-  { title: 'Små kontorer', desc: 'Profesjonelt kundemottak uten å ansette noen.' },
+  { title: 'Klinikker og helsepersonell', desc: 'Pasienter ringer ofte midt i arbeidstiden for å bestille timer eller stille spørsmål om behandlinger. Med en virtuell resepsjonist kan du fokusere fullt på pasientene dine, mens assistenten håndterer telefonen profesjonelt.' },
+  { title: 'Håndverkere og servicebedrifter', desc: 'Når du er ute på oppdrag med hendene fulle, ringer potensielle kunder neste firma på listen. Assistenten tar imot henvendelsen, gir informasjon om tjenestene dine og booker tid for befaring eller oppdrag.' },
+  { title: 'Advokater og konsulenter', desc: 'Møter og klientarbeid fyller hele dagen. En virtuell resepsjonist sørger for at nye henvendelser blir tatt imot, at beskjeder blir strukturert og at hastesaker blir videresendt til deg umiddelbart.' },
+  { title: 'Små kontorer', desc: 'Ikke alle bedrifter har råd til eller behov for en heltidsansatt i resepsjonen. Med Bra Svar får du profesjonelt kundemottak til en brøkdel av prisen, uten ansettelse og uten administrasjon.' },
 ];
 
 const jsonLd = {

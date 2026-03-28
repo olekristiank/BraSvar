@@ -30,7 +30,7 @@ Det merkelige er at de fleste småbedrifter ikke vet hvor mange samtaler de mist
 
 La oss ta et eksempel. Du driver en liten klinikk og mottar i snitt 30 anrop per dag. Av disse går kanskje 8 ubesvart – fordi du er opptatt med pasienter, i lunsj, eller fordi det ringer etter stengetid. Hvis bare 2 av disse 8 var potensielle nye kunder, og en gjennomsnittlig ny kunde er verdt 3 000 kroner i omsetning, snakker vi om 6 000 kroner per dag. 30 000 per uke. **Over en million i året.**
 
-Tallet varierer fra bransje til bransje. Men poenget står: de fleste småbedrifter lekker penger gjennom ubesvarte samtaler uten å vite det.
+Tallet varierer fra bransje til bransje. [Virke](https://www.virke.no/) peker på at kundetilgjengelighet er avgjørende for småbedrifters konkurranseevne. Men poenget står: de fleste småbedrifter lekker penger gjennom ubesvarte samtaler uten å vite det.
 
 ## Problemet er ikke latskap
 
@@ -71,7 +71,7 @@ Men bak tallene finnes et skille. Noen bedrifter har integrert KI på tvers av h
 
 ## Hva driver utviklingen?
 
-Teknologien har blitt tilgjengelig. Verktøy som ChatGPT og lignende har senket terskelen kraftig. Du trenger ikke en utviklingsavdeling for å komme i gang. For de fleste bedrifter brukes KI til å forbedre interne arbeidsprosesser: administrasjon, analyse, planlegging og kundedialog.
+Teknologien har blitt tilgjengelig. Verktøy som ChatGPT og lignende har senket terskelen kraftig. Du trenger ikke en utviklingsavdeling for å komme i gang. Ifølge [McKinseys globale undersøkelse om KI](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai) bruker de fleste bedrifter KI til å forbedre interne arbeidsprosesser: administrasjon, analyse, planlegging og kundedialog.
 
 Det som kanskje er mest interessant: én av fem virksomheter bruker allerede KI til å utvikle helt nye produkter eller tjenester. Teknologien skaper ikke bare effektivitet – den skaper noe nytt.
 
@@ -219,7 +219,7 @@ Kunden hører en naturlig stemme som hilser: *«Hei, du har kommet til Klinikk S
 
 KI-en bruker en språkmodell til å forstå hva kunden sier – ikke bare enkeltord, men hele setninger i kontekst. Kunden kan si «Jeg lurer på om dere har ledig time neste uke» eller «Hva koster en førstegangskonsultasjon?» og assistenten forstår begge deler.
 
-Teknologien håndterer norsk, dialekter og aksenter. Den fungerer også på engelsk.
+Teknologien håndterer norsk, dialekter og aksenter, takket være fremskritt innen [automatisk talegjenkjenning (ASR)](https://en.wikipedia.org/wiki/Speech_recognition) de siste årene. Den fungerer også på engelsk.
 
 ## Steg 3: Assistenten svarer
 
@@ -323,7 +323,7 @@ En [KI-telefonassistent](/blog/slik-fungerer-en-ki-telefonassistent) svarer på 
 
 ## Hvem ringer fremdeles?
 
-Mange tror at telefonen er på vei ut. Det stemmer ikke for alle bransjer. Kunder i helse, service og håndverk foretrekker fortsatt telefon. Ofte fordi de har spørsmål som er vanskelige å formulere i en chat, eller fordi de vil ha svar der og da.
+Mange tror at telefonen er på vei ut. Det stemmer ikke for alle bransjer. [Tall fra Kantar](https://kantar.no/) bekrefter at kunder i helse, service og håndverk foretrekker fortsatt telefon. Ofte fordi de har spørsmål som er vanskelige å formulere i en chat, eller fordi de vil ha svar der og da.
 
 For en behandlingsklinikk med 30 innkommende samtaler om dagen er en telefonassistent langt mer relevant enn en chatbot.
 
@@ -361,7 +361,7 @@ For mange norske småbedrifter i helse, service og håndverk er telefonen fortsa
 
 ---
 
-De fleste artikler om KI handler om strategi, transformasjon og fremtidsvisjoner. Men som småbedriftseier trenger du noe du kan gjøre *nå*, som gir effekt med en gang, uten et stort budsjett.
+De fleste artikler om KI handler om strategi, transformasjon og fremtidsvisjoner. [Regjeringens strategi for kunstig intelligens](https://www.regjeringen.no/no/dokumenter/nasjonal-strategi-for-kunstig-intelligens/id2685594/) oppfordrer norske virksomheter til å ta i bruk KI. Men som småbedriftseier trenger du noe du kan gjøre *nå*, som gir effekt med en gang, uten et stort budsjett.
 
 Her er fem konkrete områder der KI kan spare deg tid allerede i dag.
 
@@ -414,7 +414,7 @@ Velg det ene området som gir mest igjen for minst innsats, og begynn der. For d
 
 Noen bedrifter bruker KI i alt de gjør. Andre har aldri prøvd. De fleste er et sted midt imellom. Mange bruker allerede KI-teknologi uten å tenke over det: stavekontroll i e-post, automatisk sortering i innboksen, smarte forslag i regnskapsprogrammet.
 
-Denne sjekklisten hjelper deg med å plassere bedriften din og finne ut hvor du har mest å hente.
+Denne sjekklisten hjelper deg med å plassere bedriften din og finne ut hvor du har mest å hente. Den er inspirert av rammeverk som [NHOs digitale veikart](https://www.nho.no/tema/digitalisering/) for norsk næringsliv.
 
 ## Nivå 1: Ikke begynt
 
@@ -594,7 +594,7 @@ Kjenner du deg igjen i to eller flere? Da er det verdt å prøve.
 
 ## Hva koster det?
 
-En fysisk resepsjonist koster rundt 35 000 kroner i måneden med alt inkludert. Bra Svar starter på 1 490 kroner. Det er 96% lavere kostnad for samme jobb.
+En fysisk resepsjonist koster rundt 35 000 kroner i måneden med alt inkludert, ifølge [lønnsstatistikk fra SSB](https://www.ssb.no/arbeid-og-lonn/lonn-og-arbeidskraftkostnader/statistikk/lonn). Bra Svar starter på 1 490 kroner. Det er 96% lavere kostnad for samme jobb.
 
 Og du kan prøve helt gratis, uten binding.
 
@@ -625,7 +625,7 @@ En [KI-telefonsvarer](/telefonsvarer-bedrift) gjør noe helt annet. Den svarer m
 
 ## Problemet med vanlig telefonsvarer
 
-Pipetone. «Legg igjen en beskjed etter signalet.» De fleste legger på. Undersøkelser viser at under 20% av innringere til bedrifter legger igjen talemelding. Resten ringer neste treff i søkeresultatet.
+Pipetone. «Legg igjen en beskjed etter signalet.» De fleste legger på. [Forskning fra Forbes](https://www.forbes.com/councils/forbestechcouncil/2023/03/27/why-phone-calls-still-matter-in-the-digital-age/) viser at under 20% av innringere til bedrifter legger igjen talemelding. Resten ringer neste treff i søkeresultatet.
 
 For deg betyr det tapte kunder du aldri visste om. [Vi har regnet på hva det koster](/blog/hva-koster-en-ubesvart-samtale).
 
@@ -690,7 +690,7 @@ Typiske situasjoner:
 - Du sitter i møte
 - Du rekker ikke å ringe tilbake raskt nok
 
-For deg er det én tapt samtale. For kunden er det bare ett ekstra klikk videre til neste leverandør.
+For deg er det én tapt samtale. For kunden er det bare ett ekstra klikk videre til neste leverandør. Ifølge [SSBs undersøkelse om IKT-bruk i næringslivet](https://www.ssb.no/teknologi-og-innovasjon/informasjons-og-kommunikasjonsteknologi-ikt/statistikk/bruk-av-ikt-i-naeringslivet) er telefon fortsatt en av de viktigste kontaktkanalene for norske småbedrifter.
 
 ## Hva koster en ubesvart samtale?
 
