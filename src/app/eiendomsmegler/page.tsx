@@ -5,7 +5,7 @@ import type { IndustryPageData } from '@/components/IndustryPage/IndustryPage';
 export const metadata: Metadata = {
   title: 'AI-telefonsvar for eiendomsmeglere | Bra Svar',
   description:
-    'Bra Svar tar imot visningshenvendelser og prisforespørsler mens du er opptatt med visning eller budrunde.',
+    'Bra Svar tar imot visningshenvendelser og prisforespørsler mens du er opptatt med visning eller budrunde. Alltid tilgjengelig, ingen binding.',
 };
 
 const data: IndustryPageData = {

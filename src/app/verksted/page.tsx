@@ -5,7 +5,7 @@ import type { IndustryPageData } from '@/components/IndustryPage/IndustryPage';
 export const metadata: Metadata = {
   title: 'AI telefonsvarer for verksteder | Bra Svar!',
   description:
-    'Bra Svar tar telefonen mens du jobber under panseret. Verkstedtimer, EU-kontroll og dekkskift blir booket uten avbrudd.',
+    'Bra Svar tar telefonen mens du jobber under panseret. Verkstedtimer, EU-kontroll og dekkskift blir booket uten avbrudd. Gratis å prøve.',
 };
 
 const data: IndustryPageData = {

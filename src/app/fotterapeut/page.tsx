@@ -4,7 +4,7 @@ import type { IndustryPageData } from '@/components/IndustryPage/IndustryPage';
 
 export const metadata: Metadata = {
   title: 'AI telefonsvarer for fotterapeuter | Bra Svar!',
-  description: 'Fotterapeuter kan ikke ta telefonen midt i en behandling. Bra Svar svarer for deg, booker timer og gir kundene svar med en gang.',
+  description: 'Fotterapeuter kan ikke ta telefonen midt i behandling. Bra Svar svarer for deg, booker timer og gir kundene svar med en gang.',
 };
 
 const data: IndustryPageData = {

@@ -5,7 +5,7 @@ import type { IndustryPageData } from '@/components/IndustryPage/IndustryPage';
 export const metadata: Metadata = {
   title: 'AI telefonsvarer for naprapater og osteopater | Bra Svar!',
   description:
-    'Fokuser på pasienten på benken. Bra Svar tar telefonen når du behandler, og sørger for at nye pasienter får time.',
+    'Fokuser på pasienten på benken. Bra Svar tar telefonen når du behandler, og sørger for at nye pasienter får time. Gratis å prøve.',
 };
 
 const data: IndustryPageData = {

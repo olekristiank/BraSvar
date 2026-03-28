@@ -22,6 +22,7 @@ export const metadata: Metadata = {
     siteName: 'Bra Svar',
     locale: 'en_US',
     type: 'website',
+    images: [{ url: '/opengraph-image.svg', width: 1200, height: 630 }],
   },
 };
 

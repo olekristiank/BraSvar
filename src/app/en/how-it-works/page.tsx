@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     title: 'How it works | Bra Svar!',
     description: 'See how Bra Svar answers the phone, talks to your customers and books appointments automatically.',
     url: 'https://brasvar.no/en/how-it-works',
+    images: [{ url: '/opengraph-image.svg', width: 1200, height: 630 }],
   },
 };
 

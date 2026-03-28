@@ -56,7 +56,7 @@ Eller du kan fortsette som før. Men da bør du vite hva det koster. Sjekk anrop
   },
   {
     slug: 'ki-bruken-i-norge-doblet-seg',
-    title: 'KI-bruken har doblet seg. Henger bedriften din med?',
+    title: 'KI-bruken har doblet seg. Henger du med?',
     description: 'Over halvparten av norske virksomheter bruker nå kunstig intelligens. For to år siden var tallet under en fjerdedel.',
     date: '2026-03-12',
     readTime: '4 min',
@@ -97,7 +97,7 @@ Start med noe konkret. Et verktøy som tar unna repeterende oppgaver. En [telefo
   },
   {
     slug: 'gdpr-og-ki-verktoy',
-    title: 'Slik velger du KI-verktøy uten å bryte personvernet',
+    title: 'KI-verktøy og personvern: En guide',
     description: 'GDPR gjelder også når du bruker kunstig intelligens. Her er tre konkrete ting du må ha kontroll på som småbedriftseier.',
     date: '2026-03-14',
     readTime: '5 min',
@@ -151,7 +151,7 @@ Hos [Bra Svar](/) tar vi personvern på alvor. Vi tilbyr databehandleravtale bas
   },
   {
     slug: 'norges-nye-ki-lov',
-    title: 'Norges nye KI-lov kommer i 2026. Dette bør du vite.',
+    title: 'Norges nye KI-lov: Dette bør du vite',
     description: 'EUs AI Act blir norsk lov sommeren 2026. Her er hva den nye KI-loven betyr i praksis for småbedrifter – og hva du må gjøre.',
     date: '2026-03-16',
     readTime: '5 min',
@@ -516,7 +516,7 @@ Se gjerne vår [sjekkliste for KI-modenhet](/blog/ki-modenhet-sjekkliste) for å
   },
   {
     slug: 'ai-sentralbord-for-smabedrifter',
-    title: 'AI-sentralbord: Hva det er og hvorfor du trenger det',
+    title: 'AI-sentralbord: Alt du trenger å vite',
     description: 'Et AI-sentralbord svarer telefonen for deg med en naturlig stemme, booker timer og videresender samtaler. Her er alt du trenger å vite.',
     date: '2026-03-22',
     readTime: '5 min',

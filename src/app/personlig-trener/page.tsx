@@ -5,7 +5,7 @@ import type { IndustryPageData } from '@/components/IndustryPage/IndustryPage';
 export const metadata: Metadata = {
   title: 'AI telefonsvarer for personlige trenere | Bra Svar!',
   description:
-    'Få flere klienter uten å miste fokus på treningen. Bra Svar tar telefonen mens du er i salen.',
+    'Få flere klienter uten å miste fokus på treningen. Bra Svar tar telefonen mens du er i salen og booker nye timer automatisk.',
 };
 
 const data: IndustryPageData = {

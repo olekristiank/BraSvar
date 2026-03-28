@@ -5,7 +5,7 @@ import type { IndustryPageData } from '@/components/IndustryPage/IndustryPage';
 export const metadata: Metadata = {
   title: 'AI-telefonsvar for regnskapsførere | Bra Svar',
   description:
-    'Bra Svar svarer kunder og nye henvendelser mens du jobber med årsoppgjør og MVA-frister. Aldri mist en ny kunde igjen.',
+    'Bra Svar svarer kunder og nye henvendelser mens du jobber med årsoppgjør og MVA-frister. Aldri mist en ny kunde igjen. Gratis å prøve.',
 };
 
 const data: IndustryPageData = {

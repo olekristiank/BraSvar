@@ -5,7 +5,7 @@ import type { IndustryPageData } from '@/components/IndustryPage/IndustryPage';
 export const metadata: Metadata = {
   title: 'AI telefonsvarer for optikere | Bra Svar!',
   description:
-    'La kundene få svar mens du tilpasser briller. Bra Svar tar telefonen når du har kunden i stolen.',
+    'La kundene få svar mens du tilpasser briller. Bra Svar tar telefonen og booker synsprøver når du har kunden i stolen. Gratis å prøve.',
 };
 
 const data: IndustryPageData = {

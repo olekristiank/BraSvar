@@ -5,7 +5,7 @@ import type { IndustryPageData } from '@/components/IndustryPage/IndustryPage';
 export const metadata: Metadata = {
   title: 'AI telefonsvarer for tatovører | Bra Svar!',
   description:
-    'Mist aldri en kunde mens du tatoverer. Bra Svar! tar imot bookinger og designønsker mens du har nåla i huden.',
+    'Mist aldri en kunde mens du tatoverer. Bra Svar tar imot bookinger og designønsker mens du har nåla i huden. Gratis å prøve.',
 };
 
 const data: IndustryPageData = {

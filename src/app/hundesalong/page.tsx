@@ -5,7 +5,7 @@ import type { IndustryPageData } from '@/components/IndustryPage/IndustryPage';
 export const metadata: Metadata = {
   title: 'AI telefonsvarer for hundesalonger | Bra Svar!',
   description:
-    'Hold hunden i fokus, ikke telefonen. Bra Svar booker klipping og stell mens du jobber med pelsene.',
+    'Hold hunden i fokus, ikke telefonen. Bra Svar booker klipping og stell mens du jobber med pelsene. Svarer døgnet rundt, gratis å prøve.',
 };
 
 const data: IndustryPageData = {

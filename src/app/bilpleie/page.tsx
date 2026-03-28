@@ -5,7 +5,7 @@ import type { IndustryPageData } from '@/components/IndustryPage/IndustryPage';
 export const metadata: Metadata = {
   title: 'AI telefonsvarer for bilpleie | Bra Svar!',
   description:
-    'Ikke legg fra deg polermaskinen for å ta telefonen. Bra Svar booker vask, polering og coating mens du jobber.',
+    'Ikke legg fra deg polermaskinen for å ta telefonen. Bra Svar booker vask, polering og coating mens du jobber. Gratis å prøve, ingen binding.',
 };
 
 const data: IndustryPageData = {

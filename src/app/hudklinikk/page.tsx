@@ -5,7 +5,7 @@ import type { IndustryPageData } from '@/components/IndustryPage/IndustryPage';
 export const metadata: Metadata = {
   title: 'AI-telefonsvar for hudklinikker | Bra Svar',
   description:
-    'Bra Svar tar imot samtaler mens du behandler. Konsultasjoner, hudanalyse og etterbehandling blir håndtert automatisk.',
+    'Bra Svar tar imot samtaler mens du behandler. Konsultasjoner, hudanalyse og etterbehandling blir håndtert automatisk, døgnet rundt.',
 };
 
 const data: IndustryPageData = {

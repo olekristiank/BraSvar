@@ -4,7 +4,7 @@ import type { IndustryPageData } from '@/components/IndustryPage/IndustryPage';
 
 export const metadata: Metadata = {
   title: 'AI telefonsvarer for fysioterapeuter | Bra Svar!',
-  description: 'Bra Svar tar telefonen mens du behandler pasienter. Timebestilling, førstegangshenvendelser og oppfølging uten at du forlater behandlingsbenken.',
+  description: 'Bra Svar tar telefonen mens du behandler pasienter. Timebestilling, førstegangshenvendelser og oppfølging helt automatisk.',
 };
 
 const data: IndustryPageData = {

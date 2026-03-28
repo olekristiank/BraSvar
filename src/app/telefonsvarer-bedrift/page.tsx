@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     title: 'Intelligent telefonsvarer for bedrift | Bra Svar!',
     description: 'En KI-telefonsvarer som fører naturlige samtaler og booker timer for bedriften din.',
     url: 'https://brasvar.no/telefonsvarer-bedrift',
+    images: [{ url: '/opengraph-image.svg', width: 1200, height: 630 }],
   },
 };
 

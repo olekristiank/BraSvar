@@ -5,7 +5,7 @@ import type { IndustryPageData } from '@/components/IndustryPage/IndustryPage';
 export const metadata: Metadata = {
   title: 'AI telefonsvarer for fotografer | Bra Svar!',
   description:
-    'Aldri gå glipp av en booking igjen. Bra Svar! tar imot henvendelser mens du er på shoot, i bryllup eller redigerer med deadline.',
+    'Aldri gå glipp av en booking igjen. Bra Svar tar imot henvendelser mens du er på shoot, i bryllup eller redigerer. Gratis å prøve.',
 };
 
 const data: IndustryPageData = {

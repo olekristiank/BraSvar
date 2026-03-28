@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Navbar from '@/components/Navbar/Navbar';
 
 export const metadata: Metadata = {
-  title: 'Personvern | Bra Svar!',
+  title: 'Personvernerklæring og GDPR | Bra Svar!',
   description: 'Les om hvordan brasvar.no behandler personopplysninger i tråd med GDPR.',
 };
 

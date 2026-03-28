@@ -22,6 +22,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       type: 'article',
       publishedTime: post.date,
       url: `https://brasvar.no/blog/${post.slug}`,
+      images: [{ url: `https://brasvar.no${post.cover}`, width: 800, height: 450 }],
     },
   };
 }

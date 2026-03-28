@@ -5,7 +5,7 @@ import type { IndustryPageData } from '@/components/IndustryPage/IndustryPage';
 export const metadata: Metadata = {
   title: 'AI telefonsvarer for frisører | Bra Svar!',
   description:
-    'Aldri gå glipp av en timebestilling igjen. Bra Svar tar telefonen mens du klipper, farger og styler.',
+    'Aldri gå glipp av en timebestilling igjen. Bra Svar tar telefonen mens du klipper, farger og styler. Gratis å prøve, ingen binding.',
 };
 
 const data: IndustryPageData = {

@@ -5,7 +5,7 @@ import type { IndustryPageData } from '@/components/IndustryPage/IndustryPage';
 export const metadata: Metadata = {
   title: 'AI telefonsvarer for konsulenter | Bra Svar!',
   description:
-    'Hold fokus på klienten foran deg. Bra Svar fanger opp nye prosjektforespørsler og booker møter mens du jobber.',
+    'Hold fokus på klienten foran deg. Bra Svar fanger opp nye prosjektforespørsler og booker møter mens du jobber. Gratis å prøve, ingen binding.',
 };
 
 const data: IndustryPageData = {

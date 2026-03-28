@@ -5,7 +5,7 @@ import type { IndustryPageData } from '@/components/IndustryPage/IndustryPage';
 export const metadata: Metadata = {
   title: 'AI telefonsvarer for forsikringsrådgivere | Bra Svar!',
   description:
-    'Ikke mist kunder mens du sitter i møte. Bra Svar håndterer forespørsler, skademeldinger og tilbud mens du rådgir.',
+    'Ikke mist kunder mens du sitter i møte. Bra Svar håndterer forespørsler, skademeldinger og tilbud mens du rådgir. Gratis å prøve.',
 };
 
 const data: IndustryPageData = {

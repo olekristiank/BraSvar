@@ -4,7 +4,7 @@ import type { IndustryPageData } from '@/components/IndustryPage/IndustryPage';
 
 export const metadata: Metadata = {
   title: 'AI telefonsvarer for akupunktører | Bra Svar!',
-  description: 'Aldri mist nye pasienter mens du behandler. Bra Svar svarer telefonen når du har nåler i pasienten, og booker timer automatisk.',
+  description: 'Aldri mist nye pasienter mens du behandler. Bra Svar svarer telefonen når du har nåler i pasienten og booker timer automatisk. Gratis å prøve.',
 };
 
 const data: IndustryPageData = {

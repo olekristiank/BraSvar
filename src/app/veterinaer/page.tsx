@@ -4,7 +4,7 @@ import type { IndustryPageData } from '@/components/IndustryPage/IndustryPage';
 
 export const metadata: Metadata = {
   title: 'AI telefonsvarer for veterinærer | Bra Svar!',
-  description: 'Veterinærer kan ikke legge fra seg et dyr midt i en behandling for å ta telefonen. Bra Svar svarer for deg og booker timer automatisk.',
+  description: 'Veterinærer kan ikke legge fra seg et dyr midt i behandling for å ta telefonen. Bra Svar svarer for deg og booker timer automatisk.',
 };
 
 const data: IndustryPageData = {

@@ -5,7 +5,7 @@ import type { IndustryPageData } from '@/components/IndustryPage/IndustryPage';
 export const metadata: Metadata = {
   title: 'AI-telefonsvar for velværeklinikker | Bra Svar',
   description:
-    'Bra Svar svarer telefonen mens du gir behandling. Booking, gavekort og pakker håndteres uten at du avbryter kunden.',
+    'Bra Svar svarer telefonen mens du gir behandling. Booking, gavekort og pakker håndteres uten at du avbryter kunden. Gratis å prøve.',
 };
 
 const data: IndustryPageData = {

@@ -5,7 +5,7 @@ import type { IndustryPageData } from '@/components/IndustryPage/IndustryPage';
 export const metadata: Metadata = {
   title: 'AI-telefonsvar for advokater | Bra Svar',
   description:
-    'Bra Svar tar imot nye henvendelser og hastesamtaler mens du er i rettsmøte eller klientmøte. Profesjonelt og diskret.',
+    'Bra Svar tar imot nye henvendelser og hastesamtaler mens du er i rettsmøte eller klientmøte. Profesjonelt, diskret og alltid tilgjengelig.',
 };
 
 const data: IndustryPageData = {

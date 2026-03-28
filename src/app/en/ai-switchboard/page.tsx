@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     title: 'AI Switchboard for businesses | Bra Svar!',
     description: 'An AI switchboard that answers the phone for your business around the clock.',
     url: 'https://brasvar.no/en/ai-switchboard',
+    images: [{ url: '/opengraph-image.svg', width: 1200, height: 630 }],
   },
 };
 

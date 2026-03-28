@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Navbar from '@/components/Navbar/Navbar';
 
 export const metadata: Metadata = {
-  title: 'Kontakt oss | Bra Svar!',
+  title: 'Kontakt oss – ring eller send melding | Bra Svar!',
   description: 'Ta kontakt med Bra Svar. Ring oss på 64 00 62 64 eller send en melding.',
 };
 

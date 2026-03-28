@@ -5,7 +5,7 @@ import type { IndustryPageData } from '@/components/IndustryPage/IndustryPage';
 export const metadata: Metadata = {
   title: 'AI telefonsvarer for klinikker | Bra Svar!',
   description:
-    'La Bra Svar ta telefonen mens du er med pasienten. Timebestilling, endringer og henvendelser blir tatt hånd om automatisk.',
+    'La Bra Svar ta telefonen mens du er med pasienten. Timebestilling, endringer og henvendelser blir håndtert automatisk, døgnet rundt.',
 };
 
 const data: IndustryPageData = {

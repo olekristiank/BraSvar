@@ -4,7 +4,7 @@ import type { IndustryPageData } from '@/components/IndustryPage/IndustryPage';
 
 export const metadata: Metadata = {
   title: 'AI telefonsvarer for psykologer | Bra Svar!',
-  description: 'Bra Svar tar telefonen mens du er i terapitime. Nye henvendelser, timebestilling og venteliste uten å bryte konsentrasjonen.',
+  description: 'Bra Svar tar telefonen mens du er i terapitime. Nye henvendelser, timebestilling og venteliste håndteres diskret og automatisk.',
 };
 
 const data: IndustryPageData = {

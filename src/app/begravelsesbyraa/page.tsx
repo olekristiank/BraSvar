@@ -5,7 +5,7 @@ import type { IndustryPageData } from '@/components/IndustryPage/IndustryPage';
 export const metadata: Metadata = {
   title: 'AI telefonsvarer for begravelsesbyråer | Bra Svar!',
   description:
-    'Vær tilgjengelig for pårørende også når du er opptatt. Bra Svar! tar imot henvendelser med verdighet og omtanke.',
+    'Vær tilgjengelig for pårørende også når du er opptatt. Bra Svar tar imot henvendelser med verdighet og omtanke, døgnet rundt.',
 };
 
 const data: IndustryPageData = {

@@ -4,7 +4,7 @@ import type { IndustryPageData } from '@/components/IndustryPage/IndustryPage';
 
 export const metadata: Metadata = {
   title: 'AI telefonsvarer for treningssentre | Bra Svar!',
-  description: 'Aldri gå glipp av nye medlemmer. Bra Svar svarer på telefonen når resepsjonen er opptatt, og hjelper med innmelding, priser og åpningstider.',
+  description: 'Aldri gå glipp av nye medlemmer. Bra Svar svarer telefonen når resepsjonen er opptatt, og hjelper med innmelding, priser og tider.',
 };
 
 const data: IndustryPageData = {

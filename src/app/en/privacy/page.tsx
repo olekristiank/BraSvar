@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     title: 'Privacy Policy | Bra Svar!',
     description: 'Learn how Bra Svar processes personal data in accordance with GDPR.',
     url: 'https://brasvar.no/en/privacy',
+    images: [{ url: '/opengraph-image.svg', width: 1200, height: 630 }],
   },
 };
 

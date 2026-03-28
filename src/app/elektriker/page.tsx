@@ -4,7 +4,7 @@ import type { IndustryPageData } from '@/components/IndustryPage/IndustryPage';
 
 export const metadata: Metadata = {
   title: 'AI telefonsvarer for elektrikere | Bra Svar!',
-  description: 'Bra Svar tar telefonen mens du jobber med strøm. Prisforespørsler, befaringer og akutte oppdrag uten at du trenger å klatre ned fra stigen.',
+  description: 'Bra Svar tar telefonen mens du jobber med strøm. Prisforespørsler, befaringer og akutte oppdrag blir håndtert automatisk.',
 };
 
 const data: IndustryPageData = {

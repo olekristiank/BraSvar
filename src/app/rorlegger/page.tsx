@@ -4,7 +4,7 @@ import type { IndustryPageData } from '@/components/IndustryPage/IndustryPage';
 
 export const metadata: Metadata = {
   title: 'AI telefonsvarer for rørleggere | Bra Svar!',
-  description: 'Bra Svar tar telefonen mens du er under vasken. Akutte lekkasjer, prisforespørsler og befaringer uten at du stopper jobben.',
+  description: 'Bra Svar tar telefonen mens du er under vasken. Akutte lekkasjer, prisforespørsler og befaringer håndteres automatisk. Gratis å prøve.',
 };
 
 const data: IndustryPageData = {

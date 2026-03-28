@@ -3,7 +3,7 @@ import Navbar from '@/components/Navbar/Navbar';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Om Bra Svar | Bra Svar!',
+  title: 'Om Bra Svar – KI for norske bedrifter | Bra Svar!',
   description: 'Bra Svar leverer KI-telefonassistenter for norske småbedrifter. Vi hjelper deg å svare kundene dine, døgnet rundt.',
 };
 

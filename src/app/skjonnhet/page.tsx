@@ -5,7 +5,7 @@ import type { IndustryPageData } from '@/components/IndustryPage/IndustryPage';
 export const metadata: Metadata = {
   title: 'AI telefonsvarer for skjønnhetssalonger | Bra Svar!',
   description:
-    'Bra Svar tar telefonen mens du er midt i en behandling. Bestillinger, endringer og spørsmål blir håndtert uten avbrudd.',
+    'Bra Svar tar telefonen mens du er midt i en behandling. Bestillinger, endringer og spørsmål blir håndtert uten avbrudd. Gratis å prøve.',
 };
 
 const data: IndustryPageData = {

@@ -5,7 +5,7 @@ import type { IndustryPageData } from '@/components/IndustryPage/IndustryPage';
 export const metadata: Metadata = {
   title: 'AI telefonsvarer for renholdsbedrifter | Bra Svar!',
   description:
-    'Ikke stopp moppingen for å ta telefonen. Bra Svar håndterer nye oppdrag og endringsønsker mens du gjør jobben.',
+    'Ikke stopp moppingen for å ta telefonen. Bra Svar håndterer nye oppdrag og endringsønsker mens du gjør jobben. Gratis å prøve, ingen binding.',
 };
 
 const data: IndustryPageData = {

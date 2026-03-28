@@ -4,7 +4,7 @@ import type { IndustryPageData } from '@/components/IndustryPage/IndustryPage';
 
 export const metadata: Metadata = {
   title: 'AI telefonsvarer for kiropraktorer | Bra Svar!',
-  description: 'Kiropraktorer kan ikke avbryte en justering for å ta telefonen. Bra Svar svarer kundene dine, booker timer og gir informasjon med en gang.',
+  description: 'Kiropraktorer kan ikke avbryte en justering for å ta telefonen. Bra Svar svarer kundene dine og booker timer automatisk.',
 };
 
 const data: IndustryPageData = {

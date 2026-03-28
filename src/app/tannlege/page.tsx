@@ -5,7 +5,7 @@ import type { IndustryPageData } from '@/components/IndustryPage/IndustryPage';
 export const metadata: Metadata = {
   title: 'AI telefonsvarer for tannleger | Bra Svar!',
   description:
-    'Aldri mist en pasient mens du borer. Bra Svar tar telefonen når du har hendene i munnen på noen.',
+    'Aldri mist en pasient mens du borer. Bra Svar tar telefonen, booker timer og håndterer akutte henvendelser automatisk. Gratis å prøve.',
 };
 
 const data: IndustryPageData = {

@@ -5,7 +5,7 @@ import type { IndustryPageData } from '@/components/IndustryPage/IndustryPage';
 export const metadata: Metadata = {
   title: 'AI telefonsvarer for håndverkere | Bra Svar!',
   description:
-    'Mist aldri en jobbforespørsel igjen. Bra Svar tar telefonen når du står på taket, under vasken eller kjører mellom oppdrag.',
+    'Mist aldri en jobbforespørsel igjen. Bra Svar tar telefonen når du står på taket, under vasken eller kjører mellom oppdrag. Gratis å prøve.',
 };
 
 const data: IndustryPageData = {
