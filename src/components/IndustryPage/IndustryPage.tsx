@@ -196,19 +196,6 @@ export default function IndustryPage({ data }: { data: IndustryPageData }) {
         </AnimateIn>
       </div>
 
-      <div style={{ textAlign: 'center', padding: '1.5rem 2rem', borderTop: '1px solid #f1f5f9' }}>
-        <div style={{ display: 'flex', gap: '1.5rem', justifyContent: 'center', fontSize: '0.82rem' }}>
-          <a href={lang === 'en' ? '/en/privacy' : '/personvern'} style={{ color: '#94a3b8', textDecoration: 'none' }}>
-            {lang === 'en' ? 'Privacy' : 'Personvern'}
-          </a>
-          <a href={lang === 'en' ? '/en/about' : '/om-oss'} style={{ color: '#94a3b8', textDecoration: 'none' }}>
-            {lang === 'en' ? 'About' : 'Om oss'}
-          </a>
-          <a href={lang === 'en' ? '/en/contact' : '/kontakt'} style={{ color: '#94a3b8', textDecoration: 'none' }}>
-            {lang === 'en' ? 'Contact' : 'Kontakt'}
-          </a>
-        </div>
-      </div>
     </main>
   );
 }

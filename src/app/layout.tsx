@@ -3,6 +3,7 @@ import { Outfit, Manrope, Geist, Instrument_Serif } from "next/font/google";
 import "./globals.css";
 import { cn } from "../lib/utils";
 import { ContactProvider } from "@/components/ContactModal/ContactContext";
+import AutoFooter from "@/components/Footer/AutoFooter";
 
 const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
@@ -54,7 +55,10 @@ export default function RootLayout({
     <html lang="no" className={cn(outfit.variable, manrope.variable, instrumentSerif.variable, "font-sans", geist.variable)} suppressHydrationWarning>
       <body suppressHydrationWarning>
         <a href="#main" className="skip-link">Hopp til hovedinnhold</a>
-        <ContactProvider>{children}</ContactProvider>
+        <ContactProvider>
+          {children}
+          <AutoFooter />
+        </ContactProvider>
       </body>
     </html>
   );

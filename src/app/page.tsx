@@ -66,57 +66,6 @@ export default function Home() {
       <Integrations />
       <FAQ />
       <BlogPreview />
-      {/* Footer */}
-      <footer className={styles.footer}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem' }}>
-          <span className="display-font" style={{ fontWeight: 800, fontSize: '1.1rem', color: 'rgba(255,255,255,0.9)' }}>
-            Bra Svar<span style={{ color: '#ec4899' }}>!</span>
-          </span>
-        </div>
-
-        <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '3rem', marginBottom: '1.5rem' }}>
-          {/* Løsninger */}
-          <div>
-            <p style={{ fontSize: '0.75rem', fontWeight: 700, color: 'rgba(255,255,255,0.5)', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '0.6rem' }}>
-              Løsninger
-            </p>
-            <nav style={{ display: 'flex', flexDirection: 'column', gap: '0.35rem' }}>
-              <a href="/ai-sentralbord" className={styles.footerLink}>AI sentralbord</a>
-              <a href="/telefonsvarer-bedrift" className={styles.footerLink}>Telefonsvarer for bedrift</a>
-              <a href="/virtuell-resepsjonist" className={styles.footerLink}>Virtuell resepsjonist for bedrift</a>
-              <a href="/hvordan-det-fungerer" className={styles.footerLink}>Slik fungerer det</a>
-            </nav>
-          </div>
-
-          {/* Ressurser */}
-          <div>
-            <p style={{ fontSize: '0.75rem', fontWeight: 700, color: 'rgba(255,255,255,0.5)', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '0.6rem' }}>
-              Ressurser
-            </p>
-            <nav style={{ display: 'flex', flexDirection: 'column', gap: '0.35rem' }}>
-              <a href="/blog" className={styles.footerLink}>Blogg</a>
-              <a href="/ofte-stilte-sporsmal" className={styles.footerLink}>Ofte stilte spørsmål</a>
-            </nav>
-          </div>
-
-          {/* Om oss */}
-          <div>
-            <p style={{ fontSize: '0.75rem', fontWeight: 700, color: 'rgba(255,255,255,0.5)', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '0.6rem' }}>
-              Om oss
-            </p>
-            <nav style={{ display: 'flex', flexDirection: 'column', gap: '0.35rem' }}>
-              <a href="/personvern" className={styles.footerLink}>Personvern</a>
-              <a href="/om-oss" className={styles.footerLink}>Om oss</a>
-              <a href="/kontakt" className={styles.footerLink}>Kontakt</a>
-            </nav>
-          </div>
-        </div>
-
-        <div style={{ width: '100%', maxWidth: '600px', height: '1px', background: 'rgba(255,255,255,0.06)', margin: '0 auto 1rem' }} />
-        <p style={{ fontSize: '0.85rem', color: 'rgba(255,255,255,0.25)', fontWeight: 500, textAlign: 'center' }}>
-          © 2026 by Klevstrand Innovasjon
-        </p>
-      </footer>
     </div>
   );
 }
