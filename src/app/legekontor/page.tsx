@@ -5,7 +5,7 @@ import type { IndustryPageData } from '@/components/IndustryPage/IndustryPage';
 export const metadata: Metadata = {
   title: 'AI telefonsvarer for legekontor | Bra Svar!',
   description:
-    'Slutt på telefonkø og frustrerte pasienter. Bra Svar håndterer reseptfornyelser, timebestilling og henvendelser automatisk.',
+    'Slutt på telefonkø og frustrerte pasienter. Bra Svar håndterer timebestilling og generelle henvendelser automatisk.',
 };
 
 const data: IndustryPageData = {
@@ -15,36 +15,34 @@ const data: IndustryPageData = {
   situation: 'Et legekontor har flere innringere enn det er mulig å svare på, hver eneste dag.',
   situationBullets: [
     'Legen er i konsultasjon og kan ikke forstyrres',
-    'Ti pasienter ringer samtidig for å fornye resepten',
-    'Noen trenger bare å vite om prøvesvaret er klart',
+    'Ti pasienter ringer samtidig for å bestille time',
+    'Noen trenger bare å vite åpningstider eller adresse',
     'Sekretæren må prioritere de som står i luken foran seg',
   ],
   consequence:
-    'Pasienter ringer gjentatte ganger uten å komme gjennom. Noen dropper å fornye resepten og går tom for medisin. Andre bytter fastlege fordi de aldri får svar.',
+    'Pasienter ringer gjentatte ganger uten å komme gjennom. Noen gir opp og bytter fastlege. Andre møter ikke opp fordi de ikke fikk endret timen sin i tide.',
   solutionIntro:
-    'Bra Svar tar unna rutinetelefonene slik at kontoret kan fokusere på de som trenger legehjelp mest.',
+    'Bra Svar tar unna rutinetelefonene slik at kontoret kan fokusere på pasientene som er der.',
   handles: [
     'Bestille time eller flytte eksisterende time',
-    'Reseptfornyelse med riktig informasjon til legen',
-    'Spørsmål om prøvesvar og videre oppfølging',
-    'Henvisning til spesialist og ventetid',
-    'Generell informasjon om åpningstider og legevakt',
+    'Informasjon om åpningstider, adresse og parkering',
+    'Bestille time for blodprøve eller lab',
+    'Avbestilling og ombestilling av avtaler',
+    'Generelle spørsmål om tjenester og tilgjengelighet',
   ],
   benefits: [
     'Pasientene slipper å vente i telefonkø',
-    'Reseptforespørsler kommer inn strukturert og riktig',
+    'Timebestillinger kommer inn strukturert og riktig',
     'Sekretæren får frigjort tid til oppgaver som krever mennesker',
     'Færre klager og mer fornøyde pasienter',
   ],
   benefitsIntro:
-    'En AI-assistent som sorterer henvendelsene og lar kontoret bruke tiden på det som virkelig teller.',
+    'En assistent som sorterer henvendelsene og lar kontoret bruke tiden på det som virkelig teller.',
   chat: [
-    { who: 'customer', text: 'Hei, jeg trenger å fornye resepten min på blodtrykksmedisin.' },
-    { who: 'ai', text: 'Hei! Det kan vi hjelpe med. Hvilket preparat bruker du, og hvilken dose?' },
-    { who: 'customer', text: 'Amlodipin 5 mg.' },
-    { who: 'ai', text: 'Mottatt. Kan jeg få fødselsdatoen din, så sender vi forespørselen til legen din?' },
-    { who: 'customer', text: '14. mars 1972.' },
-    { who: 'ai', text: 'Fint. Forespørselen om fornyelse av Amlodipin 5 mg er sendt. Legen behandler den i løpet av dagen, og resepten legges på apoteket ditt.' },
+    { who: 'customer', text: 'Hei, jeg trenger en time for blodprøve.' },
+    { who: 'ai', text: 'Hei! Blodprøver tas på lab mandag til fredag mellom 08 og 10. Skal jeg sette opp en time?' },
+    { who: 'customer', text: 'Ja, gjerne onsdag.' },
+    { who: 'ai', text: 'Onsdag kl. 08:30 passer. Husk å møte fastende hvis legen har bedt om det. Du får bekreftelse på SMS.' },
   ],
 };
 

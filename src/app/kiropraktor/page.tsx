@@ -35,12 +35,12 @@ const data: IndustryPageData = {
   ],
   benefitsIntro: 'Mange kiropraktorer jobber alene eller med begrenset resepsjon. Da er hver samtale som fanges opp, direkte verdi.',
   chat: [
-    { who: 'customer', text: 'Hei, jeg har fått vondt i ryggen og trenger time ganske raskt' },
-    { who: 'ai', text: 'Hei! Det forstår jeg. Hvor lenge har du hatt plagene?' },
-    { who: 'customer', text: 'Siden i går. Det stråler ned i beinet' },
-    { who: 'ai', text: 'Da anbefaler jeg en undersøkelse så raskt som mulig. Jeg har ledig i morgen klokken 09:30. Passer det?' },
-    { who: 'customer', text: 'Ja, det passer' },
-    { who: 'ai', text: 'Bra. Du er satt opp i morgen kl. 09:30. Ta med deg eventuelt røntgenbilder hvis du har. Du får bekreftelse på SMS.' },
+    { who: 'customer', text: 'Hei, jeg vil gjerne bestille time hos kiropraktor.' },
+    { who: 'ai', text: 'Hei! Har du vært hos oss før, eller er dette første gang?' },
+    { who: 'customer', text: 'Første gang.' },
+    { who: 'ai', text: 'Da setter vi opp en førstegangsundersøkelse. Den tar ca. 45 minutter. Jeg har ledig i morgen kl. 09:30. Passer det?' },
+    { who: 'customer', text: 'Ja, det passer.' },
+    { who: 'ai', text: 'Flott. Du er satt opp i morgen kl. 09:30. Bekreftelse kommer på SMS.' },
   ],
 };
 

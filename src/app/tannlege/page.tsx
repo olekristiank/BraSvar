@@ -25,7 +25,7 @@ const data: IndustryPageData = {
     'Bra Svar svarer for deg og sørger for at pasienter med akutte plager får hjelp, ikke opptatt-signal.',
   handles: [
     'Bestille time for undersøkelse eller behandling',
-    'Akutt tannpine og vurdering av hastegrad',
+    'Akutte henvendelser og prioritering av ledige timer',
     'Spørsmål om priser og egenandeler',
     'Forsikring og refusjonsordninger',
     'Endre eller avbestille eksisterende timer',
@@ -37,16 +37,14 @@ const data: IndustryPageData = {
     'Sekretæren slipper å løpe mellom telefon og resepsjon',
   ],
   benefitsIntro:
-    'En AI-assistent som forstår at tannpine haster, og som gir pasientene dine en trygg mottakelse på telefonen.',
+    'En assistent som gir pasientene dine en trygg og profesjonell mottakelse på telefonen.',
   chat: [
-    { who: 'customer', text: 'Hei, jeg har veldig vondt i en tann. Har dere ledig tid i dag?' },
-    { who: 'ai', text: 'Hei! Det høres vondt ut. Vi setter av tid til akutte tilfeller. Kan du beskrive smerten litt?' },
-    { who: 'customer', text: 'Det verker konstant og jeg klarer nesten ikke å spise.' },
-    { who: 'ai', text: 'Det skjønner jeg. Vi har en akuttime ledig kl. 13:15 i dag. Passer det for deg?' },
+    { who: 'customer', text: 'Hei, jeg trenger en tannlegetime ganske raskt. Har dere ledig?' },
+    { who: 'ai', text: 'Hei! Vi har en ledig time i dag kl. 13:15. Passer det for deg?' },
     { who: 'customer', text: 'Ja, det passer perfekt.' },
-    { who: 'ai', text: 'Fint! Kan jeg få navnet ditt, så setter jeg deg opp?' },
+    { who: 'ai', text: 'Flott! Kan jeg få navnet ditt, så setter jeg deg opp?' },
     { who: 'customer', text: 'Erik Johansen.' },
-    { who: 'ai', text: 'Da er du satt opp i dag kl. 13:15, Erik. Velkommen, vi skal få ordnet dette.' },
+    { who: 'ai', text: 'Da er du satt opp i dag kl. 13:15, Erik. Du får bekreftelse på SMS. Velkommen!' },
   ],
 };
 

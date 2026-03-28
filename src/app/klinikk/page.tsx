@@ -41,8 +41,8 @@ const data: IndustryPageData = {
   chat: [
     { who: 'customer', text: 'Hei, jeg ønsker å bestille en konsultasjon hos dere.' },
     { who: 'ai', text: 'Hei! Selvfølgelig. Hva gjelder konsultasjonen?' },
-    { who: 'customer', text: 'Jeg har hatt vondt i skulderen en stund og vil gjerne få det sjekket.' },
-    { who: 'ai', text: 'Det ordner vi. Vi har ledig tid mandag kl. 11:00 eller onsdag kl. 09:00. Hva passer best?' },
+    { who: 'customer', text: 'Jeg vil gjerne ha en generell konsultasjon.' },
+    { who: 'ai', text: 'Flott. Vi har ledig tid mandag kl. 11:00 eller onsdag kl. 09:00. Hva passer best?' },
     { who: 'customer', text: 'Onsdag morgen passer fint.' },
     { who: 'ai', text: 'Onsdag kl. 09:00, notert. Kan jeg få navnet og telefonnummeret ditt?' },
   ],

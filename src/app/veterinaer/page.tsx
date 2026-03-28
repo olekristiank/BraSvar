@@ -35,12 +35,12 @@ const data: IndustryPageData = {
   ],
   benefitsIntro: 'Veterinærklinikker har ofte en blanding av planlagte timer og akutte henvendelser. Når telefonen alltid blir besvart, håndteres begge deler.',
   chat: [
-    { who: 'customer', text: 'Hei, katten min har ikke spist på to dager og virker slapp' },
-    { who: 'ai', text: 'Hei! Det høres ut som noe vi bør se på. Hvor gammel er katten?' },
-    { who: 'customer', text: 'Hun er 8 år. Ellers frisk' },
-    { who: 'ai', text: 'Jeg anbefaler en undersøkelse i dag eller i morgen. Vi har ledig i dag klokken 15:00. Passer det?' },
-    { who: 'customer', text: 'Ja, vi kommer da' },
-    { who: 'ai', text: 'Flott. Dere er satt opp kl. 15:00 hos Dyreklinikken. Ta med dere eventuelt fôrmerke og informasjon om vaksinasjoner. Bekreftelse kommer på SMS.' },
+    { who: 'customer', text: 'Hei, jeg trenger en time for katten min.' },
+    { who: 'ai', text: 'Hei! Selvfølgelig. Er det en rutinekontroll, eller ønsker dere en undersøkelse?' },
+    { who: 'customer', text: 'En undersøkelse, helst i dag om mulig.' },
+    { who: 'ai', text: 'Vi har ledig i dag kl. 15:00. Passer det?' },
+    { who: 'customer', text: 'Ja, vi kommer da.' },
+    { who: 'ai', text: 'Flott. Dere er satt opp kl. 15:00. Bekreftelse kommer på SMS. Velkommen!' },
   ],
 };
 

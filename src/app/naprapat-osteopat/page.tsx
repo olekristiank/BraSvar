@@ -39,7 +39,7 @@ const data: IndustryPageData = {
   benefitsIntro:
     'En AI-assistent som gir nye pasienter et godt førsteinntrykk og holder timeboka full.',
   chat: [
-    { who: 'customer', text: 'Hei, jeg har hatt vondt i korsryggen i tre uker nå. Kan jeg få en time?' },
+    { who: 'customer', text: 'Hei, jeg vil gjerne bestille time hos naprapat. Kan jeg få en time?' },
     { who: 'ai', text: 'Hei! Det kan vi absolutt hjelpe med. Har du vært hos oss før?' },
     { who: 'customer', text: 'Nei, dette er første gang.' },
     { who: 'ai', text: 'Velkommen! Første konsultasjon er 45 minutter og inkluderer undersøkelse og behandling. Vi har ledig tirsdag kl. 10:00 eller onsdag kl. 15:30. Hva passer best?' },

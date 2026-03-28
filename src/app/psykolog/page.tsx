@@ -35,7 +35,7 @@ const data: IndustryPageData = {
     'Mer overskudd mellom timer når du slipper telefonkø',
   ],
   chat: [
-    { who: 'customer', text: 'Hei, jeg har slitt med angst en stund og lurer på om dere tar imot nye pasienter.' },
+    { who: 'customer', text: 'Hei, jeg lurer på om dere tar imot nye pasienter.' },
     { who: 'ai', text: 'Hei, og takk for at du ringer. Vi tar imot nye pasienter. Akkurat nå er ventetiden ca. tre uker. Ønsker du å settes opp for en førstesamtale?' },
     { who: 'customer', text: 'Ja, det hadde vært fint. Tre uker går greit.' },
     { who: 'ai', text: 'Bra. Jeg har ledig onsdag 16. april kl. 13:00 eller torsdag 17. april kl. 09:00. Hva passer best?' },

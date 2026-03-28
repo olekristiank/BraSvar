@@ -36,8 +36,8 @@ const data: IndustryPageData = {
     'Timeboken fylles opp uten at du bruker kveldene på å ringe tilbake',
   ],
   chat: [
-    { who: 'customer', text: 'Hei, jeg har slitt med migrene lenge og vil gjerne prøve akupunktur. Er det noe dere kan hjelpe med?' },
-    { who: 'ai', text: 'Hei! Ja, akupunktur kan være effektivt mot migrene. Mange av pasientene våre opplever god bedring. Vi anbefaler å starte med en førstegangsbehandling der vi kartlegger plagene dine og legger en plan.' },
+    { who: 'customer', text: 'Hei, jeg vil gjerne prøve akupunktur. Tar dere imot nye pasienter?' },
+    { who: 'ai', text: 'Hei! Ja, vi tar imot nye pasienter. Vi anbefaler å starte med en førstegangsbehandling der vi blir kjent og legger en plan.' },
     { who: 'customer', text: 'Hva koster det, og hvor lang tid tar det?' },
     { who: 'ai', text: 'En førstegangsbehandling tar ca. 75 minutter og koster 950 kr. Den inkluderer en grundig samtale og første behandling. Oppfølgingstimer er 60 minutter til 750 kr.' },
     { who: 'customer', text: 'Det høres bra ut. Har dere noe ledig neste uke?' },

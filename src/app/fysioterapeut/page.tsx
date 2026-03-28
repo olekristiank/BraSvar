@@ -35,12 +35,12 @@ const data: IndustryPageData = {
     'Mer tid til journalføring mellom behandlinger',
   ],
   chat: [
-    { who: 'customer', text: 'Hei, jeg har fått en skulderskade og trenger fysioterapeut.' },
-    { who: 'ai', text: 'Hei! Beklager å høre det. Har du henvisning fra lege, eller ønsker du en vurdering først?' },
-    { who: 'customer', text: 'Jeg har henvisning fra fastlegen min.' },
-    { who: 'ai', text: 'Flott. Vi har ledig tid torsdag kl. 10:00 eller fredag kl. 14:30. Førstegangstime varer 45 minutter. Passer noen av disse?' },
+    { who: 'customer', text: 'Hei, jeg vil gjerne bestille time hos fysioterapeut.' },
+    { who: 'ai', text: 'Hei! Vi tar imot nye pasienter. Ønsker du en førstegangstime?' },
+    { who: 'customer', text: 'Ja, gjerne.' },
+    { who: 'ai', text: 'Vi har ledig torsdag kl. 10:00 eller fredag kl. 14:30. Førstegangstime varer 45 minutter. Hva passer?' },
     { who: 'customer', text: 'Torsdag kl. 10 passer fint.' },
-    { who: 'ai', text: 'Da setter jeg opp torsdag kl. 10:00. Ta med henvisningen og legitimasjon. Du får en bekreftelse på SMS.' },
+    { who: 'ai', text: 'Da setter jeg opp torsdag kl. 10:00. Ta med legitimasjon. Du får en bekreftelse på SMS.' },
   ],
 };
 
