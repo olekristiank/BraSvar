@@ -148,6 +148,7 @@ function CategoryRow({ title, items }: { title: string; items: string[] }) {
               alignItems: 'center',
               gap: '0.35rem',
               overflow: 'hidden',
+              flexWrap: 'wrap',
             }}>
               {previewItems.map((item, i) => (
                 <span key={item} style={{ display: 'flex', alignItems: 'center', gap: '0.35rem' }}>
@@ -155,34 +156,25 @@ function CategoryRow({ title, items }: { title: string; items: string[] }) {
                   <span style={{ fontSize: '0.8rem', fontWeight: 450, color: '#64748b', whiteSpace: 'nowrap' }}>{item}</span>
                 </span>
               ))}
+              {hasMore && (
+                <span style={{ display: 'flex', alignItems: 'center', gap: '0.25rem', fontSize: '0.78rem', fontWeight: 600, color: '#ec4899', whiteSpace: 'nowrap' }}>
+                  ..flere
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ width: 11, height: 11 }}>
+                    <polyline points="6 9 12 15 18 9" />
+                  </svg>
+                </span>
+              )}
+            </span>
+          )}
+          {open && hasMore && (
+            <span style={{ fontSize: '0.78rem', fontWeight: 600, color: '#db2777', whiteSpace: 'nowrap', display: 'flex', alignItems: 'center', gap: '0.25rem' }}>
+              Skjul
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ width: 11, height: 11, transform: 'rotate(180deg)' }}>
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
             </span>
           )}
         </div>
-        {hasMore && (
-          <span style={{
-            fontSize: '0.78rem',
-            fontWeight: 600,
-            color: open ? '#db2777' : '#ec4899',
-            whiteSpace: 'nowrap',
-            flexShrink: 0,
-            display: 'flex',
-            alignItems: 'center',
-            gap: '0.3rem',
-          }}>
-            {open ? 'Skjul' : 'Flere'}
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              style={{ width: 12, height: 12, transition: 'transform 0.3s ease', transform: open ? 'rotate(180deg)' : 'rotate(0)' }}
-            >
-              <polyline points="6 9 12 15 18 9" />
-            </svg>
-          </span>
-        )}
       </button>
 
       <div
