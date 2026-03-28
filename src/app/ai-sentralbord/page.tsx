@@ -35,7 +35,7 @@ const jsonLd = {
   name: 'Bra Svar AI Sentralbord',
   description: 'AI-sentralbord som svarer telefonen for norske bedrifter døgnet rundt.',
   brand: { '@type': 'Organization', name: 'Bra Svar' },
-  offers: { '@type': 'AggregateOffer', lowPrice: '1490', highPrice: '2990', priceCurrency: 'NOK', offerCount: '3' },
+  offers: { '@type': 'AggregateOffer', lowPrice: '1490', highPrice: '2990', priceCurrency: 'NOK', offerCount: '3', availability: 'https://schema.org/InStock' },
 };
 
 export default function AISentralbord() {

@@ -167,8 +167,14 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     headline: post.title,
     description: post.description,
     datePublished: post.date,
+    image: `https://brasvar.no${post.cover}`,
     author: { '@type': 'Organization', name: 'Bra Svar', url: 'https://brasvar.no' },
-    publisher: { '@type': 'Organization', name: 'Bra Svar', url: 'https://brasvar.no' },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Bra Svar',
+      url: 'https://brasvar.no',
+      logo: { '@type': 'ImageObject', url: 'https://brasvar.no/icon.svg' },
+    },
     mainEntityOfPage: `https://brasvar.no/blog/${post.slug}`,
   };
 

@@ -29,6 +29,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
       'virtuell-resepsjonist',
       'hvordan-det-fungerer',
       'ofte-stilte-sporsmal',
+      'om-oss',
+      'kontakt',
+      'personvern',
     ].map(slug => ({
       url: `https://brasvar.no/${slug}`,
       lastModified: new Date(),

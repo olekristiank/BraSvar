@@ -32,6 +32,8 @@ export const metadata: Metadata = {
   title: "Bra Svar! – AI-sentralbord og intelligent kundeservice",
   description: "Bra Svar er ditt AI-sentralbord og kundebehandler. Svarer telefonen, booker avtaler og hjelper kundene dine – døgnet rundt. Ingen binding.",
   keywords: ['KI-telefonassistent', 'AI sentralbord', 'kunstig intelligens', 'telefonassistent', 'automatisering småbedrift', 'ubesvarte samtaler', 'KI kundeservice', 'intelligent kundeservice'],
+  metadataBase: new URL('https://brasvar.no'),
+  alternates: { canonical: '/' },
   openGraph: {
     title: 'Bra Svar! – AI-sentralbord og intelligent kundeservice',
     description: 'AI-sentralbord som svarer telefonen, booker avtaler og hjelper kundene dine – døgnet rundt.',
@@ -39,6 +41,7 @@ export const metadata: Metadata = {
     siteName: 'Bra Svar',
     locale: 'nb_NO',
     type: 'website',
+    images: [{ url: '/icon.svg', width: 100, height: 100, alt: 'Bra Svar logo' }],
   },
 };
 

@@ -28,6 +28,7 @@ const jsonLd = {
   name: 'Bra Svar Telefonsvarer',
   description: 'KI-telefonsvarer for norske bedrifter som fører naturlige samtaler og booker timer.',
   brand: { '@type': 'Organization', name: 'Bra Svar' },
+  offers: { '@type': 'AggregateOffer', lowPrice: '1490', highPrice: '2990', priceCurrency: 'NOK', offerCount: '3', availability: 'https://schema.org/InStock' },
 };
 
 export default function Telefonsvarer() {

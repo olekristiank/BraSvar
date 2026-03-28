@@ -93,7 +93,7 @@ Start med noe konkret. Et verktøy som tar unna repeterende oppgaver. En [telefo
 
 ---
 
-**Kilder:** NHO/Abelia: *Næringslivets KI-barometer 2026*. Basert på svar fra ca. 4 000 norske virksomheter.`,
+**Kilder:** [NHO](https://www.nho.no)/[Abelia](https://www.abelia.no): *Næringslivets KI-barometer 2026*. Basert på svar fra ca. 4 000 norske virksomheter.`,
   },
   {
     slug: 'gdpr-og-ki-verktoy',
@@ -116,7 +116,7 @@ Men personvern trenger ikke å være et hinder. Med noen enkle grep kan du ta i 
 
 Hvis du bruker et KI-verktøy som behandler personopplysninger på vegne av bedriften din, må du ha en databehandleravtale. Dette er lovpålagt. Avtalen regulerer hva leverandøren kan og ikke kan gjøre med dataene.
 
-Datatilsynet har en gratis mal du kan bruke som utgangspunkt. Sjekk at avtalen dekker hva som behandles, hvor dataene lagres, og hva som skjer når avtalen opphører.
+[Datatilsynet](https://www.datatilsynet.no) har en gratis mal du kan bruke som utgangspunkt. Sjekk at avtalen dekker hva som behandles, hvor dataene lagres, og hva som skjer når avtalen opphører.
 
 ### 2. Kontroll på underbehandlere
 
@@ -182,7 +182,7 @@ Du trenger ikke registrere systemet, du trenger ikke sertifisering, og du trenge
 
 ## KI Norge og regulatorisk sandkasse
 
-Regjeringen har opprettet KI Norge, en nasjonal arena som skal hjelpe virksomheter med å bruke KI ansvarlig. Som en del av dette opprettes en regulatorisk sandkasse der bedrifter kan få veiledning om regelverket. Digitaliseringsdirektoratet leder arbeidet i samarbeid med Nkom og Datatilsynet.
+Regjeringen har opprettet KI Norge, en nasjonal arena som skal hjelpe virksomheter med å bruke KI ansvarlig. Som en del av dette opprettes en regulatorisk sandkasse der bedrifter kan få veiledning om regelverket. [Digitaliseringsdirektoratet](https://www.digdir.no) leder arbeidet i samarbeid med [Nkom](https://www.nkom.no) og [Datatilsynet](https://www.datatilsynet.no).
 
 ## Ikke vent, men ikke stress heller
 
@@ -292,11 +292,11 @@ Når KI tar seg av det forutsigbare, kan du og de ansatte bruke tiden på det so
 
 ---
 
-**Kilder:** NHO/Abelia: *Næringslivets KI-barometer 2026*. NAV: Bedriftsundersøkelsen 2025.`,
+**Kilder:** [NHO](https://www.nho.no)/[Abelia](https://www.abelia.no): *Næringslivets KI-barometer 2026*. [NAV](https://www.nav.no): Bedriftsundersøkelsen 2025.`,
   },
   {
     slug: 'chatbot-vs-telefonassistent',
-    title: 'Chatbot vs. telefonassistent: Hva passer for din bedrift?',
+    title: 'Chatbot vs. telefonassistent: Hva passer best?',
     description: 'Begge bruker kunstig intelligens, men de løser ulike problemer for ulike bransjer. Her er en ærlig sammenligning.',
     date: '2026-03-06',
     readTime: '5 min',
@@ -352,7 +352,7 @@ For mange norske småbedrifter i helse, service og håndverk er telefonen fortsa
   },
   {
     slug: 'fem-ting-du-kan-automatisere',
-    title: 'Fem ting du kan automatisere i bedriften din i dag',
+    title: 'Fem ting du kan automatisere i dag',
     description: 'Du trenger ikke et stort KI-prosjekt. Her er fem konkrete ting du kan automatisere i småbedriften din allerede i dag.',
     date: '2026-03-04',
     readTime: '4 min',
@@ -512,11 +512,11 @@ Se gjerne vår [sjekkliste for KI-modenhet](/blog/ki-modenhet-sjekkliste) for å
 
 ---
 
-**Kilder:** SSB: *Bruk av IKT i husholdningene 2025*. Statistisk sentralbyrå.`,
+**Kilder:** [SSB](https://www.ssb.no): *Bruk av IKT i husholdningene 2025*. Statistisk sentralbyrå.`,
   },
   {
     slug: 'ai-sentralbord-for-smabedrifter',
-    title: 'AI-sentralbord: Hva det er og hvorfor bedriften din trenger det',
+    title: 'AI-sentralbord: Hva det er og hvorfor du trenger det',
     description: 'Et AI-sentralbord svarer telefonen for deg med en naturlig stemme, booker timer og videresender samtaler. Her er alt du trenger å vite.',
     date: '2026-03-22',
     readTime: '5 min',

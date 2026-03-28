@@ -130,6 +130,8 @@ export default function Recognition() {
                 <img
                   src={img.src}
                   alt={img.alt}
+                  width={400}
+                  height={600}
                   loading="eager"
                   style={{
                     position: 'absolute',

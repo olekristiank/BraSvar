@@ -105,9 +105,9 @@ export default function Home() {
               Om oss
             </p>
             <nav style={{ display: 'flex', flexDirection: 'column', gap: '0.35rem' }}>
-              <a href="#" className={styles.footerLink}>Personvern</a>
-              <a href="#" className={styles.footerLink}>Vilkår</a>
-              <a href="#" className={styles.footerLink}>Kontakt</a>
+              <a href="/personvern" className={styles.footerLink}>Personvern</a>
+              <a href="/om-oss" className={styles.footerLink}>Om oss</a>
+              <a href="/kontakt" className={styles.footerLink}>Kontakt</a>
             </nav>
           </div>
         </div>
