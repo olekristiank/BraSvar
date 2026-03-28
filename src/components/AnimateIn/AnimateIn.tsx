@@ -12,6 +12,16 @@ export default function AnimateIn({ children, delay = 0, style = {}, className }
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+
+    // Check if already in viewport (e.g. after client-side navigation back)
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight && rect.bottom > 0) {
+      setIsVisible(true);
+      return;
+    }
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -21,7 +31,7 @@ export default function AnimateIn({ children, delay = 0, style = {}, className }
       },
       { threshold: 0.15, rootMargin: '0px 0px -40px 0px' }
     );
-    if (ref.current) observer.observe(ref.current);
+    observer.observe(el);
     return () => observer.disconnect();
   }, []);
 
