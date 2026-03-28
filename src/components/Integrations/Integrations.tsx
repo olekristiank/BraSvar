@@ -109,10 +109,9 @@ function CategoryRow({ title, items }: { title: string; items: string[] }) {
   return (
     <div
       style={{
-        borderRadius: '12px',
-        border: hasMore ? '1px solid' : 'none',
-        borderColor: open ? 'rgba(236,72,153,0.15)' : '#f1f5f9',
-        background: open ? 'rgba(253,242,248,0.3)' : hasMore ? '#fff' : 'transparent',
+        borderLeft: '2px solid',
+        borderLeftColor: open ? '#ec4899' : 'rgba(236,72,153,0.2)',
+        background: open ? 'rgba(253,242,248,0.25)' : 'transparent',
         transition: 'all 0.3s ease',
         overflow: 'hidden',
       }}
@@ -124,7 +123,7 @@ function CategoryRow({ title, items }: { title: string; items: string[] }) {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'flex-start',
-          padding: '0.85rem 1.1rem',
+          padding: '0.7rem 1rem',
           background: 'none',
           border: 'none',
           cursor: hasMore ? 'pointer' : 'default',
@@ -187,7 +186,7 @@ function CategoryRow({ title, items }: { title: string; items: string[] }) {
           display: 'flex',
           flexWrap: 'wrap',
           gap: '0.35rem',
-          padding: '0 1.1rem 0.85rem',
+          padding: '0 1rem 0.75rem',
         }}>
           {items.map((item) => (
             <span
