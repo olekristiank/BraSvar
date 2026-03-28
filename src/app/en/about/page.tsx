@@ -3,8 +3,13 @@ import Navbar from '@/components/Navbar/Navbar';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Om Bra Svar | Bra Svar!',
-  description: 'Bra Svar leverer KI-telefonassistenter for norske småbedrifter. Vi hjelper deg å svare kundene dine, døgnet rundt.',
+  title: 'About Bra Svar | Bra Svar!',
+  description: 'Bra Svar is a service from Klevstrand Innovasjon, a Norwegian technology company. AI phone assistants for small and medium businesses.',
+  openGraph: {
+    title: 'About Bra Svar | Bra Svar!',
+    description: 'AI phone assistants for small and medium businesses, built in Norway.',
+    url: 'https://brasvar.no/en/about',
+  },
 };
 
 const sectionStyle: React.CSSProperties = {
@@ -24,7 +29,7 @@ const textStyle: React.CSSProperties = {
   lineHeight: 1.7,
 };
 
-export default function OmOssPage() {
+export default function AboutPage() {
   return (
     <main style={{ minHeight: '100vh', fontFamily: 'var(--font-outfit)', background: '#fff' }}>
       <Navbar />
@@ -45,7 +50,7 @@ export default function OmOssPage() {
           lineHeight: 1.15,
           marginBottom: '1rem',
         }}>
-          Om Bra Svar
+          About Bra Svar
         </h1>
         <p style={{
           fontSize: 'clamp(1rem, 2vw, 1.15rem)',
@@ -54,7 +59,7 @@ export default function OmOssPage() {
           margin: '0 auto',
           lineHeight: 1.6,
         }}>
-          KI-telefonassistenter for norske småbedrifter.
+          AI phone assistants for small and medium businesses.
         </p>
       </div>
 
@@ -65,36 +70,36 @@ export default function OmOssPage() {
         padding: '2rem 2rem 4rem',
       }}>
         <div style={sectionStyle}>
-          <h2 style={sectionTitleStyle}>Hvem vi er</h2>
+          <h2 style={sectionTitleStyle}>Who we are</h2>
           <p style={textStyle}>
-            Bra Svar er en tjeneste fra Klevstrand Innovasjon, et norsk teknologiselskap med base i Akershus. Hovedfokus er utvikling av SaaS-løsninger og apper for SMB og konsumentmarkedet, med brukervennlighet i fokus.
+            Bra Svar is a service from Klevstrand Innovasjon, a Norwegian technology company based in Akershus. Our main focus is developing SaaS solutions and apps for small and medium-sized businesses and the consumer market, with usability at the core of everything we build.
           </p>
         </div>
 
         <div style={sectionStyle}>
-          <h2 style={sectionTitleStyle}>Hva vi gjør</h2>
+          <h2 style={sectionTitleStyle}>What we do</h2>
           <p style={textStyle}>
-            Med tjenesten Bra Svar lager vi KI-telefonassistenter som svarer telefonen for bedriften din med en naturlig norsk stemme. Assistenten booker timer, svarer på spørsmål og sender deg oppsummering etterpå.
+            With Bra Svar, we build AI phone assistants that answer the phone for your business with a natural voice. The assistant books appointments, answers questions and sends you a summary afterwards.
           </p>
         </div>
 
         <div style={sectionStyle}>
-          <h2 style={sectionTitleStyle}>Hvorfor</h2>
+          <h2 style={sectionTitleStyle}>Why</h2>
           <p style={textStyle}>
-            Fordi småbedrifter fortjener samme tilgjengelighet som store selskaper, uten kostnadene.
+            Because small businesses deserve the same availability as large corporations, without the cost.
           </p>
         </div>
 
         <div style={sectionStyle}>
-          <h2 style={sectionTitleStyle}>Kontaktinformasjon</h2>
+          <h2 style={sectionTitleStyle}>Contact information</h2>
           <p style={textStyle}>
-            Telefon: <a href="tel:+4764006264" style={{ color: '#ec4899', textDecoration: 'none' }}>64 00 62 64</a><br />
-            E-post: <a href="mailto:kontakt@brasvar.no" style={{ color: '#ec4899', textDecoration: 'none' }}>kontakt@brasvar.no</a>
+            Phone: <a href="tel:+4764006264" style={{ color: '#ec4899', textDecoration: 'none' }}>64 00 62 64</a><br />
+            Email: <a href="mailto:kontakt@brasvar.no" style={{ color: '#ec4899', textDecoration: 'none' }}>kontakt@brasvar.no</a>
           </p>
         </div>
 
         <div style={sectionStyle}>
-          <h2 style={sectionTitleStyle}>Selskap</h2>
+          <h2 style={sectionTitleStyle}>Company</h2>
           <p style={textStyle}>
             Klevstrand Innovasjon<br />
             Org.nr. 937 361 157<br />
@@ -104,7 +109,7 @@ export default function OmOssPage() {
 
         {/* CTA */}
         <div style={{ textAlign: 'center', marginTop: '3rem' }}>
-          <Link href="/" style={{
+          <Link href="/en" style={{
             display: 'inline-block',
             background: 'linear-gradient(135deg, #ec4899, #f472b6)',
             color: '#fff',
@@ -116,7 +121,7 @@ export default function OmOssPage() {
             transition: 'transform 0.2s, box-shadow 0.2s',
             boxShadow: '0 4px 14px rgba(236, 72, 153, 0.35)',
           }}>
-            Prøv Bra Svar gratis
+            Try Bra Svar for free
           </Link>
         </div>
       </div>

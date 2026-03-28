@@ -170,6 +170,18 @@ export default function Navbar() {
           >
             Ta kontakt
           </button>
+          <a href="/en" style={{
+            fontSize: '0.78rem',
+            fontWeight: 600,
+            color: '#94a3b8',
+            textDecoration: 'none',
+            padding: '0.3rem 0.5rem',
+            borderRadius: '6px',
+            border: '1px solid #e2e8f0',
+            transition: 'color 0.2s, border-color 0.2s',
+          }}>
+            EN
+          </a>
         </nav>
 
         {/* Mobile hamburger */}

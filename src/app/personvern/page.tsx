@@ -3,7 +3,7 @@ import Navbar from '@/components/Navbar/Navbar';
 
 export const metadata: Metadata = {
   title: 'Personvern | Bra Svar!',
-  description: 'Les om hvordan Bra Svar behandler personopplysninger i tråd med GDPR.',
+  description: 'Les om hvordan brasvar.no behandler personopplysninger i tråd med GDPR.',
 };
 
 const sectionStyle: React.CSSProperties = {
@@ -44,7 +44,7 @@ export default function PersonvernPage() {
           lineHeight: 1.15,
           marginBottom: '1rem',
         }}>
-          Personvernerklæring
+          Personvernerkl&aelig;ring
         </h1>
         <p style={{
           fontSize: 'clamp(1rem, 2vw, 1.15rem)',
@@ -53,7 +53,7 @@ export default function PersonvernPage() {
           margin: '0 auto',
           lineHeight: 1.6,
         }}>
-          Slik behandler Bra Svar personopplysningene dine.
+          Slik behandler vi personopplysninger p&aring; brasvar.no.
         </p>
       </div>
 
@@ -66,48 +66,61 @@ export default function PersonvernPage() {
         <div style={sectionStyle}>
           <h2 style={sectionTitleStyle}>Behandlingsansvarlig</h2>
           <p style={textStyle}>
-            Klevstrand Innovasjon er behandlingsansvarlig for personopplysninger som samles inn gjennom Bra Svar sine tjenester og nettsider.
+            Klevstrand Innovasjon er behandlingsansvarlig for personopplysninger som samles inn gjennom nettsiden brasvar.no.
+          </p>
+        </div>
+
+        <div style={sectionStyle}>
+          <h2 style={sectionTitleStyle}>Hva gjelder denne erkl&aelig;ringen</h2>
+          <p style={textStyle}>
+            Denne personvernerkl&aelig;ringen gjelder for nettsiden brasvar.no og beskriver hvordan vi behandler opplysninger om deg som bes&oslash;kende p&aring; nettsiden. Hvis du er kunde av tjenesten Bra Svar, gjelder en egen personvernerkl&aelig;ring og databehandleravtale som du f&aring;r tilgang til som en del av kundeavtalen.
           </p>
         </div>
 
         <div style={sectionStyle}>
           <h2 style={sectionTitleStyle}>Hva vi samler inn</h2>
-          <p style={textStyle}>Vi kan samle inn følgende personopplysninger:</p>
+          <p style={textStyle}>N&aring;r du bes&oslash;ker brasvar.no kan vi samle inn f&oslash;lgende:</p>
           <ul style={{ ...textStyle, paddingLeft: '1.5rem', marginTop: '0.5rem' }}>
-            <li style={{ marginBottom: '0.4rem' }}>Samtaledata fra telefonsamtaler med KI-assistenten, inkludert lydopptak og transkripsjoner.</li>
-            <li style={{ marginBottom: '0.4rem' }}>Kontaktinformasjon du oppgir via skjemaer på nettsiden, som navn, e-post og telefonnummer.</li>
-            <li style={{ marginBottom: '0.4rem' }}>Brukerdata fra nettsiden, som IP-adresse, nettlesertype og sidevisninger.</li>
+            <li style={{ marginBottom: '0.4rem' }}>Kontaktinformasjon du oppgir via skjemaer p&aring; nettsiden, som navn, e-post, telefonnummer og firmanavn.</li>
+            <li style={{ marginBottom: '0.4rem' }}>Teknisk informasjon som IP-adresse, nettlesertype og sidevisninger.</li>
           </ul>
         </div>
 
         <div style={sectionStyle}>
-          <h2 style={sectionTitleStyle}>Formål</h2>
-          <p style={textStyle}>Vi behandler personopplysninger for å:</p>
+          <h2 style={sectionTitleStyle}>Form&aring;l</h2>
+          <p style={textStyle}>Vi behandler personopplysninger for &aring;:</p>
           <ul style={{ ...textStyle, paddingLeft: '1.5rem', marginTop: '0.5rem' }}>
-            <li style={{ marginBottom: '0.4rem' }}>Levere tjenesten og håndtere telefonsamtaler på vegne av bedriften din.</li>
-            <li style={{ marginBottom: '0.4rem' }}>Forbedre produktet og brukeropplevelsen.</li>
-            <li style={{ marginBottom: '0.4rem' }}>Kommunisere med deg om tjenesten.</li>
+            <li style={{ marginBottom: '0.4rem' }}>Besvare henvendelser du sender gjennom kontaktskjemaet.</li>
+            <li style={{ marginBottom: '0.4rem' }}>Forbedre nettsiden og brukeropplevelsen.</li>
+            <li style={{ marginBottom: '0.4rem' }}>Sende deg informasjon om tjenesten dersom du har bedt om det.</li>
           </ul>
         </div>
 
         <div style={sectionStyle}>
           <h2 style={sectionTitleStyle}>Rettslig grunnlag</h2>
           <p style={textStyle}>
-            Behandlingen av personopplysninger skjer på grunnlag av samtykke (GDPR art. 6 nr. 1 bokstav a) og avtale (GDPR art. 6 nr. 1 bokstav b). Når du bruker tjenesten vår eller sender oss en henvendelse, gir du samtykke til behandling av de opplysningene som er nødvendige for å levere tjenesten.
+            Behandlingen skjer p&aring; grunnlag av samtykke (GDPR art. 6 nr. 1 bokstav a) n&aring;r du sender oss en henvendelse via kontaktskjemaet, og berettiget interesse (GDPR art. 6 nr. 1 bokstav f) for teknisk informasjon som er n&oslash;dvendig for &aring; drifte nettsiden.
+          </p>
+        </div>
+
+        <div style={sectionStyle}>
+          <h2 style={sectionTitleStyle}>Cookies</h2>
+          <p style={textStyle}>
+            Nettsiden bruker kun n&oslash;dvendige cookies for &aring; sikre funksjonalitet. Vi bruker ikke sporings-cookies eller tredjeparts reklamecookies.
           </p>
         </div>
 
         <div style={sectionStyle}>
           <h2 style={sectionTitleStyle}>Lagring</h2>
           <p style={textStyle}>
-            Alle personopplysninger lagres på servere innenfor EU/EØS-området. Data oppbevares så lenge det er nødvendig for å oppfylle formålet med behandlingen, og slettes når det ikke lenger er behov for dem.
+            Opplysninger du oppgir via kontaktskjemaet lagres s&aring; lenge det er n&oslash;dvendig for &aring; f&oslash;lge opp henvendelsen din. Teknisk informasjon om nettside-bes&oslash;k lagres ikke p&aring; en m&aring;te som identifiserer deg personlig.
           </p>
         </div>
 
         <div style={sectionStyle}>
           <h2 style={sectionTitleStyle}>Deling med tredjepart</h2>
           <p style={textStyle}>
-            Vi deler ikke personopplysninger med tredjepart uten at det foreligger en databehandleravtale. Vi bruker underleverandører for å levere tjenesten, og disse er forpliktet til å behandle opplysningene i samsvar med GDPR.
+            Vi deler ikke personopplysninger fra nettsiden med tredjepart, med unntak av tekniske leverand&oslash;rer som er n&oslash;dvendige for &aring; drifte nettsiden (for eksempel hosting). Disse er forpliktet til &aring; behandle opplysningene i samsvar med GDPR.
           </p>
         </div>
 
@@ -118,22 +131,21 @@ export default function PersonvernPage() {
             <li style={{ marginBottom: '0.4rem' }}>Innsyn i hvilke personopplysninger vi har lagret om deg.</li>
             <li style={{ marginBottom: '0.4rem' }}>Retting av uriktige opplysninger.</li>
             <li style={{ marginBottom: '0.4rem' }}>Sletting av personopplysninger.</li>
-            <li style={{ marginBottom: '0.4rem' }}>Dataportabilitet, det vil si å få utlevert opplysningene dine i et maskinlesbart format.</li>
-            <li style={{ marginBottom: '0.4rem' }}>Å trekke tilbake samtykke når som helst.</li>
+            <li style={{ marginBottom: '0.4rem' }}>Å trekke tilbake samtykke n&aring;r som helst.</li>
           </ul>
         </div>
 
         <div style={sectionStyle}>
-          <h2 style={sectionTitleStyle}>Cookies</h2>
+          <h2 style={sectionTitleStyle}>Personvern for tjenesten Bra Svar</h2>
           <p style={textStyle}>
-            Nettsiden bruker nødvendige cookies for å sikre funksjonalitet og en god brukeropplevelse. Vi bruker ikke sporings-cookies eller tredjeparts reklamecookies.
+            Denne erkl&aelig;ringen dekker kun nettsiden brasvar.no. Kunder som bruker tjenesten Bra Svar (KI-telefonassistenten) f&aring;r en egen personvernerkl&aelig;ring og databehandleravtale som en del av kundeavtalen. Sp&oslash;rsm&aring;l om dette kan rettes til oss p&aring; e-post.
           </p>
         </div>
 
         <div style={sectionStyle}>
           <h2 style={sectionTitleStyle}>Kontakt</h2>
           <p style={textStyle}>
-            Har du spørsmål om personvern, eller ønsker du å utøve rettighetene dine, kan du kontakte oss på <a href="mailto:kontakt@brasvar.no" style={{ color: '#ec4899', textDecoration: 'none' }}>kontakt@brasvar.no</a>.
+            Har du sp&oslash;rsm&aring;l om personvern, eller &oslash;nsker du &aring; ut&oslash;ve rettighetene dine, kan du kontakte oss p&aring; <a href="mailto:kontakt@brasvar.no" style={{ color: '#ec4899', textDecoration: 'none' }}>kontakt@brasvar.no</a>.
           </p>
         </div>
 
