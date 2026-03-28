@@ -96,7 +96,7 @@ function CategoryRow({ title, items }: { title: string; items: string[] }) {
   const [open, setOpen] = useState(false);
   const contentRef = useRef<HTMLDivElement>(null);
   const [height, setHeight] = useState(0);
-  const previewCount = Math.min(6, items.length);
+  const previewCount = Math.min(8, items.length);
   const previewItems = items.slice(0, previewCount);
   const hasMore = items.length > previewCount;
 
