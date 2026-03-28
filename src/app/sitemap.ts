@@ -35,5 +35,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly' as const,
       priority: 0.6,
     })),
+    ...[
+      'frisor', 'klinikk', 'handverker', 'verksted', 'skjonnhet',
+      'tannlege', 'legekontor', 'naprapat-osteopat', 'personlig-trener', 'optiker',
+      'hudklinikk', 'velvaereklinikk', 'advokat', 'regnskapsforer', 'eiendomsmegler',
+      'forsikring', 'konsulent', 'hundesalong', 'bilpleie', 'renhold',
+    ].map(slug => ({
+      url: `https://brasvar.no/${slug}`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.5,
+    })),
   ];
 }
