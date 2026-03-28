@@ -157,11 +157,9 @@ function CategoryRow({ title, items }: { title: string; items: string[] }) {
                 </span>
               ))}
               {hasMore && (
-                <span style={{ display: 'flex', alignItems: 'center', gap: '0.25rem', fontSize: '0.78rem', fontWeight: 600, color: '#ec4899', whiteSpace: 'nowrap' }}>
-                  ..flere
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ width: 11, height: 11 }}>
-                    <polyline points="6 9 12 15 18 9" />
-                  </svg>
+                <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.2rem', whiteSpace: 'nowrap' }}>
+                  <span style={{ fontSize: '0.8rem', fontWeight: 450, color: '#64748b' }}>..</span>
+                  <span style={{ fontSize: '0.8rem', fontWeight: 600, color: '#ec4899' }}>flere</span>
                 </span>
               )}
             </span>
