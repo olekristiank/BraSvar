@@ -72,7 +72,7 @@ export default function AboutPage() {
         <div style={sectionStyle}>
           <h2 style={sectionTitleStyle}>Who we are</h2>
           <p style={textStyle}>
-            Bra Svar is a service from Klevstrand Innovasjon, a Norwegian technology company based in Akershus. Our main focus is developing SaaS solutions and apps for small and medium-sized businesses and the consumer market, with usability at the core of everything we build.
+            Bra Svar is a service from Klevstrand Innovasjon, a Norwegian technology company based in Akershus. We build software for small and medium-sized businesses.
           </p>
         </div>
 

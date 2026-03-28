@@ -41,7 +41,7 @@ export default function ContactPage() {
           margin: '0 auto',
           lineHeight: 1.6,
         }}>
-          We are happy to answer any questions about Bra Svar.
+          Questions? Call or email us.
         </p>
       </div>
 

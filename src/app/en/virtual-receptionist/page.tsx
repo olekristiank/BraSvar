@@ -29,15 +29,22 @@ const whoItsFor = [
 export default function VirtualReceptionist() {
   return (
     <main style={{ minHeight: '100vh', fontFamily: 'var(--font-outfit)', background: '#fff' }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        '@context': 'https://schema.org', '@type': 'Product',
+        name: 'Bra Svar Virtual Receptionist',
+        description: 'Virtual receptionist that answers calls, books appointments and helps your customers.',
+        brand: { '@type': 'Organization', name: 'Bra Svar' },
+        offers: { '@type': 'AggregateOffer', lowPrice: '1490', highPrice: '2990', priceCurrency: 'NOK', offerCount: '3', availability: 'https://schema.org/InStock' },
+      }) }} />
       <Navbar />
 
       <div style={{ paddingTop: 'clamp(7rem, 14vw, 10rem)', paddingBottom: '4rem', textAlign: 'center', background: 'linear-gradient(180deg, #fdf2f8 0%, #fff 100%)', paddingLeft: 'clamp(1.5rem, 4vw, 3rem)', paddingRight: 'clamp(1.5rem, 4vw, 3rem)' }}>
         <p style={{ fontSize: '0.75rem', fontWeight: 700, color: '#ec4899', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '1rem' }}>Virtual Receptionist</p>
         <h1 style={{ fontSize: 'clamp(2rem, 5vw, 3.2rem)', fontWeight: 800, color: '#0f172a', lineHeight: 1.15, marginBottom: '1.25rem', maxWidth: '750px', marginLeft: 'auto', marginRight: 'auto' }}>
-          The receptionist who is never <span style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 400, color: '#ec4899' }}>away</span>
+          The receptionist who{`'`}s always <span style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 400, color: '#ec4899' }}>there</span>
         </h1>
         <p style={{ fontSize: 'clamp(1rem, 2vw, 1.15rem)', color: '#64748b', maxWidth: '600px', margin: '0 auto 2rem', lineHeight: 1.65 }}>
-          Bra Svar is a virtual receptionist that answers the phone for your business with a natural voice. The assistant books appointments, answers questions and makes sure no customers fall through the cracks.
+          Bra Svar is a virtual receptionist that answers the phone for your business with a natural voice. The assistant books appointments, answers questions and makes sure every call is answered.
         </p>
         <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
           <Link href="/en/contact" style={{ display: 'inline-flex', padding: '0.9rem 2rem', fontWeight: 700, fontSize: '0.95rem', color: '#fff', background: 'linear-gradient(135deg, #db2777, #be185d)', borderRadius: '12px', textDecoration: 'none', boxShadow: '0 4px 14px rgba(236,72,153,0.3)' }}>Try for free</Link>
@@ -89,7 +96,7 @@ export default function VirtualReceptionist() {
             <p style={{ fontSize: '0.82rem', color: '#94a3b8' }}>per month</p>
           </div>
         </div>
-        <p style={{ marginTop: '1rem', fontSize: '0.9rem', color: '#64748b', textAlign: 'center' }}>Same job. 96% lower cost.</p>
+        <p style={{ marginTop: '1rem', fontSize: '0.9rem', color: '#64748b', textAlign: 'center' }}>A fraction of the cost.</p>
       </div>
 
       <div style={{ textAlign: 'center', padding: '3rem 2rem 5rem', background: 'linear-gradient(180deg, #fff 0%, #fdf2f8 100%)' }}>

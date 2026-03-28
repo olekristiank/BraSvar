@@ -53,5 +53,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly' as const,
       priority: 0.5,
     })),
+    // English pages
+    { url: 'https://brasvar.no/en', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.9 },
+    ...[
+      'ai-switchboard', 'phone-answering-service', 'virtual-receptionist',
+      'how-it-works', 'about', 'contact', 'privacy',
+      'hairdresser', 'clinic', 'tradesperson', 'workshop', 'beauty',
+      'dentist', 'medical-office', 'chiropractor', 'physiotherapist',
+      'psychologist', 'electrician', 'plumber', 'photographer',
+      'tattoo-artist', 'painter', 'funeral-home', 'gym', 'acupuncturist',
+      'contractor', 'architect', 'naprapat', 'personal-trainer', 'optician',
+      'skin-clinic', 'wellness-clinic', 'lawyer', 'accountant',
+      'real-estate', 'insurance', 'consultant', 'dog-grooming',
+      'car-detailing', 'cleaning', 'veterinarian', 'podiatrist',
+    ].map(slug => ({
+      url: `https://brasvar.no/en/${slug}`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.5,
+    })),
   ];
 }

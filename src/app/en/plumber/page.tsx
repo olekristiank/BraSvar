@@ -41,9 +41,7 @@ const data: IndustryPageData = {
     'An AI assistant that understands the difference between a dripping faucet and a burst main, and handles both.',
   chat: [
     { who: 'customer', text: 'We have water pouring from the ceiling in our bathroom. I think a pipe burst upstairs!' },
-    { who: 'ai', text: 'That sounds urgent. First, can you turn off the main water valve if you know where it is? I am flagging this as an emergency right now.' },
-    { who: 'customer', text: 'Yes, I just shut it off. The water has stopped but there is water everywhere.' },
-    { who: 'ai', text: 'Good thinking. Can I get your address? The plumber will be in touch very shortly.' },
+    { who: 'ai', text: 'I\'m flagging this as urgent. Can I get your address so the plumber can reach you quickly?' },
     { who: 'customer', text: '8 River Road.' },
     { who: 'ai', text: 'Got it. I have marked this as an emergency at 8 River Road, possible burst pipe with ceiling leak. You will hear back within minutes.' },
   ],

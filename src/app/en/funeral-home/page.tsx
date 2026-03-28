@@ -43,7 +43,7 @@ const data: IndustryPageData = {
   ],
   chat: [
     { who: 'customer', text: 'Hello. My father passed away last night. We are not sure what to do.' },
-    { who: 'ai', text: 'I am so sorry for your loss. It is completely understandable that this feels overwhelming. We are here to help you through this.' },
+    { who: 'ai', text: 'I\'m very sorry for your loss. We\'re here to help.' },
     { who: 'customer', text: 'Thank you. He is at the hospital now. What happens next?' },
     { who: 'ai', text: 'We will take care of everything. The funeral home can arrange transport from the hospital and help you with all the practical details. May I have your name so we can call you back as soon as possible to talk about the way forward?' },
     { who: 'customer', text: 'Yes, my name is Sarah Williams. My number is the one I am calling from.' },

@@ -106,7 +106,7 @@ export default function HowItWorksPage() {
           color: '#0f172a',
           marginBottom: '1.25rem',
         }}>
-          From missed to booked in{' '}
+          From call to booked in{' '}
           <span style={{
             fontFamily: 'var(--font-serif)',
             fontStyle: 'italic',

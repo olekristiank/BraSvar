@@ -3,10 +3,10 @@ import Link from 'next/link';
 import Navbar from '@/components/Navbar/Navbar';
 
 export const metadata: Metadata = {
-  title: 'Intelligent phone answering for business | Bra Svar!',
+  title: 'Phone answering for business | Bra Svar!',
   description: 'Never miss an important call. Bra Svar is an AI phone answering service that has natural conversations, takes messages and books appointments. No commitment.',
   openGraph: {
-    title: 'Intelligent phone answering for business | Bra Svar!',
+    title: 'Phone answering for business | Bra Svar!',
     description: 'An AI phone answering service that has natural conversations and books appointments for your business.',
     url: 'https://brasvar.no/en/phone-answering-service',
   },
@@ -22,9 +22,19 @@ const comparison = [
   { feature: 'Customer leaves a message', traditional: 'Rarely', brasvar: 'Always (conversation is completed)' },
 ];
 
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Product',
+  name: 'Bra Svar Phone Answering Service',
+  description: 'AI phone answering service that has real conversations and books appointments.',
+  brand: { '@type': 'Organization', name: 'Bra Svar' },
+  offers: { '@type': 'AggregateOffer', lowPrice: '1490', highPrice: '2990', priceCurrency: 'NOK', offerCount: '3', availability: 'https://schema.org/InStock' },
+};
+
 export default function PhoneAnsweringService() {
   return (
     <main style={{ minHeight: '100vh', fontFamily: 'var(--font-outfit)', background: '#fff' }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Navbar />
 
       <div style={{ paddingTop: 'clamp(7rem, 14vw, 10rem)', paddingBottom: '4rem', textAlign: 'center', background: 'linear-gradient(180deg, #fdf2f8 0%, #fff 100%)', paddingLeft: 'clamp(1.5rem, 4vw, 3rem)', paddingRight: 'clamp(1.5rem, 4vw, 3rem)' }}>
@@ -33,7 +43,7 @@ export default function PhoneAnsweringService() {
           Not an answering machine.<br />A <span style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 400, color: '#ec4899' }}>conversation.</span>
         </h1>
         <p style={{ fontSize: 'clamp(1rem, 2vw, 1.15rem)', color: '#64748b', maxWidth: '600px', margin: '0 auto 2rem', lineHeight: 1.65 }}>
-          Most people who call a business do not leave a message on a standard answering machine. They call the next option. Bra Svar has a real conversation, answers questions and takes bookings. The customer gets help, and you lose no one.
+          Most people who call a business do not leave a message on a standard answering machine. They call the next option. Bra Svar has a real conversation, answers questions and takes bookings. The customer gets an answer. No one calls a competitor.
         </p>
         <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
           <Link href="/en/contact" style={{ display: 'inline-flex', padding: '0.9rem 2rem', fontWeight: 700, fontSize: '0.95rem', color: '#fff', background: 'linear-gradient(135deg, #db2777, #be185d)', borderRadius: '12px', textDecoration: 'none', boxShadow: '0 4px 14px rgba(236,72,153,0.3)' }}>Try for free</Link>

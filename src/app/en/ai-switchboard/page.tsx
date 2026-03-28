@@ -4,10 +4,10 @@ import Navbar from '@/components/Navbar/Navbar';
 
 export const metadata: Metadata = {
   title: 'AI Switchboard for businesses | Bra Svar!',
-  description: 'An intelligent AI switchboard that answers the phone for your business around the clock. Handles calls, books appointments and forwards calls. No commitment.',
+  description: 'An AI switchboard that answers the phone for your business around the clock. Handles calls, books appointments and forwards calls. No commitment.',
   openGraph: {
     title: 'AI Switchboard for businesses | Bra Svar!',
-    description: 'An intelligent AI switchboard that answers the phone for your business around the clock.',
+    description: 'An AI switchboard that answers the phone for your business around the clock.',
     url: 'https://brasvar.no/en/ai-switchboard',
   },
 };
@@ -29,15 +29,25 @@ const useCases = [
   'Small offices that need professional reception without hiring',
 ];
 
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Product',
+  name: 'Bra Svar AI Switchboard',
+  description: 'AI switchboard that answers the phone for businesses around the clock.',
+  brand: { '@type': 'Organization', name: 'Bra Svar' },
+  offers: { '@type': 'AggregateOffer', lowPrice: '1490', highPrice: '2990', priceCurrency: 'NOK', offerCount: '3', availability: 'https://schema.org/InStock' },
+};
+
 export default function AISwitchboard() {
   return (
     <main style={{ minHeight: '100vh', fontFamily: 'var(--font-outfit)', background: '#fff' }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Navbar />
 
       <div style={{ paddingTop: 'clamp(7rem, 14vw, 10rem)', paddingBottom: '4rem', textAlign: 'center', background: 'linear-gradient(180deg, #fdf2f8 0%, #fff 100%)', paddingLeft: 'clamp(1.5rem, 4vw, 3rem)', paddingRight: 'clamp(1.5rem, 4vw, 3rem)' }}>
         <p style={{ fontSize: '0.75rem', fontWeight: 700, color: '#ec4899', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '1rem' }}>AI Switchboard</p>
         <h1 style={{ fontSize: 'clamp(2rem, 5vw, 3.2rem)', fontWeight: 800, color: '#0f172a', lineHeight: 1.15, marginBottom: '1.25rem', maxWidth: '700px', marginLeft: 'auto', marginRight: 'auto' }}>
-          A switchboard that never takes a <span style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 400, color: '#ec4899' }}>break</span>
+          A switchboard that never <span style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 400, color: '#ec4899' }}>closes</span>
         </h1>
         <p style={{ fontSize: 'clamp(1rem, 2vw, 1.15rem)', color: '#64748b', maxWidth: '600px', margin: '0 auto 2rem', lineHeight: 1.65 }}>
           Answers your phone with a natural voice. Around the clock, without waiting time. You never miss a call again.
