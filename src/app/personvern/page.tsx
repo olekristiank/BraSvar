@@ -44,7 +44,7 @@ export default function PersonvernPage() {
           lineHeight: 1.15,
           marginBottom: '1rem',
         }}>
-          Personvernerkl&aelig;ring
+          Personvernerklæring
         </h1>
         <p style={{
           fontSize: 'clamp(1rem, 2vw, 1.15rem)',
@@ -53,7 +53,7 @@ export default function PersonvernPage() {
           margin: '0 auto',
           lineHeight: 1.6,
         }}>
-          Slik behandler vi personopplysninger p&aring; brasvar.no.
+          Slik behandler vi personopplysninger på brasvar.no.
         </p>
       </div>
 
@@ -71,56 +71,68 @@ export default function PersonvernPage() {
         </div>
 
         <div style={sectionStyle}>
-          <h2 style={sectionTitleStyle}>Hva gjelder denne erkl&aelig;ringen</h2>
+          <h2 style={sectionTitleStyle}>Hva gjelder denne erklæringen</h2>
           <p style={textStyle}>
-            Denne personvernerkl&aelig;ringen gjelder for nettsiden brasvar.no og beskriver hvordan vi behandler opplysninger om deg som bes&oslash;kende p&aring; nettsiden. Hvis du er kunde av tjenesten Bra Svar, gjelder en egen personvernerkl&aelig;ring og databehandleravtale som du f&aring;r tilgang til som en del av kundeavtalen.
+            Denne personvernerklæringen gjelder for nettsiden brasvar.no og beskriver hvordan vi behandler opplysninger om deg som besøkende. Hvis du er kunde av tjenesten Bra Svar, gjelder en egen personvernerklæring og databehandleravtale som du får tilgang til som en del av kundeavtalen.
           </p>
         </div>
 
         <div style={sectionStyle}>
           <h2 style={sectionTitleStyle}>Hva vi samler inn</h2>
-          <p style={textStyle}>N&aring;r du bes&oslash;ker brasvar.no kan vi samle inn f&oslash;lgende:</p>
+          <p style={textStyle}>Når du besøker brasvar.no kan vi samle inn følgende:</p>
           <ul style={{ ...textStyle, paddingLeft: '1.5rem', marginTop: '0.5rem' }}>
-            <li style={{ marginBottom: '0.4rem' }}>Kontaktinformasjon du oppgir via skjemaer p&aring; nettsiden, som navn, e-post, telefonnummer og firmanavn.</li>
-            <li style={{ marginBottom: '0.4rem' }}>Teknisk informasjon som IP-adresse, nettlesertype og sidevisninger.</li>
+            <li style={{ marginBottom: '0.4rem' }}>Kontaktinformasjon du oppgir via skjemaer på nettsiden, som navn, e-post, telefonnummer og firmanavn.</li>
+            <li style={{ marginBottom: '0.4rem' }}>Anonymisert bruksdata, som sidevisninger, klikkhandlinger og navigasjonsmønstre. Denne informasjonen samles inn uten bruk av cookies og kan ikke knyttes til deg som person.</li>
+            <li style={{ marginBottom: '0.4rem' }}>Teknisk informasjon som nettlesertype og enhet, brukt for å sikre at nettsiden fungerer riktig.</li>
           </ul>
         </div>
 
         <div style={sectionStyle}>
-          <h2 style={sectionTitleStyle}>Form&aring;l</h2>
-          <p style={textStyle}>Vi behandler personopplysninger for &aring;:</p>
+          <h2 style={sectionTitleStyle}>Formål</h2>
+          <p style={textStyle}>Vi behandler personopplysninger for å:</p>
           <ul style={{ ...textStyle, paddingLeft: '1.5rem', marginTop: '0.5rem' }}>
             <li style={{ marginBottom: '0.4rem' }}>Besvare henvendelser du sender gjennom kontaktskjemaet.</li>
-            <li style={{ marginBottom: '0.4rem' }}>Forbedre nettsiden og brukeropplevelsen.</li>
-            <li style={{ marginBottom: '0.4rem' }}>Sende deg informasjon om tjenesten dersom du har bedt om det.</li>
+            <li style={{ marginBottom: '0.4rem' }}>Sende deg bekreftelse og oppfølging på e-post etter at du har fylt ut kontaktskjemaet.</li>
+            <li style={{ marginBottom: '0.4rem' }}>Forstå hvordan nettsiden brukes, slik at vi kan forbedre innhold og brukeropplevelse.</li>
           </ul>
         </div>
 
         <div style={sectionStyle}>
           <h2 style={sectionTitleStyle}>Rettslig grunnlag</h2>
           <p style={textStyle}>
-            Behandlingen skjer p&aring; grunnlag av samtykke (GDPR art. 6 nr. 1 bokstav a) n&aring;r du sender oss en henvendelse via kontaktskjemaet, og berettiget interesse (GDPR art. 6 nr. 1 bokstav f) for teknisk informasjon som er n&oslash;dvendig for &aring; drifte nettsiden.
+            Når du sender oss en henvendelse via kontaktskjemaet, behandler vi opplysningene dine på grunnlag av samtykke (GDPR art. 6 nr. 1 bokstav a). Anonymisert analyse av nettside-bruk skjer på grunnlag av berettiget interesse (GDPR art. 6 nr. 1 bokstav f), da dette ikke involverer personopplysninger.
           </p>
         </div>
 
         <div style={sectionStyle}>
           <h2 style={sectionTitleStyle}>Cookies</h2>
           <p style={textStyle}>
-            Nettsiden bruker kun n&oslash;dvendige cookies for &aring; sikre funksjonalitet. Vi bruker ikke sporings-cookies eller tredjeparts reklamecookies.
+            Nettsiden bruker kun teknisk nødvendige cookies for å sikre funksjonalitet. Vi bruker ikke sporings-cookies, reklamecookies eller tredjeparts-cookies. Vår analyseløsning fungerer uten cookies.
           </p>
         </div>
 
         <div style={sectionStyle}>
-          <h2 style={sectionTitleStyle}>Lagring</h2>
+          <h2 style={sectionTitleStyle}>Lagring og sikkerhet</h2>
           <p style={textStyle}>
-            Opplysninger du oppgir via kontaktskjemaet lagres s&aring; lenge det er n&oslash;dvendig for &aring; f&oslash;lge opp henvendelsen din. Teknisk informasjon om nettside-bes&oslash;k lagres ikke p&aring; en m&aring;te som identifiserer deg personlig.
+            Kontaktinformasjon du oppgir lagres så lenge det er nødvendig for å følge opp henvendelsen din, og slettes deretter. Anonymisert bruksdata kan ikke knyttes til enkeltpersoner.
+          </p>
+          <p style={{ ...textStyle, marginTop: '0.75rem' }}>
+            Nettsiden hostes i Europa. Enkelte av våre underleverandører er basert utenfor EU/EØS-området. I slike tilfeller er overføring av data sikret gjennom EUs standardavtaler for dataoverføring (Standard Contractual Clauses) eller EU-US Data Privacy Framework.
           </p>
         </div>
 
         <div style={sectionStyle}>
-          <h2 style={sectionTitleStyle}>Deling med tredjepart</h2>
+          <h2 style={sectionTitleStyle}>Underleverandører</h2>
           <p style={textStyle}>
-            Vi deler ikke personopplysninger fra nettsiden med tredjepart, med unntak av tekniske leverand&oslash;rer som er n&oslash;dvendige for &aring; drifte nettsiden (for eksempel hosting). Disse er forpliktet til &aring; behandle opplysningene i samsvar med GDPR.
+            Vi bruker et begrenset antall underleverandører for å drifte nettsiden:
+          </p>
+          <ul style={{ ...textStyle, paddingLeft: '1.5rem', marginTop: '0.5rem' }}>
+            <li style={{ marginBottom: '0.4rem' }}>Hostingleverandør for drift av nettsiden.</li>
+            <li style={{ marginBottom: '0.4rem' }}>Analysetjeneste for anonymisert bruksstatistikk (uten cookies, data lagres i EU).</li>
+            <li style={{ marginBottom: '0.4rem' }}>E-posttjeneste for utsending av skjemadata (data behandles i EU).</li>
+          </ul>
+          <p style={{ ...textStyle, marginTop: '0.5rem' }}>
+            Alle underleverandører er forpliktet til å behandle opplysninger i samsvar med GDPR, og vi har databehandleravtaler der dette er påkrevd.
           </p>
         </div>
 
@@ -131,21 +143,22 @@ export default function PersonvernPage() {
             <li style={{ marginBottom: '0.4rem' }}>Innsyn i hvilke personopplysninger vi har lagret om deg.</li>
             <li style={{ marginBottom: '0.4rem' }}>Retting av uriktige opplysninger.</li>
             <li style={{ marginBottom: '0.4rem' }}>Sletting av personopplysninger.</li>
-            <li style={{ marginBottom: '0.4rem' }}>Å trekke tilbake samtykke n&aring;r som helst.</li>
+            <li style={{ marginBottom: '0.4rem' }}>Å trekke tilbake samtykke når som helst.</li>
+            <li style={{ marginBottom: '0.4rem' }}>Å klage til Datatilsynet dersom du mener behandlingen er i strid med GDPR.</li>
           </ul>
         </div>
 
         <div style={sectionStyle}>
           <h2 style={sectionTitleStyle}>Personvern for tjenesten Bra Svar</h2>
           <p style={textStyle}>
-            Denne erkl&aelig;ringen dekker kun nettsiden brasvar.no. Kunder som bruker tjenesten Bra Svar (KI-telefonassistenten) f&aring;r en egen personvernerkl&aelig;ring og databehandleravtale som en del av kundeavtalen. Sp&oslash;rsm&aring;l om dette kan rettes til oss p&aring; e-post.
+            Denne erklæringen dekker kun nettsiden brasvar.no. Kunder som bruker tjenesten Bra Svar (KI-telefonassistenten) får en egen personvernerklæring og databehandleravtale som en del av kundeavtalen. Spørsmål om dette kan rettes til oss på e-post.
           </p>
         </div>
 
         <div style={sectionStyle}>
           <h2 style={sectionTitleStyle}>Kontakt</h2>
           <p style={textStyle}>
-            Har du sp&oslash;rsm&aring;l om personvern, eller &oslash;nsker du &aring; ut&oslash;ve rettighetene dine, kan du kontakte oss p&aring; <a href="mailto:kontakt@brasvar.no" style={{ color: '#ec4899', textDecoration: 'none' }}>kontakt@brasvar.no</a>.
+            Har du spørsmål om personvern, eller ønsker du å utøve rettighetene dine, kan du kontakte oss på <a href="mailto:kontakt@brasvar.no" style={{ color: '#ec4899', textDecoration: 'none' }}>kontakt@brasvar.no</a>.
           </p>
         </div>
 
