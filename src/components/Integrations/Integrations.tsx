@@ -123,7 +123,7 @@ function CategoryRow({ title, items }: { title: string; items: string[] }) {
           width: '100%',
           display: 'flex',
           alignItems: 'center',
-          justifyContent: 'space-between',
+          justifyContent: 'flex-start',
           padding: '0.85rem 1.1rem',
           background: 'none',
           border: 'none',
@@ -131,7 +131,7 @@ function CategoryRow({ title, items }: { title: string; items: string[] }) {
           gap: '0.75rem',
         }}
       >
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', flex: 1, minWidth: 0 }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', flex: 1, minWidth: 0 }}>
           <span style={{
             fontFamily: 'var(--font-outfit)',
             fontWeight: 700,
@@ -168,7 +168,7 @@ function CategoryRow({ title, items }: { title: string; items: string[] }) {
           alignItems: 'center',
           gap: '0.3rem',
         }}>
-          {open ? 'Skjul' : remainingCount > 0 ? `+${remainingCount} flere` : 'Vis'}
+          {open ? 'Skjul' : 'Flere'}
           <svg
             viewBox="0 0 24 24"
             fill="none"
