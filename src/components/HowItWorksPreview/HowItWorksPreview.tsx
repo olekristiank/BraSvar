@@ -41,8 +41,8 @@ export default function HowItWorksPreview() {
     <section
       className="w-full px-6 sm:px-8 lg:px-12 flex flex-col items-center relative z-20"
       style={{
-        paddingTop: '4.5rem',
-        paddingBottom: '4.5rem',
+        paddingTop: '3rem',
+        paddingBottom: '3rem',
         background: '#fff',
       }}
     >
@@ -61,7 +61,7 @@ export default function HowItWorksPreview() {
                 color: '#0f172a',
               }}
             >
-              Slik fungerer <span style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 400, color: '#ec4899' }}>det</span>
+              Slik fungerer <span style={{ color: '#ec4899' }}>det</span>
             </h2>
             <p style={{
               fontSize: 'clamp(0.95rem, 2vw, 1.1rem)',
@@ -77,7 +77,7 @@ export default function HowItWorksPreview() {
         {/* 3-step flow */}
         <div
           className="w-full flex flex-col lg:flex-row items-stretch"
-          style={{ gap: '0', marginTop: '2rem', maxWidth: '900px' }}
+          style={{ gap: '0', marginTop: '1rem', maxWidth: '900px' }}
         >
           {steps.map((step, i) => (
             <AnimateIn key={i} delay={100 + i * 120} style={{ flex: 1, display: 'flex' }}>

@@ -96,6 +96,9 @@ function CategoryRow({ title, items }: { title: string; items: string[] }) {
   const [open, setOpen] = useState(false);
   const contentRef = useRef<HTMLDivElement>(null);
   const [height, setHeight] = useState(0);
+  const previewCount = Math.min(3, items.length);
+  const previewItems = items.slice(0, previewCount);
+  const remainingCount = items.length - previewCount;
 
   useEffect(() => {
     if (contentRef.current) {
@@ -128,56 +131,55 @@ function CategoryRow({ title, items }: { title: string; items: string[] }) {
           gap: '0.75rem',
         }}
       >
-        <span style={{
-          fontFamily: 'var(--font-outfit)',
-          fontWeight: 700,
-          fontSize: '0.9rem',
-          color: '#0f172a',
-          display: 'flex',
-          alignItems: 'center',
-          gap: '0.5rem',
-        }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', flex: 1, minWidth: 0 }}>
           <span style={{
-            display: 'inline-flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            width: 22,
-            height: 22,
-            borderRadius: '6px',
-            background: open ? 'linear-gradient(135deg, #ec4899, #db2777)' : 'rgba(253,242,248,0.8)',
-            border: open ? 'none' : '1px solid rgba(236,72,153,0.15)',
-            transition: 'all 0.3s ease',
+            fontFamily: 'var(--font-outfit)',
+            fontWeight: 700,
+            fontSize: '0.9rem',
+            color: '#0f172a',
+            whiteSpace: 'nowrap',
             flexShrink: 0,
           }}>
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke={open ? '#fff' : '#ec4899'}
-              strokeWidth="2.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              style={{ width: 12, height: 12 }}
-            >
-              {open ? (
-                <line x1="5" y1="12" x2="19" y2="12" />
-              ) : (
-                <>
-                  <line x1="12" y1="5" x2="12" y2="19" />
-                  <line x1="5" y1="12" x2="19" y2="12" />
-                </>
-              )}
-            </svg>
+            {title}
           </span>
-          {title}
-        </span>
+          {!open && (
+            <span style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.35rem',
+              overflow: 'hidden',
+            }}>
+              {previewItems.map((item, i) => (
+                <span key={item} style={{ display: 'flex', alignItems: 'center', gap: '0.35rem' }}>
+                  {i > 0 && <span style={{ color: '#cbd5e1', fontSize: '0.7rem' }}>·</span>}
+                  <span style={{ fontSize: '0.8rem', fontWeight: 450, color: '#64748b', whiteSpace: 'nowrap' }}>{item}</span>
+                </span>
+              ))}
+            </span>
+          )}
+        </div>
         <span style={{
           fontSize: '0.78rem',
-          fontWeight: 500,
-          color: open ? '#db2777' : '#94a3b8',
-          transition: 'color 0.3s ease',
+          fontWeight: 600,
+          color: open ? '#db2777' : '#ec4899',
           whiteSpace: 'nowrap',
+          flexShrink: 0,
+          display: 'flex',
+          alignItems: 'center',
+          gap: '0.3rem',
         }}>
-          {open ? 'Skjul' : 'Vis alle'}
+          {open ? 'Skjul' : remainingCount > 0 ? `+${remainingCount} flere` : 'Vis'}
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            style={{ width: 12, height: 12, transition: 'transform 0.3s ease', transform: open ? 'rotate(180deg)' : 'rotate(0)' }}
+          >
+            <polyline points="6 9 12 15 18 9" />
+          </svg>
         </span>
       </button>
 
