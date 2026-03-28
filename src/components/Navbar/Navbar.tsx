@@ -3,9 +3,36 @@
 import React, { useEffect, useState } from 'react';
 import { useContactModal } from '@/components/ContactModal/ContactContext';
 
+const industries = [
+  { href: '/advokat', label: 'Advokat' },
+  { href: '/bilpleie', label: 'Bilpleie' },
+  { href: '/eiendomsmegler', label: 'Eiendomsmegler' },
+  { href: '/forsikring', label: 'Forsikring' },
+  { href: '/fotterapeut', label: 'Fotterapeut' },
+  { href: '/frisor', label: 'Frisør' },
+  { href: '/handverker', label: 'Håndverker' },
+  { href: '/hudklinikk', label: 'Hudklinikk' },
+  { href: '/hundesalong', label: 'Hundesalong' },
+  { href: '/kiropraktor', label: 'Kiropraktor' },
+  { href: '/klinikk', label: 'Klinikk' },
+  { href: '/konsulent', label: 'Konsulent' },
+  { href: '/legekontor', label: 'Legekontor' },
+  { href: '/naprapat-osteopat', label: 'Naprapat/Osteopat' },
+  { href: '/optiker', label: 'Optiker' },
+  { href: '/personlig-trener', label: 'Personlig trener' },
+  { href: '/regnskapsforer', label: 'Regnskapsfører' },
+  { href: '/renhold', label: 'Renhold' },
+  { href: '/skjonnhet', label: 'Skjønnhetssalong' },
+  { href: '/tannlege', label: 'Tannlege' },
+  { href: '/velvaereklinikk', label: 'Velværeklinikk' },
+  { href: '/verksted', label: 'Verksted' },
+  { href: '/veterinaer', label: 'Veterinær' },
+];
+
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [bransjOpen, setBransjOpen] = useState(false);
   const openContact = useContactModal();
 
   useEffect(() => {
@@ -69,6 +96,49 @@ export default function Navbar() {
         <nav className="nav-links" style={{ display: 'flex', alignItems: 'center', gap: '2rem' }}>
           <NavLink href="/#hvordan">Slik kommer du i gang</NavLink>
           <NavLink href="/#priser">Priser</NavLink>
+          <div
+            style={{ position: 'relative' }}
+            onMouseEnter={() => setBransjOpen(true)}
+            onMouseLeave={() => setBransjOpen(false)}
+          >
+            <button style={{
+              fontSize: '0.88rem', fontWeight: 550, color: bransjOpen ? '#0f172a' : '#64748b',
+              background: 'none', border: 'none', cursor: 'pointer', letterSpacing: '0.01em',
+              display: 'flex', alignItems: 'center', gap: '0.3rem', padding: 0,
+              transition: 'color 0.2s',
+            }}>
+              Bransjer
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ width: 12, height: 12, transition: 'transform 0.2s', transform: bransjOpen ? 'rotate(180deg)' : 'rotate(0)' }}>
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            {bransjOpen && (
+              <div style={{
+                position: 'absolute', top: '100%', left: '50%', transform: 'translateX(-50%)',
+                paddingTop: '0.5rem', zIndex: 50,
+              }}>
+                <div style={{
+                  background: '#fff', borderRadius: '14px', border: '1px solid #f1f5f9',
+                  boxShadow: '0 8px 30px rgba(0,0,0,0.08)', padding: '0.75rem 0',
+                  display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0', minWidth: '340px',
+                }}>
+                  {industries.map((ind) => (
+                    <a key={ind.href} href={ind.href} style={{
+                      display: 'block', padding: '0.45rem 1.25rem', fontSize: '0.82rem',
+                      fontWeight: 500, color: '#334155', textDecoration: 'none',
+                      transition: 'background 0.15s, color 0.15s',
+                      borderRadius: '6px', margin: '0 0.35rem',
+                    }}
+                    onMouseEnter={(e) => { e.currentTarget.style.background = '#fdf2f8'; e.currentTarget.style.color = '#db2777'; }}
+                    onMouseLeave={(e) => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.color = '#334155'; }}
+                    >
+                      {ind.label}
+                    </a>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
           <NavLink href="/blog">Blogg</NavLink>
           <button
             onClick={openContact}
@@ -153,6 +223,26 @@ export default function Navbar() {
       >
         <a href="/#hvordan" onClick={() => setMobileOpen(false)} style={{ fontSize: '1.2rem', fontWeight: 600, color: '#0f172a', textDecoration: 'none' }}>Slik kommer du i gang</a>
         <a href="/#priser" onClick={() => setMobileOpen(false)} style={{ fontSize: '1.2rem', fontWeight: 600, color: '#0f172a', textDecoration: 'none' }}>Priser</a>
+        <div style={{ textAlign: 'center' }}>
+          <button
+            onClick={() => setBransjOpen(!bransjOpen)}
+            style={{ fontSize: '1.2rem', fontWeight: 600, color: '#0f172a', background: 'none', border: 'none', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '0.4rem' }}
+          >
+            Bransjer
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ width: 14, height: 14, transition: 'transform 0.2s', transform: bransjOpen ? 'rotate(180deg)' : 'rotate(0)' }}>
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </button>
+          {bransjOpen && (
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.4rem 0.8rem', justifyContent: 'center', marginTop: '0.75rem', maxWidth: '320px' }}>
+              {industries.map((ind) => (
+                <a key={ind.href} href={ind.href} onClick={() => setMobileOpen(false)} style={{ fontSize: '0.85rem', fontWeight: 500, color: '#64748b', textDecoration: 'none' }}>
+                  {ind.label}
+                </a>
+              ))}
+            </div>
+          )}
+        </div>
         <a href="/blog" onClick={() => setMobileOpen(false)} style={{ fontSize: '1.2rem', fontWeight: 600, color: '#0f172a', textDecoration: 'none' }}>Blogg</a>
         <button
           onClick={() => { setMobileOpen(false); openContact(); }}

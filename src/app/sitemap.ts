@@ -40,6 +40,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       'tannlege', 'legekontor', 'naprapat-osteopat', 'personlig-trener', 'optiker',
       'hudklinikk', 'velvaereklinikk', 'advokat', 'regnskapsforer', 'eiendomsmegler',
       'forsikring', 'konsulent', 'hundesalong', 'bilpleie', 'renhold',
+      'fotterapeut', 'kiropraktor', 'veterinaer',
     ].map(slug => ({
       url: `https://brasvar.no/${slug}`,
       lastModified: new Date(),
