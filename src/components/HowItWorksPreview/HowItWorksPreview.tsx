@@ -41,8 +41,8 @@ export default function HowItWorksPreview() {
     <section
       className="w-full px-6 sm:px-8 lg:px-12 flex flex-col items-center relative z-20"
       style={{
-        paddingTop: '3rem',
-        paddingBottom: '3rem',
+        paddingTop: '2.5rem',
+        paddingBottom: '1.5rem',
         background: '#fff',
       }}
     >
@@ -77,7 +77,7 @@ export default function HowItWorksPreview() {
         {/* 3-step flow */}
         <div
           className="w-full flex flex-col lg:flex-row items-stretch"
-          style={{ gap: '0', marginTop: '1rem', maxWidth: '900px' }}
+          style={{ gap: '0', marginTop: '0.5rem', maxWidth: '900px' }}
         >
           {steps.map((step, i) => (
             <AnimateIn key={i} delay={100 + i * 120} style={{ flex: 1, display: 'flex' }}>
@@ -149,7 +149,7 @@ export default function HowItWorksPreview() {
 
         {/* CTA link */}
         <AnimateIn delay={500}>
-          <div className="text-center" style={{ marginTop: '2rem' }}>
+          <div className="text-center" style={{ marginTop: '1rem' }}>
             <a
               href="/hvordan-det-fungerer"
               style={{
