@@ -50,7 +50,7 @@ export default function BlogGrid({ posts }: { posts: BlogPost[] }) {
         padding: '0 1.5rem 5rem',
       }}>
         <div className="blog-grid">
-          {shuffled.map((post) => (
+          {shuffled.map((post, i) => (
             <Link
               key={post.slug}
               href={`/blog/${post.slug}`}
@@ -78,6 +78,7 @@ export default function BlogGrid({ posts }: { posts: BlogPost[] }) {
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
                   style={{ objectFit: 'cover' }}
+                  priority={i < 2}
                 />
               </div>
 
