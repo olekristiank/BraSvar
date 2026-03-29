@@ -158,7 +158,7 @@ export default function PersonvernPage() {
         <div style={sectionStyle}>
           <h2 style={sectionTitleStyle}>Kontakt</h2>
           <p style={textStyle}>
-            Har du spørsmål om personvern, eller ønsker du å utøve rettighetene dine, kan du kontakte oss på <a href="mailto:kontakt@brasvar.no" style={{ color: '#ec4899', textDecoration: 'none' }}>kontakt@brasvar.no</a>.
+            Har du spørsmål om personvern, eller ønsker du å utøve rettighetene dine, kan du kontakte oss på <a href="mailto:hei@klevstrand.no" style={{ color: '#ec4899', textDecoration: 'underline' }}>hei@klevstrand.no</a>.
           </p>
         </div>
 

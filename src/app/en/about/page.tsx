@@ -108,7 +108,7 @@ export default function AboutPage() {
           <h2 style={sectionTitleStyle}>Contact information</h2>
           <p style={textStyle}>
             Phone: <a href="tel:+4764006264" style={{ color: '#ec4899', textDecoration: 'underline' }}>64 00 62 64</a><br />
-            Email: <a href="mailto:kontakt@brasvar.no" style={{ color: '#ec4899', textDecoration: 'underline' }}>kontakt@brasvar.no</a>
+            Email: <a href="mailto:hei@klevstrand.no" style={{ color: '#ec4899', textDecoration: 'underline' }}>hei@klevstrand.no</a>
           </p>
         </div>
 

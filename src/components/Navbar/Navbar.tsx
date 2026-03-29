@@ -171,9 +171,9 @@ export default function Navbar() {
             Ta kontakt
           </button>
           <a href="/en" style={{
-            fontSize: '0.78rem',
+            fontSize: '0.82rem',
             fontWeight: 600,
-            color: '#94a3b8',
+            color: '#64748b',
             textDecoration: 'none',
             padding: '0.3rem 0.5rem',
             borderRadius: '6px',

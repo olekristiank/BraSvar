@@ -97,7 +97,6 @@ export default function Pricing() {
               borderColor: '#cbd5e1',
               borderTopColor: '#ec4899',
             }}>
-              <p className="font-semibold uppercase" style={{ fontSize: '0.65rem', letterSpacing: '0.15em', color: '#64748b', marginBottom: '0.75rem' }}>Startpakke</p>
               <h3 className="font-bold text-slate-900" style={{ fontSize: '1.4rem', marginBottom: '0.25rem' }}>Mini</h3>
               <p className="text-slate-500" style={{ fontSize: '1rem', marginBottom: '1.75rem', lineHeight: 1.55, fontWeight: 450 }}>
                 For bedrifter med lavt samtalevolum og enkle behov.
@@ -170,12 +169,11 @@ export default function Pricing() {
                     display: 'inline-block',
                   }}
                 >
-                  Mest Populær
+                  Anbefalt
                 </span>
               </div>
 
-              <p className="font-semibold uppercase" style={{ fontSize: '0.65rem', letterSpacing: '0.15em', color: 'rgba(148,163,184,.7)', marginBottom: '0.75rem', paddingTop: '0.5rem' }}>Anbefalt</p>
-              <h3 className="font-bold text-white" style={{ fontSize: '1.4rem', marginBottom: '0.25rem' }}>Basis</h3>
+              <h3 className="font-bold text-white" style={{ fontSize: '1.4rem', marginBottom: '0.25rem', paddingTop: '0.5rem' }}>Basis</h3>
               <p className="font-medium" style={{ color: '#cbd5e1', fontSize: '1rem', marginBottom: '1.75rem', lineHeight: 1.55, fontWeight: 450 }}>
                 For bedrifter som aldri vil gå glipp av et anrop.
               </p>
@@ -249,7 +247,6 @@ export default function Pricing() {
               transform: 'translateY(-3px)',
               borderColor: '#cbd5e1',
             }}>
-              <p className="font-semibold uppercase" style={{ fontSize: '0.65rem', letterSpacing: '0.15em', color: '#64748b', marginBottom: '0.75rem' }}>Spesielle behov</p>
               <h3 className="font-bold text-slate-900" style={{ fontSize: '1.4rem', marginBottom: '0.25rem' }}>Pro</h3>
               <p className="text-slate-500" style={{ fontSize: '1rem', marginBottom: '1.75rem', lineHeight: 1.55, fontWeight: 450 }}>
                 For deg som trenger noe helt eget – med skreddersydde integrasjoner og en fast kontaktperson.

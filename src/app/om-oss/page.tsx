@@ -103,7 +103,7 @@ export default function OmOssPage() {
           <h2 style={sectionTitleStyle}>Kontaktinformasjon</h2>
           <p style={textStyle}>
             Telefon: <a href="tel:+4764006264" style={{ color: '#ec4899', textDecoration: 'underline' }}>64 00 62 64</a><br />
-            E-post: <a href="mailto:kontakt@brasvar.no" style={{ color: '#ec4899', textDecoration: 'underline' }}>kontakt@brasvar.no</a>
+            E-post: <a href="mailto:hei@klevstrand.no" style={{ color: '#ec4899', textDecoration: 'underline' }}>hei@klevstrand.no</a>
           </p>
         </div>
 

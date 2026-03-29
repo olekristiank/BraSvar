@@ -84,13 +84,13 @@ export default function ContactPage() {
           }}>
             Email
           </p>
-          <a href="mailto:kontakt@brasvar.no" style={{
+          <a href="mailto:hei@klevstrand.no" style={{
             fontSize: 'clamp(1.4rem, 3vw, 1.8rem)',
             fontWeight: 700,
             color: '#0f172a',
             textDecoration: 'none',
           }}>
-            kontakt@brasvar.no
+            hei@klevstrand.no
           </a>
         </div>
 
