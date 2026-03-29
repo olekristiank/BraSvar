@@ -71,7 +71,7 @@ Men bak tallene finnes et skille. Noen bedrifter har integrert KI på tvers av h
 
 ## Hva driver utviklingen?
 
-Teknologien har blitt tilgjengelig. Verktøy som ChatGPT og lignende har senket terskelen kraftig. Du trenger ikke en utviklingsavdeling for å komme i gang. Ifølge [McKinseys globale undersøkelse om KI](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai) bruker de fleste bedrifter KI til å forbedre interne arbeidsprosesser: administrasjon, analyse, planlegging og kundedialog.
+Teknologien har blitt tilgjengelig. Verktøy som ChatGPT og lignende har senket terskelen kraftig. Du trenger ikke en utviklingsavdeling for å komme i gang. Ifølge [McKinseys globale undersøkelse om KI](https://www.mckinsey.com/featured-insights/artificial-intelligence) bruker de fleste bedrifter KI til å forbedre interne arbeidsprosesser: administrasjon, analyse, planlegging og kundedialog.
 
 Det som kanskje er mest interessant: én av fem virksomheter bruker allerede KI til å utvikle helt nye produkter eller tjenester. Teknologien skaper ikke bare effektivitet – den skaper noe nytt.
 

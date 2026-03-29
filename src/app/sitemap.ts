@@ -56,7 +56,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // English pages
     { url: 'https://brasvar.no/en', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.9 },
     ...[
-      'ai-switchboard', 'phone-answering-service', 'virtual-receptionist',
+      'ai-switchboard', 'phone-answering-service', 'virtual-receptionist', 'blog', 'faq',
       'how-it-works', 'about', 'contact', 'privacy',
       'hairdresser', 'clinic', 'tradesperson', 'workshop', 'beauty',
       'dentist', 'medical-office', 'chiropractor', 'physiotherapist',
