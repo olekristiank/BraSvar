@@ -8,7 +8,6 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'AI Sentralbord for bedrifter | Bra Svar!',
     description: 'Et intelligent AI-sentralbord som svarer telefonen for bedriften din døgnet rundt.',
-    url: 'https://brasvar.no/ai-sentralbord',
     images: [{ url: '/opengraph-image.svg', width: 1200, height: 630 }],
   },
 };

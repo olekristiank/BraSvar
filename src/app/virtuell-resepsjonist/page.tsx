@@ -8,7 +8,6 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Virtuell resepsjonist for bedrift | Bra Svar!',
     description: 'En digital resepsjonist som svarer, booker og hjelper kundene dine.',
-    url: 'https://brasvar.no/virtuell-resepsjonist',
     images: [{ url: '/opengraph-image.svg', width: 1200, height: 630 }],
   },
 };

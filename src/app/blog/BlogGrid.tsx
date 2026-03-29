@@ -78,7 +78,7 @@ export default function BlogGrid({ posts }: { posts: BlogPost[] }) {
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
                   style={{ objectFit: 'cover' }}
-                  priority={i < 2}
+                  priority={i < 4}
                 />
               </div>
 

@@ -125,7 +125,7 @@ export default function Pricing() {
                 <div className="flex items-baseline">
                   <span className="font-extrabold text-slate-900" style={{ fontSize: '2.5rem', letterSpacing: '-0.03em', lineHeight: 1 }}>1 490</span>
                   <span className="font-bold text-slate-900" style={{ fontSize: '1.25rem', marginLeft: '2px' }}>,-</span>
-                  <span className="text-slate-400 font-medium" style={{ fontSize: '0.9rem', marginLeft: '0.5rem' }}>/ mnd</span>
+                  <span className="text-slate-500 font-medium" style={{ fontSize: '0.9rem', marginLeft: '0.5rem' }}>/ mnd</span>
                 </div>
               </div>
 

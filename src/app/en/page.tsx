@@ -18,7 +18,6 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Bra Svar! - AI Switchboard and Intelligent Customer Service',
     description: 'AI switchboard that answers the phone, books appointments and helps your customers around the clock.',
-    url: 'https://brasvar.no/en',
     siteName: 'Bra Svar',
     locale: 'en_US',
     type: 'website',

@@ -8,7 +8,6 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'About Bra Svar | Bra Svar!',
     description: 'AI phone assistants for small and medium businesses, built in Norway.',
-    url: 'https://brasvar.no/en/about',
     images: [{ url: '/opengraph-image.svg', width: 1200, height: 630 }],
   },
 };

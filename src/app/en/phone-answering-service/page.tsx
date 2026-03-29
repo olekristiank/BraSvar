@@ -8,7 +8,6 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Phone answering for business | Bra Svar!',
     description: 'An AI phone answering service that has natural conversations and books appointments for your business.',
-    url: 'https://brasvar.no/en/phone-answering-service',
     images: [{ url: '/opengraph-image.svg', width: 1200, height: 630 }],
   },
 };

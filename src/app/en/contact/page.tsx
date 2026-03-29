@@ -7,7 +7,6 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Contact us | Bra Svar!',
     description: 'Get in touch with Bra Svar. Call us at 64 00 62 64 or send us an email.',
-    url: 'https://brasvar.no/en/contact',
     images: [{ url: '/opengraph-image.svg', width: 1200, height: 630 }],
   },
 };
