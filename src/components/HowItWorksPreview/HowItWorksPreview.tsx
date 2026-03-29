@@ -41,8 +41,8 @@ export default function HowItWorksPreview() {
     <section
       className="w-full px-6 sm:px-8 lg:px-12 flex flex-col items-center relative z-20"
       style={{
-        paddingTop: '4rem',
-        paddingBottom: '4rem',
+        paddingTop: '4.5rem',
+        paddingBottom: '4.5rem',
         background: '#fff',
       }}
     >
@@ -50,7 +50,7 @@ export default function HowItWorksPreview() {
 
         {/* Header */}
         <AnimateIn delay={0}>
-          <div className="text-center px-4" style={{ marginBottom: '2rem', maxWidth: '700px', marginLeft: 'auto', marginRight: 'auto' }}>
+          <div className="text-center px-4" style={{ marginBottom: '2.5rem', maxWidth: '700px', marginLeft: 'auto', marginRight: 'auto' }}>
             <h2
               className="font-extrabold tracking-tight"
               style={{

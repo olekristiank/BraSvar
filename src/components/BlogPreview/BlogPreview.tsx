@@ -25,15 +25,15 @@ export default function BlogPreview() {
     <section
       className="w-full px-6 sm:px-8 lg:px-12 flex flex-col items-center relative z-20"
       style={{
-        paddingTop: '4rem',
-        paddingBottom: '4rem',
+        paddingTop: '4.5rem',
+        paddingBottom: '4.5rem',
         background: '#fff',
       }}
     >
       <div className="w-full flex flex-col items-center" style={{ maxWidth: '1100px' }}>
 
         <AnimateIn delay={0}>
-          <div className="text-center px-4" style={{ marginBottom: '2rem' }}>
+          <div className="text-center px-4" style={{ marginBottom: '2.5rem' }}>
             <h2
               className="font-extrabold tracking-tight"
               style={{
@@ -100,8 +100,8 @@ export default function BlogPreview() {
                 <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-br from-pink-100 to-rose-50 rounded-full mix-blend-multiply filter blur-3xl opacity-0 group-hover:opacity-60 transition-opacity duration-500" style={{ transform: 'translate(20%, -20%)' }} />
                 <h3 className="relative z-10" style={{
                   fontFamily: 'var(--font-outfit)',
-                  fontWeight: 800,
-                  fontSize: '1.1rem',
+                  fontWeight: 700,
+                  fontSize: '1.2rem',
                   color: '#0f172a',
                   lineHeight: 1.3,
                   marginBottom: '0.75rem',

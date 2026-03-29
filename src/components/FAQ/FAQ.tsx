@@ -38,7 +38,7 @@ export default function FAQ() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <div className="w-full flex flex-col items-center" style={{ maxWidth: '700px' }}>
         <AnimateIn delay={0}>
-          <div className="text-center" style={{ marginBottom: '3rem' }}>
+          <div className="text-center" style={{ marginBottom: '2.5rem' }}>
             <p className="font-semibold uppercase" style={{ fontSize: '0.7rem', letterSpacing: '0.18em', color: '#ec4899', marginBottom: '0.75rem' }}>
               Ofte stilte spørsmål
             </p>

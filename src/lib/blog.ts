@@ -22,7 +22,7 @@ export const posts: BlogPost[] = [
 
 Telefonen ringer. Du står midt i en behandling, et kundemøte eller under en bil. Du ser det for sent. Kunden har allerede lagt på – og ringt neste navn på lista.
 
-For en rørlegger kan et ubesvart anrop bety et tapt oppdrag verdt flere titalls tusen kroner. For en tannlege kan det bety en ny pasient som valgte klinikken over gata. For et treningssenter kan det bety et medlemskap som aldri ble solgt.
+For en [rørlegger](/rorlegger) kan et ubesvart anrop bety et tapt oppdrag verdt flere titalls tusen kroner. For en [tannlege](/tannlege) kan det bety en ny pasient som valgte klinikken over gata. For et [treningssenter](/treningssenter) kan det bety et medlemskap som aldri ble solgt.
 
 Det merkelige er at de fleste småbedrifter ikke vet hvor mange samtaler de mister, eller hva det koster dem over tid.
 
@@ -282,7 +282,7 @@ De områdene der KI gir mest effekt for småbedrifter, er oppgaver som er repete
 
 ## Det handler om å frigjøre menneskene
 
-Målet er ikke å fjerne arbeidsplasser. Målet er å frigjøre menneskene til det arbeidet som faktisk krever dem. En fysioterapeut bør behandle pasienter, ikke sitte på telefonen. En håndverker bør være ute på oppdrag, ikke bruke ettermiddagen på tilbud og oppfølging.
+Målet er ikke å fjerne arbeidsplasser. Målet er å frigjøre menneskene til det arbeidet som faktisk krever dem. En [fysioterapeut](/fysioterapeut) bør behandle pasienter, ikke sitte på telefonen. En [håndverker](/handverker) bør være ute på oppdrag, ikke bruke ettermiddagen på tilbud og oppfølging.
 
 Når KI tar seg av det forutsigbare, kan du og de ansatte bruke tiden på det som skaper verdi: relasjoner, faglig skjønn og problemløsning.
 
@@ -319,7 +319,7 @@ En chatbot sitter på nettsiden din og svarer på spørsmål via tekst. Moderne 
 
 En [KI-telefonassistent](/blog/slik-fungerer-en-ki-telefonassistent) svarer på innkommende samtaler med en naturlig stemme. Den forstår hva kunden sier, gir relevante svar og utfører handlinger som timebestilling og beskjedmottak.
 
-**Passer best for:** bedrifter der telefon er den primære kontaktkanalen – klinikker, håndverkere, treningssentre, tannleger, fysioterapeuter, bilverksteder.
+**Passer best for:** bedrifter der telefon er den primære kontaktkanalen – [klinikker](/klinikk), [håndverkere](/handverker), [treningssentre](/treningssenter), [tannleger](/tannlege), [fysioterapeuter](/fysioterapeut), [bilverksteder](/verksted).
 
 ## Hvem ringer fremdeles?
 
@@ -726,10 +726,10 @@ For mange små bedrifter er dette grunnen til at de velger et [AI-sentralbord](/
 
 Dette gjelder spesielt for bedrifter som ikke alltid kan avbryte arbeidet sitt for å ta telefonen:
 
-- Klinikker og behandlere som står med pasienter
-- Frisører med hendene fulle
-- Håndverkere ute på jobb
-- Verksteder med støy og travle dager
+- [Klinikker](/klinikk) og behandlere som står med pasienter
+- [Frisører](/frisor) med hendene fulle
+- [Håndverkere](/handverker) ute på jobb
+- [Verksteder](/verksted) med støy og travle dager
 - Små kontorer uten resepsjon
 
 Felles for alle: telefonen er viktig, men det er ikke alltid mulig å svare.

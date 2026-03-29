@@ -32,8 +32,8 @@ export default function Integrations() {
       id="integrasjoner"
       className="w-full flex flex-col items-center relative z-20"
       style={{
-        paddingTop: '4rem',
-        paddingBottom: '4rem',
+        paddingTop: '4.5rem',
+        paddingBottom: '4.5rem',
         paddingLeft: 'clamp(2rem, 6vw, 3rem)',
         paddingRight: 'clamp(2rem, 6vw, 3rem)',
         background: 'linear-gradient(180deg, #fff1f2 0%, #fff 20%, #fff 80%, #fdf2f8 100%)',
@@ -43,7 +43,7 @@ export default function Integrations() {
 
         {/* Header */}
         <AnimateIn delay={0}>
-          <div className="text-center px-4" style={{ marginBottom: '2rem', maxWidth: '800px', marginLeft: 'auto', marginRight: 'auto' }}>
+          <div className="text-center px-4" style={{ marginBottom: '2.5rem', maxWidth: '800px', marginLeft: 'auto', marginRight: 'auto' }}>
             <h2
               className="font-extrabold tracking-tight"
               style={{

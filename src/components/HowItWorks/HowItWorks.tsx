@@ -13,6 +13,7 @@ export default function HowItWorks() {
       style={{
         paddingTop: '5rem',
         paddingBottom: '5rem',
+
         background: '#f8fafc',
       }}
     >
@@ -23,7 +24,7 @@ export default function HowItWorks() {
 
         {/* Header */}
         <AnimateIn delay={0}>
-          <div className="text-center px-4" style={{ marginBottom: '3rem', maxWidth: '800px', marginLeft: 'auto', marginRight: 'auto' }}>
+          <div className="text-center px-4" style={{ marginBottom: '2.5rem', maxWidth: '800px', marginLeft: 'auto', marginRight: 'auto' }}>
             <h2
               className="font-extrabold tracking-tight"
               style={{
@@ -124,8 +125,8 @@ export default function HowItWorks() {
                 {/* Title */}
                 <h3 className="relative z-10" style={{
                   fontFamily: 'var(--font-outfit)',
-                  fontWeight: 800,
-                  fontSize: '1.35rem',
+                  fontWeight: 700,
+                  fontSize: '1.2rem',
                   color: '#0f172a',
                   lineHeight: 1.2,
                   marginTop: '0.5rem',

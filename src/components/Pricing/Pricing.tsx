@@ -12,7 +12,7 @@ export default function Pricing() {
       className="w-full px-6 sm:px-8 lg:px-12 flex flex-col items-center relative z-20"
       style={{
         paddingTop: '5rem',
-        paddingBottom: '6rem',
+        paddingBottom: '5rem',
         background: 'linear-gradient(180deg, #f8fafc 0%, #fdf2f8 50%, #fff1f2 100%)',
       }}
     >
@@ -31,7 +31,7 @@ export default function Pricing() {
 
         {/* Header */}
         <AnimateIn delay={0}>
-          <div className="text-center px-4" style={{ marginBottom: '3.5rem', maxWidth: '700px', marginLeft: 'auto', marginRight: 'auto' }}>
+          <div className="text-center px-4" style={{ marginBottom: '2.5rem', maxWidth: '700px', marginLeft: 'auto', marginRight: 'auto' }}>
             <h2
               className="font-extrabold tracking-tight"
               style={{
@@ -88,11 +88,11 @@ export default function Pricing() {
               borderColor: '#e2e8f0',
               borderTopWidth: '3px',
               borderTopColor: '#e2e8f0',
-              boxShadow: '0 1px 3px rgba(0,0,0,.04), 0 8px 24px rgba(0,0,0,.04)',
+              boxShadow: '0 4px 6px -1px rgba(0,0,0,.01), 0 20px 40px -10px rgba(0,0,0,.03)',
               padding: '2.25rem',
               height: '100%',
             }} hoverStyle={{
-              boxShadow: '0 1px 3px rgba(0,0,0,.04), 0 16px 40px rgba(0,0,0,.08)',
+              boxShadow: '0 10px 25px -5px rgba(236,72,153,.15), 0 25px 50px -12px rgba(236,72,153,.1)',
               transform: 'translateY(-3px)',
               borderColor: '#cbd5e1',
               borderTopColor: '#ec4899',
@@ -239,11 +239,11 @@ export default function Pricing() {
               borderWidth: '1px',
               borderStyle: 'solid',
               borderColor: '#e2e8f0',
-              boxShadow: '0 1px 3px rgba(0,0,0,.04), 0 8px 24px rgba(0,0,0,.04)',
+              boxShadow: '0 4px 6px -1px rgba(0,0,0,.01), 0 20px 40px -10px rgba(0,0,0,.03)',
               padding: '2.25rem',
               height: '100%',
             }} hoverStyle={{
-              boxShadow: '0 1px 3px rgba(0,0,0,.04), 0 16px 40px rgba(0,0,0,.08)',
+              boxShadow: '0 10px 25px -5px rgba(236,72,153,.15), 0 25px 50px -12px rgba(236,72,153,.1)',
               transform: 'translateY(-3px)',
               borderColor: '#cbd5e1',
             }}>
