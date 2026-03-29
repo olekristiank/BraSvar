@@ -47,6 +47,11 @@ const data: IndustryPageData = {
     { who: 'customer', text: 'Friday at 10:30 works great.' },
     { who: 'ai', text: 'Wonderful. I have you down for Friday at 10:30 AM. Can I get your name and a phone number?' },
   ],
+  related: [
+    { href: '/en/beauty', label: 'Beauty Salon' },
+    { href: '/en/wellness-clinic', label: 'Wellness Clinic' },
+    { href: '/en/podiatrist', label: 'Podiatrist' },
+  ],
 };
 
 export default function Page() {

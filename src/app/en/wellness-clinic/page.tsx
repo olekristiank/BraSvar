@@ -56,6 +56,11 @@ const data: IndustryPageData = {
       text: 'Of course! We offer gift cards for any amount or for specific treatments. I will book you in at 14:00 on Saturday and send you gift card details by text. What is your name?',
     },
   ],
+  related: [
+    { href: '/en/skin-clinic', label: 'Skin Clinic' },
+    { href: '/en/beauty', label: 'Beauty Salon' },
+    { href: '/en/acupuncturist', label: 'Acupuncturist' },
+  ],
 };
 
 export default function Page() {

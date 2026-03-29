@@ -47,6 +47,11 @@ const data: IndustryPageData = {
     { who: 'customer', text: 'No, that is all. Thank you.' },
     { who: 'ai', text: 'You are welcome. Have a good day, Anne.' },
   ],
+  related: [
+    { href: '/en/clinic', label: 'Clinic' },
+    { href: '/en/dentist', label: 'Dentist' },
+    { href: '/en/psychologist', label: 'Psychologist' },
+  ],
 };
 
 export default function Page() {

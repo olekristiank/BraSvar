@@ -52,6 +52,11 @@ const data: IndustryPageData = {
     { who: 'customer', text: 'Thursday at 2:30 works.' },
     { who: 'ai', text: 'Wonderful. I have booked your initial session for Thursday at 2:30 PM. You will receive a confirmation by text. Avoid eating a large meal right before, and wear comfortable clothing.' },
   ],
+  related: [
+    { href: '/en/naprapat', label: 'Naprapat' },
+    { href: '/en/physiotherapist', label: 'Physiotherapist' },
+    { href: '/en/chiropractor', label: 'Chiropractor' },
+  ],
 };
 
 export default function Page() {

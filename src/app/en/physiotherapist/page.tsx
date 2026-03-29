@@ -47,6 +47,11 @@ const data: IndustryPageData = {
     { who: 'customer', text: 'Monday morning, please.' },
     { who: 'ai', text: 'You are set for Monday at 09:00. Please wear shorts or loose pants so we can assess your knee. See you then!' },
   ],
+  related: [
+    { href: '/en/chiropractor', label: 'Chiropractor' },
+    { href: '/en/naprapat', label: 'Naprapat' },
+    { href: '/en/clinic', label: 'Clinic' },
+  ],
 };
 
 export default function Page() {

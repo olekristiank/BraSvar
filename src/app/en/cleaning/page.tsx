@@ -57,6 +57,11 @@ const data: IndustryPageData = {
       text: 'Great! Can I get the address, your name, and a phone number so we can confirm the details?',
     },
   ],
+  related: [
+    { href: '/en/car-detailing', label: 'Car Detailing' },
+    { href: '/en/tradesperson', label: 'Tradesperson' },
+    { href: '/en/consultant', label: 'Consultant' },
+  ],
 };
 
 export default function Page() {

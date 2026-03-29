@@ -57,6 +57,11 @@ const data: IndustryPageData = {
       text: 'Booked! Friday at 13:00 for a full groom. Can I get your name and phone number to confirm?',
     },
   ],
+  related: [
+    { href: '/en/veterinarian', label: 'Veterinarian' },
+    { href: '/en/car-detailing', label: 'Car Detailing' },
+    { href: '/en/hairdresser', label: 'Hairdresser' },
+  ],
 };
 
 export default function Page() {

@@ -49,6 +49,11 @@ const data: IndustryPageData = {
     { who: 'customer', text: 'Yes, my name is Sarah Williams. My number is the one I am calling from.' },
     { who: 'ai', text: 'Thank you, Sarah. I have noted everything down. You will be contacted shortly. Take the time you need. We will handle the rest.' },
   ],
+  related: [
+    { href: '/en/lawyer', label: 'Lawyer' },
+    { href: '/en/clinic', label: 'Clinic' },
+    { href: '/en/insurance', label: 'Insurance' },
+  ],
 };
 
 export default function Page() {

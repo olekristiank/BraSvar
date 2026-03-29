@@ -57,6 +57,11 @@ const data: IndustryPageData = {
       text: 'Thank you, Lisa. I have passed the details along. You can expect a callback within the day.',
     },
   ],
+  related: [
+    { href: '/en/accountant', label: 'Accountant' },
+    { href: '/en/architect', label: 'Architect' },
+    { href: '/en/insurance', label: 'Insurance' },
+  ],
 };
 
 export default function Page() {

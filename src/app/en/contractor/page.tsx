@@ -50,6 +50,11 @@ const data: IndustryPageData = {
     { who: 'customer', text: 'Sure. We are located just outside the city.' },
     { who: 'ai', text: 'Great! We have availability for a site visit on Thursday or Friday this week. What works for you? I will send details and confirmation afterwards.' },
   ],
+  related: [
+    { href: '/en/architect', label: 'Architect' },
+    { href: '/en/electrician', label: 'Electrician' },
+    { href: '/en/tradesperson', label: 'Tradesperson' },
+  ],
 };
 
 export default function Page() {

@@ -47,6 +47,11 @@ const data: IndustryPageData = {
     { who: 'customer', text: '14 Elm Street. Any morning this week works.' },
     { who: 'ai', text: 'Great, we will be in touch to confirm a morning visit this week. Thanks for calling!' },
   ],
+  related: [
+    { href: '/en/electrician', label: 'Electrician' },
+    { href: '/en/plumber', label: 'Plumber' },
+    { href: '/en/painter', label: 'Painter' },
+  ],
 };
 
 export default function Page() {

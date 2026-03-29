@@ -47,6 +47,11 @@ const data: IndustryPageData = {
     { who: 'customer', text: 'Tuesday at 11:00.' },
     { who: 'ai', text: 'You are all set for Tuesday at 11:00. You will receive a brief form to fill out beforehand. Take care, and we look forward to speaking with you.' },
   ],
+  related: [
+    { href: '/en/clinic', label: 'Clinic' },
+    { href: '/en/medical-office', label: 'Medical Office' },
+    { href: '/en/naprapat', label: 'Naprapat' },
+  ],
 };
 
 export default function Page() {

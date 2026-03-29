@@ -47,6 +47,11 @@ const data: IndustryPageData = {
     { who: 'customer', text: 'Thursday at 16:00 works for me.' },
     { who: 'ai', text: 'Booked! Thursday at 16:00 for an initial consultation. Please wear comfortable clothing. See you then.' },
   ],
+  related: [
+    { href: '/en/physiotherapist', label: 'Physiotherapist' },
+    { href: '/en/naprapat', label: 'Naprapat' },
+    { href: '/en/dentist', label: 'Dentist' },
+  ],
 };
 
 export default function Page() {

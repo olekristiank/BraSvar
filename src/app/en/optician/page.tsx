@@ -50,6 +50,11 @@ const data: IndustryPageData = {
     { who: 'customer', text: 'Lisa Eriksen.' },
     { who: 'ai', text: 'You are all set for Monday at 11:00 AM, Lisa. Remember to bring any glasses you are currently using. Welcome!' },
   ],
+  related: [
+    { href: '/en/clinic', label: 'Clinic' },
+    { href: '/en/dentist', label: 'Dentist' },
+    { href: '/en/skin-clinic', label: 'Skin Clinic' },
+  ],
 };
 
 export default function Page() {

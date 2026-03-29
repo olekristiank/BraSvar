@@ -57,6 +57,11 @@ const data: IndustryPageData = {
       text: 'Booked! Could I get your name and email so we can send you a confirmation along with a list of documents to bring?',
     },
   ],
+  related: [
+    { href: '/en/lawyer', label: 'Lawyer' },
+    { href: '/en/insurance', label: 'Insurance' },
+    { href: '/en/consultant', label: 'Consultant' },
+  ],
 };
 
 export default function Page() {

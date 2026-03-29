@@ -57,6 +57,11 @@ const data: IndustryPageData = {
       text: 'Monday at 09:00 works. Can I get your name and the make and model of the vehicle?',
     },
   ],
+  related: [
+    { href: '/en/workshop', label: 'Workshop' },
+    { href: '/en/dog-grooming', label: 'Dog Grooming' },
+    { href: '/en/cleaning', label: 'Cleaning' },
+  ],
 };
 
 export default function Page() {

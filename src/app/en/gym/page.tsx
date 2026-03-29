@@ -50,6 +50,11 @@ const data: IndustryPageData = {
     { who: 'customer', text: 'Tomorrow after work, around 5 PM?' },
     { who: 'ai', text: 'That works. I have you down for a trial session tomorrow at 5:00 PM. You will get a confirmation by text. Just bring workout clothes and we will show you around!' },
   ],
+  related: [
+    { href: '/en/personal-trainer', label: 'Personal Trainer' },
+    { href: '/en/wellness-clinic', label: 'Wellness Clinic' },
+    { href: '/en/physiotherapist', label: 'Physiotherapist' },
+  ],
 };
 
 export default function Page() {

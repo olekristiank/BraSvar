@@ -57,6 +57,11 @@ const data: IndustryPageData = {
       text: 'You are welcome! Can I get your name and phone number so we can confirm the booking?',
     },
   ],
+  related: [
+    { href: '/en/skin-clinic', label: 'Skin Clinic' },
+    { href: '/en/wellness-clinic', label: 'Wellness Clinic' },
+    { href: '/en/clinic', label: 'Clinic' },
+  ],
 };
 
 export default function Page() {

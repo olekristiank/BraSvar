@@ -57,6 +57,11 @@ const data: IndustryPageData = {
       text: 'Noted. Baxter at 15:30 for a limp assessment. Can I get your name and phone number to confirm?',
     },
   ],
+  related: [
+    { href: '/en/clinic', label: 'Clinic' },
+    { href: '/en/dog-grooming', label: 'Dog Grooming' },
+    { href: '/en/medical-office', label: 'Medical Office' },
+  ],
 };
 
 export default function Page() {

@@ -47,6 +47,11 @@ const data: IndustryPageData = {
     { who: 'customer', text: 'Sarah Thompson.' },
     { who: 'ai', text: 'You are all set for Thursday at 14:30, Sarah. See you then!' },
   ],
+  related: [
+    { href: '/en/beauty', label: 'Beauty Salon' },
+    { href: '/en/skin-clinic', label: 'Skin Clinic' },
+    { href: '/en/tattoo-artist', label: 'Tattoo Artist' },
+  ],
 };
 
 export default function Page() {

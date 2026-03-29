@@ -49,6 +49,11 @@ const data: IndustryPageData = {
     { who: 'customer', text: 'We want the full day, from preparations to the first dance.' },
     { who: 'ai', text: 'Noted. I will pass on the date, venue and your wishes to the photographer, and they will get in touch to discuss packages and pricing. May I have your email address?' },
   ],
+  related: [
+    { href: '/en/tattoo-artist', label: 'Tattoo Artist' },
+    { href: '/en/real-estate', label: 'Real Estate' },
+    { href: '/en/consultant', label: 'Consultant' },
+  ],
 };
 
 export default function Page() {

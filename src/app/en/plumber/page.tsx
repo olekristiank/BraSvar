@@ -45,6 +45,11 @@ const data: IndustryPageData = {
     { who: 'customer', text: '8 River Road.' },
     { who: 'ai', text: 'Got it. I have marked this as an emergency at 8 River Road, possible burst pipe with ceiling leak. You will hear back within minutes.' },
   ],
+  related: [
+    { href: '/en/electrician', label: 'Electrician' },
+    { href: '/en/tradesperson', label: 'Tradesperson' },
+    { href: '/en/painter', label: 'Painter' },
+  ],
 };
 
 export default function Page() {

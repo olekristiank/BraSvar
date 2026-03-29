@@ -47,6 +47,11 @@ const data: IndustryPageData = {
     { who: 'customer', text: 'James Porter, March 12, 1985.' },
     { who: 'ai', text: 'You are booked with Dr. Hansen on Wednesday at 15:00, James. We will send a confirmation shortly.' },
   ],
+  related: [
+    { href: '/en/dentist', label: 'Dentist' },
+    { href: '/en/physiotherapist', label: 'Physiotherapist' },
+    { href: '/en/medical-office', label: 'Medical Office' },
+  ],
 };
 
 export default function Page() {

@@ -50,6 +50,11 @@ const data: IndustryPageData = {
     { who: 'customer', text: 'Alex Martin.' },
     { who: 'ai', text: 'All set, Alex. You are booked for Thursday at 5:00 PM. Bring workout clothes and a water bottle. Looking forward to seeing you!' },
   ],
+  related: [
+    { href: '/en/gym', label: 'Gym' },
+    { href: '/en/physiotherapist', label: 'Physiotherapist' },
+    { href: '/en/wellness-clinic', label: 'Wellness Clinic' },
+  ],
 };
 
 export default function Page() {

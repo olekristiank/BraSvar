@@ -47,6 +47,11 @@ const data: IndustryPageData = {
     { who: 'customer', text: 'The kitchen and living room. The bedrooms still have power.' },
     { who: 'ai', text: 'That helps narrow it down. I have flagged this as urgent with your address and details. You should hear back very shortly. In the meantime, avoid using the affected outlets.' },
   ],
+  related: [
+    { href: '/en/plumber', label: 'Plumber' },
+    { href: '/en/tradesperson', label: 'Tradesperson' },
+    { href: '/en/contractor', label: 'Contractor' },
+  ],
 };
 
 export default function Page() {

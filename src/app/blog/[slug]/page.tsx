@@ -230,8 +230,25 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             {renderMarkdown(post.content)}
           </div>
 
+          {/* Related articles */}
+          {(() => {
+            const others = getAllPosts().filter(p => p.slug !== post.slug).slice(0, 3);
+            return others.length > 0 ? (
+              <div style={{ marginTop: '3rem', paddingTop: '2rem', borderTop: '1px solid #e2e8f0' }}>
+                <h3 style={{ fontFamily: 'var(--font-outfit)', fontWeight: 700, fontSize: '1.1rem', color: '#0f172a', marginBottom: '1rem' }}>Relaterte artikler</h3>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+                  {others.map(p => (
+                    <Link key={p.slug} href={`/blog/${p.slug}`} style={{ fontSize: '0.9rem', fontWeight: 600, color: '#db2777', textDecoration: 'none' }}>
+                      {p.title} →
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            ) : null;
+          })()}
+
           {/* Footer nav */}
-          <div style={{ marginTop: '3rem', paddingTop: '2rem', borderTop: '1px solid #e2e8f0', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
+          <div style={{ marginTop: '2rem', paddingTop: '1.5rem', borderTop: '1px solid #e2e8f0', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
             <Link href="/blog" style={{
               fontSize: '0.9rem',
               fontWeight: 600,

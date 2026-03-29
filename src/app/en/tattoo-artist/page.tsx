@@ -49,6 +49,11 @@ const data: IndustryPageData = {
     { who: 'customer', text: 'Fineline with some dotwork. I have a few images I can send over.' },
     { who: 'ai', text: 'Perfect. I will book you in for a consultation where you can go through the design together. Can I get your name and email so the artist can send you available times?' },
   ],
+  related: [
+    { href: '/en/hairdresser', label: 'Hairdresser' },
+    { href: '/en/beauty', label: 'Beauty Salon' },
+    { href: '/en/skin-clinic', label: 'Skin Clinic' },
+  ],
 };
 
 export default function Page() {

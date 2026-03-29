@@ -52,6 +52,11 @@ const data: IndustryPageData = {
     { who: 'customer', text: 'Yes, please. We are available next week.' },
     { who: 'ai', text: 'Great! We have availability on Wednesday morning or Friday after lunch. Which day works best? I will send a confirmation with the address and what to have ready.' },
   ],
+  related: [
+    { href: '/en/contractor', label: 'Contractor' },
+    { href: '/en/real-estate', label: 'Real Estate' },
+    { href: '/en/consultant', label: 'Consultant' },
+  ],
 };
 
 export default function Page() {

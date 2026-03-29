@@ -57,6 +57,11 @@ const data: IndustryPageData = {
       text: 'Perfect. Can I get your name, phone number, and email so we can send you a confirmation?',
     },
   ],
+  related: [
+    { href: '/en/accountant', label: 'Accountant' },
+    { href: '/en/real-estate', label: 'Real Estate' },
+    { href: '/en/insurance', label: 'Insurance' },
+  ],
 };
 
 export default function Page() {

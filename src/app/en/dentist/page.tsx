@@ -47,6 +47,11 @@ const data: IndustryPageData = {
     { who: 'customer', text: 'David Chen.' },
     { who: 'ai', text: 'You are booked for today at 14:00, David. Please arrive 10 minutes early to fill out a form. See you soon.' },
   ],
+  related: [
+    { href: '/en/clinic', label: 'Clinic' },
+    { href: '/en/medical-office', label: 'Medical Office' },
+    { href: '/en/chiropractor', label: 'Chiropractor' },
+  ],
 };
 
 export default function Page() {

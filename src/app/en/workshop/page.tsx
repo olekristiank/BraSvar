@@ -47,6 +47,11 @@ const data: IndustryPageData = {
     { who: 'customer', text: 'Yes, please.' },
     { who: 'ai', text: 'Done! You are booked for 08:30 tomorrow with your VW Golf. See you then.' },
   ],
+  related: [
+    { href: '/en/car-detailing', label: 'Car Detailing' },
+    { href: '/en/tradesperson', label: 'Tradesperson' },
+    { href: '/en/electrician', label: 'Electrician' },
+  ],
 };
 
 export default function Page() {

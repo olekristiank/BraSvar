@@ -50,6 +50,11 @@ const data: IndustryPageData = {
     { who: 'customer', text: 'James Anderson, 555-0142.' },
     { who: 'ai', text: 'You are all set for Wednesday at 3:30 PM, James. Wear comfortable clothing that is easy to move in. See you then!' },
   ],
+  related: [
+    { href: '/en/physiotherapist', label: 'Physiotherapist' },
+    { href: '/en/chiropractor', label: 'Chiropractor' },
+    { href: '/en/acupuncturist', label: 'Acupuncturist' },
+  ],
 };
 
 export default function Page() {

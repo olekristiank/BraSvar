@@ -49,6 +49,11 @@ const data: IndustryPageData = {
     { who: 'customer', text: 'We are not sure yet. Some guidance would be great.' },
     { who: 'ai', text: 'Great. Then I suggest a site visit where the painter can see the walls and help with color choices. Can I get your name and address so we can find a time that works?' },
   ],
+  related: [
+    { href: '/en/tradesperson', label: 'Tradesperson' },
+    { href: '/en/electrician', label: 'Electrician' },
+    { href: '/en/plumber', label: 'Plumber' },
+  ],
 };
 
 export default function Page() {

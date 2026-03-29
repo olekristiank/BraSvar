@@ -57,6 +57,11 @@ const data: IndustryPageData = {
       text: 'I have noted the details. Your advisor will call you back within the hour to guide you through the next steps. In the meantime, please take photos of the damage if you can.',
     },
   ],
+  related: [
+    { href: '/en/lawyer', label: 'Lawyer' },
+    { href: '/en/accountant', label: 'Accountant' },
+    { href: '/en/real-estate', label: 'Real Estate' },
+  ],
 };
 
 export default function Page() {

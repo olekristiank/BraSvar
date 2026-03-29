@@ -47,6 +47,11 @@ const data: IndustryPageData = {
     { who: 'customer', text: 'Emma Collins.' },
     { who: 'ai', text: 'All booked, Emma! Friday at 13:00 for a full lash set. We look forward to seeing you.' },
   ],
+  related: [
+    { href: '/en/hairdresser', label: 'Hairdresser' },
+    { href: '/en/skin-clinic', label: 'Skin Clinic' },
+    { href: '/en/wellness-clinic', label: 'Wellness Clinic' },
+  ],
 };
 
 export default function Page() {
