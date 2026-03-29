@@ -43,6 +43,11 @@ const data: IndustryPageData = {
     { who: 'customer', text: 'I morgen etter jobb, rundt 17?' },
     { who: 'ai', text: 'Det passer fint. Jeg noterer deg for prøvetrening i morgen kl. 17:00. Du får en bekreftelse på SMS. Bare ta med treningstøy, så viser vi deg rundt!' },
   ],
+  related: [
+    { href: '/personlig-trener', label: 'Personlig trener' },
+    { href: '/velvaereklinikk', label: 'Velværeklinikk' },
+    { href: '/fysioterapeut', label: 'Fysioterapeut' },
+  ],
 };
 
 export default function Page() {

@@ -42,6 +42,11 @@ const data: IndustryPageData = {
     { who: 'customer', text: 'Ok, vi fant den og stengte. Tusen takk!' },
     { who: 'ai', text: 'Bra! Rørleggeren er varslet og tar kontakt i løpet av kort tid. Sørg for å tørke opp det dere kan i mellomtiden.' },
   ],
+  related: [
+    { href: '/elektriker', label: 'Elektriker' },
+    { href: '/handverker', label: 'Håndverker' },
+    { href: '/maler', label: 'Maler' },
+  ],
 };
 
 export default function Page() {

@@ -46,6 +46,11 @@ const data: IndustryPageData = {
     { who: 'customer', text: 'Onsdag morgen passer fint.' },
     { who: 'ai', text: 'Onsdag kl. 09:00, notert. Kan jeg få navnet og telefonnummeret ditt?' },
   ],
+  related: [
+    { href: '/tannlege', label: 'Tannlege' },
+    { href: '/fysioterapeut', label: 'Fysioterapeut' },
+    { href: '/legekontor', label: 'Legekontor' },
+  ],
 };
 
 export default function Page() {

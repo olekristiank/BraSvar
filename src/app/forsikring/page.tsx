@@ -46,6 +46,11 @@ const data: IndustryPageData = {
     { who: 'customer', text: 'Erik Johansen, EV 12345.' },
     { who: 'ai', text: 'Takk, Erik. Du hører fra oss i løpet av dagen med et tilbud på kaskoforsikring for din Tesla.' },
   ],
+  related: [
+    { href: '/advokat', label: 'Advokat' },
+    { href: '/regnskapsforer', label: 'Regnskapsfører' },
+    { href: '/eiendomsmegler', label: 'Eiendomsmegler' },
+  ],
 };
 
 export default function Page() {

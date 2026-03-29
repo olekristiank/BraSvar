@@ -42,6 +42,11 @@ const data: IndustryPageData = {
     { who: 'customer', text: 'Onsdag kl. 13 passer.' },
     { who: 'ai', text: 'Da er du satt opp onsdag 16. april kl. 13:00. Førstesamtalen varer 60 minutter. Du får en bekreftelse på SMS med praktisk informasjon.' },
   ],
+  related: [
+    { href: '/klinikk', label: 'Klinikk' },
+    { href: '/legekontor', label: 'Legekontor' },
+    { href: '/naprapat-osteopat', label: 'Naprapat og osteopat' },
+  ],
 };
 
 export default function Page() {

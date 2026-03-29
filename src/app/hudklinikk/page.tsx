@@ -55,6 +55,11 @@ const data: IndustryPageData = {
       text: 'Flott, da setter jeg deg opp fredag kl. 10:30. Kan jeg få navnet ditt og et telefonnummer?',
     },
   ],
+  related: [
+    { href: '/skjonnhet', label: 'Skjønnhet' },
+    { href: '/velvaereklinikk', label: 'Velværeklinikk' },
+    { href: '/fotterapeut', label: 'Fotterapeut' },
+  ],
 };
 
 export default function Page() {

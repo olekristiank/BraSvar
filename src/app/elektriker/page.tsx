@@ -42,6 +42,11 @@ const data: IndustryPageData = {
     { who: 'customer', text: 'Tirsdag eller onsdag hadde passet.' },
     { who: 'ai', text: 'Tirsdag fungerer. Jeg setter dere opp for befaring tirsdag formiddag. Dere får en SMS med bekreftelse og tidspunkt.' },
   ],
+  related: [
+    { href: '/rorlegger', label: 'Rørlegger' },
+    { href: '/handverker', label: 'Håndverker' },
+    { href: '/entreprenor', label: 'Entreprenør' },
+  ],
 };
 
 export default function Page() {

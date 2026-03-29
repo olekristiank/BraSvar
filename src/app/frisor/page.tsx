@@ -46,6 +46,11 @@ const data: IndustryPageData = {
     { who: 'customer', text: 'Maria Hansen.' },
     { who: 'ai', text: 'Da er du booket inn torsdag kl. 14:30, Maria. Velkommen!' },
   ],
+  related: [
+    { href: '/skjonnhet', label: 'Skjønnhet' },
+    { href: '/hudklinikk', label: 'Hudklinikk' },
+    { href: '/tatovor', label: 'Tatovør' },
+  ],
 };
 
 export default function Page() {

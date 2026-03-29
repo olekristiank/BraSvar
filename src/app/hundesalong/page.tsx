@@ -46,6 +46,11 @@ const data: IndustryPageData = {
     { who: 'customer', text: 'Hunden heter Nansen, og jeg heter Ida Lunde.' },
     { who: 'ai', text: 'Da er Nansen booket inn fredag kl. 13, Ida. Husk at pelsen bør være tørr når dere kommer. Velkommen!' },
   ],
+  related: [
+    { href: '/veterinaer', label: 'Veterinær' },
+    { href: '/bilpleie', label: 'Bilpleie' },
+    { href: '/frisor', label: 'Frisør' },
+  ],
 };
 
 export default function Page() {

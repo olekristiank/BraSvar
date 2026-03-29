@@ -46,6 +46,11 @@ const data: IndustryPageData = {
     { who: 'customer', text: 'Lørdag kl. 10 passer perfekt.' },
     { who: 'ai', text: 'Flott! Da booker jeg deg inn lørdag kl. 10:00 for nytt sett vipper. Velkommen!' },
   ],
+  related: [
+    { href: '/frisor', label: 'Frisør' },
+    { href: '/hudklinikk', label: 'Hudklinikk' },
+    { href: '/velvaereklinikk', label: 'Velværeklinikk' },
+  ],
 };
 
 export default function Page() {

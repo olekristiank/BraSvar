@@ -45,6 +45,11 @@ const data: IndustryPageData = {
     { who: 'customer', text: 'Ja, gjerne. Vi er tilgjengelige i neste uke.' },
     { who: 'ai', text: 'Fint! Vi har ledig onsdag formiddag eller fredag etter lunsj. Hvilken dag passer best? Jeg sender bekreftelse med adresse og hva dere bør ha klart.' },
   ],
+  related: [
+    { href: '/entreprenor', label: 'Entreprenør' },
+    { href: '/eiendomsmegler', label: 'Eiendomsmegler' },
+    { href: '/konsulent', label: 'Konsulent' },
+  ],
 };
 
 export default function Page() {

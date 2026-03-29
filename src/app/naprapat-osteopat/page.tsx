@@ -48,6 +48,11 @@ const data: IndustryPageData = {
     { who: 'customer', text: 'Kari Nilsen, 980 45 123.' },
     { who: 'ai', text: 'Da er du booket inn onsdag kl. 15:30, Kari. Ha på lett klær som er enkel å bevege seg i. Vi sees!' },
   ],
+  related: [
+    { href: '/fysioterapeut', label: 'Fysioterapeut' },
+    { href: '/kiropraktor', label: 'Kiropraktor' },
+    { href: '/akupunktor', label: 'Akupunktør' },
+  ],
 };
 
 export default function Page() {

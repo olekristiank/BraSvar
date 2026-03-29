@@ -45,6 +45,11 @@ const data: IndustryPageData = {
     { who: 'customer', text: 'Torsdag 14:30 passer.' },
     { who: 'ai', text: 'Flott, da setter jeg opp en førstegangsbehandling torsdag kl. 14:30. Du får en bekreftelse på SMS. Unngå å spise et stort måltid rett før, og ta med komfortable klær.' },
   ],
+  related: [
+    { href: '/naprapat-osteopat', label: 'Naprapat og osteopat' },
+    { href: '/fysioterapeut', label: 'Fysioterapeut' },
+    { href: '/kiropraktor', label: 'Kiropraktor' },
+  ],
 };
 
 export default function Page() {

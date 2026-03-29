@@ -48,6 +48,11 @@ const data: IndustryPageData = {
     { who: 'customer', text: 'Jonas Berg.' },
     { who: 'ai', text: 'Fint, Jonas. Du er booket inn torsdag kl. 17:00. Ta med treningstøy og vannflaske. Gleder oss til å se deg!' },
   ],
+  related: [
+    { href: '/treningssenter', label: 'Treningssenter' },
+    { href: '/fysioterapeut', label: 'Fysioterapeut' },
+    { href: '/velvaereklinikk', label: 'Velværeklinikk' },
+  ],
 };
 
 export default function Page() {

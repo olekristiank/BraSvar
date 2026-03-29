@@ -48,6 +48,11 @@ const data: IndustryPageData = {
     { who: 'customer', text: 'Vi er usikre. Hadde vært fint med litt veiledning.' },
     { who: 'ai', text: 'Flott. Da foreslår jeg en befaring der maleren kan se veggene og hjelpe med fargevalg. Kan jeg få navnet og adressen deres, så tar han kontakt for å finne et tidspunkt?' },
   ],
+  related: [
+    { href: '/handverker', label: 'Håndverker' },
+    { href: '/elektriker', label: 'Elektriker' },
+    { href: '/rorlegger', label: 'Rørlegger' },
+  ],
 };
 
 export default function Page() {

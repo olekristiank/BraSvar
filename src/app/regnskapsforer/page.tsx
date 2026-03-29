@@ -55,6 +55,11 @@ const data: IndustryPageData = {
       text: 'Fint, jeg noterer onsdag. Kan jeg få firmanavnet, kontaktperson og e-post, så sender vi en møtebekreftelse?',
     },
   ],
+  related: [
+    { href: '/advokat', label: 'Advokat' },
+    { href: '/forsikring', label: 'Forsikring' },
+    { href: '/konsulent', label: 'Konsulent' },
+  ],
 };
 
 export default function Page() {

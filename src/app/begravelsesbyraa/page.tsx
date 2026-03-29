@@ -48,6 +48,11 @@ const data: IndustryPageData = {
     { who: 'customer', text: 'Ja, jeg heter Kristin Haugen. Nummeret mitt er det jeg ringer fra.' },
     { who: 'ai', text: 'Takk, Kristin. Jeg har notert alt. Dere vil bli kontaktet kort tid. Ta den tiden dere trenger. Vi tar oss av resten.' },
   ],
+  related: [
+    { href: '/advokat', label: 'Advokat' },
+    { href: '/klinikk', label: 'Klinikk' },
+    { href: '/forsikring', label: 'Forsikring' },
+  ],
 };
 
 export default function Page() {

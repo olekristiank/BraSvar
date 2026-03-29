@@ -48,6 +48,11 @@ const data: IndustryPageData = {
     { who: 'customer', text: 'Fineline med litt dotwork. Har noen bilder jeg kan sende.' },
     { who: 'ai', text: 'Perfekt. Jeg booker deg inn til en konsultasjon der dere kan gå gjennom designet sammen. Kan jeg få navnet ditt og e-postadressen din, så sender tatovøren deg ledige tider?' },
   ],
+  related: [
+    { href: '/frisor', label: 'Frisør' },
+    { href: '/skjonnhet', label: 'Skjønnhet' },
+    { href: '/hudklinikk', label: 'Hudklinikk' },
+  ],
 };
 
 export default function Page() {

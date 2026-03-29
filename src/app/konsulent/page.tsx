@@ -46,6 +46,11 @@ const data: IndustryPageData = {
     { who: 'customer', text: 'Nordvik AS, jeg heter Camilla Berg. Nummeret mitt er dette jeg ringer fra.' },
     { who: 'ai', text: 'Flott, Camilla. Du hører fra oss snart for å avtale et møte. Takk for at du tok kontakt.' },
   ],
+  related: [
+    { href: '/regnskapsforer', label: 'Regnskapsfører' },
+    { href: '/arkitekt', label: 'Arkitekt' },
+    { href: '/forsikring', label: 'Forsikring' },
+  ],
 };
 
 export default function Page() {

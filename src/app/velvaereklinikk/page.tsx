@@ -55,6 +55,11 @@ const data: IndustryPageData = {
       text: 'Selvfølgelig! Vi har gavekort på valgfritt beløp eller på spesifikke behandlinger. Jeg booker deg kl. 14:00 på lørdag, og sender deg info om gavekort på SMS. Hva er navnet ditt?',
     },
   ],
+  related: [
+    { href: '/hudklinikk', label: 'Hudklinikk' },
+    { href: '/skjonnhet', label: 'Skjønnhet' },
+    { href: '/akupunktor', label: 'Akupunktør' },
+  ],
 };
 
 export default function Page() {

@@ -48,6 +48,11 @@ const data: IndustryPageData = {
     { who: 'customer', text: 'Vi vil gjerne ha hele dagen, fra forberedelser til første dans.' },
     { who: 'ai', text: 'Det noterer jeg. Jeg sender beskjed til fotografen med dato, sted og ønskene deres, så tar han kontakt med dere for å snakke om pakker og pris. Kan jeg få e-postadressen deres?' },
   ],
+  related: [
+    { href: '/tatovor', label: 'Tatovør' },
+    { href: '/eiendomsmegler', label: 'Eiendomsmegler' },
+    { href: '/konsulent', label: 'Konsulent' },
+  ],
 };
 
 export default function Page() {

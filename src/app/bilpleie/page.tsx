@@ -48,6 +48,11 @@ const data: IndustryPageData = {
     { who: 'customer', text: 'Thomas Vik.' },
     { who: 'ai', text: 'Perfekt, Thomas. Regn med rundt tre timer. Vi ses tirsdag!' },
   ],
+  related: [
+    { href: '/verksted', label: 'Verksted' },
+    { href: '/hundesalong', label: 'Hundesalong' },
+    { href: '/renhold', label: 'Renhold' },
+  ],
 };
 
 export default function Page() {

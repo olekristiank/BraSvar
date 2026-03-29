@@ -46,6 +46,11 @@ const data: IndustryPageData = {
     { who: 'customer', text: 'Erik Johansen.' },
     { who: 'ai', text: 'Da er du satt opp i dag kl. 13:15, Erik. Du får bekreftelse på SMS. Velkommen!' },
   ],
+  related: [
+    { href: '/klinikk', label: 'Klinikk' },
+    { href: '/legekontor', label: 'Legekontor' },
+    { href: '/kiropraktor', label: 'Kiropraktor' },
+  ],
 };
 
 export default function Page() {

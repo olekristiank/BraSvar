@@ -43,6 +43,11 @@ const data: IndustryPageData = {
     { who: 'customer', text: 'Ja, gjerne. Vi bor på Lillehammer.' },
     { who: 'ai', text: 'Fint! Vi har ledig for befaring på torsdag eller fredag denne uken. Hva passer for dere? Jeg sender detaljer og bekreftelse etterpå.' },
   ],
+  related: [
+    { href: '/arkitekt', label: 'Arkitekt' },
+    { href: '/elektriker', label: 'Elektriker' },
+    { href: '/handverker', label: 'Håndverker' },
+  ],
 };
 
 export default function Page() {

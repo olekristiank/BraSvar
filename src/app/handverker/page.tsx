@@ -47,6 +47,11 @@ const data: IndustryPageData = {
     { who: 'customer', text: 'Storgata 15 i Drammen.' },
     { who: 'ai', text: 'Fint, da noterer jeg det. Du hører fra oss i løpet av dagen med forslag til tidspunkt for befaring.' },
   ],
+  related: [
+    { href: '/elektriker', label: 'Elektriker' },
+    { href: '/rorlegger', label: 'Rørlegger' },
+    { href: '/maler', label: 'Maler' },
+  ],
 };
 
 export default function Page() {

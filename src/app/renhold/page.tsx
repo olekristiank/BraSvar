@@ -46,6 +46,11 @@ const data: IndustryPageData = {
     { who: 'customer', text: 'Firmaet heter Solberg Regnskap, og jeg heter Kjetil Paulsen.' },
     { who: 'ai', text: 'Takk, Kjetil. Vi sender et tilbud til Solberg Regnskap i løpet av dagen. Fint at dere tok kontakt.' },
   ],
+  related: [
+    { href: '/bilpleie', label: 'Bilpleie' },
+    { href: '/handverker', label: 'Håndverker' },
+    { href: '/konsulent', label: 'Konsulent' },
+  ],
 };
 
 export default function Page() {

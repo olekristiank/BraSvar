@@ -55,6 +55,11 @@ const data: IndustryPageData = {
       text: 'Takk, Erik. Du hører fra oss innen i morgen kl. 10. Ta vare på alle dokumenter du har mottatt fra utleier.',
     },
   ],
+  related: [
+    { href: '/regnskapsforer', label: 'Regnskapsfører' },
+    { href: '/eiendomsmegler', label: 'Eiendomsmegler' },
+    { href: '/forsikring', label: 'Forsikring' },
+  ],
 };
 
 export default function Page() {

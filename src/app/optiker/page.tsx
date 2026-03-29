@@ -48,6 +48,11 @@ const data: IndustryPageData = {
     { who: 'customer', text: 'Lise Fredriksen.' },
     { who: 'ai', text: 'Da er du satt opp mandag kl. 11:00, Lise. Husk å ta med brillene du bruker nå hvis du har noen. Velkommen!' },
   ],
+  related: [
+    { href: '/klinikk', label: 'Klinikk' },
+    { href: '/tannlege', label: 'Tannlege' },
+    { href: '/hudklinikk', label: 'Hudklinikk' },
+  ],
 };
 
 export default function Page() {

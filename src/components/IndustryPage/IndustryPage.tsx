@@ -24,6 +24,7 @@ export interface IndustryPageData {
   benefitsIntro: string;
   chat: ChatLine[];
   lang?: 'no' | 'en';
+  related?: { href: string; label: string }[];
 }
 
 const t = {
@@ -186,6 +187,26 @@ export default function IndustryPage({ data }: { data: IndustryPageData }) {
           ))}
         </div>
       </AnimateIn></Section>
+
+      {data.related && data.related.length > 0 && (
+        <div style={{ maxWidth: '700px', margin: '0 auto', padding: '0 clamp(1.5rem, 4vw, 3rem) 2rem', textAlign: 'center' }}>
+          <p style={{ fontSize: '0.85rem', color: '#94a3b8', marginBottom: '0.75rem' }}>
+            {lang === 'en' ? 'See also:' : 'Se også:'}
+          </p>
+          <div style={{ display: 'flex', gap: '0.75rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+            {data.related.map((r) => (
+              <a key={r.href} href={r.href} style={{
+                fontSize: '0.85rem', fontWeight: 600, color: '#db2777',
+                textDecoration: 'none', padding: '0.4rem 1rem',
+                borderRadius: '8px', border: '1px solid rgba(236,72,153,0.2)',
+                transition: 'all 0.2s',
+              }}>
+                {r.label}
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
 
       <div style={{ textAlign: 'center', padding: '3.5rem clamp(1.5rem, 4vw, 3rem) 5rem', background: 'linear-gradient(180deg, #fff 0%, #fdf2f8 100%)' }}>
         <AnimateIn delay={0}>

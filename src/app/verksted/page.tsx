@@ -46,6 +46,11 @@ const data: IndustryPageData = {
     { who: 'customer', text: 'En 2019 Volkswagen Golf.' },
     { who: 'ai', text: 'Fint. Da setter jeg deg opp for EU-kontroll fredag morgen. Du får en bekreftelse på SMS.' },
   ],
+  related: [
+    { href: '/bilpleie', label: 'Bilpleie' },
+    { href: '/handverker', label: 'Håndverker' },
+    { href: '/elektriker', label: 'Elektriker' },
+  ],
 };
 
 export default function Page() {

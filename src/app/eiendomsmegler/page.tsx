@@ -55,6 +55,11 @@ const data: IndustryPageData = {
       text: 'Takk, Marte. Du er påmeldt visning søndag kl. 12:00 i Bygdøy allé. Du får en påminnelse på SMS dagen før.',
     },
   ],
+  related: [
+    { href: '/advokat', label: 'Advokat' },
+    { href: '/forsikring', label: 'Forsikring' },
+    { href: '/arkitekt', label: 'Arkitekt' },
+  ],
 };
 
 export default function Page() {

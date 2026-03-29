@@ -41,6 +41,11 @@ const data: IndustryPageData = {
     { who: 'customer', text: 'Onsdag passer fint' },
     { who: 'ai', text: 'Da har jeg satt opp onsdag kl. 11:00 til deg. Du får en bekreftelse på SMS. Velkommen!' },
   ],
+  related: [
+    { href: '/hudklinikk', label: 'Hudklinikk' },
+    { href: '/velvaereklinikk', label: 'Velværeklinikk' },
+    { href: '/klinikk', label: 'Klinikk' },
+  ],
 };
 
 export default function Page() {

@@ -42,6 +42,11 @@ const data: IndustryPageData = {
     { who: 'customer', text: 'Ja, det passer.' },
     { who: 'ai', text: 'Flott. Du er satt opp i morgen kl. 09:30. Bekreftelse kommer på SMS.' },
   ],
+  related: [
+    { href: '/fysioterapeut', label: 'Fysioterapeut' },
+    { href: '/naprapat-osteopat', label: 'Naprapat og osteopat' },
+    { href: '/tannlege', label: 'Tannlege' },
+  ],
 };
 
 export default function Page() {

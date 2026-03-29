@@ -42,6 +42,11 @@ const data: IndustryPageData = {
     { who: 'customer', text: 'Ja, vi kommer da.' },
     { who: 'ai', text: 'Flott. Dere er satt opp kl. 15:00. Bekreftelse kommer på SMS. Velkommen!' },
   ],
+  related: [
+    { href: '/klinikk', label: 'Klinikk' },
+    { href: '/hundesalong', label: 'Hundesalong' },
+    { href: '/legekontor', label: 'Legekontor' },
+  ],
 };
 
 export default function Page() {

@@ -42,6 +42,11 @@ const data: IndustryPageData = {
     { who: 'customer', text: 'Torsdag kl. 10 passer fint.' },
     { who: 'ai', text: 'Da setter jeg opp torsdag kl. 10:00. Ta med legitimasjon. Du får en bekreftelse på SMS.' },
   ],
+  related: [
+    { href: '/kiropraktor', label: 'Kiropraktor' },
+    { href: '/naprapat-osteopat', label: 'Naprapat og osteopat' },
+    { href: '/klinikk', label: 'Klinikk' },
+  ],
 };
 
 export default function Page() {

@@ -44,6 +44,11 @@ const data: IndustryPageData = {
     { who: 'customer', text: 'Ja, gjerne onsdag.' },
     { who: 'ai', text: 'Onsdag kl. 08:30 passer. Husk å møte fastende hvis legen har bedt om det. Du får bekreftelse på SMS.' },
   ],
+  related: [
+    { href: '/klinikk', label: 'Klinikk' },
+    { href: '/tannlege', label: 'Tannlege' },
+    { href: '/psykolog', label: 'Psykolog' },
+  ],
 };
 
 export default function Page() {
