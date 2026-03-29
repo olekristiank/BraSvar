@@ -83,7 +83,7 @@ export default function Footer({ lang = 'no' }: { lang?: 'no' | 'en' }) {
             </p>
             <nav style={{ display: 'flex', flexDirection: 'column', gap: '0.35rem' }}>
               {section.links.map((link) => (
-                <a key={link.href} href={link.href} style={{ fontSize: '0.85rem', fontWeight: 500, color: 'rgba(255,255,255,0.65)', textDecoration: 'none', transition: 'color 0.2s' }}>
+                <a key={link.href} href={link.href} style={{ fontSize: '0.85rem', fontWeight: 500, color: 'rgba(255,255,255,0.65)', textDecoration: 'none', transition: 'color 0.2s', padding: '0.35rem 0', display: 'inline-block' }}>
                   {link.label}
                 </a>
               ))}

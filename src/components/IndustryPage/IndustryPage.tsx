@@ -70,7 +70,7 @@ const t = {
       { num: '3', title: 'Call is handled', desc: 'The customer gets answers, information or help.' },
       { num: '4', title: 'Action is taken', desc: 'Appointment booked, message sent, or call forwarded to you.' },
     ],
-    seeHow: 'See how it works in detail',
+    seeHow: 'Learn how Bra Svar works',
     whyWorks: 'Why this works for',
     example: 'Example',
     getMore: 'Get more customers without answering the phone yourself',
@@ -165,7 +165,7 @@ export default function IndustryPage({ data }: { data: IndustryPageData }) {
           ))}
         </div>
         <p style={{ marginTop: '1.5rem', fontSize: '0.9rem' }}>
-          <Link href={s.howItWorksLink} style={{ color: '#db2777', fontWeight: 600, textDecoration: 'none' }}>{s.seeHow} →</Link>
+          <Link href={s.howItWorksLink} style={{ color: '#db2777', fontWeight: 600, textDecoration: 'underline', textDecorationColor: 'rgba(219,39,119,0.3)', textUnderlineOffset: '2px' }}>{s.seeHow} →</Link>
         </p>
       </AnimateIn></Section>
 
