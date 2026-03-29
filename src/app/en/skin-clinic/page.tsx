@@ -5,7 +5,7 @@ import type { IndustryPageData } from '@/components/IndustryPage/IndustryPage';
 export const metadata: Metadata = {
   title: 'AI phone answering for skin clinics | Bra Svar!',
   description:
-    'Bra Svar takes calls while you are treating. Consultations, skin analysis and aftercare are handled automatically.',
+    'Bra Svar takes calls while you are treating. Consultations, skin analysis and aftercare bookings are handled automatically. Free to try.',
 };
 
 const data: IndustryPageData = {

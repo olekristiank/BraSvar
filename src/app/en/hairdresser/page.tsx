@@ -5,7 +5,7 @@ import type { IndustryPageData } from '@/components/IndustryPage/IndustryPage';
 export const metadata: Metadata = {
   title: 'AI phone answering for hairdressers | Bra Svar!',
   description:
-    'Never miss a booking again. Bra Svar answers the phone while you cut, color, and style.',
+    'Never miss a booking again. Bra Svar answers the phone while you cut, color, and style. Handles calls, books appointments and forwards messages.',
 };
 
 const data: IndustryPageData = {

@@ -5,7 +5,7 @@ import type { IndustryPageData } from '@/components/IndustryPage/IndustryPage';
 export const metadata: Metadata = {
   title: 'AI phone answering for real estate agents | Bra Svar!',
   description:
-    'Never miss a buyer call during viewings or bidding rounds. Bra Svar answers the phone for real estate agents.',
+    'Never miss a buyer call during viewings or bidding rounds. Bra Svar answers the phone for real estate agents. Available 24/7, free to try.',
 };
 
 const data: IndustryPageData = {

@@ -5,7 +5,7 @@ import type { IndustryPageData } from '@/components/IndustryPage/IndustryPage';
 export const metadata: Metadata = {
   title: 'AI phone answering for dentists | Bra Svar!',
   description:
-    'Drilling, scaling, or deep in concentration? Bra Svar answers your dental practice calls and books patients seamlessly.',
+    'Drilling, scaling, or deep in concentration? Bra Svar answers your dental practice calls and books patients seamlessly. Free to try.',
 };
 
 const data: IndustryPageData = {

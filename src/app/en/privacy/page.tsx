@@ -3,10 +3,10 @@ import Navbar from '@/components/NavbarEN/NavbarEN';
 
 export const metadata: Metadata = {
   title: 'Privacy Policy and GDPR compliance | Bra Svar!',
-  description: 'Learn how Bra Svar processes personal data in accordance with GDPR.',
+  description: 'Learn how Bra Svar processes personal data in accordance with GDPR. Covers data collection, storage, your rights, and how to contact us.',
   openGraph: {
     title: 'Privacy Policy and GDPR compliance | Bra Svar!',
-    description: 'Learn how Bra Svar processes personal data in accordance with GDPR.',
+    description: 'Learn how Bra Svar processes personal data in accordance with GDPR. Covers data collection, storage, your rights, and how to contact us.',
     images: [{ url: '/opengraph-image.svg', width: 1200, height: 630 }],
   },
 };

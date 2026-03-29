@@ -5,7 +5,7 @@ import type { IndustryPageData } from '@/components/IndustryPage/IndustryPage';
 export const metadata: Metadata = {
   title: 'AI phone answering for accountants | Bra Svar!',
   description:
-    'Stay focused during year-end close and tax season. Bra Svar answers the phone so you can meet every deadline.',
+    'Stay focused during year-end close and tax season. Bra Svar answers the phone so you can meet every deadline. Available 24/7, free to try.',
 };
 
 const data: IndustryPageData = {

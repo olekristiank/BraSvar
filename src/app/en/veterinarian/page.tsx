@@ -5,7 +5,7 @@ import type { IndustryPageData } from '@/components/IndustryPage/IndustryPage';
 export const metadata: Metadata = {
   title: 'AI phone answering for veterinarians | Bra Svar!',
   description:
-    'Never miss a pet owner call while you treat animals. Bra Svar answers the phone for veterinary clinics.',
+    'Never miss a pet owner call while you treat animals. Bra Svar answers the phone for veterinary clinics. Books appointments and triages urgency.',
 };
 
 const data: IndustryPageData = {

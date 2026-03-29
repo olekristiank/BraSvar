@@ -5,7 +5,7 @@ import type { IndustryPageData } from '@/components/IndustryPage/IndustryPage';
 export const metadata: Metadata = {
   title: 'AI phone answering for dog groomers | Bra Svar!',
   description:
-    'Never miss a booking while you groom. Bra Svar answers the phone when your hands are full of wet dog.',
+    'Never miss a booking while you groom. Bra Svar answers the phone when your hands are full of wet dog. Books appointments and forwards messages.',
 };
 
 const data: IndustryPageData = {

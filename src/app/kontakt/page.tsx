@@ -3,7 +3,7 @@ import Navbar from '@/components/Navbar/Navbar';
 
 export const metadata: Metadata = {
   title: 'Kontakt oss – ring eller send melding | Bra Svar!',
-  description: 'Ta kontakt med Bra Svar. Ring oss på 64 00 62 64 eller send en melding.',
+  description: 'Ta kontakt med Bra Svar. Ring oss på 64 00 62 64, send oss e-post eller bruk kontaktskjemaet. Vi svarer raskt på hverdager.',
 };
 
 export default function KontaktPage() {

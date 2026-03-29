@@ -5,7 +5,7 @@ import type { IndustryPageData } from '@/components/IndustryPage/IndustryPage';
 export const metadata: Metadata = {
   title: 'AI phone answering for physiotherapists | Bra Svar!',
   description:
-    'Patient on the bench and phone ringing? Bra Svar answers for physiotherapy clinics so your sessions stay uninterrupted.',
+    'Patient on the bench and phone ringing? Bra Svar answers for physiotherapy clinics so your sessions stay uninterrupted. Free to try.',
 };
 
 const data: IndustryPageData = {

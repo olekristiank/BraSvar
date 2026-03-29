@@ -63,7 +63,7 @@ export default function Pricing() {
             </h2>
             <div className="flex flex-wrap justify-center" style={{ gap: '0.5rem 1.5rem' }}>
               {['Ingen bindingstid', 'Gratis oppstart', 'Norsk support'].map((item) => (
-                <span key={item} className="font-medium" style={{ fontSize: '0.85rem', color: '#64748b' }}>
+                <span key={item} className="font-medium" style={{ fontSize: '1rem', color: '#475569' }}>
                   {item}
                 </span>
               ))}
@@ -125,7 +125,7 @@ export default function Pricing() {
                 <div className="flex items-baseline">
                   <span className="font-extrabold text-slate-900" style={{ fontSize: '2.5rem', letterSpacing: '-0.03em', lineHeight: 1 }}>1 490</span>
                   <span className="font-bold text-slate-900" style={{ fontSize: '1.25rem', marginLeft: '2px' }}>,-</span>
-                  <span className="text-slate-500 font-medium" style={{ fontSize: '0.9rem', marginLeft: '0.5rem' }}>/ mnd</span>
+                  <span className="font-semibold" style={{ fontSize: '1rem', marginLeft: '0.5rem', color: '#334155' }}>/ mnd</span>
                 </div>
               </div>
 
@@ -211,7 +211,7 @@ export default function Pricing() {
                     2 990
                   </span>
                   <span className="font-bold" style={{ fontSize: '1.25rem', marginLeft: '2px', color: '#f472b6' }}>,-</span>
-                  <span className="font-medium" style={{ fontSize: '0.9rem', marginLeft: '0.5rem', color: '#64748b' }}>/ mnd</span>
+                  <span className="font-semibold" style={{ fontSize: '1rem', marginLeft: '0.5rem', color: '#94a3b8' }}>/ mnd</span>
                 </div>
               </div>
 

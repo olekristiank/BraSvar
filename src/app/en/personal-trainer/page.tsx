@@ -5,7 +5,7 @@ import type { IndustryPageData } from '@/components/IndustryPage/IndustryPage';
 export const metadata: Metadata = {
   title: 'AI phone answering for personal trainers | Bra Svar!',
   description:
-    'Get more clients without losing focus on the session. Bra Svar answers the phone while you are on the gym floor.',
+    'Get more clients without losing focus on the session. Bra Svar answers the phone while you are on the gym floor. Books sessions automatically.',
 };
 
 const data: IndustryPageData = {

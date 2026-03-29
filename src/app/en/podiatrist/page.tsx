@@ -5,7 +5,7 @@ import type { IndustryPageData } from '@/components/IndustryPage/IndustryPage';
 export const metadata: Metadata = {
   title: 'AI phone answering for podiatrists | Bra Svar!',
   description:
-    'Never miss a patient call while you treat. Bra Svar answers the phone for podiatry clinics and foot care specialists.',
+    'Never miss a patient call while you treat. Bra Svar answers the phone for podiatry clinics and foot care specialists. Available 24/7.',
 };
 
 const data: IndustryPageData = {

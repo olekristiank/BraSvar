@@ -12,7 +12,7 @@ export const posts: BlogPost[] = [
   {
     slug: 'hva-koster-en-ubesvart-samtale',
     title: 'Hva koster en ubesvart samtale?',
-    description: 'For mange småbedrifter er tapte anrop den største kilden til tapt omsetning de aldri måler. Vi gjør regnestykket.',
+    description: 'For mange småbedrifter er tapte anrop den største kilden til tapt omsetning de aldri måler. Vi gjør regnestykket for deg.',
     date: '2026-03-10',
     readTime: '4 min',
     cover: '/images/blog/samtale-kostnad.jpg',
@@ -57,11 +57,11 @@ Eller du kan fortsette som før. Men da bør du vite hva det koster. Sjekk anrop
   {
     slug: 'ki-bruken-i-norge-doblet-seg',
     title: 'KI-bruken har doblet seg. Henger du med?',
-    description: 'Over halvparten av norske virksomheter bruker nå kunstig intelligens. For to år siden var tallet under en fjerdedel.',
+    description: 'Over halvparten av norske virksomheter bruker nå kunstig intelligens. For to år siden var tallet under en fjerdedel. Henger du med?',
     date: '2026-03-12',
     readTime: '4 min',
     cover: '/images/blog/abelia-nho.jpg',
-    content: `Over halvparten av norske virksomheter bruker nå kunstig intelligens. For to år siden var tallet under en fjerdedel.
+    content: `Over halvparten av norske virksomheter bruker nå kunstig intelligens. For to år siden var tallet under en fjerdedel. Henger du med?
 
 ---
 
@@ -98,7 +98,7 @@ Start med noe konkret. Et verktøy som tar unna repeterende oppgaver. En [telefo
   {
     slug: 'gdpr-og-ki-verktoy',
     title: 'KI-verktøy og personvern: En guide',
-    description: 'GDPR gjelder også når du bruker kunstig intelligens. Her er tre konkrete ting du må ha kontroll på som småbedriftseier.',
+    description: 'GDPR gjelder også når du bruker kunstig intelligens. Her er tre konkrete ting du må ha kontroll på som småbedriftseier. Enklere enn du tror.',
     date: '2026-03-14',
     readTime: '5 min',
     cover: '/images/blog/personvern.jpg',
@@ -252,7 +252,7 @@ For bedriften din betyr det [færre tapte samtaler](/blog/hva-koster-en-ubesvart
   {
     slug: 'arbeidskraftmangel-og-ki',
     title: 'Arbeidskraftmangel? Slik kan KI hjelpe.',
-    description: 'Norge mangler folk. For bedrifter med få ansatte er hver ledig stilling ekstra kritisk. Slik kan KI være en buffer.',
+    description: 'Norge mangler folk. For bedrifter med få ansatte er hver ledig stilling ekstra kritisk. Slik kan KI være en buffer i hverdagen.',
     date: '2026-03-08',
     readTime: '4 min',
     cover: '/images/blog/vekst.jpg',
@@ -297,7 +297,7 @@ Når KI tar seg av det forutsigbare, kan du og de ansatte bruke tiden på det so
   {
     slug: 'chatbot-vs-telefonassistent',
     title: 'Chatbot vs. telefonassistent: Hva passer best?',
-    description: 'Begge bruker kunstig intelligens, men de løser ulike problemer for ulike bransjer. Her er en ærlig sammenligning.',
+    description: 'Begge bruker kunstig intelligens, men de løser ulike problemer for ulike bransjer. Her er en ærlig og konkret sammenligning.',
     date: '2026-03-06',
     readTime: '5 min',
     cover: '/images/blog/chatbot-samtaleagent.jpg',
@@ -353,7 +353,7 @@ For mange norske småbedrifter i helse, service og håndverk er telefonen fortsa
   {
     slug: 'fem-ting-du-kan-automatisere',
     title: 'Fem ting du kan automatisere i dag',
-    description: 'Du trenger ikke et stort KI-prosjekt. Her er fem konkrete ting du kan automatisere i småbedriften din allerede i dag.',
+    description: 'Du trenger ikke et stort KI-prosjekt. Her er fem konkrete ting du kan automatisere i småbedriften din allerede i dag. Start her.',
     date: '2026-03-04',
     readTime: '4 min',
     cover: '/images/blog/personvern2.jpg',

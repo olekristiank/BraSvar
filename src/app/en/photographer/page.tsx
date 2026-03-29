@@ -5,7 +5,7 @@ import type { IndustryPageData } from '@/components/IndustryPage/IndustryPage';
 export const metadata: Metadata = {
   title: 'AI phone answering for photographers | Bra Svar!',
   description:
-    'Never miss a booking again. Bra Svar takes calls while you are on a shoot, at a wedding or editing with a deadline.',
+    'Never miss a booking again. Bra Svar takes calls while you are on a shoot, at a wedding or editing with a deadline. Free to try.',
 };
 
 const data: IndustryPageData = {

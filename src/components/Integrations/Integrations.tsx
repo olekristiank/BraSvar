@@ -134,7 +134,7 @@ function CategoryRow({ title, items }: { title: string; items: string[] }) {
           <span style={{
             fontFamily: 'var(--font-outfit)',
             fontWeight: 700,
-            fontSize: '0.9rem',
+            fontSize: '1rem',
             color: '#0f172a',
             whiteSpace: 'nowrap',
             flexShrink: 0,

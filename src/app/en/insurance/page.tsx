@@ -5,7 +5,7 @@ import type { IndustryPageData } from '@/components/IndustryPage/IndustryPage';
 export const metadata: Metadata = {
   title: 'AI phone answering for insurance advisors | Bra Svar!',
   description:
-    'Never miss a client call during meetings or policy reviews. Bra Svar answers the phone for insurance professionals.',
+    'Never miss a client call during meetings or policy reviews. Bra Svar answers the phone for insurance professionals. Available 24/7, free to try.',
 };
 
 const data: IndustryPageData = {

@@ -3,10 +3,10 @@ import Navbar from '@/components/NavbarEN/NavbarEN';
 
 export const metadata: Metadata = {
   title: 'Contact Bra Svar: call or send a message | Bra Svar!',
-  description: 'Get in touch with Bra Svar. Call us at 64 00 62 64 or send us an email.',
+  description: 'Get in touch with Bra Svar. Call us at 64 00 62 64, send an email, or fill out the contact form. We respond quickly on weekdays.',
   openGraph: {
     title: 'Contact Bra Svar: call or send a message | Bra Svar!',
-    description: 'Get in touch with Bra Svar. Call us at 64 00 62 64 or send us an email.',
+    description: 'Get in touch with Bra Svar. Call us at 64 00 62 64, send an email, or fill out the contact form. We respond quickly on weekdays.',
     images: [{ url: '/opengraph-image.svg', width: 1200, height: 630 }],
   },
 };

@@ -3,7 +3,7 @@ import Navbar from '@/components/Navbar/Navbar';
 
 export const metadata: Metadata = {
   title: 'Personvernerklæring og GDPR | Bra Svar!',
-  description: 'Les om hvordan brasvar.no behandler personopplysninger i tråd med GDPR.',
+  description: 'Les om hvordan brasvar.no behandler personopplysninger i tråd med GDPR. Dekker datainnsamling, lagring, dine rettigheter og kontaktinfo.',
 };
 
 const sectionStyle: React.CSSProperties = {

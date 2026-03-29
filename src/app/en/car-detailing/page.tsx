@@ -5,7 +5,7 @@ import type { IndustryPageData } from '@/components/IndustryPage/IndustryPage';
 export const metadata: Metadata = {
   title: 'AI phone answering for car detailing | Bra Svar!',
   description:
-    'Never miss a customer while you polish and coat. Bra Svar answers the phone for car detailing businesses.',
+    'Never miss a customer while you polish and coat. Bra Svar answers the phone for car detailing businesses. Books jobs automatically, 24/7.',
 };
 
 const data: IndustryPageData = {

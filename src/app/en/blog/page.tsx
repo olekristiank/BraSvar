@@ -6,7 +6,7 @@ import { getAllPosts } from '@/lib/blog';
 
 export const metadata: Metadata = {
   title: 'Blog: AI and automation for businesses | Bra Svar!',
-  description: 'Articles about AI, automation and smarter operations for Norwegian small businesses.',
+  description: 'Articles about AI, automation and smarter operations for Norwegian small businesses. Tips, guides and insights to help you grow.',
 };
 
 export default function BlogPageEN() {

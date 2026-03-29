@@ -5,7 +5,7 @@ import type { IndustryPageData } from '@/components/IndustryPage/IndustryPage';
 export const metadata: Metadata = {
   title: 'AI phone answering for auto workshops | Bra Svar!',
   description:
-    'Under the car with oily hands? Bra Svar answers your workshop calls and books service appointments automatically.',
+    'Under the car with oily hands? Bra Svar answers your workshop calls and books service appointments automatically. Available 24/7, free to try.',
 };
 
 const data: IndustryPageData = {

@@ -5,7 +5,7 @@ import type { IndustryPageData } from '@/components/IndustryPage/IndustryPage';
 export const metadata: Metadata = {
   title: 'AI phone answering for psychologists | Bra Svar!',
   description:
-    'In session and cannot interrupt? Bra Svar answers calls for psychology practices with discretion and professionalism.',
+    'In session and cannot interrupt? Bra Svar answers calls for psychology practices with discretion and professionalism. Available 24/7.',
 };
 
 const data: IndustryPageData = {

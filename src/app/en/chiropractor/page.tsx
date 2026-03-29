@@ -5,7 +5,7 @@ import type { IndustryPageData } from '@/components/IndustryPage/IndustryPage';
 export const metadata: Metadata = {
   title: 'AI phone answering for chiropractors | Bra Svar!',
   description:
-    'Mid-adjustment and cannot answer? Bra Svar handles calls for chiropractic clinics so you can focus on your patients.',
+    'Mid-adjustment and cannot answer? Bra Svar handles calls for chiropractic clinics so you can focus on your patients. Books appointments 24/7.',
 };
 
 const data: IndustryPageData = {

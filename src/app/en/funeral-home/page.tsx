@@ -5,7 +5,7 @@ import type { IndustryPageData } from '@/components/IndustryPage/IndustryPage';
 export const metadata: Metadata = {
   title: 'AI phone answering for funeral homes | Bra Svar!',
   description:
-    'Be available for grieving families even when you are occupied. Bra Svar handles inquiries with dignity and compassion.',
+    'Be available for grieving families even when you are occupied. Bra Svar handles inquiries with dignity and compassion. Available 24/7.',
 };
 
 const data: IndustryPageData = {
