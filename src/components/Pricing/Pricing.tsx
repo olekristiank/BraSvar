@@ -93,7 +93,7 @@ export default function Pricing() {
               height: '100%',
             }} hoverStyle={{
               boxShadow: '0 10px 25px -5px rgba(236,72,153,.15), 0 25px 50px -12px rgba(236,72,153,.1)',
-              transform: 'translateY(-3px)',
+              transform: 'translateY(-6px)',
               borderColor: '#cbd5e1',
               borderTopColor: '#ec4899',
             }}>
@@ -154,7 +154,7 @@ export default function Pricing() {
               height: '100%',
             }} hoverStyle={{
               boxShadow: '0 30px 70px -12px rgba(0,0,0,.35), 0 0 0 1px rgba(255,255,255,.06) inset, 0 0 60px rgba(236,72,153,.12)',
-              transform: 'translateY(-5px)',
+              transform: 'translateY(-6px)',
               borderColor: '#475569',
             }}>
               {/* Badge */}
@@ -244,7 +244,7 @@ export default function Pricing() {
               height: '100%',
             }} hoverStyle={{
               boxShadow: '0 10px 25px -5px rgba(236,72,153,.15), 0 25px 50px -12px rgba(236,72,153,.1)',
-              transform: 'translateY(-3px)',
+              transform: 'translateY(-6px)',
               borderColor: '#cbd5e1',
             }}>
               <h3 className="font-bold text-slate-900" style={{ fontSize: '1.4rem', marginBottom: '0.25rem' }}>Pro</h3>

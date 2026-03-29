@@ -85,7 +85,7 @@ export default function HowItWorks() {
                   overflow: 'hidden',
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.transform = 'translateY(-8px)';
+                  e.currentTarget.style.transform = 'translateY(-6px)';
                   e.currentTarget.style.boxShadow = '0 10px 25px -5px rgba(236,72,153,.15), 0 25px 50px -12px rgba(236,72,153,.1)';
                   e.currentTarget.style.borderColor = '#fbcfe8';
                   e.currentTarget.style.borderTopColor = '#ec4899';
