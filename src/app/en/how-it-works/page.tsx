@@ -410,6 +410,13 @@ export default function HowItWorksPage() {
         </div>
       </div>
 
+      {/* Extra context */}
+      <div style={{ maxWidth: '780px', margin: '0 auto', padding: '0 clamp(1.5rem, 4vw, 3rem) 2rem' }}>
+        <p style={{ fontSize: '0.95rem', color: '#475569', lineHeight: 1.7, fontWeight: 450, textAlign: 'center' }}>
+          You do not need any technical skills to get started. We build the assistant based on information you provide about your business. Services, prices, opening hours and common customer questions. The entire process usually takes less than a week, and you can test everything for free before you decide.
+        </p>
+      </div>
+
       {/* Results */}
       <div style={{
         maxWidth: '780px',

@@ -399,6 +399,15 @@ export default function HowItWorksPageContent() {
         </div>
       </div>
 
+      {/* ─── Section: Hva trenger du? ─── */}
+      <div style={{ maxWidth: '780px', margin: '0 auto', padding: '0 clamp(1.5rem, 4vw, 3rem) 2rem' }}>
+        <AnimateIn delay={0}>
+          <p style={{ fontSize: '0.95rem', color: '#475569', lineHeight: 1.7, fontWeight: 450, textAlign: 'center' }}>
+            Du trenger ingen teknisk kompetanse for å komme i gang. Vi bygger assistenten basert på informasjon du gir oss om bedriften din. Tjenester, priser, åpningstider og vanlige spørsmål fra kundene dine. Hele prosessen tar vanligvis under en uke, og du kan teste alt gratis før du bestemmer deg.
+          </p>
+        </AnimateIn>
+      </div>
+
       {/* ─── Section: Resultatet ─── */}
       <div style={{
         maxWidth: '780px',
