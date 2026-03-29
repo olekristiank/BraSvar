@@ -71,7 +71,7 @@ Men bak tallene finnes et skille. Noen bedrifter har integrert KI på tvers av h
 
 ## Hva driver utviklingen?
 
-Teknologien har blitt tilgjengelig. Verktøy som ChatGPT og lignende har senket terskelen kraftig. Du trenger ikke en utviklingsavdeling for å komme i gang. Ifølge [McKinseys globale undersøkelse om KI](https://www.mckinsey.com/featured-insights/artificial-intelligence) bruker de fleste bedrifter KI til å forbedre interne arbeidsprosesser: administrasjon, analyse, planlegging og kundedialog.
+Teknologien har blitt tilgjengelig. Verktøy som ChatGPT og lignende har senket terskelen kraftig. Du trenger ikke en utviklingsavdeling for å komme i gang. Ifølge [NHOs KI-barometer](https://www.nho.no/tema/digitalisering/kunstig-intelligens/) bruker de fleste bedrifter KI til å forbedre interne arbeidsprosesser: administrasjon, analyse, planlegging og kundedialog.
 
 Det som kanskje er mest interessant: én av fem virksomheter bruker allerede KI til å utvikle helt nye produkter eller tjenester. Teknologien skaper ikke bare effektivitet – den skaper noe nytt.
 
@@ -543,7 +543,7 @@ Et AI-sentralbord fører en samtale. Det stiller spørsmål, gir svar og løser 
 
 ## Hvem bruker det?
 
-AI-sentralbord brukes av bedrifter der telefon er en viktig kontaktkanal, men der det ikke er mulig eller lønnsomt å ha noen til å svare hele tiden. Det gjelder [de fleste småbedrifter](/blog/hva-koster-en-ubesvart-samtale): tannleger, rørleggere, frisører, advokater, klinikker og verksteder.
+AI-sentralbord brukes av bedrifter der telefon er en viktig kontaktkanal, men der det ikke er mulig eller lønnsomt å ha noen til å svare hele tiden. Ifølge [NHOs KI-barometer](https://www.nho.no/tema/digitalisering/kunstig-intelligens/) er kundeservice og telefoni blant de vanligste bruksomradene for KI i norske bedrifter. Det gjelder [de fleste småbedrifter](/blog/hva-koster-en-ubesvart-samtale): tannleger, rørleggere, frisører, advokater, klinikker og verksteder.
 
 ## Hva koster det?
 

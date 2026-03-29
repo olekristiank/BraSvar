@@ -3,10 +3,10 @@ import Navbar from '@/components/NavbarEN/NavbarEN';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'About Bra Svar | Bra Svar!',
+  title: 'About Bra Svar: AI for Norwegian businesses | Bra Svar!',
   description: 'Bra Svar is a service from Klevstrand Innovasjon, a Norwegian technology company. AI phone assistants for small and medium businesses.',
   openGraph: {
-    title: 'About Bra Svar | Bra Svar!',
+    title: 'About Bra Svar: AI for Norwegian businesses | Bra Svar!',
     description: 'AI phone assistants for small and medium businesses, built in Norway.',
     images: [{ url: '/opengraph-image.svg', width: 1200, height: 630 }],
   },
@@ -107,8 +107,8 @@ export default function AboutPage() {
         <div style={sectionStyle}>
           <h2 style={sectionTitleStyle}>Contact information</h2>
           <p style={textStyle}>
-            Phone: <a href="tel:+4764006264" style={{ color: '#ec4899', textDecoration: 'none' }}>64 00 62 64</a><br />
-            Email: <a href="mailto:kontakt@brasvar.no" style={{ color: '#ec4899', textDecoration: 'none' }}>kontakt@brasvar.no</a>
+            Phone: <a href="tel:+4764006264" style={{ color: '#ec4899', textDecoration: 'underline' }}>64 00 62 64</a><br />
+            Email: <a href="mailto:kontakt@brasvar.no" style={{ color: '#ec4899', textDecoration: 'underline' }}>kontakt@brasvar.no</a>
           </p>
         </div>
 

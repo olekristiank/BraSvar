@@ -5,7 +5,7 @@ import NavbarEN from '@/components/NavbarEN/NavbarEN';
 import { getAllPosts } from '@/lib/blog';
 
 export const metadata: Metadata = {
-  title: 'Blog | Bra Svar!',
+  title: 'Blog: AI and automation for businesses | Bra Svar!',
   description: 'Articles about AI, automation and smarter operations for Norwegian small businesses.',
 };
 
@@ -34,7 +34,7 @@ export default function BlogPageEN() {
 
       <div style={{ maxWidth: '1000px', margin: '0 auto', padding: '0 1.5rem 5rem' }}>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '1.5rem' }}>
-          {posts.map((post) => (
+          {posts.map((post, index) => (
             <Link key={post.slug} href={`/blog/${post.slug}`} style={{
               textDecoration: 'none', display: 'flex', flexDirection: 'column',
               borderRadius: '20px', background: '#fff', border: '1px solid #f1f5f9',
@@ -42,7 +42,7 @@ export default function BlogPageEN() {
               overflow: 'hidden', transition: 'all 0.3s ease',
             }}>
               <div style={{ position: 'relative', width: '100%', aspectRatio: '16 / 9', overflow: 'hidden' }}>
-                <Image src={post.cover} alt={post.title} fill sizes="(max-width: 768px) 100vw, 50vw" style={{ objectFit: 'cover' }} />
+                <Image src={post.cover} alt={post.title} fill sizes="(max-width: 768px) 100vw, 50vw" style={{ objectFit: 'cover' }} priority={index < 4} />
               </div>
               <div style={{ padding: '1.5rem 1.75rem 1.75rem' }}>
                 <h2 style={{ fontSize: '1.1rem', fontWeight: 700, color: '#0f172a', lineHeight: 1.3, marginBottom: '0.5rem' }}>{post.title}</h2>

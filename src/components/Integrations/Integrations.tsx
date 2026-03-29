@@ -79,7 +79,7 @@ export default function Integrations() {
         {/* Note */}
         <AnimateIn delay={600}>
           <p className="text-center" style={{
-            fontSize: '0.95rem',
+            fontSize: '1rem',
             color: '#64748b',
             marginTop: '2rem',
           }}>
@@ -152,13 +152,13 @@ function CategoryRow({ title, items }: { title: string; items: string[] }) {
               {previewItems.map((item, i) => (
                 <span key={item} style={{ display: 'flex', alignItems: 'center', gap: '0.35rem' }}>
                   {i > 0 && <span style={{ color: '#cbd5e1', fontSize: '0.7rem' }}>·</span>}
-                  <span style={{ fontSize: '0.8rem', fontWeight: 450, color: '#64748b', whiteSpace: 'nowrap' }}>{item}</span>
+                  <span style={{ fontSize: '0.95rem', fontWeight: 450, color: '#64748b', whiteSpace: 'nowrap' }}>{item}</span>
                 </span>
               ))}
               {hasMore && (
                 <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.2rem', whiteSpace: 'nowrap' }}>
-                  <span style={{ fontSize: '0.8rem', fontWeight: 450, color: '#64748b' }}>..</span>
-                  <span style={{ fontSize: '0.8rem', fontWeight: 600, color: '#ec4899' }}>flere</span>
+                  <span style={{ fontSize: '0.95rem', fontWeight: 450, color: '#64748b' }}>..</span>
+                  <span style={{ fontSize: '0.95rem', fontWeight: 600, color: '#ec4899' }}>flere</span>
                 </span>
               )}
             </span>
@@ -197,7 +197,7 @@ function CategoryRow({ title, items }: { title: string; items: string[] }) {
                 padding: '0.25rem 0.65rem',
                 background: 'rgba(253,242,248,0.6)',
                 borderRadius: '6px',
-                fontSize: '0.8rem',
+                fontSize: '0.95rem',
                 fontWeight: 500,
                 color: '#475569',
                 border: '1px solid rgba(236,72,153,0.1)',

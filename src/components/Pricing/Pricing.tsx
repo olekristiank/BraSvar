@@ -97,9 +97,9 @@ export default function Pricing() {
               borderColor: '#cbd5e1',
               borderTopColor: '#ec4899',
             }}>
-              <p className="font-semibold uppercase" style={{ fontSize: '0.65rem', letterSpacing: '0.15em', color: '#94a3b8', marginBottom: '0.75rem' }}>Startpakke</p>
+              <p className="font-semibold uppercase" style={{ fontSize: '0.65rem', letterSpacing: '0.15em', color: '#64748b', marginBottom: '0.75rem' }}>Startpakke</p>
               <h3 className="font-bold text-slate-900" style={{ fontSize: '1.4rem', marginBottom: '0.25rem' }}>Mini</h3>
-              <p className="text-slate-500" style={{ fontSize: '0.88rem', marginBottom: '1.75rem', lineHeight: 1.55, fontWeight: 450 }}>
+              <p className="text-slate-500" style={{ fontSize: '1rem', marginBottom: '1.75rem', lineHeight: 1.55, fontWeight: 450 }}>
                 For bedrifter med lavt samtalevolum og enkle behov.
               </p>
 
@@ -176,7 +176,7 @@ export default function Pricing() {
 
               <p className="font-semibold uppercase" style={{ fontSize: '0.65rem', letterSpacing: '0.15em', color: 'rgba(148,163,184,.7)', marginBottom: '0.75rem', paddingTop: '0.5rem' }}>Anbefalt</p>
               <h3 className="font-bold text-white" style={{ fontSize: '1.4rem', marginBottom: '0.25rem' }}>Basis</h3>
-              <p className="font-medium" style={{ color: '#94a3b8', fontSize: '0.88rem', marginBottom: '1.75rem', lineHeight: 1.55, fontWeight: 450 }}>
+              <p className="font-medium" style={{ color: '#cbd5e1', fontSize: '1rem', marginBottom: '1.75rem', lineHeight: 1.55, fontWeight: 450 }}>
                 For bedrifter som aldri vil gå glipp av et anrop.
               </p>
 
@@ -249,9 +249,9 @@ export default function Pricing() {
               transform: 'translateY(-3px)',
               borderColor: '#cbd5e1',
             }}>
-              <p className="font-semibold uppercase" style={{ fontSize: '0.65rem', letterSpacing: '0.15em', color: '#94a3b8', marginBottom: '0.75rem' }}>Spesielle behov</p>
+              <p className="font-semibold uppercase" style={{ fontSize: '0.65rem', letterSpacing: '0.15em', color: '#64748b', marginBottom: '0.75rem' }}>Spesielle behov</p>
               <h3 className="font-bold text-slate-900" style={{ fontSize: '1.4rem', marginBottom: '0.25rem' }}>Pro</h3>
-              <p className="text-slate-500" style={{ fontSize: '0.88rem', marginBottom: '1.75rem', lineHeight: 1.55, fontWeight: 450 }}>
+              <p className="text-slate-500" style={{ fontSize: '1rem', marginBottom: '1.75rem', lineHeight: 1.55, fontWeight: 450 }}>
                 For deg som trenger noe helt eget – med skreddersydde integrasjoner og en fast kontaktperson.
               </p>
 
@@ -323,7 +323,7 @@ function Feature({ children, color }: { children: React.ReactNode; color: 'green
           <polyline points="20 6 9 17 4 12" />
         </svg>
       </div>
-      <span className="font-medium" style={{ fontSize: '0.9rem', lineHeight: 1.4, color: styles.text }}>{children}</span>
+      <span className="font-medium" style={{ fontSize: '1rem', lineHeight: 1.4, color: styles.text }}>{children}</span>
     </li>
   );
 }

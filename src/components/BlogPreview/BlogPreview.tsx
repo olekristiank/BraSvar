@@ -109,7 +109,7 @@ export default function BlogPreview() {
                   {post.title}
                 </h3>
                 <p className="relative z-10" style={{
-                  fontSize: '0.9rem',
+                  fontSize: '1rem',
                   color: '#475569',
                   lineHeight: 1.6,
                   fontWeight: 450,
@@ -118,7 +118,7 @@ export default function BlogPreview() {
                   {post.description}
                 </p>
                 <span style={{
-                  fontSize: '0.82rem',
+                  fontSize: '0.95rem',
                   fontWeight: 600,
                   color: '#db2777',
                   marginTop: '0.75rem',
@@ -136,7 +136,7 @@ export default function BlogPreview() {
         <AnimateIn delay={400}>
           <div className="text-center" style={{ marginTop: '1.5rem' }}>
             <Link href="/blog" style={{
-              fontSize: '0.9rem',
+              fontSize: '0.95rem',
               fontWeight: 600,
               color: '#64748b',
               textDecoration: 'none',

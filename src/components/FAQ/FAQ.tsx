@@ -132,7 +132,7 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
         onMouseLeave={(e) => { e.currentTarget.style.paddingLeft = '0'; }}
       >
         <span style={{
-          fontSize: '0.95rem',
+          fontSize: '1rem',
           fontWeight: 600,
           color: '#1e293b',
           lineHeight: 1.4,
@@ -167,7 +167,7 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
         }}
       >
         <p style={{
-          fontSize: '0.9rem',
+          fontSize: '1rem',
           color: '#64748b',
           lineHeight: 1.7,
           paddingBottom: '1.25rem',

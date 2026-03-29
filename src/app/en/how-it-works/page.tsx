@@ -3,10 +3,10 @@ import Link from 'next/link';
 import Navbar from '@/components/NavbarEN/NavbarEN';
 
 export const metadata: Metadata = {
-  title: 'How it works | Bra Svar!',
+  title: 'How Bra Svar works: step by step | Bra Svar!',
   description: 'See how Bra Svar answers the phone, talks to your customers and books appointments automatically. Simple, effective and available around the clock.',
   openGraph: {
-    title: 'How it works | Bra Svar!',
+    title: 'How Bra Svar works: step by step | Bra Svar!',
     description: 'See how Bra Svar answers the phone, talks to your customers and books appointments automatically.',
     images: [{ url: '/opengraph-image.svg', width: 1200, height: 630 }],
   },

@@ -121,7 +121,7 @@ export default function HowItWorksPreview() {
                   </h3>
 
                   <p style={{
-                    fontSize: '0.9rem',
+                    fontSize: '1rem',
                     color: '#64748b',
                     lineHeight: 1.6,
                     fontWeight: 450,

@@ -2,10 +2,10 @@ import type { Metadata } from 'next';
 import Navbar from '@/components/NavbarEN/NavbarEN';
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | Bra Svar!',
+  title: 'Privacy Policy and GDPR compliance | Bra Svar!',
   description: 'Learn how Bra Svar processes personal data in accordance with GDPR.',
   openGraph: {
-    title: 'Privacy Policy | Bra Svar!',
+    title: 'Privacy Policy and GDPR compliance | Bra Svar!',
     description: 'Learn how Bra Svar processes personal data in accordance with GDPR.',
     images: [{ url: '/opengraph-image.svg', width: 1200, height: 630 }],
   },

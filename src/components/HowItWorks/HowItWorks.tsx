@@ -135,7 +135,7 @@ export default function HowItWorks() {
 
                 {/* Description */}
                 <p className="relative z-10" style={{
-                  fontSize: '0.95rem',
+                  fontSize: '1rem',
                   color: '#475569',
                   lineHeight: 1.6,
                   fontWeight: 450,

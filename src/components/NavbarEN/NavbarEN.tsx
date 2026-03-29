@@ -106,7 +106,7 @@ export default function NavbarEN() {
 
         {/* Desktop nav */}
         <nav className="nav-links" style={{ display: 'flex', alignItems: 'center', gap: '2rem' }}>
-          <NavLink href="/en/#how-it-works">How it works</NavLink>
+          <NavLink href="/en/#how-it-works">Getting started</NavLink>
           <NavLink href="/en/#pricing">Pricing</NavLink>
           <div
             style={{ position: 'relative' }}
@@ -245,7 +245,7 @@ export default function NavbarEN() {
           transition: 'opacity 0.3s ease',
         }}
       >
-        <a href="/en/#how-it-works" onClick={() => setMobileOpen(false)} style={{ fontSize: '1.2rem', fontWeight: 600, color: '#0f172a', textDecoration: 'none' }}>How it works</a>
+        <a href="/en/#how-it-works" onClick={() => setMobileOpen(false)} style={{ fontSize: '1.2rem', fontWeight: 600, color: '#0f172a', textDecoration: 'none' }}>Getting started</a>
         <a href="/en/#pricing" onClick={() => setMobileOpen(false)} style={{ fontSize: '1.2rem', fontWeight: 600, color: '#0f172a', textDecoration: 'none' }}>Pricing</a>
         <div style={{ textAlign: 'center' }}>
           <button

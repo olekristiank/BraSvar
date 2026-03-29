@@ -2,10 +2,10 @@ import type { Metadata } from 'next';
 import Navbar from '@/components/NavbarEN/NavbarEN';
 
 export const metadata: Metadata = {
-  title: 'Contact us | Bra Svar!',
+  title: 'Contact Bra Svar: call or send a message | Bra Svar!',
   description: 'Get in touch with Bra Svar. Call us at 64 00 62 64 or send us an email.',
   openGraph: {
-    title: 'Contact us | Bra Svar!',
+    title: 'Contact Bra Svar: call or send a message | Bra Svar!',
     description: 'Get in touch with Bra Svar. Call us at 64 00 62 64 or send us an email.',
     images: [{ url: '/opengraph-image.svg', width: 1200, height: 630 }],
   },
