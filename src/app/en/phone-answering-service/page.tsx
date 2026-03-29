@@ -97,6 +97,12 @@ export default function PhoneAnsweringService() {
         </div>
       </div>
 
+      <div style={{ maxWidth: '700px', margin: '0 auto', padding: '0 clamp(1.5rem, 4vw, 3rem) 2rem' }}>
+        <p style={{ fontSize: '0.95rem', color: '#475569', lineHeight: 1.7, fontWeight: 450, textAlign: 'center' }}>
+          Bra Svar is built for Norwegian small businesses that want to give every caller a proper response. The assistant speaks natural Norwegian, knows your business, and handles the most common requests without you having to lift the phone. Setup takes less than a week, and there is no commitment or setup fee.
+        </p>
+      </div>
+
       <div style={{ textAlign: 'center', padding: '3rem 2rem 5rem', background: 'linear-gradient(180deg, #fff 0%, #fdf2f8 100%)' }}>
         <h2 style={{ fontSize: 'clamp(1.5rem, 3vw, 2.2rem)', fontWeight: 800, color: '#0f172a', marginBottom: '1rem' }}>Switch from answering machine to conversation</h2>
         <p style={{ color: '#64748b', marginBottom: '1.5rem' }}>Free to try. No commitment, no setup fee.</p>
