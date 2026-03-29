@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import styles from '../page.module.css';
 import WaveAdmin from '@/components/FrequencyWave/WaveAdmin';
-import Navbar from '@/components/Navbar/Navbar';
+import Navbar from '@/components/NavbarEN/NavbarEN';
 import HowItWorks from '@/components/HowItWorksEN/HowItWorksEN';
 import Pricing from '@/components/PricingEN/PricingEN';
 import FAQ from '@/components/FAQEN/FAQEN';

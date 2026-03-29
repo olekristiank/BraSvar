@@ -3,6 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Navbar from '@/components/Navbar/Navbar';
+import NavbarEN from '@/components/NavbarEN/NavbarEN';
 import AnimateIn from '@/components/AnimateIn/AnimateIn';
 import { useContactModal } from '@/components/ContactModal/ContactContext';
 
@@ -87,7 +88,7 @@ export default function IndustryPage({ data }: { data: IndustryPageData }) {
 
   return (
     <main style={{ minHeight: '100vh', fontFamily: 'var(--font-outfit)', background: '#fff' }}>
-      <Navbar />
+      {lang === 'en' ? <NavbarEN /> : <Navbar />}
 
       {/* Hero */}
       <div style={{

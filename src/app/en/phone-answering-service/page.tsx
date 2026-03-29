@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import Navbar from '@/components/Navbar/Navbar';
+import Navbar from '@/components/NavbarEN/NavbarEN';
 
 export const metadata: Metadata = {
   title: 'Phone answering for business | Bra Svar!',

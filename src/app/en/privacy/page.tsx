@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import Navbar from '@/components/Navbar/Navbar';
+import Navbar from '@/components/NavbarEN/NavbarEN';
 
 export const metadata: Metadata = {
   title: 'Privacy Policy | Bra Svar!',

@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import Navbar from '@/components/Navbar/Navbar';
+import Navbar from '@/components/NavbarEN/NavbarEN';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
